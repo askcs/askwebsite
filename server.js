@@ -3,7 +3,7 @@ var express = require('express'),
     
 
 app.configure(function(){
-  app.use(express.static(__dirname + '/static'));
+  app.use(express.static(__dirname + '/public'));
   app.use(express.logger('dev'));
 });
 
