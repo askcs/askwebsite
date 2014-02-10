@@ -14,25 +14,25 @@
 			'resize' : true,
 			'slidesColor' : [],
 			'anchors':[],
-			'scrollingSpeed': 700,
+			'scrollingSpeed': 70,
 			'easing': 'easeInQuart',
 			'menu': false,
 			'navigation': false,
 			'navigationPosition': 'right',
 			'navigationColor': '#000',
 			'navigationTooltips': [],
-			'slidesNavigation': false,
+			'slidesNavigation': true,
 			'slidesNavPosition': 'bottom',
 			'controlArrowColor': '#fff',
 			'loopBottom': false,
 			'loopTop': false,
-			'loopHorizontal': true,
+			'loopHorizontal': false,
 			'autoScrolling': true,
 			'scrollOverflow': false,
-			'css3': false,
+			'css3': true,
 			'paddingTop': 0,
 			'paddingBottom': 0,
-			'fixedElements': null,
+			'fixedElements': '#menu, #footer',
 			'normalScrollElements': null,
 			'keyboardScrolling': true,
 
@@ -49,7 +49,7 @@
 		//Defines the delay to take place before being able to scroll to the next section
 		//BE CAREFUL! Not recommened to change it under 400 for a good behavior in laptops and 
 		//Apple devices (laptops, mouses...)
-		var scrollDelay = 700;
+		var scrollDelay = 300;
 		
 		$.fn.fullpage.setAutoScrolling = function(value){
 			options.autoScrolling = value;
@@ -994,18 +994,20 @@
 			var section = element.closest('.section');
 			var scrollable = element.find('.scrollable');
 
+            console.log("nummer1",scrollable.length, element);
 			//if there was scroll, the contentHeight will be the one in the scrollable section
 			if(scrollable.length){
-				var contentHeight = element.find('.scrollable').get(0).scrollHeight;
+				var contentHeight = element.find('.scrollable').get(0).height;
 			}else{
-				var contentHeight = element.get(0).scrollHeight;
+				var contentHeight = element.get(0).height;
 				if(options.verticalCentered){
-					contentHeight = element.find('.tableCell').get(0).scrollHeight;
+					contentHeight = element.find('.tableCell').get(0).height;
 				}
 			}
 			
 			var scrollHeight = windowsHeight - parseInt(section.css('padding-bottom')) - parseInt(section.css('padding-top'));
 
+            console.log ("nummer2",contentHeight, scrollHeight);
 			//needs scroll?
 			if ( contentHeight > scrollHeight) {
 				//was there already an scroll ? Updating it
@@ -1043,8 +1045,10 @@
 		function addTableClass(element){
 			element.addClass('table').wrapInner('<div class="tableCell" style="height:' + getTableHeight(element) + 'px;" />');
 		}
-		
+
+
 		function getTableHeight(element){
+            console.log("hallo3", element);
 			var sectionHeight = windowsHeight;
 
 			if(options.paddingTop || options.paddingBottom){
@@ -1056,7 +1060,7 @@
 				var paddings = parseInt(section.css('padding-top')) + parseInt(section.css('padding-bottom'));
 				sectionHeight = (windowsHeight - paddings);
 			}
-
+            console.log("hallo4", sectionHeight);
 			return sectionHeight;
 		}
 		
@@ -1247,3 +1251,7 @@
 
 	};
 })(jQuery);
+
+
+
+

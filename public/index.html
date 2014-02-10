@@ -2,105 +2,270 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	<title>fullPage.js One Page Scroll Sites</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
-	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ASK Community Systems</title>
+	<meta name="author" content="ASK Community Systems" />
 	<meta name="Resource-type" content="Document" />
 
-	
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/example2.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ASK Community Systems" property="og:title">
+    <meta content="image" property="og:type">
+    <meta content="https://ask-cs.nl/" property="og:url">
+    <meta content="" property="og:image">
 
+    <!----------CSS-------->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <!----------FONTS-------->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:700,400,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
+
+    <!----------JS-------->
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
-		
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
-	
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			var pepe = $.fn.fullpage({
-				slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				slidesColor: ['#facb6a', '#9fe384', '#fff', 'whitesmoke', '#ccddff'],
+				anchors: ['home', 'products', 'cases', '4thpage', 'lastPage'],
 				menu: '#menu'
 			});
-			
+
 		});
 	</script>
 
 </head>
 <body>
-<a href="https://github.com/alvarotrigo/fullPage.js"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://http://alvarotrigo.com/fullPage/" data-text="Great plugin to create fullscreen scrolling websites: http://alvarotrigo.com/fullPage/">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<ul id="menu">
-	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
-</ul>
+<!----------HEADER-------->
 
-<div class="section " id="section0">
-	<h1>fullPage.js</h1>
-	<p>Create Beautiful Fullscreen Scrolling Websites</p>
-	<img src="img/fullPage.png" alt="fullPage" />
+<div id="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-5">
+                <ul class="">
+                    <!--<li data-menuanchor="home" class="active"><a href="#home">Home</a></li>-->
+                    <li data-menuanchor="products"><a href="#products">Producten</a></li>
+                </ul>
+            </div>
+            <div id="mainLogo">
+                <div class="logoContainer" data-menuanchor="home"><a href="#home"></a>
+                </div>
+            </div>
+            <div class="col-xs-5 col-xs-offset-2">
+            <ul class="">
+                <!--<li data-menuanchor="home" class="active"><a href="#home">Home</a></li>-->
+                <li data-menuanchor="cases"><a href="#cases">Casussen</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="section" id="section1">
+
+
+
+
+
+<!----------SCENARIO-------->
+
+<div class="section" id="section0">
     <div class="slide">
-		<div class="intro">
-			<h1>Create Sliders</h1>
-			<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-			<img src="img/slider.png" alt="slider" />
-		</div>
-		
-	</div>
-    <div class="slide">
-		<div class="intro">
-			<img src="img/1.png" alt="simple" />
-			<h1>Simple</h1>
-			<p>Easy to use. Configurable and customizable.</p>
-		</div>
-	</div>
-    <div class="slide">
-		<div class="intro">
-			<img src="img/2.png" alt="Cool" />
-			<h1>Cool</h1>
-			<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+		<div class="container">
+            <div class="col-md-12">
+                <h2>Regelmatig een tekort aan personeel?</h2>
+                <img src="img/home/scenario01.png" alt="slider" class="scenarioImg" />
+            </div>
 		</div>
 	</div>
     <div class="slide">
-		<div class="intro">
-			<img src="img/3.png" alt="Compatible" />
-			<h1>Compatible</h1>
-			<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
-		</div>
-	</div>
+        <div class="container">
+            <div class="col-md-12">
+                <h2>Met ASK geeft personeel zelf beschikbaarheid aan.</h2>
+                <img src="img/home/scenario02.png" alt="slider" class="scenarioImg" />
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="container">
+            <div class="col-md-12">
+                <h2>Bij een tekort zoekt ASK automatisch naar personeel.</h2>
+                <img src="img/home/scenario03.png" alt="slider" class="scenarioImg"/>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="container">
+            <div class="col-md-12">
+                <h2>Zo heeft u altijd voldoende personeel!</h2>
+                <img src="img/home/scenario04.png" alt="slider" class="scenarioImg"/>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="section" id="section2">
-	<div class="intro">
-		<h1>Example</h1>
-		<p>HTML markup example to define 4 sections.</p>
-		<img src="img/example2.png" alt="example" />
-	</div>
+
+
+
+
+<!----------PRODUCTS-------->
+
+<div class="section products" id="section1">
+        <div class="container desktopView">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 standBy">
+                    <div class="box">
+                        <div class="top">
+                            <img src="img/products/logoStandBy.png">
+                        </div>
+                        <div class="textPart">
+                            <h3>StandBy</h3>
+                            <p>Vooraf inzage in de paraatheid hebben en niet pas wanneer het alarm is afgegaan. Online roosters en alarmontvangers bieden slechts een deeloplossing. Daarom heeft ASK Standby ontwikkeld.</p>
+                            <a href="http://standby.ask-cs.nl" target="_blank">Lees meer...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 teamUp">
+                    <div class="box">
+                        <div class="top">
+                            <img src="img/products/logoTeamUp.png">
+                        </div>
+                        <div class="textPart">
+                            <h3>TeamUp</h3>
+                            <p>ASK vindt dat ICT de zorg dient te ondersteunen. Uw medewerkers willen zo min mogelijk tijd aan administratie kwijt zijn, zodat ze zich kunnen richten op het verlenen van goede zorg. </p>
+                            <a href="http://teamup.ask-cs.nl" target="_blank">Lees meer...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 joinUs">
+                    <div class="box">
+                        <div class="top">
+                            <img src="img/products/logoStandBy.png">
+                        </div>
+                        <div class="textPart">
+                            <h3>JoinUs</h3>
+                            <p>Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.</p>
+                            <a href="http://joinus.ask-cs.nl" target="_blank">Lees meer...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="mobileView">
+        <div class="slide" id="product01">
+            <div class="standBy">
+                    <div class="top">
+                        <img src="img/products/logoStandBy.png">
+                    </div>
+                    <div class="col-xs-12 textPart">
+                        <h3>StandBy</h3>
+                        <p>Vooraf inzage in de paraatheid hebben en niet pas wanneer het alarm is afgegaan. Online roosters en alarmontvangers bieden slechts een deeloplossing. Daarom heeft ASK Standby ontwikkeld.</p>
+                        <a href="http://standby.ask-cs.nl" target="_blank">Lees meer...</a>
+                    </div>
+            </div>
+        </div>
+        <div class="slide" id="product02">
+            <div class="teamUp">
+                    <div class="top">
+                        <img src="img/products/logoTeamUp.png">
+                    </div>
+                    <div class="col-xs-12 textPart">
+                        <h3>TeamUp</h3>
+                        <p>ASK vindt dat ICT de zorg dient te ondersteunen. Uw medewerkers willen zo min mogelijk tijd aan administratie kwijt zijn, zodat ze zich kunnen richten op het verlenen van goede zorg. </p>
+                        <a href="http://teamup.ask-cs.nl" target="_blank">Lees meer...</a>
+                    </div>
+            </div>
+        </div>
+        <div class="slide" id="product03">
+            <div class="joinUs">
+                    <div class="top">
+                        <img src="img/products/logoStandBy.png">
+                    </div>
+                    <div class="col-xs-12 textPart">
+                        <h3>JoinUs</h3>
+                        <p>Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.</p>
+                        <a href="http://joinus.ask-cs.nl" target="_blank">Lees meer...</a>
+                    </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+
+
+<!----------CASES-------->
+
 <div class="section" id="section3">
-	<div class="intro">
-		<h1>Working On Tablets</h1>
-		<p>
-			Designed to fit to different screen sizes as well as tablet and mobile devices.
-			<br /><br /><br /><br /><br /><br />
-		</p>
-	</div>
-	<img src="img/tablets.png" alt="tablets" />
+    <div class="slide case" id="case01">
+        <div class="container">
+            <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
+                <div class="textField">
+                    <h2>PostNL</h2>
+                    <p>ASK helpt PostNL om postsorteerders flexibel in te roosteren. Hierbij houdt ASK rekening met benodigde capaciteit, individuele voorkeuren en arbowetgeving.</p>
+                    <a href="">Lees meer...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide case"  id="case02">
+        <div class="container">
+            <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
+                <div class="textField">
+                    <h2>Olympia</h2>
+                    <p>ASK heeft Olympia geholpen om vacatures onder de aandacht van uitzendkrachten te brengen en om direct reacties van kandidaten te verzamelen via de smartphone, telefoon of e-mail.</p>
+                    <a href="">Lees meer...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide case" id="case03">
+        <div class="container">
+            <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
+                <div class="textField">
+                    <h2>Buurtzorg</h2>
+                    <p>De case Buurtzorg heeft mede geleid tot de uiteindelijke ontwikkeling van TeamUp.</p>
+                    <p>Met de smartphone-app faciliteert ASK de onderlinge afstemming en communicatie. Zo hoeft er minder te worden geregeld, en kan er meer worden gedaan.</p>
+                    <a href="">Lees meer...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide case" id="case04">
+        <div class="container">
+            <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
+                <div class="textField">
+                    <h2>Openbare Orde & Veiligheid</h2>
+                    <p>ASK zorgt er bij de KNRM, Reddingsbrigade en Brandweer voor dat er altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.</p>
+                    <p>Hulpverleners kunnen via de pc, de smartphone of de telefoon zelf aangeven wanneer ze paraat kunnen staan, en wanneer ze een dag vrij willen. </p>
+                    <a href="">Lees meer...</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+
+
+<!----------FOOTER-------->
+
+    <div id="footer">hallo</div>
+
 
 
 </body>
