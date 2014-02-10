@@ -1,0 +1,534 @@
+@CHARSET "ISO-8859-1";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a, a:hover, a:active {
+	text-decoration:none;
+    outline: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+
+
+
+/*----------FULL PAGE JS-----------*/
+
+#superContainer {
+    height: 100%;
+    position: relative;
+}
+.section {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.slide {
+    float: left;
+}
+.slide, .slidesContainer {
+    height: 100%;
+    display: block;
+}
+.slides {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.section.table, .slide.table {
+    display: table;
+    width: 100%;
+}
+.tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.slidesContainer {
+    float: left;
+    position: relative;
+}
+.controlArrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    border: none;
+    margin-top: -20px;
+    width: 56px;
+    height: 56px;
+}
+.controlArrow.prev {
+    left: 4%;
+    background-image: url("../img/arrowLeft.png");
+}
+.controlArrow.next {
+    right: 4%;
+    background-image: url("../img/arrowRight.png");
+}
+.scrollable {
+    overflow: scroll;
+}
+.easing {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+
+.fullPage-slidesNav {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fullPage-slidesNav.bottom {
+    bottom: 60px;
+}
+.fullPage-slidesNav.top {
+    top: 60px;
+}
+#fullPage-nav ul,
+.fullPage-slidesNav ul {
+    margin: 0;
+    padding: 0;
+}
+#fullPage-nav li,
+.fullPage-slidesNav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fullPage-slidesNav li {
+    display: inline-block;
+}
+#fullPage-nav li a,
+.fullPage-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+    background: #e61e3b;
+}
+#fullPage-nav span,
+.fullPage-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
+
+/*----------CUSTOM-----------*/
+
+body{
+    font-family: 'Lato', sans-serif, arial,helvetica;
+	color: #000;
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+
+a{
+    color: #e61e3b;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+	font-size: 36px;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+p{
+	font-size: 14px;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+}
+#menu li.active{
+}
+#menu li a{
+	text-decoration:none;
+	color: #fff;
+}
+#menu li.active a:hover{
+
+}
+#menu li:hover a{
+    color: #e61e3b;
+}
+#menu li a{
+	padding: 22px 18px;
+	display:block;
+    outline: none;
+}
+#menu li.active a{
+	color: #e61e3b;
+}
+#menu{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+	position:fixed;
+	top:0;
+	left:0;
+	height: 60px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+    background-color: #000;
+    border:none;
+}
+
+#menu .container {
+    text-align: center;
+    position: relative;
+    text-align: left;
+}
+
+#menu .container div div:first-child ul {
+    text-align: right;
+}
+
+
+
+#mainLogo {
+    padding: 0;
+    position: absolute;
+    left: 50%;
+
+}
+
+#mainLogo .logoContainer{
+    height: auto;
+    width: 100%;
+}
+
+#mainLogo .logoContainer a {
+    outline: none;
+    background: url('../img/logoHeader.png') no-repeat;
+    height: 110px;
+    width: 140px;
+    display: block;
+    margin-left: -70px;
+}
+
+
+
+
+#section0 .scenarioImg, #section2 .scenarioImg {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin: 20px 0 ;
+}
+
+
+.products {
+    color: #fff;
+    background: url("../img/products/bgBlurred.jpg") repeat;
+    background-position: center center;
+}
+
+.products a, .products a:hover, .products a:active {
+    color: #fff;
+    padding-top: 15px;
+    display: block;
+    outline: none;
+    text-transform: uppercase;
+}
+
+
+
+
+.products .standBy .box, #product01{
+    background-color: #a93232;
+}
+
+.products .top, .products .box .textPart {
+    padding: 20px;
+}
+
+.products .standBy .top{
+    background-color: #b34d49;
+}
+
+.products .teamUp .box, #product02{
+    background-color: #1dc8b6;
+}
+
+.products .teamUp .top{
+    background-color: #61d9cc;
+}
+
+.products .joinUs .box, #product03{
+    background-color: #fab25e;
+}
+
+.products .joinUs .top {
+    background-color: #faca83;
+}
+
+
+.products .mobileView {
+/*    display: none;*/
+}
+
+
+
+.case {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.case a, .case a:hover, .case a:active {
+    text-transform: uppercase;
+    display: block;
+    padding-top: 15px;
+}
+
+.case .textField {
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 20px;
+    right: 0;
+    margin-top: -70%;
+    display: block;
+}
+
+#case01 {
+    background-image: url('../img/cases/PostNL07.jpg');
+/*    background-position: center left;*/
+}
+
+#case02 {
+    background-image: url('../img/cases/olympia.jpg');
+}
+
+#case03 {
+    background-image: url('../img/cases/buurtzorg.jpg');
+    background-position: center left;
+}
+
+#case04 {
+    background-image: url('../img/cases/oov.jpeg');
+}
+
+
+
+
+#footer {
+    bottom: 0;
+    background: none repeat scroll 0 0 #000;
+    color: #fff;
+    display: block;
+    height: 50px;
+    padding: 20px 0 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 9;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+
+    .products .mobileView {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    h2{
+        font-size: 20px;
+    }
+
+    #menu{
+        font-size: 10px;
+        height: 40px;
+    }
+
+    #menu li a{
+        padding: 14px 20px;
+        display:block;
+        outline: none;}
+
+    #mainLogo .logoContainer a {
+        outline: none;
+        background: url('../img/logoHeaderSmall.png') no-repeat;
+        height: 57px;
+        width: 80px;
+        margin-left: -40px;
+    }
+
+
+    .controlArrow {
+        width: 20px;
+        height: 20px;
+        background-size: 100%;
+    }
+
+    .products .desktopView {
+        display: none;
+    }
+
+    .products p{
+        font-size: 12px;
+        line-height: 13px;
+        padding: 10px 7% 0 7%;
+    }
+
+    .products .container {
+        margin: 80px 0;
+    }
+
+    .products img {
+        bottom: 10%;
+        left: 50%;
+        margin: 0 auto 0 -10%;
+        width: 20%;
+        position: absolute;
+        text-align: center;
+    }
+
+
+    .standBy, .teamUp, .joinUs {
+        height: 100%;
+
+    }
+
+    .top {
+        height: 40%;
+        position: relative;
+    }
+
+
+
+    .case .textField {
+        margin-top: -40%;
+    }
+    .case .textField p {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    #mainLogo .logoContainer a {
+        background: url('../img/logoHeader@2x.png') no-repeat;
+    }
+}
+
+
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    #mainLogo .logoContainer a {
+        background: url('../img/logoHeaderSmall@2x.png') no-repeat;
+        background-size: 80px 57px;
+        height: 57px;
+        width: 80px;
+    }
+}
+
+
