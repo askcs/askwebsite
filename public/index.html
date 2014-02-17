@@ -37,6 +37,8 @@
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+            if ( $(window).width() >= 768 ) { $( '.mobileView' ).empty().detach(); }
+
 			var pepe = $.fn.fullpage({
 				slidesColor: ['#facb6a', '#9fe384', '#fff', 'whitesmoke', '#ccddff'],
 				anchors: ['home', 'products', 'cases', '4thpage', 'lastPage'],
@@ -52,7 +54,7 @@
 
 <!----------HEADER-------->
 
-<div id="menu">
+<div id="menu" class="mainMenu">
     <div class="container">
         <div class="row">
             <div class="col-xs-5">
@@ -248,8 +250,8 @@
         <div class="container">
             <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
                 <div class="textField">
-                    <h2>Openbare Orde & Veiligheid</h2>
-                    <p>ASK zorgt er bij de KNRM, Reddingsbrigade en Brandweer voor dat er altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.</p>
+                    <h2>KNRM</h2>
+                    <p>ASK zorgt er bij de KNRM voor dat er altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.</p>
                     <p>Hulpverleners kunnen via de pc, de smartphone of de telefoon zelf aangeven wanneer ze paraat kunnen staan, en wanneer ze een dag vrij willen. </p>
                     <a href="">Lees meer...</a>
                 </div>
@@ -264,7 +266,13 @@
 
 <!----------FOOTER-------->
 
-    <div id="footer">hallo</div>
+    <div id="footer">
+        <ul>
+            <li><a href="about.html">Over ASK</a></li>
+            <li><a href="careers.html">Vacatures</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
 
 
