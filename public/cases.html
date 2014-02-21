@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>ASK Community Systems</title>
-	<meta name="author" content="ASK Community Systems" />
-	<meta name="Resource-type" content="Document" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ASK Community Systems</title>
+    <meta name="author" content="ASK Community Systems" />
+    <meta name="Resource-type" content="Document" />
 
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ASK Community Systems" property="og:title">
@@ -13,38 +15,23 @@
     <meta content="https://ask-cs.nl/" property="og:url">
     <meta content="" property="og:image">
 
-    <!----------CSS-------->
-<!--    <link rel="stylesheet" type="text/css" href="css/reset.css" />-->
-    <link rel="stylesheet" type="text/css" href="css/parallax.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
 
-    <!--[if lt IE 9]>
-    <script src="js/html5.js"></script>
-    <![endif]-->
+    <!----------CSS-------->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <!----------JS (ALSO @ END)-------->
+    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
     <!----------FONTS-------->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:700,400,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
 
-    <!----------JS-------->
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/side-nav.js"></script>
-    <script type="text/javascript" src="js/backgrounds.js"></script>
-    <script type="text/javascript" src="js/kinetics.js"></script>
-    <script type="text/javascript" src="js/parallax.js"></script>
-
-
 </head>
-<body>
+<body class="loading">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 
 
 <!----------HEADER-------->
@@ -65,10 +52,10 @@
                 </ul>
             </div>
             <div class="col-xs-5">
-            <ul class="">
-                <!--<li data-menuanchor="home" class="active"><a href="#home">Home</a></li>-->
+                <ul class="">
+                    <!--<li data-menuanchor="home" class="active"><a href="#home">Home</a></li>-->
 
-            </ul>
+                </ul>
             </div>
         </div>
     </div>
@@ -76,96 +63,94 @@
 
 
 
-
-
 <!----------Cases-------->
 
-<div id="mock-scroller"></div>
-<ul id="nav"></ul>
-
 <div id="content">
+<div id="skrollr-body">
 
-    <section id="casePostnl" anim-detached="true">
-        <img class="bg animate" src="/img/cases/PostNL08.jpg" anim-detached="false" />
-        <div class="story container">
-            <div class="row">
-                <div class="textField text-center col-md-6 col-md-offset-6">
-                    <h2>ASK bij PostNL in cijfers:</h2>
+
+    <section id="slide-1" class="casePostnl homeSlide" anim-detached="true">
+        <div class="bcg" data-center="background-position: 50% 100%;" data-top-bottom="background-position: 50% -50px;" data-anchor-target="#slide-1">
+                <div class="container" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
                     <div class="row">
-                        <div class="fact col-md-4">
-                            <h1>6</h1>
-                            <p>Sorteercentra verspreid door Nederland</p>
-                        </div>
-                        <div class="fact col-md-4">
-                            <h1>2570</h1>
-                            <p>Flexwerkers in het systeem</p>
-                        </div>
-                        <div class="fact col-md-4">
-                            <h1>170.000</h1>
-                            <p>Communicatiehandelingen per maand (telefoon/sms)</p>
+                        <div class="textField text-center col-md-6 col-md-offset-6">
+                            <h2>ASK bij PostNL in cijfers:</h2>
+                            <div class="row">
+                                <div class="fact col-md-4">
+                                    <h1>6</h1>
+                                    <p>Sorteercentra verspreid door Nederland</p>
+                                </div>
+                                <div class="fact col-md-4">
+                                    <h1>2570</h1>
+                                    <p>Flexwerkers in het systeem</p>
+                                </div>
+                                <div class="fact col-md-4">
+                                    <h1>170.000</h1>
+                                    <p>Communicatiehandelingen per maand (telefoon/sms)</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 
-
-    <section id="casePostnlText" class="caseTextPart">
-        <div class="story container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="row">
-                        <h2>PostNL</h2>
-                        <div class="col-md-6">
-                            <h4>Probleemschets:</h4>
-                            <ol>
-                                <li>Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;</li>
-                                <li>Overschot aan medewerkers en uitzendkrachten;</li>
-                                <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
-                            </ol>
+    <section id="slide-2" class="casePostnlText caseTextPart">
+        <div class="bcg" data-anchor-target="#slide-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <h2>PostNL</h2>
+                            <div class="col-md-6">
+                                <h4>Probleemschets:</h4>
+                                <ol>
+                                    <li>Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;</li>
+                                    <li>Overschot aan medewerkers en uitzendkrachten;</li>
+                                    <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
+                                </ol>
+                            </div>
+                            <div class="col-md-6" data-106-bottom="opacity: 0" data-center="opacity: 1">
+                                <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
+                        <div class="row">
+                            <div class="col-md-6" data-106-bottom="opacity: 0" data-center="opacity: 1">
+                                <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Doelstellingen:</h4>
+                                <ol>
+                                    <li>Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;</li>
+                                    <li>Overschot aan medewerkers en uitzendkrachten;</li>
+                                    <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Oplossing:</h4>
+                                <ol>
+                                    <li>Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;</li>
+                                    <li>Overschot aan medewerkers en uitzendkrachten;</li>
+                                    <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
+                                </ol>
+                            </div>
+                            <div class="col-md-6" data-106-bottom="opacity: 0" data-center="opacity: 1">
+                                <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Doelstellingen:</h4>
-                            <ol>
-                                <li>Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;</li>
-                                <li>Overschot aan medewerkers en uitzendkrachten;</li>
-                                <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Oplossing:</h4>
-                            <ol>
-                                <li>Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;</li>
-                                <li>Overschot aan medewerkers en uitzendkrachten;</li>
-                                <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
-                            </ol>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="textField text-left col-md-4">
-                    <h4>Kwalitatieve resultaten:</h4>
-                    <ol>
-                        <li>Aantal uitzenduren is teruggebracht;</li>
-                        <li>Geen ontslagen onder vaste medewerkers;</li>
-                        <li>Meer continuïteit doordat er meer met vaste medewerkers wordt gewerkt;</li>
-                        <li>Personeel is beter gemotiveerd omdat werk en privé beter op elkaar zijn af te stemmen.</li>
-                    </ol>
-                    <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
-                    <div class="factVer">
+                    <div class="textField text-left col-md-4">
+                        <h4>Kwalitatieve resultaten:</h4>
+                        <ol>
+                            <li>Aantal uitzenduren is teruggebracht;</li>
+                            <li>Geen ontslagen onder vaste medewerkers;</li>
+                            <li>Meer continuïteit doordat er meer met vaste medewerkers wordt gewerkt;</li>
+                            <li>Personeel is beter gemotiveerd omdat werk en privé beter op elkaar zijn af te stemmen.</li>
+                        </ol>
+                        <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
+                        <div class="factVer">
                             <h1>- 250 FTE's</h1>
                             <p>Kostenvermindering door besparing</p>
                         </div>
@@ -177,89 +162,6 @@
                             <h1>- €10.000.000</h1>
                             <p>Totale besparing in 3 jaar</p>
                         </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="caseOlympia" >
-        <img class="bg animate" src="/img/cases/olympia.jpg" anim-detached="true" />
-        <div class="story container">
-            <div class="row">
-                <div class="textField text-center col-md-4">
-                    <h2>ASK bij Olympia in cijfers:</h2>
-                    <div class="row">
-                        <div class="fact col-md-6">
-                            <h1>20.000</h1>
-                            <p>Geregistreerde uitzendkrachten</p>
-                        </div>
-                        <div class="fact col-md-6">
-                            <h1>30.000</h1>
-                            <p>Communicatiehandelingen per kwartaal (telefoon/sms)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="caseOlympiaText" class="caseTextPart">
-        <div class="story container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="row">
-                        <h2>Olympia</h2>
-                        <div class="col-md-6">
-                            <h4>Probleemschets:</h4>
-                            <ol>
-                                <li>Beperkte productiviteit bij intercedenten in alle branches;</li>
-                                <li>Intercedenten besteden te veel tijd aan herhalende communicatiehandelingen;</li>
-                                <li>Intercedenten hebben behoefte aan meer tijd voor persoonlijk contact op de momenten dat het telt.</li>
-                            </ol>
-                            <h4>Doelstellingen:</h4>
-                            <ol>
-                                <li>Kernprocessen optimaliseren door repetitieve en tijdrovende telefoongesprekken te automatiseren;</li>
-                                <li>Tijd vrijmaken voor persoonlijk contact tussen intercedent en klant;</li>
-                                <li>Een database inrichten met direct inzetbare uitzendkrachten.</li>
-                            </ol>
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Oplossing:</h4>
-                            <p>
-                                Olympia Uitzendbureau gebruikte ASK om haar intercedenten te ondersteunen bij dagelijkse werkprocessen.
-                                Wanneer een vacature moet worden vervuld, selecteert de intercedent eerst handmatig een groep geschikte uitzendkrachten. De intercedent neemt óf een gesproken bericht op, óf schrijft een tekst met daarin de belangrijkste informatie over de opdracht. ASK bezorgt dit bericht bij de geselecteerde uitzendkrachten en verzamelt meteen reacties via de telefoon, sms, of e-mail.
-                                De opdracht kan online worden uitgezet en gevolgd. Dit betekent dat de intercedent niet in hetzelfde land hoeft te zijn als de kandidaten en dat de effectieve werktijd wordt uitgebreid (tot wel 24/7). Het systeem blijft kandidaten benaderen, ook wanneer de intercedent niet achter zijn of haar bureau zit.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <img src="img/home/scenario01-01.png" style="height: auto; width:200px">
-                        </div>
-                    </div>
-                </div>
-                <div class="textField text-left col-md-4">
-                    <h4>Kwalitatieve resultaten:</h4>
-                    <ol>
-                        <li>De dagelijkse operatie is efficiënter en flexibeler;</li>
-                        <li>Een betere concurrentiepositie;</li>
-                        <li>De baan van intercedent is aantrekkelijker omdat ASK de saaie, repetitieve taken overneemt.</li>
-                    </ol>
-                    <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
-                    <div class="factVer">
-                        <h1>+ 20%</h1>
-                        <p>Succesvolle uitzendingen</p>
-                    </div>
-                    <div class="factVer">
-                        <h1>+ 11%</h1>
-                        <p>Inkomsten</p>
-                    </div>
-                    <div class="factVer">
-                        <h1>- 90%</h1>
-                        <p>Communicatiekosten (EUR 0,38 aan licentie + EUR 0,10 per gesprek/sms ipv EUR 4,30 per contact)</p>
                     </div>
                 </div>
             </div>
@@ -268,32 +170,85 @@
 
 
 
-    <section id="caseBz">
-        <img class="bg animate" src="/img/cases/buurtzorg.jpg" anim-detached="true" />
-        <div class="story container">
+    <section id="slide-3" class="caseOlympia homeSlide">
+        <div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
+            <div class="container">
+                <div class="row">
+                    <div class="textField text-center col-md-4">
+                        <h2>ASK bij Olympia in cijfers:</h2>
+                        <div class="row">
+                            <div class="fact col-md-6">
+                                <h1>20.000</h1>
+                                <p>Geregistreerde uitzendkrachten</p>
+                            </div>
+                            <div class="fact col-md-6">
+                                <h1>30.000</h1>
+                                <p>Communicatiehandelingen per kwartaal (telefoon/sms)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-
-    <section id="caseBzText" class="caseTextPart">
-        <div class="story container">
-            <h2>Buurtzorg</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <p>
-                        De case Buurtzorg heeft mede geleid tot de uiteindelijke ontwikkeling van TeamUp. ASK heeft voor de thuiszorgmedewerkers van Buurtzorg Nederland en regionale stichting De Kempen namelijk een app onwikkeld, die de voorloper van TeamUp genoemd kan worden.
-                    </p>
-                    <p>
-                        Met de smartphone-app faciliteert ASK de onderlinge afstemming en communicatie. Zo hoeft er minder te worden geregeld, en kan er meer worden gedaan.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        De app regelt automatische tijdsregistratie en rapportage. Ook hebben de thuiszorgmedewerkers via de app toegang tot realtime informatie over hun cliënt. Indien nodig kunnen ze via dezelfde app contact opnemen met cliënten of collega's.
-                    </p>
-                    <p>
-                        Doordat de basisinformatie altijd en overal beschikbaar is, kunnen zorgverleners sneller goed geïnformeerde beslissingen nemen in situaties die zich dagelijks voordoen.
-                    </p>
+    <section id="slide-4" class="caseOlympiaText caseTextPart">
+        <div class="bcg" data-anchor-target="#slide-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <h2>Olympia</h2>
+                            <div class="col-md-6">
+                                <h4>Probleemschets:</h4>
+                                <ol>
+                                    <li>Beperkte productiviteit bij intercedenten in alle branches;</li>
+                                    <li>Intercedenten besteden te veel tijd aan herhalende communicatiehandelingen;</li>
+                                    <li>Intercedenten hebben behoefte aan meer tijd voor persoonlijk contact op de momenten dat het telt.</li>
+                                </ol>
+                                <h4>Doelstellingen:</h4>
+                                <ol>
+                                    <li>Kernprocessen optimaliseren door repetitieve en tijdrovende telefoongesprekken te automatiseren;</li>
+                                    <li>Tijd vrijmaken voor persoonlijk contact tussen intercedent en klant;</li>
+                                    <li>Een database inrichten met direct inzetbare uitzendkrachten.</li>
+                                </ol>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Oplossing:</h4>
+                                <p>
+                                    Olympia Uitzendbureau gebruikte ASK om haar intercedenten te ondersteunen bij dagelijkse werkprocessen.
+                                    Wanneer een vacature moet worden vervuld, selecteert de intercedent eerst handmatig een groep geschikte uitzendkrachten. De intercedent neemt óf een gesproken bericht op, óf schrijft een tekst met daarin de belangrijkste informatie over de opdracht. ASK bezorgt dit bericht bij de geselecteerde uitzendkrachten en verzamelt meteen reacties via de telefoon, sms, of e-mail.
+                                    De opdracht kan online worden uitgezet en gevolgd. Dit betekent dat de intercedent niet in hetzelfde land hoeft te zijn als de kandidaten en dat de effectieve werktijd wordt uitgebreid (tot wel 24/7). Het systeem blijft kandidaten benaderen, ook wanneer de intercedent niet achter zijn of haar bureau zit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="img/home/scenario01-01.png" style="height: auto; width:200px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textField text-left col-md-4">
+                        <h4>Kwalitatieve resultaten:</h4>
+                        <ol>
+                            <li>De dagelijkse operatie is efficiënter en flexibeler;</li>
+                            <li>Een betere concurrentiepositie;</li>
+                            <li>De baan van intercedent is aantrekkelijker omdat ASK de saaie, repetitieve taken overneemt.</li>
+                        </ol>
+                        <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
+                        <div class="factVer">
+                            <h1>+ 20%</h1>
+                            <p>Succesvolle uitzendingen</p>
+                        </div>
+                        <div class="factVer">
+                            <h1>+ 11%</h1>
+                            <p>Inkomsten</p>
+                        </div>
+                        <div class="factVer">
+                            <h1>- 90%</h1>
+                            <p>Communicatiekosten (EUR 0,38 aan licentie + EUR 0,10 per gesprek/sms ipv EUR 4,30 per contact)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -301,52 +256,142 @@
 
 
 
-    <section id="caseKnrm">
-        <img class="bg animate" src="/img/cases/oov.jpeg" anim-detached="true" />
-        <div class="story container">
+    <section id="slide-5" class="caseBz homeSlide" anim-detached="true">
+        <div class="bcg" data-center="background-position: 0% 0px;" data-bottom-top="background-position: 0% 100px;" data-top-bottom="background-position: 0% -100px;" data-anchor-target="#slide-5">
+            <div class="container">
+            </div>
+        </div>
+    </section>
+
+    <section id="slide-6" class="caseBzText caseTextPart">
+        <div class="bcg" data-anchor-target="#slide-6">
+            <div class="container">
+                <h2>Buurtzorg</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>
+                            De case Buurtzorg heeft mede geleid tot de uiteindelijke ontwikkeling van TeamUp. ASK heeft voor de thuiszorgmedewerkers van Buurtzorg Nederland en regionale stichting De Kempen namelijk een app onwikkeld, die de voorloper van TeamUp genoemd kan worden.
+                        </p>
+                        <p>
+                            Met de smartphone-app faciliteert ASK de onderlinge afstemming en communicatie. Zo hoeft er minder te worden geregeld, en kan er meer worden gedaan.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            De app regelt automatische tijdsregistratie en rapportage. Ook hebben de thuiszorgmedewerkers via de app toegang tot realtime informatie over hun cliënt. Indien nodig kunnen ze via dezelfde app contact opnemen met cliënten of collega's.
+                        </p>
+                        <p>
+                            Doordat de basisinformatie altijd en overal beschikbaar is, kunnen zorgverleners sneller goed geïnformeerde beslissingen nemen in situaties die zich dagelijks voordoen.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section id="caseKnrmText" class="caseTextPart">
-        <div class="story container">
-            <div class="row">
+
+    <section id="slide-7" class="caseKnrm homeSlide" anim-detached="true">
+        <div class="bcg" data-center="background-position: 0% 0px;" data-bottom-top="background-position: 0% 100px;" data-top-bottom="background-position: 0% -100px;" data-anchor-target="#slide-7">
+            <div class="container">
+            </div>
+        </div>
+    </section>
+
+    <section id="slide-8" class="caseKnrmText caseTextPart">
+        <div class="bcg" data-anchor-target="#slide-8">
+            <div class="container">
                 <h2>KNRM</h2>
-                <div class="col-md-4">
-                    <p>
-                        ASK zorgt er bij de KNRM voor dat er altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.
-                    </p>
-                    <p>
-                        Hulpverleners kunnen via de pc, de smartphone of de telefoon zelf aangeven wanneer ze paraat kunnen staan, en wanneer ze een dag vrij willen. Zo is ook vrijwilligerswerk beter te combineren met privé en werk.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        Met behulp van de GPS-locatie van hun telefoon houdt ASK bij of de parate hulpverleners ook daadwerkelijk in de buurt zijn en snel genoeg kunnen reageren op een oproep. Als er te weinig hulpverleners paraat staan, zoekt ASK zelf actief naar vervangers.
-                    </p>
-                    <p>
-                        Wegens succes bij de KNRM zorgt ASK er nu ook voor dat er bij de Brandweer en de Reddingsbrigade altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.
-                    </p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>
+                            ASK zorgt er bij de KNRM voor dat er altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.
+                        </p>
+                        <p>
+                            Hulpverleners kunnen via de pc, de smartphone of de telefoon zelf aangeven wanneer ze paraat kunnen staan, en wanneer ze een dag vrij willen. Zo is ook vrijwilligerswerk beter te combineren met privé en werk.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            Met behulp van de GPS-locatie van hun telefoon houdt ASK bij of de parate hulpverleners ook daadwerkelijk in de buurt zijn en snel genoeg kunnen reageren op een oproep. Als er te weinig hulpverleners paraat staan, zoekt ASK zelf actief naar vervangers.
+                        </p>
+                        <p>
+                            Wegens succes bij de KNRM zorgt ASK er nu ook voor dat er bij de Brandweer en de Reddingsbrigade altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
 </div>
 
 
 
+
+
+
+
+
+<!--
+    <section id="slide-12" class="homeSlide homeSlideTall">
+        <div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4">
+            <div class="curtainContainer">
+
+                <div class="curtain" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-4"></div>
+                <div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
+                    <h2>Curtain effect while you scroll</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="slide-13" class="homeSlide homeSlideTall2">
+        <div class="bcg">
+            &nbsp;
+        </div>
+        <div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-5">
+            <div class="hsContainer">
+                <div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-5">
+                    <h2>Fixed element fading in and out</h2>
+                    <p>Showcase your beautiful images before blurring the scene and fading in your headline.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bcg bcg3" data-300-bottom="opacity: 0;" data-100-bottom="opacity: 1;" data-anchor-target="#slide-5">
+            <div class="hsContainer">
+                <div class="hsContent" data-100-bottom="opacity: 0;" data-bottom="opacity: 1;" data-anchor-target="#slide-5">
+                    <h2>The End</h2>
+                    <p>Not enough parallax goodness? Let me know in the comments or hit me up at <a href="https://www.twitter.com/ihatetomatoes" target="_blank">@ihatetomatoes</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+
+</div>
+
+
 <!----------FOOTER-------->
 
-    <div id="footer">
-        <ul>
-            <li><a href="http://ask-cs.nl/about">Over ASK</a></li>
-            <li><a href="http://ask-cs.nl/careers">Vacatures</a></li>
-            <li><a href="http://ask-cs.nl/contact">Contact</a></li>
-        </ul>
-    </div>
+<div id="footer">
+    <ul>
+        <li><a href="http://ask-cs.nl/about">Over ASK</a></li>
+        <li><a href="http://ask-cs.nl/careers">Vacatures</a></li>
+        <li><a href="http://ask-cs.nl/contact">Contact</a></li>
+    </ul>
+</div>
 
 
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/imagesloaded.js"></script>
+<script src="js/skrollr.js"></script>
+<script src="js/_main.js"></script>
 
 </body>
 </html>

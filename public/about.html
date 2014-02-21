@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ASK Community Systems</title>
+    <meta name="author" content="ASK Community Systems" />
+    <meta name="Resource-type" content="Document" />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ASK Community Systems" property="og:title">
+    <meta content="image" property="og:type">
+    <meta content="https://ask-cs.nl/" property="og:url">
+    <meta content="" property="og:image">
+
+
+    <!----------CSS-------->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <!----------JS (ALSO @ END)-------->
+    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+
+    <!----------FONTS-------->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:700,400,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+        /* Set a size for our map container, the Google Map will take up 100% of this container */
+        #map {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+
+    <script type="text/javascript">
+
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+
+            var myLatlng = new google.maps.LatLng(51.907921, 4.452299);
+
+            var mapOptions = {
+                zoom: 14,
+
+                center: myLatlng,
+
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: false,
+                overviewMapControl: true,
+
+                styles: [
+                    {
+                        "featureType": "water",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#acbcc9"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "stylers": [
+                            {
+                                "color": "#f2e5d4"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "visibility": "on",
+                                "color": "#c5c6c6"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "visibility": "on",
+                                "color": "#e4d7c6"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "visibility": "on",
+                                "color": "#fbfaf7"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "visibility": "on",
+                                "color": "#c5dac6"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "lightness": 33
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road"
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {},
+                    {
+                        "featureType": "road",
+                        "stylers": [
+                            {
+                                "visibility": "on",
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        featureType: "transit.station.rail",
+                        elementType: "geometry",
+                        stylers: [
+                            { "color": "#ffff00" },
+                            { "lightness": 33 }
+                        ]
+                    },
+                    {
+                        featureType: "transit.station.rail",
+                        elementType: "labels",
+                        stylers: [
+                            { hue: "#ffff00" },
+                            { saturation:50 }
+                        ]
+                    },
+                    {
+                        featureType: "landscape",
+                        elementType: "geometry",
+                        stylers: [
+                            { invert_lightness:false}
+                        ]
+                    }
+                ]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+    </script>
+
+</head>
+<body class="loading">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!----------HEADER-------->
+
+<div id="menu">
+    <div class="container">
+        <div class="row">
+            <div id="mainLogo" class="col-xs-2">
+                <div class="logoContainer" data-menuanchor="home"><a href="index.html"></a>
+                </div>
+            </div>
+            <div class="col-xs-10">
+                <ul class="">
+                    <li data-menuanchor="about" class="active"><a href="about.html">Over Ask</a></li>
+                    <li data-menuanchor="careers"><a href="careers.html">Vacatures</a></li>
+                    <li data-menuanchor="cases"><a href="cases.html">Casussen</a></li>
+                    <li data-menuanchor="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-5">
+                <ul class="">
+                    <!--<li data-menuanchor="home" class="active"><a href="#home">Home</a></li>-->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!----------About Slides-------->
+
+<div id="content">
+<div id="skrollr-body">
+
+
+    <section id="slide-1" class="about1 homeSlide" anim-detached="true">
+        <div class="bcg" data-center="background-position: 50% 100%;" data-top-bottom="background-position: 50% -50px;" data-anchor-target="#slide-1">
+        </div>
+    </section>
+
+    <section id="slide-2" class="about2 caseTextPart">
+        <div class="bcg" data-anchor-target="#slide-2">
+            <div class="container">
+                        <div class="row">
+                            <div class="textField text-left col-md-6 col-xs-12">
+                                <h2>ASK Community Systems</h4>
+                                <p>Minimale regeldruk… ASK is expert in het ontwikkelen van applicaties die dit mogelijk maken! Uw mensen kunnen met ASK onderling de planning afstemmen. Daarbij hebben ze tegelijkertijd de relevante informatie bij de hand om het werk efficienter uit te voeren. </p>
+                                <p>Met de ASK applicaties is het communiceren van de beschikbaarheid erg eenvoudig. Het kan zelfs automatisch. Vervolgens neemt de applicatie zelf contact op met beschikbare mensen bij uitval. Dit houdt de belasting van uw mensen laag en de motivatie hoog. </p>
+                                <p>ASK applicaties faciliteren het onderlinge netwerk van uw mensen, zodat ze continu met elkaar in verbinding staan. Dit garandeert u de flexibiliteit om snel te kunnen reageren op last-minute situaties.</p>
+                                <p>ASK werkt al meer dan 10 jaar aan intelligente software. De applicaties die hieruit voortkomen bevorderen de communicatie tussen mensen. Hiervoor gebruikt ASK het netwerk dat mensen met elkaar vormen. De applicaties zijn altijd multi-device: werken vanaf uw eigen computer, smartphone of tablet. </p>
+                            </div>
+                            <div class="col-md-6 col-xs-12" data-106-bottom="opacity: 0" data-center="opacity: 1">
+                                <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section id="slide-3" class="about3 homeSlide">
+        <div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
+            <div class="container">
+                <div class="row">
+                    <div class="textField text-center col-md-4 col-md-offset-8 col-xs-12">
+                        <h2>Hoe werkt ASK?</h2>
+                        <p>Traditionele planning werkt op basis van veel, maar vaak verouderde informatie. Het gebruikt een momentopname… Software van ASK daarentegen is realtime: de informatie die gebruikt wordt is veranderlijk en altijd de meest recente. Hierdoor is altijd de optimale planning op ieder moment voorhanden.</p>
+
+                        <p>Omdat ASK naast het gebruik van realtime, alleen de meest relevante informatie selecteert, kunt u direct inspelen op onvoorziene situaties. ASK levert wat u nodig heeft, direct. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="slide-4" class="about4 caseTextPart">
+        <div class="bcg" data-anchor-target="#slide-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Eigen netwerk</h2>
+                        <p>ASK is onderdeel van een groep high-tech bedrijven: de Almende Groep. Door de nauwe onderlinge samenwerking loopt ASK technologisch altijd voorop.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../img/about/partners01.png" style="width: 100%; height: auto">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../img/about/partners02.png" style="width: 100%; height: auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    <section id="slide-5" class="map">
+        <div class="bcg" id="map" data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -100px;"
+             data-bottom-top="background-position: 50% 100px;"
+             data-anchor-target="#slide-5">
+            &lt;!&ndash;<iframe src="https://mapsengine.google.com/map/embed?mid=z-Ae80LUhW4Q.k3d8aHsFL7_0&z=10" width="100%" height="600"></iframe>&ndash;&gt;
+        </div>
+    </section>-->
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!--
+    <section id="slide-12" class="homeSlide homeSlideTall">
+        <div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4">
+            <div class="curtainContainer">
+
+                <div class="curtain" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-4"></div>
+                <div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
+                    <h2>Curtain effect while you scroll</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="slide-13" class="homeSlide homeSlideTall2">
+        <div class="bcg">
+            &nbsp;
+        </div>
+        <div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-5">
+            <div class="hsContainer">
+                <div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-5">
+                    <h2>Fixed element fading in and out</h2>
+                    <p>Showcase your beautiful images before blurring the scene and fading in your headline.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bcg bcg3" data-300-bottom="opacity: 0;" data-100-bottom="opacity: 1;" data-anchor-target="#slide-5">
+            <div class="hsContainer">
+                <div class="hsContent" data-100-bottom="opacity: 0;" data-bottom="opacity: 1;" data-anchor-target="#slide-5">
+                    <h2>The End</h2>
+                    <p>Not enough parallax goodness? Let me know in the comments or hit me up at <a href="https://www.twitter.com/ihatetomatoes" target="_blank">@ihatetomatoes</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+
+</div>
+
+
+<div id="mapContainer">
+    <div id="map"></div>
+
+</div>
+
+<!----------FOOTER-------->
+
+<div id="footer">
+    <ul>
+        <li><a href="http://ask-cs.nl/about">Over ASK</a></li>
+        <li><a href="http://ask-cs.nl/careers">Vacatures</a></li>
+        <li><a href="http://ask-cs.nl/contact">Contact</a></li>
+    </ul>
+</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/imagesloaded.js"></script>
+<script src="js/skrollr.js"></script>
+<script src="js/_main.js"></script>
+
+</body>
+</html>
