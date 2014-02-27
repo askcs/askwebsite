@@ -36,25 +36,21 @@
 
 <!----------HEADER-------->
 
-<div id="menu">
+<div id="menu" class="mainMenu">
     <div class="container">
         <div class="row">
-            <div id="mainLogo" class="col-xs-2">
-                <div class="logoContainer" data-menuanchor="home"><a href="index.html"></a>
-                </div>
-            </div>
-            <div class="col-xs-10">
-                <ul class="">
-                    <li data-menuanchor="about"><a href="about.html">Over Ask</a></li>
-                    <li data-menuanchor="careers"><a href="careers.html">Vacatures</a></li>
-                    <li data-menuanchor="cases" class="active"><a href="cases.html">Casussen</a></li>
-                    <li data-menuanchor="contact"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
             <div class="col-xs-5">
                 <ul class="">
-                    <!--<li data-menuanchor="home" class="active"><a href="#home">Home</a></li>-->
-
+                    <li><a href="about.html">Bedrijf</a></li>
+                </ul>
+            </div>
+            <div id="mainLogo">
+                <div class="logoContainer"><a href="index.html"></a>
+                </div>
+            </div>
+            <div class="col-xs-5 col-xs-offset-2">
+                <ul class="">
+                    <li><a href="cases.html" class="active">Casussen</a></li>
                 </ul>
             </div>
         </div>
@@ -71,22 +67,26 @@
 
     <section id="slide-1" class="casePostnl homeSlide" anim-detached="true">
         <div class="bcg" data-center="background-position: 50% 100%;" data-top-bottom="background-position: 50% -50px;" data-anchor-target="#slide-1">
-                <div class="container" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
+                <div class="container smallDeviceContainer" data-center="opacity: 1" data-0-top="opacity: 0.5" data-anchor-target="#slide-1 h2">
                     <div class="row">
-                        <div class="textField text-center col-md-6 col-md-offset-6">
-                            <h2>ASK bij PostNL in cijfers:</h2>
-                            <div class="row">
-                                <div class="fact col-md-4">
-                                    <h1>6</h1>
-                                    <p>Sorteercentra verspreid door Nederland</p>
+                        <div class="textFieldContainer">
+                            <div class="textField text-center col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 col-xs-10 col-xs-offset-2">
+                                <div class="col-md-12">
+                                    <h2>ASK bij PostNL in cijfers:</h2>
                                 </div>
-                                <div class="fact col-md-4">
-                                    <h1>2570</h1>
-                                    <p>Flexwerkers in het systeem</p>
-                                </div>
-                                <div class="fact col-md-4">
-                                    <h1>170.000</h1>
-                                    <p>Communicatiehandelingen per maand (telefoon/sms)</p>
+                                <div class="row">
+                                    <div class="fact col-md-4 col-xs-12 col-sm-4">
+                                        <h1>6</h1>
+                                        <p>Sorteercentra verspreid door Nederland</p>
+                                    </div>
+                                    <div class="fact col-md-4 col-xs-12 col-sm-4">
+                                        <h1>2570</h1>
+                                        <p>Flexwerkers in het systeem</p>
+                                    </div>
+                                    <div class="fact col-md-4 col-xs-12 col-sm-4">
+                                        <h1>170.000</h1>
+                                        <p class="wordBreak">Communicatiehandelingen per maand (telefoon/sms)</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -97,11 +97,13 @@
 
     <section id="slide-2" class="casePostnlText caseTextPart">
         <div class="bcg" data-anchor-target="#slide-2">
-            <div class="container">
+            <div class="container smallDeviceContainer">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
                         <div class="row">
-                            <h2>PostNL</h2>
+                            <div class="col-md-12">
+                                <h2>PostNL</h2>
+                            </div>
                             <div class="col-md-6">
                                 <h4>Probleemschets:</h4>
                                 <ol>
@@ -109,58 +111,47 @@
                                     <li>Overschot aan medewerkers en uitzendkrachten;</li>
                                     <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
                                 </ol>
-                            </div>
-                            <div class="col-md-6" data-106-bottom="opacity: 0" data-center="opacity: 1">
-                                <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6" data-106-bottom="opacity: 0" data-center="opacity: 1">
-                                <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
-                            </div>
-                            <div class="col-md-6">
                                 <h4>Doelstellingen:</h4>
                                 <ol>
-                                    <li>Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;</li>
-                                    <li>Overschot aan medewerkers en uitzendkrachten;</li>
-                                    <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
+                                    <li>Roosters maken gebaseerd op de individuele voorkeuren van de medewerkers;</li>
+                                    <li>Een betere verhouding tussen de fluctuerende werkdruk en daadwerkelijk personeelsinzet;</li>
+                                    <li>Sneller reageren op ziekte en afwezigheid.</li>
                                 </ol>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Oplossing:</h4>
+                                <p>PostNL heeft, in overeenstemming met de ondernemingsraad, gekozen voor de oplossing van ASK, omdat deze goed aansluit bij hun MVO-doelstellingen (Maatschappelijk Verantwoord Ondernemen).</p>
+                                <p>De roosters van postsorteerders worden voortaan gegenereerd op basis van de beschikbaarheid van werknemers, die zij zelf online aangeven. De definitieve planning wordt aan de flexwerkers doorgegeven via e-mail of sms.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
-                                <h4>Oplossing:</h4>
-                                <ol>
-                                    <li>Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;</li>
-                                    <li>Overschot aan medewerkers en uitzendkrachten;</li>
-                                    <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
-                                </ol>
-                            </div>
                             <div class="col-md-6" data-106-bottom="opacity: 0" data-center="opacity: 1">
                                 <img src="img/home/scenario01-01.png" style="height: auto; width:100%">
                             </div>
                         </div>
                     </div>
-                    <div class="textField text-left col-md-4">
-                        <h4>Kwalitatieve resultaten:</h4>
-                        <ol>
-                            <li>Aantal uitzenduren is teruggebracht;</li>
-                            <li>Geen ontslagen onder vaste medewerkers;</li>
-                            <li>Meer continuïteit doordat er meer met vaste medewerkers wordt gewerkt;</li>
-                            <li>Personeel is beter gemotiveerd omdat werk en privé beter op elkaar zijn af te stemmen.</li>
-                        </ol>
-                        <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
-                        <div class="factVer">
-                            <h1>- 250 FTE's</h1>
-                            <p>Kostenvermindering door besparing</p>
-                        </div>
-                        <div class="factVer">
-                            <h1>- 45%</h1>
-                            <p>Verzuim gereduceerd (van 11% naar 6%)</p>
-                        </div>
-                        <div class="factVer">
-                            <h1>- €10.000.000</h1>
-                            <p>Totale besparing in 3 jaar</p>
+                    <div class="textFieldContainer">
+                        <div class="textField text-left col-md-4 col-sm-6 col-xs-12">
+                            <h4>Kwalitatieve resultaten:</h4>
+                            <ol>
+                                <li>Aantal uitzenduren is teruggebracht;</li>
+                                <li>Geen ontslagen onder vaste medewerkers;</li>
+                                <li>Meer continuïteit doordat er meer met vaste medewerkers wordt gewerkt;</li>
+                                <li>Personeel is beter gemotiveerd omdat werk en privé beter op elkaar zijn af te stemmen.</li>
+                            </ol>
+                            <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
+                            <div class="factVer">
+                                <h1>- 250 FTE's</h1>
+                                <p>Kostenvermindering door besparing</p>
+                            </div>
+                            <div class="factVer">
+                                <h1>- 45%</h1>
+                                <p>Verzuim gereduceerd (van 11% naar 6%)</p>
+                            </div>
+                            <div class="factVer">
+                                <h1>- €10.000.000</h1>
+                                <p>Totale besparing in 3 jaar</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -171,19 +162,23 @@
 
 
     <section id="slide-3" class="caseOlympia homeSlide">
-        <div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
-            <div class="container">
+        <div class="bcg" data-center="background-position: 40px 50%;" data-bottom-top="background-position: 0px 0%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
+            <div class="container smallDeviceContainer">
                 <div class="row">
-                    <div class="textField text-center col-md-4">
-                        <h2>ASK bij Olympia in cijfers:</h2>
-                        <div class="row">
-                            <div class="fact col-md-6">
-                                <h1>20.000</h1>
-                                <p>Geregistreerde uitzendkrachten</p>
+                    <div class="textFieldContainer">
+                        <div class="textField text-center col-md-4 col-sm-6 col-xs-8" data-50-bottom="opacity: 0.5" data-center="opacity: 1" data-0-top="opacity: 0.5">
+                            <div class="col-md-12">
+                                <h2>ASK bij Olympia in cijfers:</h2>
                             </div>
-                            <div class="fact col-md-6">
-                                <h1>30.000</h1>
-                                <p>Communicatiehandelingen per kwartaal (telefoon/sms)</p>
+                            <div class="row">
+                                <div class="fact col-md-6 col-sm-6">
+                                    <h1>20.000</h1>
+                                    <p>Geregistreerde uitzendkrachten</p>
+                                </div>
+                                <div class="fact col-md-6 col-sm-6">
+                                    <h1>30.000</h1>
+                                    <p class="wordBreak">Communicatiehandelingen per kwartaal (telefoon/sms)</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -194,12 +189,14 @@
 
     <section id="slide-4" class="caseOlympiaText caseTextPart">
         <div class="bcg" data-anchor-target="#slide-4">
-            <div class="container">
+            <div class="container smallDeviceContainer">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
                         <div class="row">
-                            <h2>Olympia</h2>
-                            <div class="col-md-6">
+                            <div class="col-md-12">
+                                <h2>Olympia</h2>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
                                 <h4>Probleemschets:</h4>
                                 <ol>
                                     <li>Beperkte productiviteit bij intercedenten in alle branches;</li>
@@ -213,7 +210,7 @@
                                     <li>Een database inrichten met direct inzetbare uitzendkrachten.</li>
                                 </ol>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
                                 <h4>Oplossing:</h4>
                                 <p>
                                     Olympia Uitzendbureau gebruikte ASK om haar intercedenten te ondersteunen bij dagelijkse werkprocessen.
@@ -228,25 +225,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="textField text-left col-md-4">
-                        <h4>Kwalitatieve resultaten:</h4>
-                        <ol>
-                            <li>De dagelijkse operatie is efficiënter en flexibeler;</li>
-                            <li>Een betere concurrentiepositie;</li>
-                            <li>De baan van intercedent is aantrekkelijker omdat ASK de saaie, repetitieve taken overneemt.</li>
-                        </ol>
-                        <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
-                        <div class="factVer">
-                            <h1>+ 20%</h1>
-                            <p>Succesvolle uitzendingen</p>
-                        </div>
-                        <div class="factVer">
-                            <h1>+ 11%</h1>
-                            <p>Inkomsten</p>
-                        </div>
-                        <div class="factVer">
-                            <h1>- 90%</h1>
-                            <p>Communicatiekosten (EUR 0,38 aan licentie + EUR 0,10 per gesprek/sms ipv EUR 4,30 per contact)</p>
+                    <div class="textFieldContainer">
+                        <div class="textField text-left col-md-4 col-sm-6 col-xs-12">
+                            <h4>Kwalitatieve resultaten:</h4>
+                            <ol>
+                                <li>De dagelijkse operatie is efficiënter en flexibeler;</li>
+                                <li>Een betere concurrentiepositie;</li>
+                                <li>De baan van intercedent is aantrekkelijker omdat ASK de saaie, repetitieve taken overneemt.</li>
+                            </ol>
+                            <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
+                            <div class="factVer">
+                                <h1>+ 20%</h1>
+                                <p>Succesvolle uitzendingen</p>
+                            </div>
+                            <div class="factVer">
+                                <h1>+ 11%</h1>
+                                <p>Inkomsten</p>
+                            </div>
+                            <div class="factVer">
+                                <h1>- 90%</h1>
+                                <p>Communicatiekosten (EUR 0,38 aan licentie + EUR 0,10 per gesprek/sms ipv EUR 4,30 per contact)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,17 +257,19 @@
 
     <section id="slide-5" class="caseBz homeSlide" anim-detached="true">
         <div class="bcg" data-center="background-position: 0% 0px;" data-bottom-top="background-position: 0% 100px;" data-top-bottom="background-position: 0% -100px;" data-anchor-target="#slide-5">
-            <div class="container">
+            <div class="container smallDeviceContainer">
             </div>
         </div>
     </section>
 
     <section id="slide-6" class="caseBzText caseTextPart">
         <div class="bcg" data-anchor-target="#slide-6">
-            <div class="container">
-                <h2>Buurtzorg</h2>
+            <div class="container smallDeviceContainer">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-12">
+                        <h2>Buurtzorg</h2>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <p>
                             De case Buurtzorg heeft mede geleid tot de uiteindelijke ontwikkeling van TeamUp. ASK heeft voor de thuiszorgmedewerkers van Buurtzorg Nederland en regionale stichting De Kempen namelijk een app onwikkeld, die de voorloper van TeamUp genoemd kan worden.
                         </p>
@@ -276,7 +277,7 @@
                             Met de smartphone-app faciliteert ASK de onderlinge afstemming en communicatie. Zo hoeft er minder te worden geregeld, en kan er meer worden gedaan.
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <p>
                             De app regelt automatische tijdsregistratie en rapportage. Ook hebben de thuiszorgmedewerkers via de app toegang tot realtime informatie over hun cliënt. Indien nodig kunnen ze via dezelfde app contact opnemen met cliënten of collega's.
                         </p>
@@ -292,18 +293,20 @@
 
 
     <section id="slide-7" class="caseKnrm homeSlide" anim-detached="true">
-        <div class="bcg" data-center="background-position: 0% 0px;" data-bottom-top="background-position: 0% 100px;" data-top-bottom="background-position: 0% -100px;" data-anchor-target="#slide-7">
-            <div class="container">
+        <div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 50%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-7">
+            <div class="container smallDeviceContainer">
             </div>
         </div>
     </section>
 
     <section id="slide-8" class="caseKnrmText caseTextPart">
         <div class="bcg" data-anchor-target="#slide-8">
-            <div class="container">
-                <h2>KNRM</h2>
+            <div class="container smallDeviceContainer">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-12">
+                        <h2>KNRM</h2>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <p>
                             ASK zorgt er bij de KNRM voor dat er altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.
                         </p>
@@ -311,7 +314,7 @@
                             Hulpverleners kunnen via de pc, de smartphone of de telefoon zelf aangeven wanneer ze paraat kunnen staan, en wanneer ze een dag vrij willen. Zo is ook vrijwilligerswerk beter te combineren met privé en werk.
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <p>
                             Met behulp van de GPS-locatie van hun telefoon houdt ASK bij of de parate hulpverleners ook daadwerkelijk in de buurt zijn en snel genoeg kunnen reageren op een oproep. Als er te weinig hulpverleners paraat staan, zoekt ASK zelf actief naar vervangers.
                         </p>
@@ -379,13 +382,15 @@
 
 <div id="footer">
     <ul>
-        <li><a href="http://ask-cs.nl/about">Over ASK</a></li>
-        <li><a href="http://ask-cs.nl/careers">Vacatures</a></li>
-        <li><a href="http://ask-cs.nl/contact">Contact</a></li>
+        <li><a href="http://standby.ask-cs.com" target="_blank">StandBy</a></li>
+        <li><a href="http://teamup.ask-cs.com" target="_blank">TeamUp</a></li>
+        <li><a href="http://joinus.ask-cs.com" target="_blank">JoinUs</a></li>
     </ul>
 </div>
 
 
+
+<!----------JS-------->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

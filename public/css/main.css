@@ -88,7 +88,7 @@ body, html {
 }
 
 .no-js {
-    padding-top: 106px;
+    padding-top: 40px;
 }
 h2 {
     margin-top: 0;
@@ -97,7 +97,6 @@ h2 {
     background: url('../img/ico_loading.gif') no-repeat center center;
 }
 section {
-    min-width: 960px;
     opacity: 0;
 }
 .loaded section,
@@ -112,12 +111,18 @@ main {
 }
 
 .bcg {
-    background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+.homeSlide .bcg {
+    min-height: 400px;
 }
 
 
@@ -403,7 +408,8 @@ main {
 }
 
 .caseBz .bcg {
-    background-image:url('../img/cases/buurtzorg.jpg')
+    background-image:url('../img/cases/buurtzorg.jpg');
+    background-position: left center;
 }
 
 .caseBzText .bcg {
@@ -412,7 +418,8 @@ main {
 }
 
 .caseKnrm .bcg {
-    background-image:url('../img/cases/knrm02.jpg')
+    background-image:url('../img/cases/knrm02.jpg');
+    background-position: center center;
 }
 
 .caseKnrmText .bcg {
@@ -430,7 +437,7 @@ main {
 }
 
 .about2 .textField {
-    margin-top: -150px;
+    margin-top: -190px;
 }
 
 .about3 .bcg {
@@ -689,11 +696,13 @@ P:last-child {
 #menu li {
 	display:inline-block;
 }
-#menu li.active{
-}
+
 #menu li a{
 	text-decoration:none;
 	color: #fff;
+}
+#menu li a.active{
+    color: #e61e3b;
 }
 #menu li.active a:hover{
 
@@ -820,9 +829,17 @@ P:last-child {
     display: block;
 }
 
+.wordBreak {
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
 #case01 {
-    background-image: url('../img/cases/PostNL07.jpg');
-/*    background-position: center left;*/
+    background-image: url('../img/cases/PostNL08.jpg');
+    background-position: bottom;
 }
 
 #case02 {
@@ -835,27 +852,52 @@ P:last-child {
 }
 
 #case04 {
-    background-image: url('../img/cases/oov.jpeg');
+    background-image: url('../img/cases/knrm02.jpg');
 }
 
 
-#content {
-    z-index: 5 !important;
+.aboutContent {
+    z-index: 5;
     position: relative;
-    margin-bottom: 600px !important;
+    margin-bottom: 600px;
+}
+
+
+.partners .partnerContainer {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    padding: 0 10px 40px ;
+}
+
+.partners .partnerContainer a img {
+width: 100%;
+}
+
+.partners .partnerContainer .hoverShow {
+    display: none;
+}
+.partners .partnerContainer:hover .hoverHide {
+    display: none;
+}
+.partners .partnerContainer:hover .hoverShow {
+    display: block;
 }
 
 
 
 #mapContainer {
-background-color: #4B4B4B;
-bottom: 0 !important;
-height: 600px !important;
-position: fixed !important;
+background-color: #000;
+bottom: 0;
+height: 600px;
+position: fixed;
 width: 100%;
-z-index: 1!important;
+z-index: 1;
 }
 
+#map {
+    height: 600px;
+}
 
 
 
@@ -894,9 +936,58 @@ z-index: 1!important;
 
 
 
+@media (min-width: 1200px){
+    .bcg {
+        background-attachment: fixed;
+    }
+
+    .products .mobileView {
+        display: none;
+    }
+}
 
 
-@media (min-width: 768px){
+
+@media (max-width: 1199px) {
+    .aboutContent {
+        margin-bottom: 0;
+    }
+
+    #mapContainer {
+        position: static;
+        height:80%;
+    }
+    #map {
+        height: 100%;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .homeSlide .bcg {
+        min-height: 600px;
+    }
+
+    .products .mobileView {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .smallDeviceContainer {
+        padding: 50px 15px !important;
+    }
+
+    .homeSlide .bcg {
+        min-height: 500px;
+    }
 
     .products .mobileView {
         display: none;
@@ -907,7 +998,6 @@ z-index: 1!important;
 
 
 @media (max-width: 767px) {
-
     h2{
         font-size: 20px;
     }
@@ -922,7 +1012,7 @@ z-index: 1!important;
         display:block;
         outline: none;}
 
-    #mainLogo .logoContainer a {
+    .mainMenu #mainLogo .logoContainer a {
         outline: none;
         background: url('../img/logoHeaderSmall.png') no-repeat;
         height: 57px;
@@ -935,6 +1025,24 @@ z-index: 1!important;
         width: 20px;
         height: 20px;
         background-size: 100%;
+    }
+
+
+    .smallDeviceContainer {
+        padding: 50px 15px !important;
+    }
+    .textFieldContainer {
+        margin: auto 15px;
+    }
+
+    #content .textField .row {
+        padding: 0 15px;
+    }
+
+    #content .textField .fact {
+        border-left: none;
+        border-top: 1px solid #e61e3b;
+        padding: 20px 0;
     }
 
     .products .desktopView {
@@ -979,6 +1087,7 @@ z-index: 1!important;
     .case .textField p {
         display: none;
     }
+
 }
 
 

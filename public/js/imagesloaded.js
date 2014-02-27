@@ -12,6 +12,17 @@
  * @preserve
  */
 
+function detectmob() {
+    if(window.innerWidth <= 1200 || $('html').hasClass('touch')) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+if(!detectmob()){
+
 (function () {
 	
 
@@ -835,3 +846,5 @@ if ( typeof define === 'function' && define.amd ) {
 }
 
 })( window );
+
+}

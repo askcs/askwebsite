@@ -5,6 +5,18 @@
  *
  * Free to use under terms of MIT license
  */
+
+function detectmob() {
+    if(window.innerWidth <= 1200 || $('html').hasClass('touch')) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+if(!detectmob()){
+
 (function(window, document, undefined) {
 	'use strict';
 
@@ -1637,3 +1649,5 @@
 	//Animation frame id returned by RequestAnimationFrame (or timeout when RAF is not supported).
 	var _animFrame;
 }(window, document));
+
+}
