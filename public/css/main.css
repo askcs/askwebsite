@@ -347,16 +347,30 @@ main {
 
 
 
-#content .container{
+#content .container, #mapContainer .container{
     padding: 50px 0;
 }
+.label {
+    padding: 4px 2% 4px 4%;
+    position: absolute;
+    left: 0;
+    bottom: 12%;
+    background-color: #e61e3b;
+    z-index: 10;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
 
+.label h4 {
+    font-size: 12px;
+}
 
 #content .casePostnl .textField {
     margin-top: 10%;
 }
 
-#content .textField {
+.textField {
     background-color: #fff;
     opacity: 0.9;
     padding: 20px;
@@ -364,11 +378,11 @@ main {
     display: block;
 }
 
-#content .textField h2 {
+.textField h2 {
     margin-bottom: 20px;
 }
 
-#content .caseTextPart h2 {
+.caseTextPart h2 {
     margin-bottom: 20px;
 }
 
@@ -523,16 +537,16 @@ main {
     top: 50%;
     cursor: pointer;
     border: none;
-    margin-top: -20px;
+    margin-top: -28px;
     width: 56px;
     height: 56px;
 }
 .controlArrow.prev {
-    left: 4%;
+    left: 6%;
     background-image: url("../img/arrowLeft.png");
 }
 .controlArrow.next {
-    right: 4%;
+    right: 6%;
     background-image: url("../img/arrowRight.png");
 }
 .scrollable {
@@ -557,6 +571,23 @@ main {
 .fullPage-slidesNav.top {
     top: 60px;
 }
+
+#fullPage-nav {
+    margin-top: -32px;
+    opacity: 1;
+    position: fixed;
+    top: 50%;
+    z-index: 100;
+}
+
+#fullPage-nav.left {
+    left: 2%;
+}
+
+#fullPage-nav.right {
+    right: 2%;
+}
+
 #fullPage-nav ul,
 .fullPage-slidesNav ul {
     margin: 0;
@@ -565,9 +596,9 @@ main {
 #fullPage-nav li,
 .fullPage-slidesNav li {
     display: block;
-    width: 14px;
+    width: 7px;
     height: 13px;
-    margin: 7px;
+    margin:  7px 0;
     position:relative;
 }
 .fullPage-slidesNav li {
@@ -742,7 +773,7 @@ P:last-child {
     display: block;
 }
 
-.mainMenu #mainLogo .logoContainer a {
+#mainLogo .logoContainer a {
     margin-left: -70px;
 }
 
@@ -764,7 +795,6 @@ P:last-child {
 
 .products a, .products a:hover, .products a:active {
     color: #fff;
-    padding-top: 15px;
     display: block;
     outline: none;
     text-transform: uppercase;
@@ -817,7 +847,6 @@ P:last-child {
 .case a, .case a:hover, .case a:active {
     text-transform: uppercase;
     display: block;
-    padding-top: 15px;
 }
 
 .case .textField {
@@ -855,6 +884,13 @@ P:last-child {
     background-image: url('../img/cases/knrm02.jpg');
 }
 
+.row div h4 {
+    padding-top: 14px;
+}
+
+.row div h4:first-child {
+    padding-top: 0;
+}
 
 .aboutContent {
     z-index: 5;
@@ -1012,7 +1048,7 @@ z-index: 1;
         display:block;
         outline: none;}
 
-    .mainMenu #mainLogo .logoContainer a {
+    #mainLogo .logoContainer a {
         outline: none;
         background: url('../img/logoHeaderSmall.png') no-repeat;
         height: 57px;
@@ -1024,7 +1060,13 @@ z-index: 1;
     .controlArrow {
         width: 20px;
         height: 20px;
+        margin-top: -10px;
         background-size: 100%;
+    }
+
+    #fullPage-nav span, .fullPage-slidesNav span {
+        height: 6px;
+        width: 6px;
     }
 
 
@@ -1035,7 +1077,7 @@ z-index: 1;
         margin: auto 15px;
     }
 
-    #content .textField .row {
+    .textField .row {
         padding: 0 15px;
     }
 

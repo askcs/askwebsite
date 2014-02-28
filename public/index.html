@@ -13,6 +13,8 @@
     <meta content="https://ask-cs.nl/" property="og:url">
     <meta content="" property="og:image">
 
+    <link href="/img/favicon.ico" rel="Shortcut Icon" />
+
     <!----------CSS-------->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -40,8 +42,8 @@
             if ( $(window).width() >= 768 ) { $( '.mobileView' ).empty().detach(); }
 
 			var pepe = $.fn.fullpage({
-				slidesColor: ['#facb6a', '#9fe384', '#fff', 'whitesmoke', '#ccddff'],
-				anchors: ['home', 'products', 'cases', '4thpage', 'lastPage'],
+				slidesColor: ['#facb6a', '#000', '#000'],
+				anchors: ['home', 'products', 'cases'],
 				menu: '#menu'
 			});
 
@@ -68,7 +70,7 @@
             </div>
             <div class="col-xs-5 col-xs-offset-2">
             <ul class="">
-                <li><a href="cases.html">Casussen</a></li>
+                <li><a href="cases.html">Referenties</a></li>
             </ul>
             </div>
         </div>
@@ -80,6 +82,7 @@
 
 
 <!----------SCENARIO-------->
+
 
 <div class="section" id="section0">
     <div class="slide">
@@ -122,9 +125,10 @@
 <!----------PRODUCTS-------->
 
 <div class="section products" id="section1">
+    <div class="label"><h4>Producten</h4></div>
         <div class="container desktopView">
             <div class="row">
-                <div class="col-md-4 col-sm-4 standBy">
+                <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 standBy">
                     <div class="box">
                         <div class="top">
                             <img src="img/products/logoStandBy.png">
@@ -136,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 teamUp">
+                <div class="col-md-4 col-sm-5 teamUp">
                     <div class="box">
                         <div class="top">
                             <img src="img/products/logoTeamUp.png">
@@ -148,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 joinUs">
+                <div class="hidden col-md-4 col-sm-4 joinUs">
                     <div class="box">
                         <div class="top">
                             <img src="img/products/logoStandBy.png">
@@ -188,7 +192,7 @@
                     </div>
             </div>
         </div>
-        <div class="slide" id="product03">
+        <div class="hidden" id="product03">
             <div class="joinUs">
                     <div class="top">
                         <img src="img/products/logoStandBy.png">
@@ -210,6 +214,7 @@
 <!----------CASES-------->
 
 <div class="section" id="section3">
+    <div class="label"><h4>Referenties</h4></div>
     <div class="slide case" id="case01">
         <div class="container">
             <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
@@ -268,7 +273,7 @@
         <ul>
             <li><a href="http://standby.ask-cs.com" target="_blank">StandBy</a></li>
             <li><a href="http://teamup.ask-cs.com" target="_blank">TeamUp</a></li>
-            <li><a href="http://joinus.ask-cs.com" target="_blank">JoinUs</a></li>
+            <li class="hidden"><a href="http://joinus.ask-cs.com" target="_blank">JoinUs</a></li>
         </ul>
     </div>
 
