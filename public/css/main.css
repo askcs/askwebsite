@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Reset CSS
+   ========================================================================== */
 @CHARSET "ISO-8859-1";
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
@@ -78,418 +81,13 @@ hr {
 
 
 
-/* ==========================================================================
-   Parallax Scroll
-   ========================================================================== */
-body, html {
-    height: 100%;
-    min-height: 100%;
-    background-color: #000000;
-}
-
-.no-js {
-    padding-top: 40px;
-}
-h2 {
-    margin-top: 0;
-}
-.loading {
-    background: url('../img/ico_loading.gif') no-repeat center center;
-}
-section {
-    opacity: 0;
-}
-.loaded section,
-.no-js section {
-    opacity: 1;
-    -webkit-transition: opacity 300ms ease-out;
-    -moz-transition: opacity 300ms ease-out;
-    transition: opacity 300ms ease-out;
-}
-main {
-    overflow-x: hidden;
-}
-
-.bcg {
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.homeSlide .bcg {
-    min-height: 400px;
-}
-
-
-
-/* Slide 4 */
-.curtainContainer {width: 100%; height: 100%; position: relative;}
-.curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
-.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
-
-
-
-.bgBlack {
-    background-color: rgba(0,0,0,0.75);
-    padding: 3px 10px;
-}
-
-
-
-
 
 
 
 /* ==========================================================================
-   Helper classes
+   FULL PAGE JS
    ========================================================================== */
 
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#content .container, #mapContainer .container{
-    padding: 50px 0;
-}
-.label {
-    padding: 4px 2% 4px 4%;
-    position: absolute;
-    left: 0;
-    bottom: 12%;
-    background-color: #e61e3b;
-    z-index: 10;
-    color: #fff;
-    text-transform: uppercase;
-    opacity: 0.9;
-}
-
-.label h4 {
-    font-size: 12px;
-}
-
-#content .casePostnl .textField {
-    margin-top: 10%;
-}
-
-.textField {
-    background-color: #fff;
-    opacity: 0.9;
-    padding: 20px;
-    right: 0;
-    display: block;
-}
-
-.textField h2 {
-    margin-bottom: 20px;
-}
-
-.caseTextPart h2 {
-    margin-bottom: 20px;
-}
-
-#content .textField .factVerTitle {
-    padding: 20px 0 10px;
-}
-
-#content .textField .fact {
- border-left: 1px solid #e61e3b;
-}
-
-#content .textField .factVer {
-    border-top: 1px solid #e61e3b;
-    padding: 20px 0;
-}
-
-#content .textField .fact:first-child, #content .textField .factVer:first-child  {
-    border: none;
-}
-
-.casePostnl .bcg {
-    background-image:url('../img/cases/PostNL08.jpg')
-}
-
-.casePostnlText .bcg {
-    background: none;
-    background-color: #a5eaf5;
-}
-
-.caseOlympia .bcg {
-    background-image:url('../img/cases/olympia.jpg')
-}
-
-.caseOlympiaText .bcg {
-    background: none;
-    background-color: #9fe384;
-}
-
-.caseBz .bcg {
-    background-image:url('../img/cases/buurtzorg.jpg');
-    background-position: left center;
-}
-
-.caseBzText .bcg {
-    background: none;
-    background-color: #FACB6A;
-}
-
-.caseKnrm .bcg {
-    background-image:url('../img/cases/knrm02.jpg');
-    background-position: center center;
-}
-
-.caseKnrmText .bcg {
-    background: none;
-    background-color: #a5eaf5;
-}
-
-.about1 .bcg {
-    background-image:url('../img/about/ask06.jpg');
-}
-
-.about2 .bcg {
-    background: none;
-    background-color: #9fe384;
-}
-
-.about2 .textField {
-    margin-top: -190px;
-}
-
-.about3 .bcg {
-    background-image:url('../img/about/ask03.jpg');
-}
-
-.about4 .bcg {
-    background: none;
-    background-color: #fff;
-}
-
-
-
-#content ol {
-    list-style-type:disc;
-    margin-left: 16px;
-}
-
-#content ol li {
-    margin-bottom: 6px;
-}
-
-#caseBzText {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*----------FULL PAGE JS-----------*/
 
 #superContainer {
     height: 100%;
@@ -500,6 +98,7 @@ main {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    text-align:center;
 }
 
 .slide {
@@ -637,17 +236,245 @@ main {
 
 
 
-/*----------CUSTOM-----------*/
+
+
+
+
+
+
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+
+body, html {
+    height: 100%;
+    min-height: 100%;
+    background-color: #000000;
+}
+
+.no-js {
+    padding-top: 40px;
+}
+
+.loading {
+    background: url('../img/ico_loading.gif') no-repeat center center;
+}
+section {
+    opacity: 0;
+}
+.loaded section,
+.no-js section {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+}
+.bcg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.homeSlide .bcg {
+    min-height: 400px;
+}
+
+/* Not used */
+.curtainContainer {width: 100%; height: 100%; position: relative;}
+.curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
+.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*----------Image replacement-----------*/
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+
+/*----------Hide from both screenreaders and browsers: h5bp.com/u-----------*/
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*----------For IE 6/7 only * Include this rule to trigger hasLayout and contain floats.-----------*/
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*----------PRINT STYLES-----------*/
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   CUSTOM
+   ========================================================================== */
+
+/*----------GENERAL-----------*/
 
 body{
     font-family: 'Lato', sans-serif, arial,helvetica;
-	color: #000;
+    color: #000;
 }
 .wrap{
-	margin-left: auto;
-	margin-right: auto;
-	width: 960px;
-	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    position: relative;
 }
 
 a, a:hover, a:active, a:visited {
@@ -665,7 +492,7 @@ h1,h2,h3,h4 {
 }
 
 h1{
-	font-size: 36px;
+    font-size: 36px;
 }
 
 h2{
@@ -685,17 +512,32 @@ h4{
     line-height: 20px;
 }
 
+.row div h4 {
+    padding-top: 14px;
+}
+
+.row div h4:first-child {
+    padding-top: 0;
+}
+
 p{
-	font-size: 14px;
+    font-size: 14px;
     padding-bottom: 20px;
 }
 
 P:last-child {
     padding-bottom: 0;
 }
-.section{
-	text-align:center;
+
+.wordBreak {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
+
+
+/*----------HEADER-----------*/
 
 #menu{
     font-family: 'Ubuntu', sans-serif;
@@ -725,12 +567,12 @@ P:last-child {
 }
 
 #menu li {
-	display:inline-block;
+    display:inline-block;
 }
 
 #menu li a{
-	text-decoration:none;
-	color: #fff;
+    text-decoration:none;
+    color: #fff;
 }
 #menu li a.active{
     color: #e61e3b;
@@ -742,29 +584,24 @@ P:last-child {
     color: #e61e3b;
 }
 #menu li a{
-	padding: 22px 18px;
-	display:block;
+    padding: 22px 18px;
+    display:block;
     outline: none;
 }
 #menu li.active a{
-	color: #e61e3b;
+    color: #e61e3b;
 }
-
-
 
 
 .mainMenu #mainLogo {
     padding: 0;
     position: absolute;
     left: 50%;
-
 }
-
 #mainLogo .logoContainer{
     height: auto;
     width: 100%;
 }
-
 #mainLogo .logoContainer a {
     outline: none;
     background: url('../img/logoHeader.png') no-repeat;
@@ -772,11 +609,68 @@ P:last-child {
     width: 140px;
     display: block;
 }
-
 #mainLogo .logoContainer a {
     margin-left: -70px;
 }
 
+
+#footer {
+    bottom: 0;
+    background: none repeat scroll 0 0 #000;
+    color: #fff;
+    display: block;
+    height: 30px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 9;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+}
+
+#footer ul li {
+    display: inline-block;
+    padding: 9px 0;
+}
+
+#footer li a {
+    color: #fff;
+    outline: none;
+    /*    display: block;*/
+    /*    padding: 9px 18px;*/
+    /*    text-transform: uppercase;*/
+}
+
+#footer a:hover, #footer a:active {
+    color: #e61e3b;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
+
+.label {
+    padding: 4px 2% 4px 4%;
+    position: absolute;
+    left: 0;
+    bottom: 12%;
+    background-color: #e61e3b;
+    z-index: 10;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.label h4 {
+    font-size: 12px;
+}
 
 
 #section0 .scenarioImg, #section2 .scenarioImg {
@@ -797,11 +691,14 @@ P:last-child {
     color: #fff;
     display: block;
     outline: none;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 
-
-
+.products  a.box{
+    text-decoration: none !important;
+    text-transform: none;
+}
 
 .products .standBy .box, #product01{
     background-color: #a93232;
@@ -831,9 +728,8 @@ P:last-child {
     background-color: #faca83;
 }
 
-
 .products .mobileView {
-/*    display: none;*/
+    /*    display: none;*/
 }
 
 
@@ -843,54 +739,173 @@ P:last-child {
     background-position: center center;
     background-size: cover;
 }
-
 .case a, .case a:hover, .case a:active {
     text-transform: uppercase;
     display: block;
 }
-
 .case .textField {
-    background-color: #fff;
-    opacity: 0.9;
-    padding: 20px;
-    right: 0;
     margin-top: -70%;
-    display: block;
 }
 
-.wordBreak {
-    word-break: break-word;
-
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-}
 
 #case01 {
-    background-image: url('../img/cases/PostNL08.jpg');
+    background-image: url('../img/cases/PostNL.jpg');
     background-position: bottom;
 }
-
 #case02 {
     background-image: url('../img/cases/olympia.jpg');
 }
-
 #case03 {
     background-image: url('../img/cases/buurtzorg.jpg');
     background-position: center left;
 }
-
 #case04 {
-    background-image: url('../img/cases/knrm02.jpg');
+    background-image: url('../img/cases/knrm.jpg');
 }
 
-.row div h4 {
-    padding-top: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   COMPANY AND CASES PAGES
+   ========================================================================== */
+
+
+
+
+#content .container, #mapContainer .container{
+    padding: 50px 0;
 }
 
-.row div h4:first-child {
-    padding-top: 0;
+#content ol {
+    list-style-type:disc;
+    margin-left: 16px;
 }
+
+#content ol li {
+    margin-bottom: 6px;
+}
+
+.textField {
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 20px;
+    right: 0;
+    display: block;
+}
+
+.textField h2 {
+    margin-bottom: 20px;
+}
+
+.textField h2 span {
+    display: block;
+    position: absolute;
+    text-align: left !important;
+    left: 0;
+    padding: 10px 20px;
+    margin: -36px 0 0 0;
+    transform:rotate(-7deg);
+    -ms-transform:rotate(-7deg); /* IE 9 */
+    -webkit-transform:rotate(-7deg); /* Opera, Chrome, and Safari */
+}
+
+.caseTextPart h2 {
+    margin-bottom: 20px;
+}
+
+#content .textField .factVerTitle {
+    padding: 20px 0 10px;
+}
+
+#content .textField .fact {
+ border-left: 1px solid #e61e3b;
+}
+
+#content .textField .factVer {
+    border-top: 1px solid #e61e3b;
+    padding: 20px 0;
+}
+
+#content .textField .fact:first-child, #content .textField .factVer:first-child  {
+    border: none;
+}
+
+.casePostnl .bcg {
+    background-image:url('../img/cases/PostNL.jpg')
+}
+
+.casePostnlText .bcg, .casePostnl .textField span {
+    background: none;
+    background-color: #a5eaf5;
+}
+
+#content .casePostnl .textField {
+    margin-top: 10%;
+}
+
+.caseOlympia .bcg {
+    background-image:url('../img/cases/olympia.jpg')
+}
+
+.caseOlympiaText .bcg, .caseOlympia .textField span {
+    background: none;
+    background-color: #9fe384;
+}
+
+.caseBz .bcg {
+    background-image:url('../img/cases/buurtzorg.jpg');
+    background-position: left center;
+}
+
+.caseBzText .bcg,  .caseBz .textField span {
+    background: none;
+    background-color: #FACB6A;
+}
+
+.caseKnrm .bcg {
+    background-image:url('../img/cases/knrm.jpg');
+    background-position: center center;
+}
+
+.caseKnrmText .bcg, .caseKnrm .textField span {
+    background: none;
+    background-color: #a5eaf5;
+}
+
+.about1 .bcg {
+    background-image:url('../img/about/ask.jpg');
+}
+
+.about2 .bcg {
+    background: none;
+    background-color: #9fe384;
+}
+
+.about2 .textField {
+    margin-top: -190px;
+}
+
+.about3 .bcg {
+    background-image:url('../img/about/ask02.jpg');
+}
+
+.about4 .bcg {
+    background: none;
+    background-color: #fff;
+}
+
 
 .aboutContent {
     z-index: 5;
@@ -898,18 +913,15 @@ P:last-child {
     margin-bottom: 600px;
 }
 
-
 .partners .partnerContainer {
     display: block;
     max-width: 200px;
     height: auto;
     padding: 0 10px 40px ;
 }
-
 .partners .partnerContainer a img {
 width: 100%;
 }
-
 .partners .partnerContainer .hoverShow {
     display: none;
 }
@@ -921,7 +933,6 @@ width: 100%;
 }
 
 
-
 #mapContainer {
 background-color: #000;
 bottom: 0;
@@ -930,7 +941,6 @@ position: fixed;
 width: 100%;
 z-index: 1;
 }
-
 #map {
     height: 600px;
 }
@@ -938,39 +948,18 @@ z-index: 1;
 
 
 
-#footer {
-    bottom: 0;
-    background: none repeat scroll 0 0 #000;
-    color: #fff;
-    display: block;
-    height: 30px;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    z-index: 9;
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
-    font-size: 10px;
-}
-
-#footer ul li {
-    display: inline-block;
-}
-
-#footer li a {
-    color: #fff;
-    display: block;
-    padding: 9px 18px;
-    outline: none;
-}
-
-#footer a:hover, #footer a:active {
-    color: #e61e3b;
-    text-decoration: none;
-}
 
 
 
+
+
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+
+/*----------MIN WIDTH 1200-----------*/
 
 @media (min-width: 1200px){
     .bcg {
@@ -984,6 +973,8 @@ z-index: 1;
 
 
 
+/*----------MAX WIDTH 1199-----------*/
+
 @media (max-width: 1199px) {
     .aboutContent {
         margin-bottom: 0;
@@ -996,9 +987,12 @@ z-index: 1;
     #map {
         height: 100%;
     }
+
 }
 
 
+
+/*----------MIN WIDTH 992 | MAX WIDTH 1199-----------*/
 
 @media (min-width: 992px) and (max-width: 1199px){
 
@@ -1013,7 +1007,17 @@ z-index: 1;
 
 
 
+/*----------MAX WIDTH 991-----------*/
 
+@media (max-width: 991px) {
+    .textField h2 span {
+        margin: -56px 0 0 0;
+    }
+}
+
+
+
+/*----------MIN WIDTH 768 | MAX WIDTH 991-----------*/
 
 @media (min-width: 768px) and (max-width: 991px){
 
@@ -1032,8 +1036,12 @@ z-index: 1;
 
 
 
+/*----------MIN WIDTH 767-----------*/
 
 @media (max-width: 767px) {
+    .hideXs {
+        display: none !important;
+    }
     h2{
         font-size: 20px;
     }
@@ -1076,11 +1084,9 @@ z-index: 1;
     .textFieldContainer {
         margin: auto 15px;
     }
-
     .textField .row {
         padding: 0 15px;
     }
-
     #content .textField .fact {
         border-left: none;
         border-top: 1px solid #e61e3b;
@@ -1090,17 +1096,14 @@ z-index: 1;
     .products .desktopView {
         display: none;
     }
-
     .products p{
         font-size: 12px;
         line-height: 13px;
         padding: 10px 7% 0 7%;
     }
-
     .products .container {
         margin: 80px 0;
     }
-
     .products img {
         bottom: 10%;
         left: 50%;
@@ -1110,17 +1113,14 @@ z-index: 1;
         text-align: center;
     }
 
-
     .standBy, .teamUp, .joinUs {
         height: 100%;
-
     }
 
     .top {
         height: 40%;
         position: relative;
     }
-
 
 
     .case .textField {
@@ -1134,12 +1134,17 @@ z-index: 1;
 
 
 
+/*----------ONLY SCREEN | RATIO 2-----------*/
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
     #mainLogo .logoContainer a {
         background: url('../img/logoHeader@2x.png') no-repeat;
     }
 }
 
+
+
+/*----------ONLY SCREEN | MAX WIDTH 767 | RATIO 2-----------*/
 
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
     #mainLogo .logoContainer a {
