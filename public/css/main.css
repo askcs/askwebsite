@@ -254,7 +254,7 @@ body, html {
 }
 
 .no-js {
-    padding-top: 40px;
+/*    padding-top: 40px;*/
 }
 
 .loading {
@@ -898,7 +898,12 @@ P:last-child {
 }
 
 .about3 .bcg {
+    background: none;
     background-image:url('../img/about/ask02.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .about4 .bcg {
@@ -911,6 +916,66 @@ P:last-child {
     z-index: 5;
     position: relative;
     margin-bottom: 600px;
+}
+
+#jobsToggle {
+    cursor: pointer;
+    margin: 20px 0 0 -64px;
+    padding: 6px 0;
+    width: 200px;
+    text-align: center;
+    background-color: #e61e3b;
+    z-index: 101;
+    position: fixed;
+    color: #fff;
+    transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg); /* IE 9 */
+    -webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */
+}
+
+#jobsToggle h4{
+font-size: 12px;
+text-transform: uppercase;
+}
+
+#jobArea {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 50;
+    opacity: 0.9;
+    padding: 60px 0;
+    top:60px;
+    border-bottom: 2px dashed #000000;
+}
+
+#jobArea li {
+    margin-top: 4px;
+}
+
+#closeJobs:before {
+    content: "x";
+    font-size: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    border: 2px solid #000000;
+    font-weight: bold;
+    padding: 0 11px 4px;
+}
+
+.workAt{
+}
+
+.workAt h2 {
+    margin: 0 0 20px 0;
+}
+
+#closeJobs {
+    cursor: pointer;
 }
 
 .partners .partnerContainer {
@@ -1036,7 +1101,7 @@ z-index: 1;
 
 
 
-/*----------MIN WIDTH 767-----------*/
+/*----------MAX WIDTH 767-----------*/
 
 @media (max-width: 767px) {
     .hideXs {
@@ -1064,6 +1129,17 @@ z-index: 1;
         margin-left: -40px;
     }
 
+    #jobsToggle{
+        margin: 52px 0 0 -74px;
+        padding: 3px 0;
+        z-index: 52;
+    }
+    #jobsToggle h4{
+        font-size: 9px;
+    }
+    #jobArea {
+        top: 40px;
+    }
 
     .controlArrow {
         width: 20px;
