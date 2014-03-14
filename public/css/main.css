@@ -536,6 +536,9 @@ P:last-child {
     hyphens: auto;
 }
 
+.paddingFix {
+/*    padding: 0 30px;*/
+}
 
 /*----------HEADER-----------*/
 
@@ -1001,9 +1004,14 @@ body.jobs {
     background-color: #fff !important;
 }
 
+#jobHeader{
+    background-size: cover;
+    width: 100%;
+    margin-top: 40px;
+}
 
 .jobs #content {
-    padding: 80px 0 60px;
+    padding: 0 0 60px;
 }
 
 .jobs #content .container{
@@ -1012,6 +1020,15 @@ body.jobs {
 
 .jobs .job {
     border-bottom: 1px solid #e61e3b;
+}
+
+.jobs .job .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.job h2 {
+    padding: 0 15px;
 }
 
 .job .row h4, .job .row h4:first-child {
@@ -1052,6 +1069,10 @@ body.jobs {
     }
     #case04, .caseKnrm .bcg {
         background-image: url('../img/cases/knrm.jpg');
+    }
+    #jobHeader{
+        background-image:url('../img/jobs/ask.jpg');
+        height: 600px;
     }
 
     .products .mobileView {
@@ -1100,6 +1121,10 @@ body.jobs {
     #case04, .caseKnrm .bcg {
         background-image: url('../img/cases/knrm.jpg');
     }
+    #jobHeader{
+        background-image:url('../img/jobs/ask.jpg');
+        height: 600px;
+    }
 
     .products .mobileView {
         display: none;
@@ -1141,6 +1166,10 @@ body.jobs {
     }
     #case04, .caseKnrm .bcg {
         background-image: url('../img/cases/knrmSm.jpg');
+    }
+    #jobHeader{
+        background-image:url('../img/jobs/ask.jpg');
+        height: 600px;
     }
 
     .products .mobileView {
@@ -1189,6 +1218,10 @@ body.jobs {
     }
     #case04, .caseKnrm .bcg {
         background-image: url('../img/cases/knrmXs.jpg');
+    }
+    #jobHeader{
+        background-image:url('../img/jobs/ask.jpg');
+        height: 250px;
     }
 
     #jobsToggle{
