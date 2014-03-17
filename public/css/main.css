@@ -1019,7 +1019,7 @@ body.jobs {
     margin: 0 auto;
 }
 .jobs .job {
-    margin: 50px 0;
+    margin: 50px 0 0;
 }
 
 
@@ -1124,6 +1124,7 @@ body.jobs {
     }
     .jobs .twoJobs {
         border-bottom: 1px solid #e61e3b;
+        padding-bottom: 50px;
     }
 }
 
@@ -1182,6 +1183,7 @@ body.jobs {
     }
     .jobs .twoJobs {
         border-bottom: 1px solid #e61e3b;
+        padding-bottom: 50px;
     }
 }
 
@@ -1235,6 +1237,7 @@ body.jobs {
     }
     .jobs .twoJobs {
         border-bottom: 1px solid #e61e3b;
+        padding-bottom: 50px;
     }
 }
 
