@@ -14,7 +14,7 @@
                         'resize' : true,
                         'slidesColor' : [],
                         'anchors':[],
-                        'scrollingSpeed': 70,
+                        'scrollingSpeed': 700,
                         'easing': 'easeInQuart',
                         'menu': '#menu',
                         'navigation': true,
@@ -35,7 +35,7 @@
                         'fixedElements': '#menu, #footer',
                         'normalScrollElements': null,
                         'keyboardScrolling': true,
-                        'touchSensitivity': 10,
+                        'touchSensitivity': 20,
                         'continuousVertical': false,
                         'animateAnchor': true,
 
@@ -57,7 +57,7 @@
                     //Defines the delay to take place before being able to scroll to the next section
                     //BE CAREFUL! Not recommened to change it under 400 for a good behavior in laptops and
                     //Apple devices (laptops, mouses...)
-                    var scrollDelay = 600;
+                    var scrollDelay = 800;
 
                     $.fn.fullpage.setAutoScrolling = function(value){
                         options.autoScrolling = value;

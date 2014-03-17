@@ -1015,12 +1015,13 @@ body.jobs {
 }
 
 .jobs #content .container{
-    padding: 50px 0;
+    padding: 0;
+    margin: 0 auto;
+}
+.jobs .job {
+    margin: 50px 0;
 }
 
-.jobs .job {
-    border-bottom: 1px solid #e61e3b;
-}
 
 .jobs .job .row {
     margin-right: 0px !important;
@@ -1039,6 +1040,45 @@ body.jobs {
     font-style: italic;
     margin: 10px 0;
 }
+
+.job .reactField {
+    display: block;
+    background-color: #9fe384;
+    margin-top: 10px;
+}
+
+.job .reactField .contactItem {
+    padding: 0 0 4px 0;
+}
+.job .reactField .contactItem:last-child {
+    padding: 0 0 14px 0;
+}
+.jobs .reactField .italic {
+    font-style: italic;
+}
+.job .reactField .contactItem span{
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+.job .reactField a {
+    color: #000;
+}
+
+.icon{
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+}
+
+.callIcon {
+    background-image: url("../img/jobs/call.png");
+}
+.mailIcon {
+    background-image: url("../img/jobs/mail.png");
+}
+
+
 
 
 
@@ -1077,6 +1117,13 @@ body.jobs {
 
     .products .mobileView {
         display: none;
+    }
+
+    .jobs .job:nth-child(even) {
+        border-left: 1px solid #e61e3b;
+    }
+    .jobs .twoJobs {
+        border-bottom: 1px solid #e61e3b;
     }
 }
 
@@ -1129,6 +1176,13 @@ body.jobs {
     .products .mobileView {
         display: none;
     }
+
+    .jobs .job:nth-child(even) {
+        border-left: 1px solid #e61e3b;
+    }
+    .jobs .twoJobs {
+        border-bottom: 1px solid #e61e3b;
+    }
 }
 
 
@@ -1168,12 +1222,19 @@ body.jobs {
         background-image: url('../img/cases/knrmSm.jpg');
     }
     #jobHeader{
-        background-image:url('../img/jobs/ask.jpg');
+        background-image:url('../img/jobs/askSm.jpg');
         height: 600px;
     }
 
     .products .mobileView {
         display: none;
+    }
+
+    .jobs .job:nth-child(even) {
+        border-left: 1px solid #e61e3b;
+    }
+    .jobs .twoJobs {
+        border-bottom: 1px solid #e61e3b;
     }
 }
 
@@ -1220,7 +1281,7 @@ body.jobs {
         background-image: url('../img/cases/knrmXs.jpg');
     }
     #jobHeader{
-        background-image:url('../img/jobs/ask.jpg');
+        background-image:url('../img/jobs/askXs.jpg');
         height: 250px;
     }
 
@@ -1235,6 +1296,12 @@ body.jobs {
     #jobArea {
         top: 40px;
     }
+
+    .jobs .job {
+        border-bottom: 1px solid #e61e3b;
+        padding-bottom: 50px;
+    }
+
 
     .controlArrow {
         width: 20px;
