@@ -487,6 +487,10 @@ a:hover{
     text-decoration: underline;
 }
 
+.anchor {
+    display: block; position: relative; top: -100px; visibility: hidden;
+}
+
 h1,h2,h3,h4 {
     font-family: 'Lato', sans-serif;
 }
@@ -1016,7 +1020,7 @@ body.jobs {
 
 .jobs #content .container{
     padding: 0;
-    margin: 0 auto;
+/*    margin: 0 auto;*/
 }
 .jobs .job {
     margin: 50px 0 0;
@@ -1024,12 +1028,12 @@ body.jobs {
 
 
 .jobs .job .row {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
+/*    margin-right: 0px !important;
+    margin-left: 0px !important;*/
 }
 
 .job h2 {
-    padding: 0 15px;
+/*    padding: 0 15px;*/
 }
 
 .job .row h4, .job .row h4:first-child {
@@ -1124,8 +1128,9 @@ body.jobs {
     }
     .jobs .twoJobs {
         border-bottom: 1px solid #e61e3b;
-        padding-bottom: 50px;
+        padding-bottom: 50px !important;
     }
+
 }
 
 
@@ -1183,7 +1188,7 @@ body.jobs {
     }
     .jobs .twoJobs {
         border-bottom: 1px solid #e61e3b;
-        padding-bottom: 50px;
+        padding-bottom: 50px !important;
     }
 }
 
@@ -1237,7 +1242,7 @@ body.jobs {
     }
     .jobs .twoJobs {
         border-bottom: 1px solid #e61e3b;
-        padding-bottom: 50px;
+        padding-bottom: 50px !important;
     }
 }
 
@@ -1253,6 +1258,9 @@ body.jobs {
         font-size: 20px;
     }
 
+    .anchor {
+        top: -60px;
+    }
     #menu{
         font-size: 10px;
         height: 40px;
