@@ -32,7 +32,7 @@
                         'css3': true,
                         'paddingTop': 0,
                         'paddingBottom': 0,
-                        'fixedElements': '#menu, #footer',
+                        'fixedElements': '#menu, #footer, #cookieMessage',
                         'normalScrollElements': null,
                         'keyboardScrolling': true,
                         'touchSensitivity': 20,

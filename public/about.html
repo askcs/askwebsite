@@ -313,6 +313,16 @@
 </div>
 
 
+
+<!----------COOKIE MESSAGE-------->
+
+<div id="cookieMessage">
+    <div id="closeCookie"></div>
+    <p>Wij gebruiken cookies om uw gebruikerservaring te verbeteren. Door deze website te gebruiken, accepteert u ons <a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank">privacybeleid</a>.</p>
+</div>
+
+
+
 <!----------About Slides-------->
 
 <div id="content" class="aboutContent">
@@ -484,6 +494,24 @@
 
 
 </script>
+
+
+
+<script>
+
+    var isShown = localStorage.getItem('cookieMessageShown');
+
+    if (!isShown) {
+        $('#cookieMessage').show();
+    }
+
+    $( "#closeCookie").click(function () {
+        $('#cookieMessage').hide();
+        localStorage.setItem('cookieMessageShown', true);
+    });
+
+</script>
+
 
 </body>
 </html>

@@ -75,10 +75,17 @@
 
 
 
-<div id="jobHeader"></div>
+<!----------COOKIE MESSAGE-------->
+
+<div id="cookieMessage">
+    <div id="closeCookie"></div>
+    <p>Wij gebruiken cookies om uw gebruikerservaring te verbeteren. Door deze website te gebruiken, accepteert u ons <a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank">privacybeleid</a>.</p>
+</div>
 
 
 <!----------JOBS-------->
+
+<div id="jobHeader"></div>
 
 <div id="content">
 
@@ -347,6 +354,23 @@
 <script src="js/imagesloaded.js"></script>
 <script src="js/skrollr.js"></script>
 <script src="js/_main.js"></script>
+
+
+
+<script>
+
+    var isShown = localStorage.getItem('cookieMessageShown');
+
+    if (!isShown) {
+        $('#cookieMessage').show();
+    }
+
+    $( "#closeCookie").click(function () {
+        $('#cookieMessage').hide();
+        localStorage.setItem('cookieMessageShown', true);
+    });
+
+</script>
 
 
 </body>

@@ -15,13 +15,14 @@
 
     <link href="/img/favicon.ico" rel="Shortcut Icon" />
 
-    <!----------CSS-------->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-
     <!----------FONTS-------->
     <link href='//fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Lato:700,400,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
+
+    <!----------CSS-------->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
 
     <!----------JS-------->
 	<!--[if IE]>
@@ -48,20 +49,120 @@
     <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript">
+
+        function animateSlide (slide){
+            switch (slide) {
+                case 0:
+                    $(".animate01-01").addClass('animated bounce');
+                    setTimeout(function(){$(".animate01-02").addClass('animated bounce');}, 500);
+                    setTimeout(function(){$(".animate01-03").addClass('animated tada');}, 1200);
+                    setTimeout(function(){$(".scenarioText1").addClass('animated pulse');}, 2500);
+                    setTimeout(function(){$(".next").addClass('animated wobble');}, 4000);
+
+                    setTimeout(function(){ cleanStyles(0); }, 3500);
+                    break;
+                case 1:
+                    $('.animate02-01').addClass('animated swing');
+                    setTimeout(function(){$(".animate02-02").addClass('animated shake');}, 250);
+                    setTimeout(function(){$(".animate02-03").addClass('animated shake');}, 500);
+                    setTimeout(function(){$(".scenarioText2").addClass('animated pulse');}, 1500);
+
+                    setTimeout(function(){ cleanStyles(1); }, 2500);
+                    break;
+                case 2:
+                    $('.animate03-01').addClass('animated flip');
+                    setTimeout(function(){$(".scenarioText3").addClass('animated pulse');}, 1000);
+                    setTimeout(function(){$(".animate03-02").addClass('animated pulse');}, 2000);
+                    setTimeout(function(){$(".animate03-03").addClass('animated pulse');}, 2250);
+                    setTimeout(function(){$(".animate03-04").addClass('animated pulse');}, 2500);
+                    setTimeout(function(){$(".animate03-05").addClass('animated pulse');}, 2750);
+                    setTimeout(function(){$(".animate03-06").addClass('animated pulse');}, 3000);
+
+                    setTimeout(function(){ cleanStyles(2); }, 4000);
+                    break;
+                case 3:
+                    $(".animate04-01").addClass('animated bounce');
+                    setTimeout(function(){$(".animate04-02").addClass('animated bounce');}, 500);
+                    setTimeout(function(){$(".animate04-03").addClass('animated bounce');}, 1200);
+                    setTimeout(function(){$(".animate04-04").removeClass('hide').addClass('animated rotateIn');}, 1900);
+                    setTimeout(function(){$(".scenarioText4").addClass('animated pulse');}, 2500);
+
+                    setTimeout(function(){ cleanStyles(3); }, 3500);
+                    break;
+            }
+        }
+
+        function cleanStyles (slide)
+        {
+            switch (slide) {
+                case 0:
+                    // clean slide 0 styles
+                    $(".animate01-01").removeClass('animated bounce');
+                    $(".animate01-02").removeClass('animated bounce');
+                    $(".animate01-03").removeClass('animated tada');
+                    $(".scenarioText1").removeClass('animated pulse');
+                    break;
+                case 1:
+                    // clean slide 1 styles
+                    $('.animate02-01').removeClass('animated swing');
+                    $(".animate02-02").removeClass('animated shake');
+                    $(".animate02-03").removeClass('animated shake');
+                    $(".scenarioText2").removeClass('animated pulse');
+                    break;
+                case 2:
+                    // clean slide 2 styles
+                    $('.animate03-01').removeClass('animated flip');
+                    $(".scenarioText3").removeClass('animated pulse');
+                    $(".animate03-02").removeClass('animated pulse');
+                    $(".animate03-03").removeClass('animated pulse');
+                    $(".animate03-04").removeClass('animated pulse');
+                    $(".animate03-05").removeClass('animated pulse');
+                    $(".animate03-06").removeClass('animated pulse');
+                    break;
+                case 3:
+                    // clean slide 3 styles
+                    $(".animate04-01").removeClass('animated bounce');
+                    $(".animate04-02").removeClass('animated bounce');
+                    $(".animate04-03").removeClass('animated bounce');
+                    $(".animate04-04").removeClass('animated rotateIn')/*.addClass('hide')*/;
+                    $(".scenarioText4").removeClass('animated pulse');
+                    break;
+            }
+        }
+
+        setTimeout(function () { animateSlide(0); }, 500);
+
 		$(document).ready(function() {
             if ( $(window).width() >= 768 ) { $( '.mobileView' ).empty().detach(); }
 
 			var pepe = $.fn.fullpage({
 				slidesColor: ['#facb6a', '#000', '#000'],
 				anchors: ['home', 'products', 'cases'],
-				menu: '#menu'
+				menu: '#menu',
+
+                afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex)
+                {
+                    if (index == 1)
+                    {
+                        switch (slideIndex)
+                        {
+                            case 0: animateSlide(0); break;
+                            case 1: animateSlide(1); break;
+                            case 2: animateSlide(2); break;
+                            case 3: animateSlide(3); break;
+                        }
+                    }
+                }
 			});
 
 		});
+
 	</script>
 
 </head>
 <body>
+
+
 
 
 <!----------HEADER-------->
@@ -88,6 +189,13 @@
 </div>
 
 
+<!----------COOKIE MESSAGE-------->
+
+<div id="cookieMessage">
+    <div id="closeCookie"></div>
+    <p>Wij gebruiken cookies om uw gebruikerservaring te verbeteren. Door deze website te gebruiken, accepteert u ons <a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank">privacybeleid</a>.</p>
+</div>
+
 
 
 
@@ -95,35 +203,62 @@
 
 
 <div class="section" id="section0">
-    <div class="slide">
+    <div class="slide slide1">
 		<div class="container">
             <div class="col-md-12">
-                <h2>Regelmatig een tekort aan personeel?</h2>
-                <img src="img/home/scenario01.png" alt="slider" class="scenarioImg" />
+                <h2 class="scenarioText1">Regelmatig een tekort aan personeel?</h2>
+                <!--<img src="img/home/scenario01.png" alt="slider" class="scenarioImg" />-->
+                <div class="scenarioImg">
+                    <img class="animate01-01" src="img/home/scenario01-01.png" alt="slider"/>
+                    <img class="animate01-02" src="img/home/scenario01-02.png" alt="slider"/>
+                    <img class="animate01-03" src="img/home/scenario01-03.png" alt="slider"/>
+                </div>
             </div>
 		</div>
 	</div>
-    <div class="slide">
+    <div class="slide slide2">
         <div class="container">
             <div class="col-md-12">
-                <h2>Met ASK geeft personeel zelf beschikbaarheid aan.</h2>
-                <img src="img/home/scenario02.png" alt="slider" class="scenarioImg" />
+                <h2 class="scenarioText2">Met ASK geeft personeel zelf beschikbaarheid aan.</h2>
+                <div class="scenarioImg">
+                    <img class="animate02-01" src="img/home/scenario02-01.png" alt="slider"/>
+                    <img class="animate02-02" src="img/home/scenario02-02.png" alt="slider"/>
+                    <img class="animate02-03" src="img/home/scenario02-03.png" alt="slider"/>
+                </div>
+<!--                <img src="img/home/scenario02.png" alt="slider" class="hide scenarioImg" />-->
             </div>
         </div>
     </div>
-    <div class="slide">
+    <div class="slide slide3">
         <div class="container">
             <div class="col-md-12">
-                <h2>Bij een tekort zoekt ASK automatisch naar personeel.</h2>
-                <img src="img/home/scenario03.png" alt="slider" class="scenarioImg"/>
+                <h2 class="scenarioText3">Bij een tekort zoekt ASK automatisch naar personeel.</h2>
+                <div class="animate03-01 scenarioImg">
+                    <img src="img/home/scenario03-01.png" alt="slider"/>
+                    <div class="absoluteElements">
+                        <span class="animate03-02"><img src="img/home/scenario03-02.png"/></span>
+                        <span class="animate03-03"><img src="img/home/scenario03-03.png"/></span>
+                        <span class="animate03-04"><img src="img/home/scenario03-04.png"/></span>
+                        <span class="animate03-05"><img src="img/home/scenario03-05.png"/></span>
+                        <span class="animate03-06"><img src="img/home/scenario03-06.png"/></span>
+                    </div>
+                </div>
+<!--                <img src="img/home/scenario03.png" alt="slider" class="scenarioImg"/>-->
             </div>
         </div>
     </div>
-    <div class="slide">
+    <div class="slide slide4">
         <div class="container">
             <div class="col-md-12">
-                <h2>Zo heeft u altijd voldoende personeel!</h2>
-                <img src="img/home/scenario04.png" alt="slider" class="scenarioImg"/>
+                <h2 class="scenarioText4">Zo heeft u altijd voldoende personeel!</h2>
+                <div class="scenarioImg">
+                    <img class="animate04-01" src="img/home/scenario04-01.png" alt="slider"/>
+                    <img class="animate04-02" src="img/home/scenario04-02.png" alt="slider"/>
+                    <img class="animate04-03" src="img/home/scenario04-03.png" alt="slider"/>
+                    <div class="absoluteElements">
+                        <span><img class="hide animate04-04" src="img/home/scenario04-04.png"/></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -235,7 +370,7 @@
     </div>
     <div class="slide case" id="case04">
         <div class="container">
-            <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
+            <div class="col-md-4 col-xs-8">
                 <div class="textField">
                     <h2>KNRM</h2>
                     <p>ASK zorgt er bij de KNRM voor dat er altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.</p>
@@ -259,7 +394,7 @@
     </div>
     <div class="slide case"  id="case02">
         <div class="container">
-            <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
+            <div class="col-md-4 col-xs-8">
                 <div class="textField">
                     <h2>Olympia</h2>
                     <p>ASK heeft Olympia geholpen om vacatures onder de aandacht van uitzendkrachten te brengen en om direct reacties van kandidaten te verzamelen via de smartphone, telefoon of e-mail.</p>
@@ -285,9 +420,36 @@
             <li class="hideXs"> 3024 AN </li>
             <li> Rotterdam | </li>
             <li> 010 225 0130 | <a href="mailto:info@ask-cs.com">info@ask-cs.com</a></li>
-
         </ul>
     </div>
+
+
+
+
+<script>
+
+    var isShown = localStorage.getItem('cookieMessageShown');
+
+    if (!isShown) {
+        $('#cookieMessage').show();
+    }
+
+    $( "#closeCookie").click(function () {
+        $('#cookieMessage').hide();
+        localStorage.setItem('cookieMessageShown', true);
+    });
+
+/*    var LOOP_TIME = 5000;
+
+    var loop = setInterval(function ()
+    {
+
+        console.log('timer running!');
+
+        // $.fn.fullpage.moveTo(3, 0);
+    }, LOOP_TIME);*/
+
+</script>
 
 
 
