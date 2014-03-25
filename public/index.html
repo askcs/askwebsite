@@ -42,7 +42,11 @@
 
     </script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/app.js"></script>
+
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <!--    <script src="//getbootstrap.com/dist/js/bootstrap.min.js"></script>-->
 
@@ -160,14 +164,26 @@
 	</script>
 
 </head>
-<body>
-
-
+<body ng-app="AskWeb">
 
 
 <!----------HEADER-------->
 
 <div id="menu" class="mainMenu">
+
+
+
+    <ul style="color: white;">
+        <a ng-click="changeLang('en')" ng-hide="(lang == 'en')" class="{{(lang == 'en') && 'active'}}">EN</a>
+        <a ng-click="changeLang('de')" ng-hide="(lang == 'de')" class="{{(lang == 'de') && 'active'}}">DE</a>
+        <a ng-click="changeLang('nl')" ng-hide="(lang == 'nl')" class="{{(lang == 'nl') && 'active'}}">NL</a>
+    </ul>
+
+    <span style="background-color: white"> {{ui.home.title}} </span>
+
+
+
+
     <div class="container">
         <div class="row">
             <div class="col-xs-5">
