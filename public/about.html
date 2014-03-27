@@ -262,13 +262,11 @@
 
 
 
-    <ul style="color: white;">
+    <ul style="color: white; position: absolute">
         <a ng-click="changeLang('en')" ng-hide="(lang == 'en')" class="{{(lang == 'en') && 'active'}}">EN</a>
         <a ng-click="changeLang('de')" ng-hide="(lang == 'de')" class="{{(lang == 'de') && 'active'}}">DE</a>
         <a ng-click="changeLang('nl')" ng-hide="(lang == 'nl')" class="{{(lang == 'nl') && 'active'}}">NL</a>
     </ul>
-
-    <span style="background-color: white"> {{ui.home.title}} </span>
 
 
 
@@ -277,7 +275,7 @@
         <div class="row">
             <div class="col-xs-5">
                 <ul class="">
-                    <li><a href="about.html" class="active">Bedrijf</a></li>
+                    <li><a href="about.html" class="active">{{ui.menu.company}}</a></li>
                 </ul>
             </div>
             <div id="mainLogo">
@@ -286,41 +284,37 @@
             </div>
             <div class="col-xs-5 col-xs-offset-2">
                 <ul class="">
-                    <li><a href="cases.html">Referenties</a></li>
+                    <li><a href="cases.html">{{ui.menu.cases}}</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 
-<div id="jobsToggle"><h4>Vacatures</h4></div>
+<div id="jobsToggle"><h4>{{ui.jobs.title}}</h4></div>
 <div id="jobArea" class="hide">
     <div id="closeJobs"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6">
-                <h2>Vacatures</h2>
+                <h2>{{ui.jobs.title}}</h2>
                 <ol>
-                    <li><a href="jobs.html#iosdev">iOS Developer</a></li>
-                    <li><a href="jobs.html#businessconsultant">Business Consultant</a></li>
+                    <li><a href="jobs.html#iosdev">{{ui.jobs.iosdev.title}}</a></li>
+                    <li><a href="jobs.html#businessconsultant">{{ui.jobs.businessConsultant.title}}</a></li>
                 </ol>
-                <h4>Stages</h4>
+                <h4>{{ui.jobs.internshipTitle}}</h4>
                 <ol>
-                    <li><a href="jobs.html#stage1">Onderzoek naar clouds</a></li>
-                    <li><a href="jobs.html#stage2">Personal alarm system</a></li>
-                    <li class="hidden"><a href="jobs.html#stage3"">P2000 alarm system</a></li>
-                    <li><a href="jobs.html#stage4">Een lerende software-agent voor multi-modale communicatie</a></li>
-                    <li><a href="jobs.html#stage5">TeamUp in de praktijk</a></li>
+                    <li><a href="jobs.html#stage1">{{ui.jobs.internshipClouds.title}}</a></li>
+                    <li><a href="jobs.html#stage2">{{ui.jobs.internshipPersonalAlarm.title}}</a></li>
+                    <li class="hidden"><a href="jobs.html#stage3">{{ui.jobs.internshipP2000Alarm.title}}</a></li>
+                    <li><a href="jobs.html#stage4">{{ui.jobs.internshipLearningSoftwareAgent.title}}</a></li>
+                    <li><a href="jobs.html#stage5">{{ui.jobs.internshipTeamup.title}}</a></li>
                 </ol>
             </div>
             <div class="workAt col-md-8 col-sm-6 hidden-xs">
-                <h2 class="col-md-12">Werken bij ASK</h2>
-                <p class="col-md-6"> ASK Community Systems is een internationaal opererende softwareleverancier van Nederlandse bodem.
-                    ASK Community Systems richt zich op het vlak waar informatiemanagement en communicatie elkaar raken.
-                    De intelligente systemen die wij maken ondersteunen menselijke processen door gebruik te maken van software-agenttechnologie.</p>
-                <p class="col-md-6">Ben je gemotiveerd en gepassioneerd met je werk bezig? En bereid om iets extra's te geven voor de klant?
-                    Werk je graag met andere professionals in een informele doch prestatiegerichte werksfeer?
-                    Dan nodigen we je graag uit onze vacatures te bekijken en te solliciteren.</p>
+                <h2 class="col-md-12">{{ui.jobs.workAt.title}}</h2>
+                <p class="col-md-6">{{ui.jobs.workAt.description01}}</p>
+                <p class="col-md-6">{{ui.jobs.workAt.description02}}</p>
             </div>
         </div>
     </div>
@@ -332,7 +326,7 @@
 
 <div id="cookieMessage">
     <div id="closeCookie"></div>
-    <p>Wij gebruiken cookies om uw gebruikerservaring te verbeteren. Door deze website te gebruiken, accepteert u ons <a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank">privacybeleid</a>.</p>
+    <p>{{ui.general.cookieMessage}}<a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank"> {{ui.general.cookieMessageLink}}</a>.</p>
 </div>
 
 
@@ -354,11 +348,11 @@
                         <div class="row">
                             <div class="textFieldContainer">
                                 <div class="textField text-left col-md-6 col-sm-6 col-xs-12">
-                                    <h2>Minimale regeldruk</h4>
-                                    <p>ASK is expert in het ontwikkelen van applicaties die dit mogelijk maken! Uw personen kunnen met ASK onderling de planning afstemmen. Daarbij hebben ze tegelijkertijd de relevante informatie bij de hand om het werk efficienter uit te voeren. </p>
-                                    <p>Met de applicaties van ASK is het communiceren van de beschikbaarheid erg eenvoudig. Het kan zelfs automatisch. Vervolgens neemt de applicatie zelf contact op met beschikbare personen bij uitval. Dit houdt de belasting van uw personen laag en de motivatie hoog. </p>
-                                    <p>ASK applicaties faciliteren het onderlinge netwerk van uw personeel, zodat ze continu met elkaar in verbinding staan. Dit garandeert u de flexibiliteit om snel te kunnen reageren op last-minute situaties.</p>
-                                    <p>ASK werkt al meer dan 10 jaar aan intelligente software. De applicaties die hieruit voortkomen bevorderen de communicatie tussen personen. Hiervoor gebruikt ASK het netwerk dat mensen met elkaar vormen. De applicaties zijn altijd multi-device: werken vanaf uw eigen computer, smartphone of tablet. </p>
+                                    <h2>{{ui.company.pressure.title}}</h4>
+                                    <p>{{ui.company.pressure.description01}}</p>
+                                    <p>{{ui.company.pressure.description02}}</p>
+                                    <p>{{ui.company.pressure.description03}}</p>
+                                    <p>{{ui.company.pressure.description04}}</p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12" data-106-bottom="opacity: 0" data-center="opacity: 1">
@@ -369,34 +363,15 @@
             </div>
     </section>
 
-<!--    <section id="slide-3" class="about3 homeSlide" anim-detached="true">
-        <div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 50%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-1">
-            <div class="container smallDeviceContainer">
-                <div class="row">
-                    <div class="textFieldContainer">
-                        <div class="textField text-center col-md-4 col-md-offset-8 col-sm-4 col-sm-offset-8 col-xs-12">
-                            <h2>Hoe werkt ASK?</h2>
-                            <p>Traditionele planning werkt op basis van veel, maar vaak verouderde informatie. Het gebruikt een momentopname… Software van ASK daarentegen is realtime: de informatie die gebruikt wordt is veranderlijk en altijd de meest recente. Hierdoor is altijd de optimale planning op ieder moment voorhanden.</p>
-
-                            <p>Omdat ASK naast het gebruik van realtime, alleen de meest relevante informatie selecteert, kunt u direct inspelen op onvoorziene situaties. ASK levert wat u nodig heeft, direct. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-
     <section id="slide-3" class="about3 homeSlide" anim-detached="true">
         <div class="bcg" data-center="background-position: 50% -50px;" data-top-bottom="background-position: 50% 100%;" data-anchor-target="#slide-3">
             <div class="container smallDeviceContainer">
                 <div class="row">
                     <div class="textFieldContainer">
                         <div class="textField text-center col-md-4 col-md-offset-8 col-sm-4 col-sm-offset-8 col-xs-12">
-                            <h2>Hoe werkt ASK?</h2>
-                            <p>Traditionele planning werkt op basis van veel, maar vaak verouderde informatie. Het gebruikt een momentopname… Software van ASK daarentegen is realtime: de informatie die gebruikt wordt is veranderlijk en altijd de meest recente. Hierdoor is altijd de optimale planning op ieder moment voorhanden.</p>
-
-                            <p>Omdat ASK naast het gebruik van realtime, alleen de meest relevante informatie selecteert, kunt u direct inspelen op onvoorziene situaties. ASK levert wat u nodig heeft, direct. </p>
+                            <h2>{{ui.company.howWork.title}}</h2>
+                            <p>{{ui.company.howWork.description01}}</p>
+                            <p>{{ui.company.howWork.description02}}</p>
                         </div>
                     </div>
                 </div>
@@ -409,8 +384,8 @@
             <div class="container smallDeviceContainer">
                 <div class="row">
                     <div class="col-md-4 col-sm-2">
-                        <h2>Eigen netwerk</h2>
-                        <p>ASK is onderdeel van een groep high-tech bedrijven: de Almende Groep. Door de nauwe onderlinge samenwerking loopt ASK technologisch altijd voorop.</p>
+                        <h2>{{ui.company.personalNetwork.title}}</h2>
+                        <p>{{ui.company.personalNetwork.description}}</p>
                     </div>
                     <div class="col-md-8 col-sm-10 col-xs-12 partners">
                         <div class="row">
@@ -472,9 +447,6 @@
 
 <div id="footer">
     <ul>
-        <!--            <li><a href="http://standby.ask-cs.com" target="_blank">StandBy</a></li>
-                    <li><a href="http://teamup.ask-cs.com" target="_blank">TeamUp</a></li>
-                    <li class="hidden"><a href="http://joinus.ask-cs.com" target="_blank">JoinUs</a></li>-->
         <li>Coolhaven 236 |   </li>
         <li class="hideXs"> 3024 AN </li>
         <li> Rotterdam | </li>

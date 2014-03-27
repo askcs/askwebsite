@@ -44,7 +44,7 @@
 
 </head>
 
-<body class="jobs">
+<body class="jobs" ng-app="AskWeb">
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -53,11 +53,23 @@
 <!----------HEADER-------->
 
 <div id="menu" class="mainMenu">
+
+
+
+    <ul style="color: white; position: absolute">
+        <a ng-click="changeLang('en')" ng-hide="(lang == 'en')" class="{{(lang == 'en') && 'active'}}">EN</a>
+        <a ng-click="changeLang('de')" ng-hide="(lang == 'de')" class="{{(lang == 'de') && 'active'}}">DE</a>
+        <a ng-click="changeLang('nl')" ng-hide="(lang == 'nl')" class="{{(lang == 'nl') && 'active'}}">NL</a>
+    </ul>
+
+
+
+
     <div class="container">
         <div class="row">
             <div class="col-xs-5">
                 <ul class="">
-                    <li><a href="about.html">Bedrijf</a></li>
+                    <li><a href="about.html">{{ui.menu.company}}</a></li>
                 </ul>
             </div>
             <div id="mainLogo">
@@ -66,7 +78,7 @@
             </div>
             <div class="col-xs-5 col-xs-offset-2">
                 <ul class="">
-                    <li><a href="cases.html">Referenties</a></li>
+                    <li><a href="cases.html">{{ui.menu.cases}}</a></li>
                 </ul>
             </div>
         </div>
@@ -79,7 +91,7 @@
 
 <div id="cookieMessage">
     <div id="closeCookie"></div>
-    <p>Wij gebruiken cookies om uw gebruikerservaring te verbeteren. Door deze website te gebruiken, accepteert u ons <a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank">privacybeleid</a>.</p>
+    <p>{{ui.general.cookieMessage}}<a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank"> {{ui.general.cookieMessageLink}}</a>.</p>
 </div>
 
 
@@ -97,38 +109,38 @@
             <div class="row">
                 <a class="anchor" id="iosdev"></a>
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <h2>iOS Developer</h2>
-                    <p class="intro">ASK Community Systems B.V.  is voor een aantal projecten op zoek naar ervaren iOS Developers.  Het gaat hierbij om de ontwikkeling van innovatieve iPhone en iPad applicaties. Je streeft samen met het team naar het beste resultaat.</p>
+                    <h2>{{ui.jobs.iosdev.title}}</h2>
+                    <p class="intro">{{ui.jobs.iosdev.intro}}</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                        <h4>Gewenste kennis en ervaring:</h4>
+                        <h4>{{ui.jobs.knowledgeTitle}}</h4>
                         <ol>
-                            <li>HBO denk- en werkniveau</li>
-                            <li>Minimaal 2 jaar aantoonbare ervaring met iOS app development</li>
-                            <li>Uitgebreide kennis van iOS SDK en Xcode</li>
-                            <li>Goede kennis van Objective-C , HTML5, JSON</li>
+                            <li>{{ui.jobs.iosdev.knowledge.point01}}</li>
+                            <li>{{ui.jobs.iosdev.knowledge.point02}}</li>
+                            <li>{{ui.jobs.iosdev.knowledge.point03}}</li>
+                            <li>{{ui.jobs.iosdev.knowledge.point04}}</li>
                         </ol>
-                        <h4>Jouw profiel:</h4>
+                        <h4>{{ui.jobs.profileTitle}}</h4>
                         <ol>
-                            <li>Analytische vaardigheden</li>
-                            <li>Collegiaal en flexibel</li>
-                            <li>Verantwoordelijkheidsgevoel en stressbestendigheid</li>
-                            <li>Onze doelstelling onderschrijven door plezier te hebben in je werk en dat uit te stralen</li>
-                            <li>bereid zijn jouw kennis met je collega's te delen</li>
+                            <li>{{ui.jobs.iosdev.profile.point01}}</li>
+                            <li>{{ui.jobs.iosdev.profile.point02}}</li>
+                            <li>{{ui.jobs.iosdev.profile.point03}}</li>
+                            <li>{{ui.jobs.iosdev.profile.point04}}</li>
+                            <li>{{ui.jobs.iosdev.profile.point05}}</li>
                         </ol>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                        <h4>Wij bieden jou:</h4>
+                        <h4>{{ui.jobs.offerTitle}}</h4>
                         <ol>
-                            <li>Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden;</li>
-                            <li>Een inspirerende internationale werkomgeving;</li>
-                            <li>Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen.</li>
+                            <li>{{ui.jobs.iosdev.offer.point01}}</li>
+                            <li>{{ui.jobs.iosdev.offer.point02}}</li>
+                            <li>{{ui.jobs.iosdev.offer.point03}}</li>
                         </ol>
                     <div class="reactField col-md-12">
-                        <h4>Interesse?</h4>
-                        <p class="italic">Neem contact op met Carolyn Hoek:</p>
+                        <h4>{{ui.jobs.contactTitle}}</h4>
+                        <p class="italic">{{ui.jobs.contactDescription01}}</p>
                         <p class="contactItem"><span class="callIcon icon"></span> 010 225 0130</p>
                         <p class="contactItem"><span class="mailIcon icon"></span><a href="mailto:choek@ask-cs.com">choek@ask-cs.com</a></p>
                     </div>
@@ -139,43 +151,44 @@
         <div class="job col-sm-6">
             <div class="row">
                 <a class="anchor" id="businessconsultant"></a>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <h2>Business Consultant</h2>
-                    <p class="intro">Ter uitbreiding van ons salesteam, zijn wij op zoek naar een Business Consultant. In deze functie ben je verantwoordelijk voor het binnenhalen van new business en het relatiebeheer met klanten. Je bent het boegbeeld van ASK Community Systems B.V.  en gaat geen enkele commerciële uitdaging uit de weg.</p>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2>{{ui.jobs.businessConsultant.title}}</h2>
+                        <p class="intro">{{ui.jobs.businessConsultant.intro}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                        <h4>Gewenste kennis en ervaring:</h4>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <h4>{{ui.jobs.knowledgeTitle}}</h4>
                         <ol>
-                            <li>Afgeronde HBO / universitaire opleiding op technisch gebied (zoals Computertechnologie, Informatietechnologie of Bedrijfskunde)</li>
-                            <li>Minimaal 3 jaar ervaring in een soortgelijke functie</li>
-                            <li>Aantoonbaar succesvolle commerciële werkervaring</li>
+                            <li>{{ui.jobs.businessConsultant.knowledge.point01}}</li>
+                            <li>{{ui.jobs.businessConsultant.knowledge.point02}}</li>
+                            <li>{{ui.jobs.businessConsultant.knowledge.point03}}</li>
                         </ol>
-                        <h4>Jouw profiel:</h4>
+                        <h4>{{ui.jobs.profileTitle}}</h4>
                         <ol>
-                            <li>Je bent ondernemend en neemt initiatief</li>
-                            <li>Je bent zelfstandig, toont ownership en werkt graag in teamverband</li>
-                            <li>Een goede netwerker</li>
-                            <li>Communicatief vaardig in woord en geschrift</li>
-                            <li>Uitstekende mondelinge en schriftelijke kennis van het Engels</li>
-                            <li>In staat om je op korte termijn het dienstenaanbod van ASK eigen te maken</li>
-                            <li>Bij voorkeur woonachtig in regio Rotterdam</li>
+                            <li>{{ui.jobs.businessConsultant.profile.point01}}</li>
+                            <li>{{ui.jobs.businessConsultant.profile.point02}}</li>
+                            <li>{{ui.jobs.businessConsultant.profile.point03}}</li>
+                            <li>{{ui.jobs.businessConsultant.profile.point04}}</li>
+                            <li>{{ui.jobs.businessConsultant.profile.point05}}</li>
+                            <li>{{ui.jobs.businessConsultant.profile.point06}}</li>
+                            <li>{{ui.jobs.businessConsultant.profile.point07}}</li>
                         </ol>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                        <h4>Wij bieden jou:</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <h4>{{ui.jobs.offerTitle}}</h4>
                         <ol>
-                            <li>Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden</li>
-                            <li>Bedrijf met potentie</li>
-                            <li>Een inspirerende internationale werkomgeving</li>
-                            <li>Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen</li>
+                            <li>{{ui.jobs.businessConsultant.offer.point01}}</li>
+                            <li>{{ui.jobs.businessConsultant.offer.point02}}</li>
+                            <li>{{ui.jobs.businessConsultant.offer.point03}}</li>
+                            <li>{{ui.jobs.businessConsultant.offer.point04}}</li>
                         </ol>
-                    <div class="reactField col-md-12">
-                        <h4>Interesse?</h4>
-                        <p class="italic">Neem contact op met Carolyn Hoek:</p>
-                        <p class="contactItem"><span class="callIcon icon"></span> 010 225 0130</p>
-                        <p class="contactItem"><span class="mailIcon icon"></span><a href="mailto:choek@ask-cs.com">choek@ask-cs.com</a></p>
+                        <div class="reactField col-md-12">
+                            <h4>{{ui.jobs.contactTitle}}</h4>
+                            <p class="italic">{{ui.jobs.contactDescription01}}</p>
+                            <p class="contactItem"><span class="callIcon icon"></span> 010 225 0130</p>
+                            <p class="contactItem"><span class="mailIcon icon"></span><a href="mailto:choek@ask-cs.com">choek@ask-cs.com</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,32 +204,25 @@
             <div class="row">
                 <a class="anchor" id="stage1"></a>
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <h2>Stage: Onderzoek naar clouds</h2>
+                    <h2>{{ui.jobs.internshipTitle02}} {{ui.jobs.internshipClouds.title}}</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="paddingFix col-md-6 col-sm-12 col-xs-12">
-                    <h4>De uitdaging</h4>
-                    <p>
-                        ASK maakt veelvuldig gebruik van multi-agenttechnologie in haar oplossingen. Twee van onze belangrijkste systemen maken gebruik van deze technologie: de ASK Back-End voor realtime coördinatie en informatie-uitwisseling, en ASK-Fast, een platform voor realtime communicatie tussen verschillende partijen.
-                    </p>
-                    <p>
-                        Beide platforms draaien in de cloud (voornamelijk Google App Engine), waardoor ze onbeperkt schaalbaar zijn. Om ook in de toekomst goede beslissingen te kunnen nemen over onze applicaties in de cloud, willen we graag meer weten over andere cloud oplossingen.
-                    </p>
+                    <h4>{{ui.jobs.challengeTitle}}</h4>
+                    <p>{{ui.jobs.internshipClouds.challengeDescription01}}</p>
+                    <p>{{ui.jobs.internshipClouds.challengeDescription02}}</p>
                 </div>
                 <div class="paddingFix col-md-6 col-sm-12 col-xs-12">
-                    <h4>Wie we zoeken</h4>
-                    <p>
-                        We zoeken daarom een stagiair die een uitgebreid vergelijkend onderzoek wil doen naar de verschillende cloudplatforms die op dit moment op de markt zijn. Het gaat daarbij om zowel een literatuurstudie als praktische experimenten waarbij de voors en tegens van de verschillende cloud platforms tegen elkaar kunnen worden afgewogen.
-                    </p>
+                    <h4>{{ui.jobs.weSeekTitle}}</h4>
+                    <p>{{ui.jobs.internshipClouds.weSeekDescription01}}</p>
                     <div class="reactField col-md-12">
-                        <h4>Interesse?</h4>
-                        <p class="italic">Neem contact op met Carolyn Hoek:</p>
+                        <h4>{{ui.jobs.contactTitle}}</h4>
+                        <p class="italic">{{ui.jobs.contactDescription01}}</p>
                         <p class="contactItem"><span class="callIcon icon"></span> 010 225 0130</p>
                         <p class="contactItem"><span class="mailIcon icon"></span><a href="mailto:choek@ask-cs.com">choek@ask-cs.com</a></p>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -224,27 +230,21 @@
             <div class="row">
                 <a class="anchor" id="stage2"></a>
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <h2>Stage: Personal alarm system</h2>
+                    <h2>{{ui.jobs.internshipTitle02}} {{ui.jobs.internshipPersonalAlarm.title}}</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="paddingFix col-md-6 col-sm-12 col-xs-12">
-                    <h4>De uitdaging</h4>
-                    <p>
-                        ASK werkt op dit moment aan de Alarm app: een innovatief systeem dat de juiste mensen alarmeert in geval van nood. Deze app kan gebruikt worden door bijvoorbeeld patiënten met epilepsie, diabetes of hartproblemen, mobiele beveiligers, medewerkers die in hun eentje op een gevaarlijke plek moeten werken, reizigers die worden geconfronteerd met geweld, enz.
-                    </p>
-                    <p>
-                        De applicatie bestaat uit een app (te gebruiken door slachtoffers én helpers) en een intelligente back-end. De back-end zorgt dat de meest geschikte persoon wordt gealarmeerd en dat de juiste informatie snel bij de juiste persoon terecht komt. De Alarm app is getest in twee experimentele situaties, namelijk binnen Zorg en binnen Veiligheid.
-                    </p>
+                    <h4>{{ui.jobs.challengeTitle}}</h4>
+                    <p>{{ui.jobs.internshipPersonalAlarm.challengeDescription01}}</p>
+                    <p>{{ui.jobs.internshipPersonalAlarm.challengeDescription02}}</p>
                 </div>
                 <div class="paddingFix col-md-6 col-sm-12 col-xs-12">
-                    <h4>Wie we zoeken</h4>
-                    <p>
-                        ASK-CS zoekt een stagiair die wil helpen deze pilotversie om te zetten naar een market ready systeem.
-                    </p>
+                    <h4>{{ui.jobs.weSeekTitle}}</h4>
+                    <p>{{ui.jobs.internshipPersonalAlarm.weSeekDescription01}}</p>
                     <div class="reactField col-md-12">
-                        <h4>Interesse?</h4>
-                        <p class="italic">Neem contact op met Carolyn Hoek:</p>
+                        <h4>{{ui.jobs.contactTitle}}</h4>
+                        <p class="italic">{{ui.jobs.contactDescription01}}</p>
                         <p class="contactItem"><span class="callIcon icon"></span> 010 225 0130</p>
                         <p class="contactItem"><span class="mailIcon icon"></span><a href="mailto:choek@ask-cs.com">choek@ask-cs.com</a></p>
                     </div>
@@ -264,30 +264,22 @@
             <div class="row">
                 <a class="anchor" id="stage4"></a>
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <h2>Stage: Een lerende software-agent voor multi-modale communicatie</h2>
+                    <h2>{{ui.jobs.internshipTitle02}} {{ui.jobs.internshipLearningSoftwareAgent.title}}</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="paddingFix col-md-6 col-sm-12 col-xs-12">
-                    <h4>De uitdaging</h4>
-                    <p>
-                        Het ASK-Fast platform stelt gebruikers in staat om met verschillende partijen te communiceren via verschillende kanalen. Denk aan telefonie, SMS, Email, IM, in-app berichten, enz. Op deze manier kunnen één of meerdere dialogen worden opgezet.
-                    </p>
-                    <p>
-                        Eén van de systemen die gebruik maken van ASK-Fast is JoinUs, een systeem dat recruiters helpt om veel flex-medewerkers tegelijk te polsen over hun beschikbaarheid voor een bepaalde taak. Elke flex-medewerker wordt afhankelijk van zijn/haar voorkeuren via één of meerdere kanalen aangesproken.
-                    </p>
-                    <p>
-                        Om tot een optimale mix van communicatiekanalen te komen, willen we een lerende software-agent ontwikkelen. Deze agent combineert de statische kennis over de verschillende communicatiekanalen, met de gebruikerspecifieke voorkeuren.
-                    </p>
+                    <h4>{{ui.jobs.challengeTitle}}</h4>
+                    <p>{{ui.jobs.internshipLearningSoftwareAgent.challengeDescription01}}</p>
+                    <p>{{ui.jobs.internshipLearningSoftwareAgent.challengeDescription02}}</p>
+                    <p>{{ui.jobs.internshipLearningSoftwareAgent.challengeDescription03}}</p>
                 </div>
                 <div class="paddingFix col-md-6 col-sm-12 col-xs-12">
-                    <h4>Wie we zoeken</h4>
-                    <p>
-                        We zijn op zoek naar een afstudeerder die ons wil helpen bij het ontwikkelen van deze lerende software-agent. Onderdeel van de afstudeerstage is een onderzoek naar de effectiviteit van de verschillende communicatiekanalen. De resultaten van dit onderzoek worden gebruikt als input voor de agent.
-                    </p>
+                    <h4>{{ui.jobs.weSeekTitle}}</h4>
+                    <p>{{ui.jobs.internshipLearningSoftwareAgent.weSeekDescription01}}</p>
                     <div class="reactField col-md-12">
-                        <h4>Interesse?</h4>
-                        <p class="italic">Neem contact op met Carolyn Hoek:</p>
+                        <h4>{{ui.jobs.contactTitle}}</h4>
+                        <p class="italic">{{ui.jobs.contactDescription01}}</p>
                         <p class="contactItem"><span class="callIcon icon"></span> 010 225 0130</p>
                         <p class="contactItem"><span class="mailIcon icon"></span><a href="mailto:choek@ask-cs.com">choek@ask-cs.com</a></p>
                     </div>
@@ -299,27 +291,21 @@
             <div class="row">
                 <a class="anchor" id="stage5"></a>
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <h2>Stage: TeamUp in de praktijk</h2>
+                    <h2>{{ui.jobs.internshipTitle02}} {{ui.jobs.internshipTeamup.title}}</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="paddingFix col-md-6 col-sm-12 col-xs-12">
-                    <h4>De uitdaging</h4>
-                    <p>
-                        Voor de zorgsector ontwikkelt ASK de oplossing TeamUp. Deze applicatie helpt teams van zorgverleners (zoals thuiszorgmedewerkers) om samen te werken met hun teamgenoten. Ze kunnen bijvoorbeeld elkaars status opvragen, ondersteuning vragen, of op locatie informatie over hun patiënten opzoeken.
-                    </p>
-                    <p>
-                        ASK wil de TeamUp applicatie nu ook inzetten in andere domeinen, zoals sportteams, mantelzorgers, enz.
-                    </p>
+                    <h4>{{ui.jobs.challengeTitle}}</h4>
+                    <p>{{ui.jobs.internshipTeamup.challengeDescription01}}</p>
+                    <p>{{ui.jobs.internshipTeamup.challengeDescription02}}</p>
                 </div>
                 <div class="paddingFix col-md-6 col-sm-12 col-xs-12">
-                    <h4>Wie we zoeken</h4>
-                    <p>
-                        We zoeken een stagiair die voor ons wil onderzoeken hoe TeamUp kan worden ingezet in dergelijke domeinen en welke toegevoegde waarde de applicatie kan hebben.
-                    </p>
+                    <h4>{{ui.jobs.weSeekTitle}}</h4>
+                    <p>{{ui.jobs.internshipTeamup.weSeekDescription01}}</p>
                     <div class="reactField col-md-12">
-                        <h4>Interesse?</h4>
-                        <p class="italic">Neem contact op met Carolyn Hoek:</p>
+                        <h4>{{ui.jobs.contactTitle}}</h4>
+                        <p class="italic">{{ui.jobs.contactDescription01}}</p>
                         <p class="contactItem"><span class="callIcon icon"></span> 010 225 0130</p>
                         <p class="contactItem"><span class="mailIcon icon"></span><a href="mailto:choek@ask-cs.com">choek@ask-cs.com</a></p>
                     </div>
@@ -335,14 +321,10 @@
 
 <div id="footer">
     <ul>
-        <!--            <li><a href="http://standby.ask-cs.com" target="_blank">StandBy</a></li>
-                    <li><a href="http://teamup.ask-cs.com" target="_blank">TeamUp</a></li>
-                    <li class="hidden"><a href="http://joinus.ask-cs.com" target="_blank">JoinUs</a></li>-->
         <li>Coolhaven 236 |   </li>
         <li class="hideXs"> 3024 AN </li>
         <li> Rotterdam | </li>
         <li> 010 225 0130 | <a href="mailto:info@ask-cs.com">info@ask-cs.com</a></li>
-
     </ul>
 </div>
 
@@ -351,6 +333,10 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+<script src="js/vendor/angular.min.js"></script>
+<script src="js/app.js"></script>
+
 <script src="js/imagesloaded.js"></script>
 <script src="js/skrollr.js"></script>
 <script src="js/_main.js"></script>

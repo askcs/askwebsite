@@ -40,7 +40,7 @@
     <link href='//fonts.googleapis.com/css?family=Lato:700,400,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
 
 </head>
-<body class="loading">
+<body class="loading" ng-app="AskWeb">
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -49,11 +49,23 @@
 <!----------HEADER-------->
 
 <div id="menu" class="mainMenu">
+
+
+
+    <ul style="color: white; position: absolute">
+        <a ng-click="changeLang('en')" ng-hide="(lang == 'en')" class="{{(lang == 'en') && 'active'}}">EN</a>
+        <a ng-click="changeLang('de')" ng-hide="(lang == 'de')" class="{{(lang == 'de') && 'active'}}">DE</a>
+        <a ng-click="changeLang('nl')" ng-hide="(lang == 'nl')" class="{{(lang == 'nl') && 'active'}}">NL</a>
+    </ul>
+
+
+
+
     <div class="container">
         <div class="row">
             <div class="col-xs-5">
                 <ul class="">
-                    <li><a href="about.html">Bedrijf</a></li>
+                    <li><a href="about.html">{{ui.menu.company}}</a></li>
                 </ul>
             </div>
             <div id="mainLogo">
@@ -62,7 +74,7 @@
             </div>
             <div class="col-xs-5 col-xs-offset-2">
                 <ul class="">
-                    <li><a href="cases.html" class="active">Referenties</a></li>
+                    <li><a href="cases.html" class="active">{{ui.menu.cases}}</a></li>
                 </ul>
             </div>
         </div>
@@ -75,7 +87,7 @@
 
 <div id="cookieMessage">
     <div id="closeCookie"></div>
-    <p>Wij gebruiken cookies om uw gebruikerservaring te verbeteren. Door deze website te gebruiken, accepteert u ons <a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank">privacybeleid</a>.</p>
+    <p>{{ui.general.cookieMessage}}<a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank"> {{ui.general.cookieMessageLink}}</a>.</p>
 </div>
 
 
@@ -94,21 +106,21 @@
                         <div class="textFieldContainer">
                             <div class="textField text-center col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4">
                                 <div class="col-md-12">
-                                    <h2><span>PostNL</span></h2>
-                                    <h2>ASK bij PostNL in cijfers:</h2>
+                                    <h2><span>{{ui.cases.postnl.title}}</span></h2>
+                                    <h2>{{ui.cases.postnl.factsTitle}}</h2>
                                 </div>
                                 <div class="row">
                                     <div class="fact col-md-4 col-xs-12 col-sm-4">
                                         <h1>6</h1>
-                                        <p>Sorteercentra verspreid door Nederland</p>
+                                        <p>{{ui.cases.postnl.fact01}}</p>
                                     </div>
                                     <div class="fact col-md-4 col-xs-12 col-sm-4">
                                         <h1>2570</h1>
-                                        <p>Flexwerkers in het systeem</p>
+                                        <p>{{ui.cases.postnl.fact02}}</p>
                                     </div>
                                     <div class="fact col-md-4 col-xs-12 col-sm-4">
                                         <h1>170.000</h1>
-                                        <p class="wordBreak">Communicatiehandelingen per maand (telefoon/sms)</p>
+                                        <p class="wordBreak">{{ui.cases.postnl.fact03}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -125,26 +137,26 @@
                     <div class="col-md-8 col-sm-7 col-xs-12">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2>PostNL</h2>
+                                <h2>{{ui.cases.postnl.title}}</h2>
                             </div>
-                            <div class="col-md-6">
-                                <h4>Probleemschets:</h4>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <h4>{{ui.cases.problemTitle}}</h4>
                                 <ol>
-                                    <li>Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;</li>
-                                    <li>Overschot aan medewerkers en uitzendkrachten;</li>
-                                    <li>Wens om vaste medewerkers te behouden en aantal uitzenduren te verminderen.</li>
+                                    <li>{{ui.cases.postnl.problem.point01}}</li>
+                                    <li>{{ui.cases.postnl.problem.point02}}</li>
+                                    <li>{{ui.cases.postnl.problem.point03}}</li>
                                 </ol>
-                                <h4>Doelstellingen:</h4>
+                                <h4>{{ui.cases.goalsTitle}}</h4>
                                 <ol>
-                                    <li>Roosters maken gebaseerd op de individuele voorkeuren van de medewerkers;</li>
-                                    <li>Een betere verhouding tussen de fluctuerende werkdruk en daadwerkelijk personeelsinzet;</li>
-                                    <li>Sneller reageren op ziekte en afwezigheid.</li>
+                                    <li>{{ui.cases.postnl.goals.point01}}</li>
+                                    <li>{{ui.cases.postnl.goals.point02}}</li>
+                                    <li>{{ui.cases.postnl.goals.point03}}</li>
                                 </ol>
                             </div>
-                            <div class="col-md-6">
-                                <h4>Oplossing:</h4>
-                                <p>PostNL heeft, in overeenstemming met de ondernemingsraad, gekozen voor de oplossing van ASK, omdat deze goed aansluit bij hun MVO-doelstellingen (Maatschappelijk Verantwoord Ondernemen).</p>
-                                <p>De roosters van postsorteerders worden voortaan gegenereerd op basis van de beschikbaarheid van werknemers, die zij zelf online aangeven. De definitieve planning wordt aan de flexwerkers doorgegeven via e-mail of sms.</p>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <h4>{{ui.cases.solutionTitle}}</h4>
+                                <p>{{ui.cases.postnl.solution.description01}}</p>
+                                <p>{{ui.cases.postnl.solution.description02}}</p>
                             </div>
                         </div>
                         <div class="row">
@@ -155,25 +167,25 @@
                     </div>
                     <div class="textFieldContainer">
                         <div class="textField text-left col-md-4 col-sm-5 col-xs-12">
-                            <h4>Kwalitatieve resultaten:</h4>
+                            <h4>{{ui.cases.qualResultsTitle}}</h4>
                             <ol>
-                                <li>Aantal uitzenduren is teruggebracht;</li>
-                                <li>Geen ontslagen onder vaste medewerkers;</li>
-                                <li>Meer continuïteit doordat er meer met vaste medewerkers wordt gewerkt;</li>
-                                <li>Personeel is beter gemotiveerd omdat werk en privé beter op elkaar zijn af te stemmen.</li>
+                                <li>{{ui.cases.postnl.qualResults.point01}}</li>
+                                <li>{{ui.cases.postnl.qualResults.point02}}</li>
+                                <li>{{ui.cases.postnl.qualResults.point03}}</li>
+                                <li>{{ui.cases.postnl.qualResults.point04}}</li>
                             </ol>
-                            <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
+                            <h4 class="factVerTitle">{{ui.cases.quanResultsTitle}}</h4>
                             <div class="factVer">
                                 <h1>- 250 FTE's</h1>
-                                <p>Kostenvermindering door besparing</p>
+                                <p>{{ui.cases.postnl.quanResults.fact01}}</p>
                             </div>
                             <div class="factVer">
                                 <h1>- 45%</h1>
-                                <p>Verzuim gereduceerd (van 11% naar 6%)</p>
+                                <p>{{ui.cases.postnl.quanResults.fact02}}</p>
                             </div>
                             <div class="factVer">
                                 <h1>- €10.000.000</h1>
-                                <p>Totale besparing in 3 jaar</p>
+                                <p>{{ui.cases.postnl.quanResults.fact03}}</p>
                             </div>
                         </div>
                     </div>
@@ -193,17 +205,17 @@
                     <div class="textFieldContainer">
                         <div class="textField text-center col-md-4 col-sm-6 col-xs-8" data-50-bottom="opacity: 0.5" data-center="opacity: 1" data-0-top="opacity: 0.5">
                             <div class="col-md-12">
-                                <h2><span>KNRM</span></h2>
-                                <h2>ASK bij KNRM in cijfers:</h2>
+                                <h2><span>{{ui.cases.knrm.title}}</span></h2>
+                                <h2>{{ui.cases.knrm.factsTitle}}</h2>
                             </div>
                             <div class="row">
                                 <div class="fact col-md-6 col-sm-6">
                                     <h1>46</h1>
-                                    <p>Reddingsstations gebruiken ASK</p>
+                                    <p>{{ui.cases.knrm.fact01}}</p>
                                 </div>
                                 <div class="fact col-md-6 col-sm-6">
                                     <h1>1300</h1>
-                                    <p class="wordBreak">Hulpverleners ondersteund</p>
+                                    <p class="wordBreak">{{ui.cases.knrm.fact02}}</p>
                                 </div>
                             </div>
                         </div>
@@ -220,29 +232,25 @@
                     <div class="col-md-8 col-sm-7 col-xs-12">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2>KNRM</h2>
+                                <h2>{{ui.cases.knrm.title}}</h2>
                             </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <h4>Probleemschets:</h4>
+                            <div class="col-md-6  col-sm-12 col-xs-12">
+                                <h4>{{ui.cases.problemTitle}}</h4>
                                 <ol>
-                                    <li>Veel onnodige oproepen;</li>
-                                    <li>Niet altijd voldoende mensen beschikbaar;</li>
-                                    <li>Weinig flexibiliteit voor de vrijwilligers.</li>
+                                    <li>{{ui.cases.knrm.problem.point01}}</li>
+                                    <li>{{ui.cases.knrm.problem.point02}}</li>
+                                    <li>{{ui.cases.knrm.problem.point03}}</li>
                                 </ol>
-                                <h4>Doelstellingen:</h4>
+                                <h4>{{ui.cases.goalsTitle}}</h4>
                                 <ol>
-                                    <li>Controlefunctie: inzichtelijk maken of er voldoende mensen zijn;</li>
-                                    <li>Ondersteunen coördinatoren;</li>
-                                    <li>Roostering faciliteren voor vrijwilligers.</li>
+                                    <li>{{ui.cases.knrm.goals.point01}}</li>
+                                    <li>{{ui.cases.knrm.goals.point02}}</li>
+                                    <li>{{ui.cases.knrm.goals.point03}}</li>
                                 </ol>
                             </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <h4>Oplossing:</h4>
-                                <p>
-                                    Met de intrede van ASK vullen de meer dan 1300 hulpverleners bij de 46 stations nu online
-                                    hun beschikbaarheid in via het planbord. De coördinator houdt het overzicht op het gezamenlijke rooster van zijn/haar locatie.
-                                    ASK vult automatisch de gaten in het rooster op door telefonisch de beschikbaarheid te peilen.
-                                </p>
+                            <div class="col-md-6  col-sm-12 col-xs-12">
+                                <h4>{{ui.cases.solutionTitle}}</h4>
+                                <p>{{ui.cases.knrm.solution.description01}}</p>
                             </div>
                         </div>
                         <div class="row">
@@ -253,11 +261,11 @@
                     </div>
                     <div class="textFieldContainer">
                         <div class="textField text-left col-md-4 col-sm-5 col-xs-12">
-                            <h4>Kwalitatieve resultaten:</h4>
+                            <h4>{{ui.cases.qualResultsTitle}}</h4>
                             <ol>
-                                <li>Vrijwilligerswerk voor de KNRM is beter te combineren met werk/privé;</li>
-                                <li>ASK bewaakt de permanentiegraad (= altijd voldoende mensen beschikbaar);</li>
-                                <li>De schippers zijn ontlast, doordat ze nu alleen bij een tekort worden genotificeerd.</li>
+                                <li>{{ui.cases.knrm.qualResults.point01}}</li>
+                                <li>{{ui.cases.knrm.qualResults.point02}}</li>
+                                <li>{{ui.cases.knrm.qualResults.point03}}</li>
                             </ol>
                         </div>
                     </div>
@@ -277,17 +285,17 @@
                     <div class="textFieldContainer">
                         <div class="textField text-center col-md-4 col-md-offset-8 col-sm-6 col-sm-offset-6 col-xs-8 col-xs-offset-4 " data-50-bottom="opacity: 0.5" data-center="opacity: 1" data-0-top="opacity: 0.5">
                             <div class="col-md-12">
-                                <h2><span>Buurtzorg</span></h2>
-                                <h2>Buurtzorg in cijfers:</h2>
+                                <h2><span>{{ui.cases.bz.title}}</span></h2>
+                                <h2>{{ui.cases.bz.factsTitle}}</h2>
                             </div>
                             <div class="row">
                                 <div class="fact col-md-6 col-sm-6">
                                     <h1>12</h1>
-                                    <p>Personen maximaal per zelfsturend team</p>
+                                    <p>{{ui.cases.bz.fact01}}</p>
                                 </div>
                                 <div class="fact col-md-6 col-sm-6">
                                     <h1>100+</h1>
-                                    <p class="wordBreak">Locaties in Nederland</p>
+                                    <p class="wordBreak">{{ui.cases.bz.fact02}}</p>
                                 </div>
                             </div>
                         </div>
@@ -305,28 +313,24 @@
                     <div class="col-md-8 col-sm-7 col-xs-12">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2>Buurtzorg</h2>
+                                <h2>{{ui.cases.bz.title}}</h2>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <h4>Probleemschets:</h4>
+                                <h4>{{ui.cases.problemTitle}}</h4>
                                 <ol>
-                                    <li>Veel tijd kwijt aan het naar kantoor gaan om op de computer cliëntgegevens te kunnen raadplegen;</li>
-                                    <li>Communicatie tussen collega’s onderling slecht gefaciliteerd.</li>
+                                    <li>{{ui.cases.bz.problem.point01}}</li>
+                                    <li>{{ui.cases.bz.problem.point02}}</li>
                                 </ol>
-                                <h4>Doelstellingen:</h4>
+                                <h4>{{ui.cases.goalsTitle}}</h4>
                                 <ol>
-                                    <li>Wijkverpleegkundigen de beschikking te geven over een gebruiksvriendelijke mobiele applicatie;</li>
-                                    <li>Deze applicatie moet de wijkverpleegkundige ondersteuning bieden bij de verzorging van cliënten door hen ter plaatse de beschikking te geven over relevante informatie.</li>
+                                    <li>{{ui.cases.bz.goals.point01}}</li>
+                                    <li>{{ui.cases.bz.goals.point02}}</li>
                                 </ol>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <h4>Oplossing:</h4>
-                                <p>
-                                    ASK Community Systems heeft in samenwerking met Ecare Services de Buurtzorg App ontwikkeld.  Deze app geeft werknemers de mogelijkheid om onderweg naar de cliënt de laatste rapporten door te nemen. Het vormt de mobiele ondersteuning van de wijkverpleegkundige.
-                                </p>
-                                <p>
-                                    Tevens zorgt de Buurtzorg App voor kortere lijntjes: Geen mensen meer achter de bureaus, maar gewoon uitvoerenden die ook de talenten in zich hebben om na te denken en gebruik te maken van moderne technologie.
-                                </p>
+                                <h4>{{ui.cases.solutionTitle}}</h4>
+                                <p>{{ui.cases.bz.solution.description01}}</p>
+                                <p>{{ui.cases.bz.solution.description02}}</p>
                             </div>
                         </div>
                         <div class="row">
@@ -337,12 +341,12 @@
                     </div>
                     <div class="textFieldContainer">
                         <div class="textField text-left col-md-4 col-sm-5 col-xs-12">
-                            <h4>Kwalitatieve resultaten:</h4>
-                            <ol>Met de Buurtzorg App kunnen wijkverpleegkundigen:
-                                <li>Basisgegevens van en over cliënten inzien;</li>
-                                <li>Rapportages van en over cliënten, inzien en creëren;</li>
-                                <li>Tijd besteed bij een cliënt vastleggen en doorsturen;</li>
-                                <li>Contact opnemen met cliënten of collega's.</li>
+                            <h4>{{ui.cases.qualResultsTitle}}</h4>
+                            <ol>{{ui.cases.bz.qualResults.description01}}
+                                <li>{{ui.cases.bz.qualResults.point01}}</li>
+                                <li>{{ui.cases.bz.qualResults.point02}}</li>
+                                <li>{{ui.cases.bz.qualResults.point03}}</li>
+                                <li>{{ui.cases.bz.qualResults.point04}}</li>
                             </ol>
                         </div>
                     </div>
@@ -362,17 +366,17 @@
                     <div class="textFieldContainer">
                         <div class="textField text-center col-md-4 col-sm-6 col-xs-8" data-50-bottom="opacity: 0.5" data-center="opacity: 1" data-0-top="opacity: 0.5">
                             <div class="col-md-12">
-                                <h2><span>Olympia</span></h2>
-                                <h2>ASK bij Olympia in cijfers:</h2>
+                                <h2><span>{{ui.cases.olympia.title}}</span></h2>
+                                <h2>{{ui.cases.olympia.factsTitle}}</h2>
                             </div>
                             <div class="row">
                                 <div class="fact col-md-6 col-sm-6">
                                     <h1>20.000</h1>
-                                    <p>Geregistreerde uitzendkrachten</p>
+                                    <p>{{ui.cases.olympia.fact01}}</p>
                                 </div>
                                 <div class="fact col-md-6 col-sm-6">
                                     <h1>30.000</h1>
-                                    <p class="wordBreak">Communicatiehandelingen per kwartaal (telefoon/sms)</p>
+                                    <p class="wordBreak">{{ui.cases.olympia.fact02}}</p>
                                 </div>
                             </div>
                         </div>
@@ -389,29 +393,27 @@
                     <div class="col-md-8 col-sm-7 col-xs-12">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2>Olympia</h2>
+                                <h2>{{ui.cases.olympia.title}}</h2>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <h4>Probleemschets:</h4>
+                                <h4>{{ui.cases.problemTitle}}</h4>
                                 <ol>
-                                    <li>Beperkte productiviteit bij intercedenten in alle branches;</li>
-                                    <li>Intercedenten besteden te veel tijd aan herhalende communicatiehandelingen;</li>
-                                    <li>Intercedenten hebben behoefte aan meer tijd voor persoonlijk contact op de momenten dat het telt.</li>
+                                    <li>{{ui.cases.olympia.problem.point01}}</li>
+                                    <li>{{ui.cases.olympia.problem.point02}}</li>
+                                    <li>{{ui.cases.olympia.problem.point03}}</li>
                                 </ol>
-                                <h4>Doelstellingen:</h4>
+                                <h4>{{ui.cases.goalsTitle}}</h4>
                                 <ol>
-                                    <li>Kernprocessen optimaliseren door repetitieve en tijdrovende telefoongesprekken te automatiseren;</li>
-                                    <li>Tijd vrijmaken voor persoonlijk contact tussen intercedent en klant;</li>
-                                    <li>Een database inrichten met direct inzetbare uitzendkrachten.</li>
+                                    <li>{{ui.cases.olympia.goals.point01}}</li>
+                                    <li>{{ui.cases.olympia.goals.point02}}</li>
+                                    <li>{{ui.cases.olympia.goals.point03}}</li>
                                 </ol>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <h4>Oplossing:</h4>
-                                <p>
-                                    Olympia Uitzendbureau gebruikte ASK om haar intercedenten te ondersteunen bij dagelijkse werkprocessen.
-                                    Wanneer een vacature moet worden vervuld, selecteert de intercedent eerst handmatig een groep geschikte uitzendkrachten. De intercedent neemt óf een gesproken bericht op, óf schrijft een tekst met daarin de belangrijkste informatie over de opdracht. ASK bezorgt dit bericht bij de geselecteerde uitzendkrachten en verzamelt meteen reacties via de telefoon, sms, of e-mail.
-                                    De opdracht kan online worden uitgezet en gevolgd. Dit betekent dat de intercedent niet in hetzelfde land hoeft te zijn als de kandidaten en dat de effectieve werktijd wordt uitgebreid (tot wel 24/7). Het systeem blijft kandidaten benaderen, ook wanneer de intercedent niet achter zijn of haar bureau zit.
-                                </p>
+                                <h4>{{ui.cases.olympia.solutionTitle}}</h4>
+                                <p>{{ui.cases.olympia.solution.description01}}</p>
+                                <p>{{ui.cases.olympia.solution.description02}}</p>
+                                <p>{{ui.cases.olympia.solution.description03}}</p>
                             </div>
                         </div>
                         <div class="row">
@@ -422,24 +424,24 @@
                     </div>
                     <div class="textFieldContainer">
                         <div class="textField text-left col-md-4 col-sm-5 col-xs-12">
-                            <h4>Kwalitatieve resultaten:</h4>
+                            <h4>{{ui.cases.qualResultsTitle}}</h4>
                             <ol>
-                                <li>De dagelijkse operatie is efficiënter en flexibeler;</li>
-                                <li>Een betere concurrentiepositie;</li>
-                                <li>De baan van intercedent is aantrekkelijker omdat ASK de saaie, repetitieve taken overneemt.</li>
+                                <li>{{ui.cases.olympia.qualResults.point01}}</li>
+                                <li>{{ui.cases.olympia.qualResults.point02}}</li>
+                                <li>{{ui.cases.olympia.qualResults.point03}}</li>
                             </ol>
-                            <h4 class="factVerTitle">Kwantitatieve resultaten:</h4>
+                            <h4 class="factVerTitle">{{ui.cases.quanResultsTitle}}</h4>
                             <div class="factVer">
                                 <h1>+ 20%</h1>
-                                <p>Succesvolle uitzendingen</p>
+                                <p>{{ui.cases.olympia.quanResults.fact01}}</p>
                             </div>
                             <div class="factVer">
                                 <h1>+ 11%</h1>
-                                <p>Inkomsten</p>
+                                <p>{{ui.cases.olympia.quanResults.fact02}}</p>
                             </div>
                             <div class="factVer">
                                 <h1>- 90%</h1>
-                                <p>Communicatiekosten (EUR 0,38 aan licentie + EUR 0,10 per gesprek/sms ipv EUR 4,30 per contact)</p>
+                                <p>{{ui.cases.olympia.quanResults.fact03}}</p>
                             </div>
                         </div>
                     </div>
@@ -477,6 +479,10 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+<script src="js/vendor/angular.min.js"></script>
+<script src="js/app.js"></script>
+
 <script src="js/imagesloaded.js"></script>
 <script src="js/skrollr.js"></script>
 <script src="js/_main.js"></script>

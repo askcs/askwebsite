@@ -173,13 +173,12 @@
 
 
 
-    <ul style="color: white;">
+    <ul style="color: white; position: absolute">
         <a ng-click="changeLang('en')" ng-hide="(lang == 'en')" class="{{(lang == 'en') && 'active'}}">EN</a>
         <a ng-click="changeLang('de')" ng-hide="(lang == 'de')" class="{{(lang == 'de') && 'active'}}">DE</a>
         <a ng-click="changeLang('nl')" ng-hide="(lang == 'nl')" class="{{(lang == 'nl') && 'active'}}">NL</a>
     </ul>
 
-    <span style="background-color: white"> {{ui.home.title}} </span>
 
 
 
@@ -188,7 +187,7 @@
         <div class="row">
             <div class="col-xs-5">
                 <ul class="">
-                    <li><a href="about.html">Bedrijf</a></li>
+                    <li><a href="about.html">{{ui.menu.company}}</a></li>
                 </ul>
             </div>
             <div id="mainLogo">
@@ -197,7 +196,7 @@
             </div>
             <div class="col-xs-5 col-xs-offset-2">
             <ul class="">
-                <li><a href="cases.html">Referenties</a></li>
+                <li><a href="cases.html">{{ui.menu.cases}}</a></li>
             </ul>
             </div>
         </div>
@@ -209,7 +208,7 @@
 
 <div id="cookieMessage">
     <div id="closeCookie"></div>
-    <p>Wij gebruiken cookies om uw gebruikerservaring te verbeteren. Door deze website te gebruiken, accepteert u ons <a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank">privacybeleid</a>.</p>
+    <p>{{ui.general.cookieMessage}}<a href="docs/Privacy-Statement-ASK-Community-Systems.pdf" target="_blank"> {{ui.general.cookieMessageLink}}</a>.</p>
 </div>
 
 
@@ -222,7 +221,7 @@
     <div class="slide slide1">
 		<div class="container">
             <div class="col-md-12">
-                <h2 class="scenarioText1">Regelmatig een tekort aan personeel?</h2>
+                <h2 class="scenarioText1">{{ui.home.scenario.titleSlide1}}</h2>
                 <!--<img src="img/home/scenario01.png" alt="slider" class="scenarioImg" />-->
                 <div class="scenarioImg">
                     <img class="animate01-01" src="img/home/scenario01-01.png" alt="slider"/>
@@ -235,7 +234,7 @@
     <div class="slide slide2">
         <div class="container">
             <div class="col-md-12">
-                <h2 class="scenarioText2">Met ASK geeft personeel zelf beschikbaarheid aan.</h2>
+                <h2 class="scenarioText2">{{ui.home.scenario.titleSlide2}}</h2>
                 <div class="scenarioImg">
                     <img class="animate02-01" src="img/home/scenario02-01.png" alt="slider"/>
                     <img class="animate02-02" src="img/home/scenario02-02.png" alt="slider"/>
@@ -248,7 +247,7 @@
     <div class="slide slide3">
         <div class="container">
             <div class="col-md-12">
-                <h2 class="scenarioText3">Bij een tekort zoekt ASK automatisch naar personeel.</h2>
+                <h2 class="scenarioText3">{{ui.home.scenario.titleSlide3}}</h2>
                 <div class="animate03-01 scenarioImg">
                     <img src="img/home/scenario03-01.png" alt="slider"/>
                     <div class="absoluteElements">
@@ -266,7 +265,7 @@
     <div class="slide slide4">
         <div class="container">
             <div class="col-md-12">
-                <h2 class="scenarioText4">Zo heeft u altijd voldoende personeel!</h2>
+                <h2 class="scenarioText4">{{ui.home.scenario.titleSlide4}}</h2>
                 <div class="scenarioImg">
                     <img class="animate04-01" src="img/home/scenario04-01.png" alt="slider"/>
                     <img class="animate04-02" src="img/home/scenario04-02.png" alt="slider"/>
@@ -286,7 +285,7 @@
 <!----------PRODUCTS-------->
 
 <div class="section products" id="section1">
-    <div class="label"><h4>Producten</h4></div>
+    <div class="label"><h4>{{ui.home.products.title}}</h4></div>
         <div class="container desktopView">
             <div class="row">
                 <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 standBy">
@@ -296,7 +295,7 @@
                         </div>
                         <div class="textPart">
                             <h3>StandBy</h3>
-                            <p>Vooraf inzage in de paraatheid hebben en niet pas wanneer het alarm is afgegaan. Online roosters en alarmontvangers bieden slechts een deeloplossing. Daarom heeft ASK Standby ontwikkeld.</p>
+                            <p>{{ui.home.products.standby}}</p>
                         </div>
                     </a>
                 </div>
@@ -307,7 +306,7 @@
                         </div>
                         <div class="textPart">
                             <h3>TeamUp</h3>
-                            <p>ASK vindt dat ICT de zorg dient te ondersteunen. Uw medewerkers willen zo min mogelijk tijd aan administratie kwijt zijn, zodat ze zich kunnen richten op het verlenen van goede zorg. </p>
+                            <p>{{ui.home.products.teamup}}</p>
                         </div>
                     </a>
                 </div>
@@ -318,7 +317,7 @@
                         </div>
                         <div class="textPart">
                             <h3>JoinUs</h3>
-                            <p>Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.</p>
+                            <p>{{ui.home.products.joinus}}</p>
                         </div>
                     </a>
                 </div>
@@ -333,8 +332,8 @@
                     </div>
                     <div class="col-xs-12 textPart">
                         <h3>StandBy</h3>
-                        <p>Vooraf inzage in de paraatheid hebben en niet pas wanneer het alarm is afgegaan. Online roosters en alarmontvangers bieden slechts een deeloplossing. Daarom heeft ASK Standby ontwikkeld.</p>
-                        <a href="http://standby.ask-cs.nl" target="_blank">Lees meer...</a>
+                        <p>{{ui.home.products.standby}}</p>
+                        <a href="http://standby.ask-cs.nl" target="_blank">{{ui.general.readMore}}...</a>
                     </div>
             </div>
         </div>
@@ -345,8 +344,8 @@
                     </div>
                     <div class="col-xs-12 textPart">
                         <h3>TeamUp</h3>
-                        <p>ASK vindt dat ICT de zorg dient te ondersteunen. Uw medewerkers willen zo min mogelijk tijd aan administratie kwijt zijn, zodat ze zich kunnen richten op het verlenen van goede zorg. </p>
-                        <a href="http://teamup.ask-cs.nl" target="_blank">Lees meer...</a>
+                        <p>{{ui.home.products.teamup}}</p>
+                        <a href="http://teamup.ask-cs.nl" target="_blank">{{ui.general.readMore}}...</a>
                     </div>
             </div>
         </div>
@@ -357,8 +356,8 @@
                     </div>
                     <div class="col-xs-12 textPart">
                         <h3>JoinUs</h3>
-                        <p>Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.</p>
-                        <a href="http://joinus.ask-cs.nl" target="_blank">Lees meer...</a>
+                        <p>{{ui.home.products.joinus}}.</p>
+                        <a href="http://joinus.ask-cs.nl" target="_blank">{{ui.general.readMore}}...</a>
                     </div>
             </div>
         </div>
@@ -372,14 +371,14 @@
 <!----------CASES-------->
 
 <div class="section" id="section3">
-    <div class="label"><h4>Referenties</h4></div>
+    <div class="label"><h4>{{ui.home.casesPreview.title}}</h4></div>
     <div class="slide case" id="case01">
         <div class="container">
             <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
                 <div class="textField">
-                    <h2>PostNL</h2>
-                    <p>ASK helpt PostNL om postsorteerders flexibel in te roosteren. Hierbij houdt ASK rekening met benodigde capaciteit, individuele voorkeuren en arbowetgeving.</p>
-                    <a href="cases.html#slide-1">Lees meer...</a>
+                    <h2>{{ui.cases.postnl.title}}</h2>
+                    <p>{{ui.home.casesPreview.postnl}}</p>
+                    <a href="cases.html#slide-1">{{ui.general.readMore}}...</a>
                 </div>
             </div>
         </div>
@@ -388,10 +387,10 @@
         <div class="container">
             <div class="col-md-4 col-xs-8">
                 <div class="textField">
-                    <h2>KNRM</h2>
-                    <p>ASK zorgt er bij de KNRM voor dat er altijd genoeg hulpverleners beschikbaar én in de buurt zijn om uit te rukken in geval van nood.</p>
-                    <p>Hulpverleners kunnen via de pc, de smartphone of de telefoon zelf aangeven wanneer ze paraat kunnen staan, en wanneer ze een dag vrij willen. </p>
-                    <a href="cases.html#slide-3">Lees meer...</a>
+                    <h2>{{ui.cases.knrm.title}}</h2>
+                    <p>{{ui.home.casesPreview.knrm01}}</p>
+                    <p>{{ui.home.casesPreview.knrm02}}</p>
+                    <a href="cases.html#slide-3">{{ui.general.readMore}}...</a>
                 </div>
             </div>
         </div>
@@ -400,10 +399,10 @@
         <div class="container">
             <div class="col-md-4 col-xs-8 col-md-offset-8 col-xs-offset-4">
                 <div class="textField">
-                    <h2>Buurtzorg</h2>
-                    <p>De case Buurtzorg heeft mede geleid tot de uiteindelijke ontwikkeling van TeamUp.</p>
-                    <p>Met de smartphone-app faciliteert ASK de onderlinge afstemming en communicatie. Zo hoeft er minder te worden geregeld, en kan er meer worden gedaan.</p>
-                    <a href="cases.html#slide-5">Lees meer...</a>
+                    <h2>{{ui.cases.bz.title}}</h2>
+                    <p>{{ui.home.casesPreview.bz01}}</p>
+                    <p>{{ui.home.casesPreview.bz02}}</p>
+                    <a href="cases.html#slide-5">{{ui.general.readMore}}...</a>
                 </div>
             </div>
         </div>
@@ -412,9 +411,9 @@
         <div class="container">
             <div class="col-md-4 col-xs-8">
                 <div class="textField">
-                    <h2>Olympia</h2>
-                    <p>ASK heeft Olympia geholpen om vacatures onder de aandacht van uitzendkrachten te brengen en om direct reacties van kandidaten te verzamelen via de smartphone, telefoon of e-mail.</p>
-                    <a href="cases.html#slide-7">Lees meer...</a>
+                    <h2>{{ui.cases.olympia.title}}</h2>
+                    <p>{{ui.home.casesPreview.olympia}}</p>
+                    <a href="cases.html#slide-7">{{ui.general.readMore}}...</a>
                 </div>
             </div>
         </div>
