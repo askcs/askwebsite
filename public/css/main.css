@@ -679,9 +679,38 @@ P:last-child {
     font-size: 10px;
 }
 
-#footer ul li {
+.languageToggle {
+    position: fixed;
+    display: block;
+    background-color: #e61e3b;
+    bottom: -3px;
+}
+
+.languageToggle a, #languageMenu a{
+    color: #fff;
+    padding: 9px;
+    display: block;
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase ;
+}
+
+.languageToggle a.false, #languageMenu a.active{
+    display: none;
+}
+
+#languageMenu {
+    position: fixed;
+    background-color: #e61e3b;
+    bottom: 30px;
+}
+
+.displayNone {
+    display: none;
+}
+
+#footer ul.contactDetails li {
     display: inline-block;
-    padding: 9px 0;
+    padding: 8px 0;
 }
 
 #footer li a {

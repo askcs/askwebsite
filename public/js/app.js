@@ -909,14 +909,62 @@ angular.module('AskWeb', []).
             localStorage.setItem('selectedLanguage', 'nl');
         }
 
+        $rootScope.showLangMenu = false;
+
+//        $rootScope.toggleLangMenu = function ()
+//        {
+//            $rootScope.showLangMenu = !$rootScope.showLangMenu;
+//
+//            // angular.element('.languageToggle').addClass('displayBlock');
+//        };
+
+        $rootScope.languages = ['de', 'en', 'nl'];
+
+        var toggled = true;
+
         $rootScope.changeLang = function (lang)
         {
+            $(".languageToggle li a").html(lang);
+
+            if ($rootScope.lang == lang) {
+                $('#languageMenu')
+                    .removeClass('rotateInDownLeft')
+                    .addClass('animated rotateOutUpLeft');
+            }
+
             $rootScope.ui = locals[lang];
 
             $rootScope.lang = lang;
 
             localStorage.setItem('selectedLanguage', lang);
+
+            toggled = !toggled;
+
+            toggleOut();
         };
 
         $rootScope.changeLang(localStorage.getItem('selectedLanguage'));
+
+        $(".languageToggle li a").click(function () {
+            if (toggled)
+            {
+                toggleOut();
+            }
+            else
+            {
+                $('#languageMenu')
+                    .removeClass('hide rotateOutUpLeft')
+                    .addClass('animated rotateInDownLeft');
+            }
+
+            toggled = !toggled;
+        });
+
+        function toggleOut ()
+        {
+            $('#languageMenu')
+                .removeClass('rotateInDownLeft')
+                .addClass('animated rotateOutUpLeft');
+        }
+
     }]);
