@@ -330,7 +330,7 @@ angular.module('AskWeb', []).
                     title:'Products',
                     standby: 'Insight in the readiness beforehand, and not only after the alarm has gone off. Online schedules of alarm-receivers only solve part of the problem. That\'s why ASK has developed Standby ',
                     teamup: 'ASK believes that ICT should support healthcare. Your employees don\'t want to spend much time on administrative tasks so they can focus on providing care.',
-                    joinus: '***Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.'
+                    joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.'
                 },
                 casesPreview: {
                     title: 'References',
@@ -346,7 +346,7 @@ angular.module('AskWeb', []).
 
             company: {
                 pressure: {
-                    title: '***Minimale regeldruk',
+                    title: 'Less management and more productivity',
                     description01: 'Ask is an expert in the development of applications for making this possible! Your people can use ASK to mutually adjust the planning. At the same time they will have relevant information available in order to perform more efficiently.',
                     description02: 'ASK applications make communicating the availability very straightforward. It can even be done automatically. Subsequently, the application will contact available people in case of shortage. This makes sure burdening of people is low and motivation is high.',
                     description03: 'ASK applications facilitate the internal network of your personnel, so they are constantly connected to eachother. This guarantees flexibility to rapidly deal with last-minute situations.',
@@ -369,7 +369,7 @@ angular.module('AskWeb', []).
                 knowledgeTitle: 'Required knowledge and experience:',
                 profileTitle: 'Your Profile:',
                 offerTitle: 'We offer you:',
-                contactTitle: '***Interesse?',
+                contactTitle: 'Interested?',
                 contactDescription01: 'Please contact Carolyn Hoek:',
 
                 iosdev: {
@@ -465,9 +465,7 @@ angular.module('AskWeb', []).
                 workAt: {
                     title: 'Work at ASK',
                     description01: 'ASK Community Systems is an international software firm based in the Netherlands. ASK Community Systems focuses on the areas where information management and communication meet. The intelligent systems we create support human processes by utilizing software agent technology.',
-                    description02: '***Ben je gemotiveerd en gepassioneerd met je werk bezig? En bereid om iets extra\'s te geven voor de klant? ' +
-                        'Werk je graag met andere professionals in een informele doch prestatiegerichte werksfeer? ' +
-                        'Dan nodigen we je graag uit onze vacatures te bekijken en te solliciteren.'
+                    description02: 'Are you a motivated and passionate person? And willing to offer help to others? Do you enjoy working with other professionals in a casual, yet performance-oriented, working atmosphere? We invite you to look at our vacancies and apply.'
                 }
             },
 
@@ -618,7 +616,7 @@ angular.module('AskWeb', []).
             home: {
                 scenario: {
                     titleSlide1: 'Häufig Mitarbeitermangel?',
-                    titleSlide2: 'Mit ASK bestimmen MitarbeiterInnen selbst über deren Verfügbarkeit.',
+                    titleSlide2: 'Mit ASK bestimmen Mitarbeiter selbst über ihre Verfügbarkeit.',
                     titleSlide3: 'Bei Bedarf sucht ASK automatisch nach einem Mitarbeiter.',
                     titleSlide4: 'Auf diese Weise haben Sie immer ausreichend Mitarbeiter.'
                 },
@@ -626,7 +624,7 @@ angular.module('AskWeb', []).
                     title:'Produkte',
                     standby: 'Im Voraus einsehen können, wer verfügbar ist, anstatt erst, nachdem der Alarm ausgelöst wurde. Online-Pläne und Alarmempfänger liefern hierfür nur eine Notlösung. Deswegen hat ASK Standby entwickelt.',
                     teamup:  'ASK ist wegweisend für IT unterstützte Dienste. Ihre Mitarbeiter sollten so wenig, wie möglich mit Verwaltungsaufgaben belastet werden, um sich der Qualität der Dienstleistung widmen zu können.',
-                    joinus: '***Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.'
+                    joinus: 'Flexibler Personaleinsatz bedeuted: Aquirieren, Verfügbarkeit kontrollieren, Planen und Einsetzen. Joinus ist eine App, mit der sämtliche Informationen rund um die flexible Arbeit schnell ausgetauscht werden.'
                 },
                 casesPreview: {
                     title: 'Referenzen',
@@ -642,16 +640,16 @@ angular.module('AskWeb', []).
 
             company: {
                 pressure: {
-                    title: 'minimale Verwaltungsaufwand',
+                    title: 'Minimaler Verwaltungsaufwand',
                     description01: 'ASK ist spezialisiert auf die Entwicklung von Anwendungen, welche dies ermöglichen. Ihre Mitarbeiter können mit ASK die Planung intern abstimmen. Dabei haben sie jederzeit die relevanten Informationen zur Hand, um die Arbeit effizienter zu gestalten.',
-                    description02: 'Die ASK Apps machen die Kommunikation über die Verfügbarkeit einfach. Sie kann auch automatisch erfolgen, indem die App bei Bedarf selbstständig verfügbare Personen kontaktiert. Das entlastet ihre Mitarbeiter und erhöht deren Motivation.',
-                    description03: 'ASK Apps erleichtern den Informationsaustausch im internen Netzwerk ihrer Mitarbeiter, sodass sie kontinuierlich miteinander in Verbindung stehen. Das garantiert Flexibilität und schnelles Reagieren auf last-minute Situationen.',
+                    description02: 'Die ASK Apps machen die Kommunikation über die Verfügbarkeit einfach. Sie kann auch automatisch erfolgen, indem die App bei Bedarf selbstständig verfügbare Personen kontaktiert. Das entlastet Ihre Mitarbeiter und erhöht deren Motivation.',
+                    description03: 'ASK Apps erleichtern den Informationsaustausch im internen Netzwerk Ihrer Mitarbeiter, sodass sie kontinuierlich miteinander in Verbindung stehen. Das garantiert Flexibilität und schnelles Reagieren auf last-minute Situationen.',
                     description04: 'ASK Community Systems arbeitet seit mehr als 10 Jahren an intelligenter Software. Die entwickelten Apps erleichtern die Kommunikation zwischen Menschen. Hierfür nutzt ASK das zwischen den Menschen bestehende Netzwerk. Die Apps sind stets multi-device: sie funktionieren über den eigenen PC, Smartphone oder Tablet.'
                 },
                 howWork: {
                     title: 'Wie funktioniert ASK?',
                     description01: 'Die herkömmliche Planung basiert auf umfangreichen, teils veralterten Informationen. Sie verwendet eine Momentaufnahme... ASK-Software dagegen funktioniert in Echtzeit: Die Informationen, die verwendet werden, sind veränderlich und stets aktuell. Dadurch wird zu jedem Zeitpunkt ein optimale Planung möglich.',
-                    description02: 'Neben Echtzeitinformationen verwendet ASK nur die wirklich relevanten Informationen, sodass man sich schnell  auf kurzfristige eintretende Änderungen einstellen kann. ASK liefert das, was benötigt wird direkt.'
+                    description02: 'Neben Echtzeitinformationen verwendet ASK nur die wirklich relevanten Informationen, sodass man sich schnell auf kurzfristig eintretende Änderungen einstellen kann. ASK liefert das, was benötigt wird direkt.'
                 },
                 personalNetwork: {
                     title: 'Persönliches Netzwerk',
@@ -784,9 +782,9 @@ angular.module('AskWeb', []).
                     fact02:'Flexible Arbeitskräfte im System',
                     fact03: 'Kommunikationshandlungen pro Monat (Tel/SMS)',
                     problem: {
-                        point01: 'ineffiziente Planung infolge Abweichungen der Vorausplanung und dem tatsächlichem Bedarf;',
+                        point01: 'Ineffiziente Planung infolge Abweichungen der Vorausplanung von dem tatsächlichen Bedarf;',
                         point02: 'Überschuss an Mitarbeitern und Zeitarbeitern;',
-                        point03: 'feste Mitarbeiter binden und Zeitarbeit vermeiden. '
+                        point03: 'Feste Mitarbeiter binden und Zeitarbeit vermeiden.'
                     },
                     goals: {
                         point01: 'Planung unter Berücksichtigung individueller Wünsche der Mitaberbeiter;',
@@ -801,10 +799,10 @@ angular.module('AskWeb', []).
                         point01:'die Anzahl Überstunden wurde reduziert;',
                         point02:'keine Kündigungen von Festangestellten;',
                         point03:'Kontinuität, da mehr feste Arbeitskräfte zum Einsatz kommen;',
-                        point04:'die Mitarbeitermotivation ist gestiegen, da Privatleben und arbeit besser aufeinander abgestimmt sind.'
+                        point04:'die Mitarbeitermotivation ist gestiegen, da Privatleben und Arbeit besser aufeinander abgestimmt sind.'
                     },
                     quanResults: {
-                        fact01: 'Kosteneinsparungen',
+                        fact01: 'Vollzeitarbeitsplätze eingespart',
                         fact02: 'weniger Ausfälle (von 11% auf 6%)',
                         fact03: 'Ersparnis in 3 Jahren'
                     }
@@ -845,11 +843,11 @@ angular.module('AskWeb', []).
                         point02: 'Kommunikation zwischen Kollegen ist ungenügend.'
                     },
                     goals: {
-                        point01: 'Krankenpfleger sollen Zugang zu einer benutzerfreundlichen mobilen System haben;',
-                        point02: 'Dieses System soll ihnen jederorts Zugang zu relevanten Patienten/ Kundenninformationen bieten und damit die Pflege optimal unterstützen.'
+                        point01: 'Krankenpfleger sollen Zugang zu einer benutzerfreundlichen mobilen System haben',
+                        point02: 'Dieses System soll ihnen jederorts Zugang zu relevanten Patienten/ Kundeninformationen bieten und damit die Pflege optimal unterstützen.'
                     },
                     solution: {
-                        description01: 'ASK Community Systems hat zusammen mit Ecare Services die Nachbarschaftshilfe App entwickelt. Diese App ermöglicht den Mitarbeitern auf dem Weg zum Kunden die letzten Berichte durchgehen zu können.Es bildet eine mobile Unterstützung der ambulanten Pflege.',
+                        description01: 'ASK Community Systems hat zusammen mit Ecare Services die Nachbarschaftshilfe App entwickelt. Diese App ermöglicht den Mitarbeitern auf dem Weg zum Kunden die letzten Berichte durchgehen zu können. Es bildet eine mobile Unterstützung der ambulanten Pflege.',
                         description02:'Gleichzeitig verkürzt die Nachbarschaftshilfe App Verwaltungswege: weniger Leute müssen hinterm Bildschirm sitzen, die Pflegekräfte können mitunter verborgende Talente entdecken und die moderne Technologie optimal nutzen.'
                     },
                     qualResults: {
@@ -864,21 +862,21 @@ angular.module('AskWeb', []).
                 olympia: {
                     title:'Olympia',
                     factsTitle: 'ASK bei Olympia in Zahlen:',
-                    fact01:'***Geregistreerde uitzendkrachten',
-                    fact02:'***Communicatiehandelingen per kwartaal (telefoon/sms)',
+                    fact01:'Registrierte Zeitarbeitskräfte',
+                    fact02:'Kommunikationshandlungen pro Quartal (Tel./ SMS)',
                     problem: {
                         point01: 'Eingeschränkte Produktivität von Disponenten, die alle Branchen betrifft;',
                         point02: 'Disponenten verbringen zu viel Zeit mit sich wiederholenden Kommunikationsaufgaben;',
                         point03: 'Disponenten haben zu wenig Zeit für persönliche Kontakte mit den Stellenanwärtern.'
                     },
                     goals: {
-                        point01: 'Kernprozesse optimieren durch automatisieren von sich wiederholenden, zeitraubenden Telefonaten;',
+                        point01: 'Kernprozesse optimieren durch Automatisieren von sich wiederholenden, zeitraubenden Telefonaten;',
                         point02: 'Zeit gewinnen für perönlichen Kontakt zwischen Disponenten und Kunden;',
                         point03: 'Etablierung einer Datenbank von Zeitarbeitern, aus der die Einsatzmöglichkeiten sofort ersichtlich sind.'
                     },
                     solution: {
                         description01: 'Das Olympia Zeitarbeitsbüro verwendet ASK, um seine Disponenten zu unterstützen.',
-                        description02: 'Wenn eine Stelle zu besetzen ist, wählt der Disponent manuell eine Gruppe geeigneter Zeitarbeiter aus. Der Disponent nimmt entweder eine Sprachnachricht auf oder schreibt einen Text mit den wesentlichen Informationen zu der Stelle. ASK sendet diese Nachricht zu den ausgewählten Zeitarbeitern und holt direkt Feedback per telefon, Sms oder Email ein.',
+                        description02: ' Wenn eine Stelle zu besetzen ist, wählt der Disponent manuell eine Gruppe geeigneter Zeitarbeiter aus. Der Disponent nimmt entweder eine Sprachnachricht auf oder schreibt einen Text mit den wesentlichen Informationen zu der Stelle. ASK sendet diese Nachricht zu den ausgewählten Zeitarbeitern und holt direkt Feedback per Telefon, SMS oder Email ein.',
                         description03: 'Die Stelle kann online gestellt werden und die Besetzung verfolgt werden. Das bedeutet, dass der Disponent nicht notwendigerweise sich in demselben Land wie der Zeitarbeiter aufhalten muss und weiterhin, dass die Arbeitszeit erweitert wird ( bis 24/7). Das System kann Kandidaten auch außerhalb der Bürozeiten des Disponenten erreichen.'
                     },
                     qualResults: {

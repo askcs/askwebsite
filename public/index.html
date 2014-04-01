@@ -417,13 +417,11 @@
         <ul class="languageToggle">
             <li><a></a></li>
         </ul>
-
         <ul id="languageMenu" class="hide">
             <li><a ng-click="changeLang('de')" class="{{(lang == 'de') && 'active'}}">DE</a></li>
             <li><a ng-click="changeLang('nl')" class="{{(lang == 'nl') && 'active'}}">NL</a></li>
             <li><a ng-click="changeLang('en')" class="{{(lang == 'en') && 'active'}}">EN</a></li>
         </ul>
-
 
         <ul class="contactDetails">
 <!--            <li><a href="http://standby.ask-cs.com" target="_blank">StandBy</a></li>
@@ -432,10 +430,9 @@
             <li>Coolhaven 236 |   </li>
             <li class="hideXs"> 3024 AN </li>
             <li> Rotterdam | </li>
-            <li> 010 225 0130 | <a href="mailto:info@ask-cs.com">info@ask-cs.com</a></li>
+            <li class="hideXs"> 010 225 0130 | <li>
+            <li> <a href="mailto:info@ask-cs.com"> info@ask-cs.com</a></li>
         </ul>
-
-
     </div>
 
 
@@ -466,24 +463,6 @@
         // $.fn.fullpage.moveTo(3, 0);
     }, LOOP_TIME);*/
 
-
-
-/*    $('.languageToggle').click(function () {
-       $('#languageMenu').removeClass('displayNone');
-    });*/
-
-
-/*
-    $('a').click(function() {
-        var clicks = $(this).data('clicks');
-        if (clicks) {
-            alert('odd number of clicks');
-        } else {
-            alert('even number of clicks');
-        }
-        $(this).data("clicks", !clicks);
-    });
-*/
 
 
 

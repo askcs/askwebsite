@@ -685,16 +685,22 @@ P:last-child {
     background-color: #e61e3b;
     bottom: -3px;
 }
-
 .languageToggle a, #languageMenu a{
     color: #fff;
     padding: 9px;
     display: block;
     border-bottom: 1px solid #fff;
     text-transform: uppercase ;
+    text-decoration: none;
+}
+#languageMenu a{
+    opacity: 0.6;
+}
+#languageMenu a:hover{
+    opacity: 1;
 }
 
-.languageToggle a.false, #languageMenu a.active{
+#languageMenu a.active{
     display: none;
 }
 
@@ -704,16 +710,13 @@ P:last-child {
     bottom: 30px;
 }
 
-.displayNone {
-    display: none;
-}
 
 #footer ul.contactDetails li {
     display: inline-block;
     padding: 8px 0;
 }
 
-#footer li a {
+#footer .contactDetails li a {
     color: #fff;
     outline: none;
     /*    display: block;*/
@@ -721,7 +724,7 @@ P:last-child {
     /*    text-transform: uppercase;*/
 }
 
-#footer a:hover, #footer a:active {
+#footer .contactDetails a:hover, #footer .contactDetails a:active {
     color: #e61e3b;
     text-decoration: none;
 }

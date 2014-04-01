@@ -20,6 +20,7 @@
     <!----------CSS-------->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <style type="text/css">
         html,body {
             background-color: #fff;
@@ -53,18 +54,6 @@
 <!----------HEADER-------->
 
 <div id="menu" class="mainMenu">
-
-
-
-    <ul style="color: white; position: absolute">
-        <a ng-click="changeLang('en')" ng-hide="(lang == 'en')" class="{{(lang == 'en') && 'active'}}">EN</a>
-        <a ng-click="changeLang('de')" ng-hide="(lang == 'de')" class="{{(lang == 'de') && 'active'}}">DE</a>
-        <a ng-click="changeLang('nl')" ng-hide="(lang == 'nl')" class="{{(lang == 'nl') && 'active'}}">NL</a>
-    </ul>
-
-
-
-
     <div class="container">
         <div class="row">
             <div class="col-xs-5">
@@ -320,11 +309,21 @@
 <!----------FOOTER-------->
 
 <div id="footer">
-    <ul>
+    <ul class="languageToggle">
+        <li><a></a></li>
+    </ul>
+    <ul id="languageMenu" class="hide">
+        <li><a ng-click="changeLang('de')" class="{{(lang == 'de') && 'active'}}">DE</a></li>
+        <li><a ng-click="changeLang('nl')" class="{{(lang == 'nl') && 'active'}}">NL</a></li>
+        <li><a ng-click="changeLang('en')" class="{{(lang == 'en') && 'active'}}">EN</a></li>
+    </ul>
+
+    <ul class="contactDetails">
         <li>Coolhaven 236 |   </li>
         <li class="hideXs"> 3024 AN </li>
         <li> Rotterdam | </li>
-        <li> 010 225 0130 | <a href="mailto:info@ask-cs.com">info@ask-cs.com</a></li>
+        <li class="hideXs"> 010 225 0130 | <li>
+        <li> <a href="mailto:info@ask-cs.com"> info@ask-cs.com</a></li>
     </ul>
 </div>
 
