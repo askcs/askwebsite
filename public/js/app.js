@@ -328,8 +328,8 @@ angular.module('AskWeb', []).
                 },
                 products: {
                     title:'Products',
-                    standby: 'Insight in the readiness beforehand, and not only after the alarm has gone off. Online schedules of alarm-receivers only solve part of the problem. That\'s why ASK has developed Standby.',
-                    teamup: 'ASK believes that ICT should support healthcare. Your employees don\'t want to spend much time on administrative tasks so they can focus on providing care.',
+                    standby: 'Insight in the readiness beforehand, and not only after the alarm has gone off. Online schedules and alarm-receivers only solve part of the problem. That\'s why ASK has developed Standby.',
+                    teamup: 'ASK believes that ICT should support healthcare. Your employees don\'t want to spend much time on administrative tasks. They want to focus on providing care.',
                     joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.'
                 },
                 casesPreview: {
@@ -349,7 +349,7 @@ angular.module('AskWeb', []).
                     title: 'Less management and more productivity',
                     description01: 'ASK is an expert in the development of applications for making this possible! Your people can use ASK to mutually adjust the planning. At the same time they will have relevant information available in order to perform more efficiently.',
                     description02: 'ASK applications make communicating the availability very straightforward. It can even be done automatically. Subsequently, the application will contact available people in case of shortage. This makes sure burdening of people is low and motivation is high.',
-                    description03: 'ASK applications facilitate the internal network of your personnel, so they are constantly connected to eachother. This guarantees flexibility to rapidly deal with last-minute situations.',
+                    description03: 'ASK applications facilitate the internal network of your personnel, so they are constantly connected to each other. This guarantees flexibility to rapidly deal with last-minute situations.',
                     description04: 'ASK has been working on intelligent software for over 10 years. The applications that arise from this promote communication between people. For this, ASK uses the networks that people have established with each other. The applications are always multi-device: working from your own computer, smartphone or tablet.'
                 },
                 howWork: {
@@ -369,7 +369,7 @@ angular.module('AskWeb', []).
                 knowledgeTitle: 'Required knowledge and experience:',
                 profileTitle: 'Your Profile:',
                 offerTitle: 'We offer you:',
-                contactTitle: 'Interested?',
+                contactTitle: 'Apply?',
                 contactDescription01: 'Please contact Carolyn Hoek:',
 
                 iosdev: {
@@ -389,7 +389,7 @@ angular.module('AskWeb', []).
                         point05: 'Prepared to share your knowledge with your colleagues'
                     },
                     offer: {
-                        point01: 'A salary conform to the market with good employment conditions',
+                        point01: 'Competitive benefits',
                         point02: 'An inspiring international working environment',
                         point03: 'Plenty of possibilities for personal development within, as well as beyond your field of study'
                     }
@@ -413,7 +413,7 @@ angular.module('AskWeb', []).
                         point07: 'Preferably living in region of Rotterdam'
                     },
                     offer: {
-                        point01: 'A salary conform to the market with good employment conditions',
+                        point01: 'Competitive benefits',
                         point02: 'A company with potential',
                         point03: 'An inspiring international working environment',
                         point04: 'Plenty of possibilities for personal development within, as well as beyond your field of study'
@@ -427,7 +427,7 @@ angular.module('AskWeb', []).
                 weSeekTitle: 'We seek',
 
                 internshipClouds: {
-                    title:'Carry out research into clouds',
+                    title:'Research cloud platforms',
                     challengeDescription01: 'ASK frequently uses multi-agent technology in its solutions. Two of our most important systems use this technology: the ASK Back-End for realtime coordination and exchange of information, and ASK-Fast, a platform for realtime communication between different parties.',
                     challengeDescription02: 'Both platforms are active in the cloud (mainly Google App Engine), causing unlimited scalability. In order to make solid decisions about our cloud-based applications in the future, we would like to gain knowledge about other cloud solutions.',
                     weSeekDescription01: 'That is why we are looking for an intern who is willing to carry out extensive comparative research into the different cloud platforms that are currently on the market. It will be a combination of a literature review and practical experiments, making it possible to measure the pros and cons of the different cloud platforms.'
@@ -471,7 +471,7 @@ angular.module('AskWeb', []).
 
 
             cases: {
-                problemTitle: 'Problem situation:',
+                problemTitle: 'The challenge:',
                 goalsTitle: 'Goals:',
                 solutionTitle: 'Solution:',
                 quanResultsTitle: 'Qualitative results:',
@@ -486,15 +486,15 @@ angular.module('AskWeb', []).
                     problem: {
                         point01: 'Inefficient planning due to inaccurate relation between earlier-made schedule and actual demand;',
                         point02: 'Surplus of employees and temporary workers;',
-                        point03: 'Desire to keep regular staff and reducing amount of temporary hours.'
+                        point03: 'A desire to retain regular staff and to reduce the amount of temporary hours.'
                     },
                     goals: {
                         point01: 'Making schedules based on individual preferences of employees; ',
-                        point02: 'A better relation between fluctuating workload and actual personnel deployment;',
+                        point02: 'A better ratio between fluctuating workload and actual personnel deployment;',
                         point03: 'More rapid response to illness and absence.'
                     },
                     solution: {
-                        description01: 'PostNL, in agreement with the works council, has chosen for ASK\'s solution, because this is in line with their CSR-goals (Corporate Social Responsibility).',
+                        description01: 'PostNL selected ASK\'s solution, because this is in line with their Corporate Social Responsibility policy.',
                         description02:'The schedules will be generated based on the availability of the employees, which they will indicate themselves. The final planning will be communicated to the flexworkers via e-mail or sms.'
                     },
                     qualResults: {
@@ -516,21 +516,21 @@ angular.module('AskWeb', []).
                     fact01:'Rescue-stations use ASK',
                     fact02:'Rescue workers are supported',
                     problem: {
-                        point01: 'A lot of unnecessary call ups;',
+                        point01: 'A lot of unnecessary calls;',
                         point02: 'Not always enough people available;',
-                        point03: 'Not much flexibility for volunteer rescuers.'
+                        point03: 'Not much flexibility for voluntary rescuers.'
                     },
                     goals: {
-                        point01: 'Controling function: make clear if there are enough people;',
+                        point01: 'Control function: provide insights on availability;',
                         point02: 'Supporting coordinators;',
-                        point03: 'Facilitate scheduling for volunteers.'
+                        point03: 'Facilitate volunteers with scheduling.'
                     },
                     solution: {
                         description01: 'By using ASK, more than 1300 rescue workers at the 46 stations are filling in their availability online through the planboard. The coordinator keeps an overview on the joint schedule of his/her location. ASK automatically fills gaps in the schedule by gauging the availability by telephone.'
                     },
                     qualResults: {
                         point01:'Volunteering for KNRM is easier to combine with work/private life;',
-                        point02:'ASK guards the permanence degree (= always having enough people available);',
+                        point02:' ASK looks after the availiability;',
                         point03:'The skippers are unburdened, because they will only be notified when there is a shortage.'
                     }
                 },
@@ -541,7 +541,7 @@ angular.module('AskWeb', []).
                     fact01:'People maximum per self-managing team',
                     fact02:'Locations in the Netherlands',
                     problem: {
-                        point01: 'A lot of time is lost by travelling to the office in order to consult client-details in the computer;',
+                        point01: 'A lot of time is lost by travelling to the office in order to look into client-details on the computer;',
                         point02: 'Communication between colleagues is poorly facilitated.'
                     },
                     goals: {
@@ -549,7 +549,7 @@ angular.module('AskWeb', []).
                         point02: 'This application should support nurses in taking care of clients by giving them access to relevant information on the spot.'
                     },
                     solution: {
-                        description01: 'ASK Community Systems has, together with Ecare Services, developed the Buurtzorg App. This app allows employees to go through the latest reports while travelling to the client. It shapes the mobile support for nurses.',
+                        description01: 'ASK Community Systems has, together with Ecare Services, developed the Buurtzorg App.  This app allows employees see the latest reports while travelling to the client. It fills in the nurses\' mobile needs.',
                         description02:'At the same time, the Buurtzorg App makes sure there are shorter lines: no more people sitting behind desks, but performers who also have the talents to think and use modern technology.'
                     },
                     qualResults: {
@@ -568,7 +568,7 @@ angular.module('AskWeb', []).
                     fact02:'Communication actions per quarter (telephone/sms)',
                     problem: {
                         point01: 'Limited productivity of consultants accross all branches;',
-                        point02: 'Consultants spend too much time on repeating communication actions;',
+                        point02: 'Consultants spend too much time on repetitive communication actions;',
                         point03: 'Consultants need more time for personal contact when necessary.'
                     },
                     goals: {
@@ -577,7 +577,7 @@ angular.module('AskWeb', []).
                         point03: 'Establish a database with temporary workers that can be deployed immediately.'
                     },
                     solution: {
-                        description01: 'Olympia Temporary Work Agency used ASK to support its consultants.',
+                        description01: 'Olympia used ASK to support its consultants.',
                         description02: 'When a job vacancy has to be filled, the consultant manually selects a group of suitable temporary workers. The consultant either records an audio message, or writes a text containing vital information about the job. ASK delivers this message to the selected temporary workers and directly collects the respones via telephone, sms or e-mail.',
                         description03: 'The job can be placed and tracked online. This means that the consultant is not required to be in the same country as the candidates and the effective working time is expanded (up to 24/7). The system keeps approaching candidates, even when the consultant is not at his/her desk.'
                     },
