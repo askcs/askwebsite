@@ -692,6 +692,7 @@ P:last-child {
     border-bottom: 1px solid #fff;
     text-transform: uppercase ;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #languageMenu {
