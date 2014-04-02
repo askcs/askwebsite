@@ -693,22 +693,25 @@ P:last-child {
     text-transform: uppercase ;
     text-decoration: none;
 }
-#languageMenu a{
-    opacity: 0.6;
-}
-#languageMenu a:hover{
-    opacity: 1;
-}
-
-#languageMenu a.active{
-    display: none;
-}
 
 #languageMenu {
     position: fixed;
     background-color: #e61e3b;
     bottom: 30px;
 }
+#languageMenu a{
+    opacity: 0.6;
+}
+#languageMenu a:hover, #languageMenu a:active{
+    opacity: 1;
+    color: #fff;
+}
+
+#languageMenu a.active{
+    display: none;
+}
+
+
 
 
 #footer ul.contactDetails li {

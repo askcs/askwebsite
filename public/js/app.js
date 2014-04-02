@@ -321,20 +321,20 @@ angular.module('AskWeb', []).
 
             home: {
                 scenario: {
-                    titleSlide1: 'Have personnel shortages regularly?',
-                    titleSlide2: 'With ASK, personnel can register availability themselves',
-                    titleSlide3: 'When there is a shortage, ASK will automatically search for personnel',
+                    titleSlide1: 'Experiencing shortages in personnel regularly?',
+                    titleSlide2: 'With ASK, personnel can register their availability themselves.',
+                    titleSlide3: 'When there is a shortage, ASK will automatically search for personnel.',
                     titleSlide4: 'This way you will always have enough personnel!'
                 },
                 products: {
                     title:'Products',
-                    standby: 'Insight in the readiness beforehand, and not only after the alarm has gone off. Online schedules of alarm-receivers only solve part of the problem. That\'s why ASK has developed Standby ',
+                    standby: 'Insight in the readiness beforehand, and not only after the alarm has gone off. Online schedules of alarm-receivers only solve part of the problem. That\'s why ASK has developed Standby.',
                     teamup: 'ASK believes that ICT should support healthcare. Your employees don\'t want to spend much time on administrative tasks so they can focus on providing care.',
                     joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.'
                 },
                 casesPreview: {
                     title: 'References',
-                    postnl: 'ASK helps PostNL by scheduling flexibly mail-sorters\' shifts. When doing this, ASK takes into account the required capacity, individual preferences and labor laws.',
+                    postnl: 'ASK helps PostNL by flexibly scheduling mail-sorters\' shifts. When doing this, ASK takes into account the required capacity, individual preferences and labor laws.',
                     knrm01: '"ASK makes sure that KNRM always has enough rescue workers available and nearby to act in case of emergency."',
                     knrm02: 'Rescue workers can use their pc, smartphone or telephone to indicate when they can be standby, and when they want a day off.',
                     bz01: 'The Buurtzorg case has partly lead to the development of TeamUp',
@@ -347,7 +347,7 @@ angular.module('AskWeb', []).
             company: {
                 pressure: {
                     title: 'Less management and more productivity',
-                    description01: 'Ask is an expert in the development of applications for making this possible! Your people can use ASK to mutually adjust the planning. At the same time they will have relevant information available in order to perform more efficiently.',
+                    description01: 'ASK is an expert in the development of applications for making this possible! Your people can use ASK to mutually adjust the planning. At the same time they will have relevant information available in order to perform more efficiently.',
                     description02: 'ASK applications make communicating the availability very straightforward. It can even be done automatically. Subsequently, the application will contact available people in case of shortage. This makes sure burdening of people is low and motivation is high.',
                     description03: 'ASK applications facilitate the internal network of your personnel, so they are constantly connected to eachother. This guarantees flexibility to rapidly deal with last-minute situations.',
                     description04: 'ASK has been working on intelligent software for over 10 years. The applications that arise from this promote communication between people. For this, ASK uses the networks that people have established with each other. The applications are always multi-device: working from your own computer, smartphone or tablet.'
@@ -359,7 +359,7 @@ angular.module('AskWeb', []).
                 },
                 personalNetwork: {
                     title: 'Own Network',
-                    description: 'ASK is part of a group of high-tech companies: the Almende Group. Owing to the close collaboration, ASK is always at the forefront of technology.'
+                    description: 'ASK is part of a group of high-tech companies: the Almende Group. As a result of this close collaboration, ASK is always at the forefront of technology.'
                 }
             },
 
@@ -427,17 +427,17 @@ angular.module('AskWeb', []).
                 weSeekTitle: 'We seek',
 
                 internshipClouds: {
-                    title:'***Onderzoek naar clouds',
-                    challengeDescription01: '***ASK maakt veelvuldig gebruik van multi-agenttechnologie in haar oplossingen. Twee van onze belangrijkste systemen maken gebruik van deze technologie: de ASK Back-End voor realtime coördinatie en informatie-uitwisseling, en ASK-Fast, een platform voor realtime communicatie tussen verschillende partijen. ',
-                    challengeDescription02: '***Beide platforms draaien in de cloud (voornamelijk Google App Engine), waardoor ze onbeperkt schaalbaar zijn. Om ook in de toekomst goede beslissingen te kunnen nemen over onze applicaties in de cloud, willen we graag meer weten over andere cloud oplossingen. ',
-                    weSeekDescription01: '***We zoeken daarom een stagiair die een uitgebreid vergelijkend onderzoek wil doen naar de verschillende cloudplatforms die op dit moment op de markt zijn. Het gaat daarbij om zowel een literatuurstudie als praktische experimenten waarbij de voors en tegens van de verschillende cloud platforms tegen elkaar kunnen worden afgewogen. '
+                    title:'Carry out research into clouds',
+                    challengeDescription01: 'ASK frequently uses multi-agent technology in its solutions. Two of our most important systems use this technology: the ASK Back-End for realtime coordination and exchange of information, and ASK-Fast, a platform for realtime communication between different parties.',
+                    challengeDescription02: 'Both platforms are active in the cloud (mainly Google App Engine), causing unlimited scalability. In order to make solid decisions about our cloud-based applications in the future, we would like to gain knowledge about other cloud solutions.',
+                    weSeekDescription01: 'That is why we are looking for an intern who is willing to carry out extensive comparative research into the different cloud platforms that are currently on the market. It will be a combination of a literature review and practical experiments, making it possible to measure the pros and cons of the different cloud platforms.'
                 },
 
                 internshipPersonalAlarm: {
                     title:'Personal alarm system',
                     challengeDescription01: 'As an innovation project, ASK started the development of the Alarm app, a system where people can alarm other people in case of an emergency. Multiple types of emergencies can be imagined, varying from someone with health-care related issues (heart failure, epileptic attack, diabetes, etc) or more into the safety and security area, where lone workers would require assistance or lonely travellers are confronted with a violent situation.',
                     challengeDescription02: 'The system is composed of an app, both for victims and helpers and a back-end with intelligence to alarm the right people and pass information on the situation to the appropriate people. So far 2 experiments have been done, one with a healthcare scenario and one with a security scenario, resulting into a demonstrator back-end and 2 demonstrator apps.',
-                    weSeekDescription01: 'ASK-CS is looking for talented students to take the demonstrators to a next level and start the production of a system based upon the lessons learned so far.'
+                    weSeekDescription01: 'ASK is looking for talented students to take the demonstrators to a next level and start the production of a system based upon the lessons learned so far.'
                 },
 
                 internshipP2000Alarm: {
@@ -449,7 +449,7 @@ angular.module('AskWeb', []).
 
                 internshipLearningSoftwareAgent: {
                     title:'Learning agent on multi-modal communication',
-                    challengeDescription01: 'The ASK-FAST platform enables users to communicate via multi-modal communication channels, including voice telephony, SMS, Email, in-app messages etc. These channels can be used to set-up one or simultaneous dialogues.',
+                    challengeDescription01: 'The ASK-Fast platform enables users to communicate via multi-modal communication channels, including voice telephony, SMS, Email, in-app messages etc. These channels can be used to set-up one or simultaneous dialogues.',
                     challengeDescription02: 'One of the systems using the multi-modal communication of the ASK-Fast platform is the JoinUs system, a system aiming to support recruiters in the flex-market to poll many flex-workers in parallel for their availability on a certain job. Each of these flex-workers can be contacted via one or multiple media, depending on their preference or the most effective type of communication.',
                     challengeDescription03: 'In order to use the optimal mixture of preference and effectiveness, a learning agent is foreseen. This agent would combine static knowledge on the different communication media with user efficiency for the specific users.',
                     weSeekDescription01: 'ASK is offering a graduation project to develop the learning agent on multi-modal communication. This development should be preceded by research on effectiveness of different communication media.'
@@ -501,7 +501,7 @@ angular.module('AskWeb', []).
                         point01:'Amount of temporary hours is reduced;',
                         point02:'No cutbacks in regular staff;',
                         point03:'More continuity because regular staff is used more often;',
-                        point04:'personnel is motivated because work and private life are more in tune.'
+                        point04:'Personnel is motivated because work and private life are more in tune.'
                     },
                     quanResults: {
                         fact01: 'Cost reduction due to savings',
@@ -564,8 +564,8 @@ angular.module('AskWeb', []).
                 olympia: {
                     title:'Olympia',
                     factsTitle: 'Olympia in numbers:',
-                    fact01:'***Geregistreerde uitzendkrachten',
-                    fact02:'***Communicatiehandelingen per kwartaal (telefoon/sms)',
+                    fact01:'Registered temporary workers',
+                    fact02:'Communication actions per quarter (telephone/sms)',
                     problem: {
                         point01: 'Limited productivity of consultants accross all branches;',
                         point02: 'Consultants spend too much time on repeating communication actions;',
