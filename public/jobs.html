@@ -319,11 +319,18 @@
     </ul>
 
     <ul class="contactDetails">
-        <li>Coolhaven 236 |   </li>
-        <li class="hideXs"> 3024 AN </li>
-        <li> Rotterdam | </li>
-        <li class="hideXs"> 010 225 0130 | <li>
-        <li> <a href="mailto:info@ask-cs.com"> info@ask-cs.com</a></li>
+        <li>{{ui.contact.address}}</li>
+        <li class="hideXs">{{ui.contact.zipcode}}</li>
+        <li>{{ui.contact.city}} </li>
+        <li class="hideXs">{{ui.contact.phone}}<li>
+        <li> <a href="mailto:{{ui.contact.email}}">{{ui.contact.email}}</a></li>
+    </ul>
+    <ul class="contactDetails extraAddress hideXs hideSm">
+        <li>{{ui.contactExtra.address}}</li>
+        <li class="hideXs">{{ui.contactExtra.zipcode}}</li>
+        <li>{{ui.contactExtra.city}} </li>
+        <li class="hideXs">{{ui.contactExtra.phone}}<li>
+        <li> <a href="mailto:{{ui.contactExtra.email}}">{{ui.contactExtra.email}}</a></li>
     </ul>
 </div>
 

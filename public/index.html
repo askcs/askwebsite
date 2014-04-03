@@ -413,27 +413,35 @@
 
 <!----------FOOTER-------->
 
-    <div id="footer">
-        <ul class="languageToggle">
-            <li><a></a></li>
-        </ul>
-        <ul id="languageMenu" class="hide">
-            <li><a ng-click="changeLang('de')" class="{{(lang == 'de') && 'active'}}">DE</a></li>
-            <li><a ng-click="changeLang('nl')" class="{{(lang == 'nl') && 'active'}}">NL</a></li>
-            <li><a ng-click="changeLang('en')" class="{{(lang == 'en') && 'active'}}">EN</a></li>
-        </ul>
 
-        <ul class="contactDetails">
-<!--            <li><a href="http://standby.ask-cs.com" target="_blank">StandBy</a></li>
+<div id="footer">
+    <ul class="languageToggle">
+        <li><a></a></li>
+    </ul>
+    <ul id="languageMenu" class="hide">
+        <li><a ng-click="changeLang('de')" class="{{(lang == 'de') && 'active'}}">DE</a></li>
+        <li><a ng-click="changeLang('nl')" class="{{(lang == 'nl') && 'active'}}">NL</a></li>
+        <li><a ng-click="changeLang('en')" class="{{(lang == 'en') && 'active'}}">EN</a></li>
+    </ul>
+
+    <ul class="contactDetails">
+        <!--            <li><a href="http://standby.ask-cs.com" target="_blank">StandBy</a></li>
             <li><a href="http://teamup.ask-cs.com" target="_blank">TeamUp</a></li>
             <li class="hidden"><a href="http://joinus.ask-cs.com" target="_blank">JoinUs</a></li>-->
-            <li>Coolhaven 236 |   </li>
-            <li class="hideXs"> 3024 AN </li>
-            <li> Rotterdam | </li>
-            <li class="hideXs"> 010 225 0130 | <li>
-            <li> <a href="mailto:info@ask-cs.com"> info@ask-cs.com</a></li>
-        </ul>
-    </div>
+        <li>{{ui.contact.address}}</li>
+        <li class="hideXs">{{ui.contact.zipcode}}</li>
+        <li>{{ui.contact.city}} </li>
+        <li class="hideXs">{{ui.contact.phone}}<li>
+        <li> <a href="mailto:{{ui.contact.email}}">{{ui.contact.email}}</a></li>
+    </ul>
+    <ul class="contactDetails extraAddress hideXs hideSm">
+        <li>{{ui.contactExtra.address}}</li>
+        <li class="hideXs">{{ui.contactExtra.zipcode}}</li>
+        <li>{{ui.contactExtra.city}} </li>
+        <li class="hideXs">{{ui.contactExtra.phone}}<li>
+        <li> <a href="mailto:{{ui.contactExtra.email}}">{{ui.contactExtra.email}}</a></li>
+    </ul>
+</div>
 
 
 
