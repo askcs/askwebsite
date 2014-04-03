@@ -11,6 +11,8 @@ angular.module('AskWeb', []).
 
         nl: {
             general: {
+                columnSize: '8',
+                columnSizeOffset: '4',
                 readMore: 'Lees meer',
                 cookieMessage: 'Wij gebruiken cookies om uw gebruikerservaring te verbeteren. Door deze website te gebruiken, accepteert u ons',
                 cookieMessageLink: 'privacybeleid'
@@ -18,6 +20,13 @@ angular.module('AskWeb', []).
             menu: {
                 company: 'Bedrijf',
                 cases: 'Referenties'
+            },
+            contact: {
+                address: 'Coolhaven 236 | ',
+                zipcode: ' 3024 AN ',
+                city: ' Rotterdam | ',
+                phone: '  +31 (0)10 225 0130 | ',
+                email: ' info@ask-cs.com '
             },
 
 
@@ -309,6 +318,8 @@ angular.module('AskWeb', []).
 
         en: {
             general: {
+                columnSize: '8',
+                columnSizeOffset: '4',
                 readMore: 'Read More',
                 cookieMessage: 'We use cookies to improve your experience. By using our website, you agree to accept our',
                 cookieMessageLink: 'privacy policies'
@@ -316,6 +327,13 @@ angular.module('AskWeb', []).
             menu: {
                 company: 'Company',
                 cases: 'References'
+            },
+            contact: {
+                address: 'Coolhaven 236 | ',
+                zipcode: ' 3024 AN ',
+                city: ' Rotterdam | ',
+                phone: '  +31 (0)10 225 0130 | ',
+                email: ' info@ask-cs.com '
             },
 
 
@@ -603,6 +621,8 @@ angular.module('AskWeb', []).
 
         de: {
             general: {
+                columnSize: '9',
+                columnSizeOffset: '3',
                 readMore: 'Mehr erfahren',
                 cookieMessage: 'Wir verwenden Cookies um unsere Anwender besser kennenzulernen. Wenn Sie unsere Webseite verwenden, akzeptieren Sie unsere',
                 cookieMessageLink: 'Datenschutzbestimmungen'
@@ -610,6 +630,20 @@ angular.module('AskWeb', []).
             menu: {
                 company: 'Unternehmen',
                 cases: 'Referenzen'
+            },
+            contact: {
+                address: 'Pfahlweg 11 | ',
+                zipcode: ' D 65307 ',
+                city: ' Bad Schwalbach (DE) | ',
+                phone: '  +49 (0) 6124 720248 | ',
+                email: ' info@ask-cs.de '
+            },
+            contactExtra: {
+                address: 'Coolhaven 236 | ',
+                zipcode: ' 3024 AN ',
+                city: ' Rotterdam (NL) | ',
+                phone: '  +31 (0)10 225 0130 | ',
+                email: ' info@ask-cs.com '
             },
 
 
