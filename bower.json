@@ -1,0 +1,14 @@
+{
+  "name": "askwebsite",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.1.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~2.1.0",
+    "animate.css": "~3.1.0",
+    "angular": "~1.2.16",
+    "fullPage.js": "~1.7.6",
+    "jquery-ui": "~1.10.4"
+  },
+  "devDependencies": {}
+}
