@@ -1,0 +1,296 @@
+doctype
+html.no-js
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title ASK Community Systems
+    meta(name='author', content='ASK Community Systems')
+    meta(name='Resource-type', content='Document')
+    meta(content='width=device-width, initial-scale=1', name='viewport')
+    meta(content='ASK Community Systems', property='og:title')
+    meta(content='image', property='og:type')
+    meta(content='https://ask-cs.nl/', property='og:url')
+    meta(content='', property='og:image')
+    link(href='/images/favicon.ico', rel='Shortcut Icon')
+
+
+
+    // --------CSS------
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='vendors/animate.css/animate.css')
+    // endbower
+    // endbuild
+    // build:css(.tmp) styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+
+
+    //  --------JS (ALSO @ END)------
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='vendors/jQuery/dist/jquery.js')
+    script(src='vendors/angular/angular.js')
+    // endbower
+    // endbuild
+
+
+    // build:js scripts/jobs.js
+    script(src='scripts/imagesloaded.js')
+    script(src='scripts/skrollr.js')
+    script(src='scripts/_main.js')
+    // endbuild
+
+
+  body.jobs(ng-app='AskWeb')
+
+
+    // build:js({app,.tmp}) scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
+
+
+
+
+    //--------HEADER------
+    #menu.mainMenu
+      .container
+        .row
+          .col-xs-5
+            ul
+              li
+                a(href='about.html') {{ui.menu.company}}
+          #mainLogo
+            .logoContainer
+              a(href='index.html')
+          .col-xs-5.col-xs-offset-2
+            ul
+              li
+                a(href='cases.html') {{ui.menu.cases}}
+
+
+
+
+    //--------COOKIE MESSAGE------
+    #cookieMessage
+      #closeCookie
+      p
+        | {{ui.general.cookieMessage}}
+        a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
+        | .
+
+
+    //--------JOBS ------
+    #jobHeader
+    #content
+      .container.twoJobs
+        div
+          .job.col-sm-6
+            .row
+              a#iosdev.anchor
+              .col-md-12.col-sm-12.col-xs-12
+                h2 {{ui.jobs.iosdev.title}}
+                p.intro {{ui.jobs.iosdev.intro}}
+            .row
+              .col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.knowledgeTitle}}
+                ol
+                  li {{ui.jobs.iosdev.knowledge.point01}}
+                  li {{ui.jobs.iosdev.knowledge.point02}}
+                  li {{ui.jobs.iosdev.knowledge.point03}}
+                  li {{ui.jobs.iosdev.knowledge.point04}}
+                h4 {{ui.jobs.profileTitle}}
+                ol
+                  li {{ui.jobs.iosdev.profile.point01}}
+                  li {{ui.jobs.iosdev.profile.point02}}
+                  li {{ui.jobs.iosdev.profile.point03}}
+                  li {{ui.jobs.iosdev.profile.point04}}
+                  li {{ui.jobs.iosdev.profile.point05}}
+              .col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.offerTitle}}
+                ol
+                  li {{ui.jobs.iosdev.offer.point01}}
+                  li {{ui.jobs.iosdev.offer.point02}}
+                  li {{ui.jobs.iosdev.offer.point03}}
+                .reactField.col-md-12
+                  h4 {{ui.jobs.contactTitle}}
+                  p.italic {{ui.jobs.contactDescription01}}
+                  p.contactItem
+                    span.callIcon.icon
+                    | 010 225 0130
+                  p.contactItem
+                    span.mailIcon.icon
+                    a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+          .job.col-sm-6
+            .row
+              a#businessconsultant.anchor
+              .col-md-12.col-sm-12.col-xs-12
+                h2 {{ui.jobs.businessConsultant.title}}
+                p.intro {{ui.jobs.businessConsultant.intro}}
+            .row
+              .col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.knowledgeTitle}}
+                ol
+                  li {{ui.jobs.businessConsultant.knowledge.point01}}
+                  li {{ui.jobs.businessConsultant.knowledge.point02}}
+                  li {{ui.jobs.businessConsultant.knowledge.point03}}
+                h4 {{ui.jobs.profileTitle}}
+                ol
+                  li {{ui.jobs.businessConsultant.profile.point01}}
+                  li {{ui.jobs.businessConsultant.profile.point02}}
+                  li {{ui.jobs.businessConsultant.profile.point03}}
+                  li {{ui.jobs.businessConsultant.profile.point04}}
+                  li {{ui.jobs.businessConsultant.profile.point05}}
+                  li {{ui.jobs.businessConsultant.profile.point06}}
+                  li {{ui.jobs.businessConsultant.profile.point07}}
+              .col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.offerTitle}}
+                ol
+                  li {{ui.jobs.businessConsultant.offer.point01}}
+                  li {{ui.jobs.businessConsultant.offer.point02}}
+                  li {{ui.jobs.businessConsultant.offer.point03}}
+                  li {{ui.jobs.businessConsultant.offer.point04}}
+                .reactField.col-md-12
+                  h4 {{ui.jobs.contactTitle}}
+                  p.italic {{ui.jobs.contactDescription01}}
+                  p.contactItem
+                    span.callIcon.icon
+                    | 010 225 0130
+                  p.contactItem
+                    span.mailIcon.icon
+                    a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+      .container.twoJobs
+        div
+          .job.col-sm-6
+            .row
+              a#stage1.anchor
+              .col-md-12.col-sm-12.col-xs-12
+                h2 {{ui.jobs.internshipTitle02}} {{ui.jobs.internshipClouds.title}}
+            .row
+              .paddingFix.col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.challengeTitle}}
+                p {{ui.jobs.internshipClouds.challengeDescription01}}
+                p {{ui.jobs.internshipClouds.challengeDescription02}}
+              .paddingFix.col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.weSeekTitle}}
+                p {{ui.jobs.internshipClouds.weSeekDescription01}}
+                .reactField.col-md-12
+                  h4 {{ui.jobs.contactTitle}}
+                  p.italic {{ui.jobs.contactDescription01}}
+                  p.contactItem
+                    span.callIcon.icon
+                    | 010 225 0130
+                  p.contactItem
+                    span.mailIcon.icon
+                    a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+          .job.col-sm-6
+            .row
+              a#stage2.anchor
+              .col-md-12.col-sm-12.col-xs-12
+                h2 {{ui.jobs.internshipTitle02}} {{ui.jobs.internshipPersonalAlarm.title}}
+            .row
+              .paddingFix.col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.challengeTitle}}
+                p {{ui.jobs.internshipPersonalAlarm.challengeDescription01}}
+                p {{ui.jobs.internshipPersonalAlarm.challengeDescription02}}
+              .paddingFix.col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.weSeekTitle}}
+                p {{ui.jobs.internshipPersonalAlarm.weSeekDescription01}}
+                .reactField.col-md-12
+                  h4 {{ui.jobs.contactTitle}}
+                  p.italic {{ui.jobs.contactDescription01}}
+                  p.contactItem
+                    span.callIcon.icon
+                    | 010 225 0130
+                  p.contactItem
+                    span.mailIcon.icon
+                    a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+      .container.twoJobs
+        div
+          .job.col-sm-6
+            .row
+              a#stage4.anchor
+              .col-md-12.col-sm-12.col-xs-12
+                h2 {{ui.jobs.internshipTitle02}} {{ui.jobs.internshipLearningSoftwareAgent.title}}
+            .row
+              .paddingFix.col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.challengeTitle}}
+                p {{ui.jobs.internshipLearningSoftwareAgent.challengeDescription01}}
+                p {{ui.jobs.internshipLearningSoftwareAgent.challengeDescription02}}
+                p {{ui.jobs.internshipLearningSoftwareAgent.challengeDescription03}}
+              .paddingFix.col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.weSeekTitle}}
+                p {{ui.jobs.internshipLearningSoftwareAgent.weSeekDescription01}}
+                .reactField.col-md-12
+                  h4 {{ui.jobs.contactTitle}}
+                  p.italic {{ui.jobs.contactDescription01}}
+                  p.contactItem
+                    span.callIcon.icon
+                    | 010 225 0130
+                  p.contactItem
+                    span.mailIcon.icon
+                    a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+          .job.col-sm-6
+            .row
+              a#stage5.anchor
+              .col-md-12.col-sm-12.col-xs-12
+                h2 {{ui.jobs.internshipTitle02}} {{ui.jobs.internshipTeamup.title}}
+            .row
+              .paddingFix.col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.challengeTitle}}
+                p {{ui.jobs.internshipTeamup.challengeDescription01}}
+                p {{ui.jobs.internshipTeamup.challengeDescription02}}
+              .paddingFix.col-md-6.col-sm-12.col-xs-12
+                h4 {{ui.jobs.weSeekTitle}}
+                p {{ui.jobs.internshipTeamup.weSeekDescription01}}
+                .reactField.col-md-12
+                  h4 {{ui.jobs.contactTitle}}
+                  p.italic {{ui.jobs.contactDescription01}}
+                  p.contactItem
+                    span.callIcon.icon
+                    | 010 225 0130
+                  p.contactItem
+                    span.mailIcon.icon
+                    a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
+
+
+
+
+
+    //--------FOOTER------
+    #footer
+      ul.languageToggle
+        li
+          a
+      ul#languageMenu.hide
+        li
+          a(ng-click="changeLang('de')", class="{{(lang == 'de') && 'active'}}") DE
+        li
+          a(ng-click="changeLang('nl')", class="{{(lang == 'nl') && 'active'}}") NL
+        li
+          a(ng-click="changeLang('en')", class="{{(lang == 'en') && 'active'}}") EN
+      ul.contactDetails
+        li {{ui.contact.address}}
+        li.hideXs {{ui.contact.zipcode}}
+        li {{ui.contact.city}}
+        li.hideXs
+          | {{ui.contact.phone}}
+          li
+            a(href='mailto:{{ui.contact.email}}') {{ui.contact.email}}
+      ul.contactDetails.extraAddress.hideXs.hideSm
+        li {{ui.contactExtra.address}}
+        li.hideXs {{ui.contactExtra.zipcode}}
+        li {{ui.contactExtra.city}}
+        li.hideXs
+          | {{ui.contactExtra.phone}}
+          li
+            a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
+
+
+    // __build:js({app,.tmp}) scripts/main.js
+    // script(src='scripts/main.js')
+    // __endbuild
+
+
+
+

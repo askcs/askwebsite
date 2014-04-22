@@ -16,31 +16,36 @@
       <meta content="https://ask-cs.nl/" property="og:url">
       <meta content="" property="og:image">
 
-      <link href="/img/favicon.ico" rel="Shortcut Icon" />
+      <link href="/images/favicon.ico" rel="Shortcut Icon" />
+
+
+
+      <!----------CSS-------->
+
+      <!-- build:css styles/vendor.css -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="vendors/animate.css/animate.css" />
+      <!-- endbower -->
+      <!-- endbuild -->
+      <!-- build:css(.tmp) styles/main.css -->
+      <link rel="stylesheet" href="styles/main.css">
+      <!-- endbuild -->
+      <!-- build:js scripts/vendor/modernizr.js -->
+      <script src="vendors/modernizr/modernizr.js"></script>
+      <!-- endbuild -->
+
+
 
       <!----------FONTS-------->
+
       <link href='//fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
       <link href='//fonts.googleapis.com/css?family=Lato:700,400,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
 
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <link rel="stylesheet" href="vendors/animate.css/animate.css" />
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="vendors/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
 
+      <!----------JS (ALSO @ END)-------->
 
-
-
-
-      <!-- build:js scripts/vendor.js -->
+        <!-- build:js scripts/vendor.js -->
       <!-- bower:js -->
       <script src="vendors/jQuery/dist/jquery.js"></script>
       <script src="vendors/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
@@ -139,6 +144,31 @@
           if ( $(window).width() >= 768 ) { $( '.mobileView' ).empty().detach(); }
 
           var pepe = $.fn.fullpage({
+              "verticalCentered" : true,
+              'resize' : true,
+              'scrollingSpeed': 700,
+              'easing': 'easeInQuart',
+              'navigation': true,
+              'navigationPosition': 'left',
+              'navigationColor': '#000',
+              'navigationTooltips': [],
+              'slidesNavigation': false,
+              'slidesNavPosition': 'bottom',
+              'controlArrowColor': '#fff',
+              'loopBottom': false,
+              'loopTop': false,
+              'loopHorizontal': false,
+              'autoScrolling': true,
+              'scrollOverflow': false,
+              'css3': true,
+              'paddingTop': 0,
+              'paddingBottom': 0,
+              'fixedElements': '#menu, #footer, #cookieMessage',
+              'normalScrollElements': null,
+              'keyboardScrolling': true,
+              'touchSensitivity': 20,
+              'continuousVertical': false,
+              'animateAnchor': true,
             slidesColor: ['#facb6a', '#000', '#000'],
             anchors: ['home', 'products', 'cases'],
             menu: '#menu',
@@ -241,7 +271,6 @@
             <div class="container">
               <div class="col-md-12">
                 <h2 class="scenarioText1">{{ui.home.scenario.titleSlide1}}</h2>
-                <!--<img src="img/home/scenario01.png" alt="slider" class="scenarioImg" />-->
                 <div class="scenarioImg">
                   <img class="animate01-01" src="images/home/scenario01-01.png" alt="slider"/>
                   <img class="animate01-02" src="images/home/scenario01-02.png" alt="slider"/>
@@ -259,7 +288,6 @@
                   <img class="animate02-02" src="images/home/scenario02-02.png" alt="slider"/>
                   <img class="animate02-03" src="images/home/scenario02-03.png" alt="slider"/>
                 </div>
-                <!--                <img src="img/home/scenario02.png" alt="slider" class="hide scenarioImg" />-->
               </div>
             </div>
           </div>
@@ -277,7 +305,6 @@
                     <span class="animate03-06"><img src="images/home/scenario03-06.png"/></span>
                   </div>
                 </div>
-                <!--                <img src="img/home/scenario03.png" alt="slider" class="scenarioImg"/>-->
               </div>
             </div>
           </div>

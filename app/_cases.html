@@ -15,12 +15,20 @@
     <meta content="https://ask-cs.nl/" property="og:url">
     <meta content="" property="og:image">
 
-    <link href="/img/favicon.ico" rel="Shortcut Icon" />
+    <link href="/images/favicon.ico" rel="Shortcut Icon" />
 
     <!----------CSS-------->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="vendors/animate.css/animate.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 
     <!----------JS (ALSO @ END)-------->
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -479,15 +487,19 @@
 
 <!----------JS-------->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="vendors/jQuery/dist/jquery.js"></script>
 
-<script src="js/vendor/angular.min.js"></script>
-<script src="js/app.js"></script>
+<script src="scripts/imagesloaded.js"></script>
+<script src="scripts/skrollr.js"></script>
+<script src="scripts/_main.js"></script>
 
-<script src="js/imagesloaded.js"></script>
-<script src="js/skrollr.js"></script>
-<script src="js/_main.js"></script>
+<script src="vendors/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
+<script src="vendors/angular/angular.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
 
 
 
@@ -505,6 +517,10 @@
     });
 
 </script>
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 
 </body>
 </html>

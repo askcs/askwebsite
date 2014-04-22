@@ -15,10 +15,11 @@ module.exports = (grunt) ->
         options:
           pretty: true
         files:
-          '.tmp/index.html': [
-            '<%= config.app %>/layout.jade'
-            '<%= config.app %>/index.jade'
-          ]
+          '.tmp/index.html': '<%= config.app %>/index.jade'
+          '.tmp/about.html': '<%= config.app %>/about.jade'
+          '.tmp/cases.html': '<%= config.app %>/cases.jade'
+          '.tmp/jobs.html': '<%= config.app %>/jobs.jade'
+          '.tmp/terms.html': '<%= config.app %>/terms.jade'
 
     watch:
 #      bower:
