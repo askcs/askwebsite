@@ -1,0 +1,168 @@
+doctype
+html.no-js
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title ASK Community Systems
+    meta(name='author', content='ASK Community Systems')
+    meta(name='Resource-type', content='Document')
+    meta(content='width=device-width, initial-scale=1', name='viewport')
+    meta(content='ASK Community Systems', property='og:title')
+    meta(content='image', property='og:type')
+    meta(content='https://ask-cs.nl/', property='og:url')
+    meta(content='', property='og:image')
+    link(href='/images/favicon.ico', rel='Shortcut Icon')
+
+
+
+    // --------CSS------
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='vendors/animate.css/animate.css')
+    // endbower
+    // endbuild
+    // build:css(.tmp) styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+
+
+
+  body(ng-app='AskWeb')
+
+
+
+    //--------HEADER------
+    #menu.mainMenu
+      .container
+        .row
+          .col-xs-5
+            ul
+              li
+                a(href='about.html') {{ui.menu.company}}
+          #mainLogo
+            .logoContainer
+              a(href='index.html')
+          .col-xs-5.col-xs-offset-2
+            ul
+              li
+                a(href='cases.html') {{ui.menu.cases}}
+
+
+
+    //--------COOKIE MESSAGE------
+    #cookieMessage
+      #closeCookie
+      p
+        | {{ui.general.cookieMessage}}
+        a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
+        | .
+
+
+
+    //--------PLATFORM STORY------
+
+    #content
+      #skrollr-body
+        section#slide-1.platform1.homeSlide(anim-detached='true')
+          .bcg(data-center='background-position: 50% 100%;', data-top-bottom='background-position: 50% -50px;', data-anchor-target='#slide-1')
+            .container.smallDeviceContainer(data-center='opacity: 1', data-0-top='opacity: 0.9', data-anchor-target='#slide-1 h2')
+              .row
+                .textFieldContainer
+                  .textField.text-left.col-md-4.col-md-offset-8.col-sm-8.col-sm-offset-4(class="col-xs-{{ui.general.columnSize}} col-xs-offset-{{ui.general.columnSizeOffset}}")
+                    .col-md-12
+                      h2 {{ui.platform.availablePeople.title}}
+                      p {{ui.platform.availablePeople.description01}}
+                      p {{ui.platform.availablePeople.description02}}
+                      p {{ui.platform.availablePeople.description03}}
+        section#slide-2.platform2.platformTextPart
+          .bcg(data-anchor-target='#slide-2')
+            .container.smallDeviceContainer
+              .row
+                .col-md-4.col-sm-6.col-xs-12
+                  h4 {{ui.platform.context.title}}
+                  p {{ui.platform.context.description01}}
+                .col-md-4.col-sm-6.col-xs-12
+                  h4 {{ui.platform.inputs.title}}
+                  p {{ui.platform.inputs.description01}}
+                .col-md-4.col-sm-6.col-xs-12
+                  h4 {{ui.platform.generatingInfo.title}}
+                  p {{ui.platform.generatingInfo.description01}}
+        section#slide-3.platform3.homeSlide(anim-detached='true')
+          .bcg(data-center='background-position: 0% 0px;', data-bottom-top='background-position: 0% 100px;', data-top-bottom='background-position: 0% -100px;', data-anchor-target='#slide-3')
+            .container.smallDeviceContainer
+              .row
+                .textFieldContainer
+                  .textField.text-center.col-md-4.col-sm-6.col-xs-8(data-50-bottom='opacity: 0.5', data-center='opacity: 1', data-0-top='opacity: 0.5')
+                    .col-md-12
+                      h2 {{ui.platform.intensity.title}}
+                      p {{ui.platform.intensity.description01}}
+                      p {{ui.platform.intensity.description02}}
+                      p {{ui.platform.intensity.description03}}
+        section#slide-4.platform4.caseTextPart
+          .bcg(data-anchor-target='#slide-4')
+            .container.smallDeviceContainer
+              .row
+                .col-md-8.col-sm-7.col-xs-12
+                  .row
+                    .col-md-12
+                      h2 {{ui.platform.nextGeneration.title}}
+                    .col-md-6.col-sm-12.col-xs-12
+                      p {{ui.platform.nextGeneration.description01}}
+                      p {{ui.platform.nextGeneration.description02}}
+                    .col-md-6.col-sm-12.col-xs-12
+                      p {{ui.platform.nextGeneration.description03}}
+                      p {{ui.platform.nextGeneration.description04}}
+                .text-left.col-md-4.col-sm-5.col-xs-12
+                  img(src='images/platform/platform02.png', style='height: auto; width: 100%; margin: 20px 0;')
+
+
+
+
+
+    //--------FOOTER------
+    #footer
+      ul.languageToggle
+        li
+          a
+      ul#languageMenu.hide
+        li
+          a(ng-click="changeLang('de')", class="{{(lang == 'de') && 'active'}}") DE
+        li
+          a(ng-click="changeLang('nl')", class="{{(lang == 'nl') && 'active'}}") NL
+        li
+          a(ng-click="changeLang('en')", class="{{(lang == 'en') && 'active'}}") EN
+      ul.contactDetails
+        li {{ui.contact.address}}
+        li.hideXs {{ui.contact.zipcode}}
+        li {{ui.contact.city}}
+        li.hideXs
+          | {{ui.contact.phone}}
+          li
+            a(href='mailto:{{ui.contact.email}}') {{ui.contact.email}}
+      ul.contactDetails.extraAddress.hideXs.hideSm
+        li {{ui.contactExtra.address}}
+        li.hideXs {{ui.contactExtra.zipcode}}
+        li {{ui.contactExtra.city}}
+        li.hideXs
+          | {{ui.contactExtra.phone}}
+          li
+            a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
+
+
+    //  --------JS------
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='vendors/jQuery/dist/jquery.js')
+    script(src='vendors/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js')
+    script(src='vendors/angular/angular.js')
+    // endbower
+    // endbuild
+
+    script(src='scripts/main.js')
+
+
+    // build:js scripts/cases.js
+    script(src='scripts/imagesloaded.js')
+    script(src='scripts/skrollr.js')
+    script(src='scripts/_main.js')
+    //script(src='scripts/cases.js')
+    // endbuild

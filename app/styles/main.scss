@@ -101,8 +101,6 @@ $ask-color: #e61e3b;
 }
 
 
-
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -995,6 +993,11 @@ P:last-child {
   /*    display: none;*/
 }
 
+.platform {
+/*  background: url("../images/home/lego.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;*/
+}
 
 
 .case {
@@ -1105,7 +1108,7 @@ P:last-child {
   background-color: #9fe384;
 }
 
-#content .casePostnl .textField {
+#content .casePostnl .textField, #content .platform1 .textField {
   margin-top: 10%;
 }
 
@@ -1159,6 +1162,24 @@ P:last-child {
   background-color: #fff;
 }
 
+.platform1 .bcg {
+  background-image:url('../images/platform/lego.jpg');
+}
+
+.platform2 .bcg {
+  background: none;
+  background-color: #9fe384;
+}
+
+.platform3 .bcg {
+  background-image:url('../images/platform/communication.JPG');
+  background-position: center center;
+}
+
+.platform4 .bcg {
+  background: none;
+  background-color: #a5eaf5;
+}
 
 .aboutContent {
   z-index: 5;

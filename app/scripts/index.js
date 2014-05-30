@@ -109,7 +109,7 @@ $(document).ready(function() {
         'touchSensitivity': 20,
         'continuousVertical': false,
         'animateAnchor': true,
-        slidesColor: ['#facb6a', '#000', '#000'],
+        slidesColor: ['#facb6a', '#000', '#a5eaf5', '#000'],
         anchors: ['home', 'products', 'cases'],
         menu: '#menu',
 

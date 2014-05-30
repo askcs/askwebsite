@@ -20,6 +20,7 @@ module.exports = (grunt) ->
           '.tmp/cases.html': '<%= config.app %>/cases.jade'
           '.tmp/jobs.html': '<%= config.app %>/jobs.jade'
           '.tmp/terms.html': '<%= config.app %>/terms.jade'
+          '.tmp/platform.html': '<%= config.app %>/platform.jade'
 
     watch:
 #      bower:

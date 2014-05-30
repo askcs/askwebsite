@@ -63,6 +63,11 @@ var localization = {
         teamup: 'ASK vindt dat ICT de zorg dient te ondersteunen. Uw medewerkers willen zo min mogelijk tijd aan administratie kwijt zijn, zodat ze zich kunnen richten op het verlenen van goede zorg.',
         joinus: 'Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.'
       },
+      platform: {
+        title:'ASK Platform',
+        introTitle:'ASK platform is the basis of all ASK products.',
+        introText: 'ASK delivers the software-platform businesses need to guarantee availability of people, thereby making effective use of Context Awareness.',
+      },
       casesPreview: {
         title: 'Referenties',
         postnl: 'ASK helpt PostNL om postsorteerders flexibel in te roosteren. Hierbij houdt ASK rekening met benodigde capaciteit, individuele voorkeuren en arbowetgeving.',
@@ -326,6 +331,40 @@ var localization = {
           fact02: 'Inkomsten',
           fact03: 'Communicatiekosten (EUR 0,38 aan licentie + EUR 0,10 per gesprek/sms ipv EUR 4,30 per contact)'
         }
+      }
+    },
+
+    platform: {
+      availablePeople: {
+        title: 'Guarding your business goals',
+        description01: 'At the moment of truth, the last thing you want is being understaffed. You need available people.',
+        description02: 'To achieve this goal, ASK organises the right availability at any moment by checking if there are enough people available for the coming period, based on their planning and location. ASK escalates when an insolvable shortage is about to occur. From here, ASK goes beyond other software to secure a solution by providing continuous goal monitoring and guarding concerning availability.',
+        description03: 'This results in a very robust, reliable solution for your peace of mind.'
+      },
+      context: {
+        title: 'The basics: You need context',
+        description01: 'If your goal is to move around safely, you need eyes and ears to determine the context (e.g. objects). This enables you not to bump into things. The same goes for technology: your applications need to know what is going on around them in order to determine your context. This can help you achieve a goal you have.'
+      },
+      inputs: {
+        title: 'Input for context',
+        description01: 'ASK uses the sensors in your devices to provide you with context information. On the other hand ASK uses dialogs to enhance the provided context information, and to organise availability. After user permission, ASK uses communication channels to gather information about the user’ behavior. Channels range from SMS, voice messages and e-mail to social media like Twitter.'
+      },
+      generatingInfo: {
+        title: 'Generating meaningful information',
+        description01: 'ASK abstracts the user’s context information. It provides access to state (a description of the user’s situation), network (who do you know and who did you meet) and timeline (when did things happen and what do we predict to happen).'
+      },
+      intensity: {
+        title: 'Adapting to your communication intensity',
+        description01: 'The ASK platform is a cloud platform. This provides you with infinite scalability. So whatever the intensity of your communications, you access the resources you need in line with your changing requirements.',
+        description02: 'To increase transparency, usage-based pricing models ensure that you only pay for the services you use. ',
+        description03: 'Also, the ASK cloud platform minimizes the risks associated with capital expenditure and the cost and effort of in-house operation and maintenance. You gain access to high-performance resources and professional solutions without needing to make upfront investment. And by reducing the need for local resources (i.e. expensive local servers), the cloud shrinks expenditure in the long term.'
+      },
+      nextGeneration: {
+        title: 'The next generation platform',
+        description01: 'ASK is the next generation Cloud Platform. It\'s a complete turnkey (developer friendly) PaaS solution. And ready to deploy in your cloud. ASK has a simple and effective API, based on open standards.',
+        description02: 'Like lego bricks, imagine ASK’s apps and API as little building blocks you can use to build a cloud based communication solution: You can start with the bricks ASK has already build (www.ask-fast.com).',
+        description03: 'In the case that you can\'t find what you\'re looking for, you can off course build your own apps with the ASK API to create your own customized solution.',
+        description04: 'On top of that we have made it really easy to implement ASK: it can be seamlessly integrated into your existing IT infrastructure.'
       }
     }
   },
