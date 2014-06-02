@@ -110,7 +110,7 @@ $(document).ready(function() {
         'continuousVertical': false,
         'animateAnchor': true,
         slidesColor: ['#facb6a', '#000', '#a5eaf5', '#000'],
-        anchors: ['home', 'products', 'cases'],
+        anchors: ['home', 'products', 'platform', 'cases'],
         menu: '#menu',
 
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex)

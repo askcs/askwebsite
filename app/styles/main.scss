@@ -62,6 +62,12 @@ $icon-font-path: "/vendors/bootstrap-sass-official/vendor/assets/fonts/bootstrap
 
 // Variables
 $ask-color: #e61e3b;
+$standby-color: #a93232;
+$teamup-color: #1dc8b6;
+$joinus-color: #fab25e;
+$yellow: #FACB6A;
+$green: #9fe384;
+$blue: #a5eaf5;
 
 // Mixins
 
@@ -100,6 +106,14 @@ $ask-color: #e61e3b;
   transition: $transition;
 }
 
+.fullbackground {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -359,8 +373,6 @@ hr {
 
 
 
-
-
 /* ==========================================================================
    Parallax Scroll
    ========================================================================== */
@@ -387,12 +399,7 @@ section {
   @include transition(opacity 300ms ease-out);
 }
 .bcg {
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @extend .fullbackground;
   height: 100%;
   width: 100%;
 }
@@ -400,12 +407,6 @@ section {
 .homeSlide .bcg {
   min-height: 400px;
 }
-
-/* Not used */
-.curtainContainer {width: 100%; height: 100%; position: relative;}
-.curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
-.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
-
 
 
 
@@ -905,7 +906,7 @@ P:last-child {
   height: auto;
   right: 0;
   top: 115px;
-  background-color: #FACB6A;
+  background-color: $yellow;
   @include border-radius(50%);
 }
 
@@ -952,36 +953,36 @@ P:last-child {
     text-transform: none;
   }
   #product01{
-    background-color: #a93232;
+    background-color: $standby-color;
   }
   .standBy{
     .box {
-      background-color: #a93232;
+      background-color: $standby-color;
     }
     .top{
-      background-color: #b34d49;
+      background-color: lighten($standby-color, 10%);
     }
   }
   #product02{
-    background-color: #1dc8b6;
+    background-color: $teamup-color;
   }
   .teamUp{
     .box{
-      background-color: #1dc8b6;
+      background-color: $teamup-color;
     }
     .top{
-      background-color: #61d9cc;
+      background-color: lighten($teamup-color, 10%);
     }
   }
   #product03{
-    background-color: #fab25e;
+    background-color: $joinus-color;
   }
   .joinUs{
     .box {
-      background-color: #fab25e;
+      background-color: $joinus-color;
     }
     .top {
-      background-color: #faca83;
+      background-color: lighten($joinus-color, 10%);
     }
   }
   .top, .textPart {
@@ -994,16 +995,19 @@ P:last-child {
 }
 
 .platform {
-/*  background: url("../images/home/lego.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;*/
+  h2 {
+    margin-bottom: 20px;
+  }
+  .scenarioImg {
+    a {
+      text-transform: uppercase;
+    }
+  }
 }
 
 
 .case {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  @extend .fullbackground;
   .textField {
     margin-top: -70%;
     a, a:hover, a:active {
@@ -1021,12 +1025,6 @@ P:last-child {
 #case03 {
   background-position: center left;
 }
-
-
-
-
-
-
 
 
 
@@ -1105,7 +1103,7 @@ P:last-child {
 
 .casePostnlText .bcg, .casePostnl .textField span {
   background: none;
-  background-color: #9fe384;
+  background-color: $green;
 }
 
 #content .casePostnl .textField, #content .platform1 .textField {
@@ -1114,25 +1112,21 @@ P:last-child {
 
 .caseOlympiaText .bcg, .caseOlympia .textField span {
   background: none;
-  background-color: #9fe384;
+  background-color: $green;
 }
 
 .caseBz .bcg {
-  background-position: left center;
+/*  background-position: left center;*/
 }
 
 .caseBzText .bcg,  .caseBz .textField span {
   background: none;
-  background-color: #FACB6A;
-}
-
-.caseKnrm .bcg {
-  background-position: center center;
+  background-color: $yellow;
 }
 
 .caseKnrmText .bcg, .caseKnrm .textField span {
   background: none;
-  background-color: #a5eaf5;
+  background-color: $blue;
 }
 
 .about1 .bcg {
@@ -1141,7 +1135,7 @@ P:last-child {
 
 .about2 .bcg {
   background: none;
-  background-color: #9fe384;
+  background-color: $green;
 }
 
 .about2 .textField {
@@ -1151,10 +1145,7 @@ P:last-child {
 .about3 .bcg {
   background: none;
   background-image:url('../images/about/ask02.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @extend .fullbackground;
 }
 
 .about4 .bcg {
@@ -1168,17 +1159,16 @@ P:last-child {
 
 .platform2 .bcg {
   background: none;
-  background-color: #9fe384;
+  background-color: $green;
 }
 
 .platform3 .bcg {
   background-image:url('../images/platform/communication.JPG');
-  background-position: center center;
 }
 
 .platform4 .bcg {
   background: none;
-  background-color: #a5eaf5;
+  background-color: $blue;
 }
 
 .aboutContent {
@@ -1310,7 +1300,7 @@ body.jobs, body.terms {
     }
     .reactField {
       display: block;
-      background-color: #9fe384;
+      background-color: $green;
       margin-top: 10px;
       .contactItem {
         padding: 0 0 4px 0;
