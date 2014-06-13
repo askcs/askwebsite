@@ -56,20 +56,34 @@ html.no-js
 
     //--------HEADER------
     #menu.mainMenu
+      #dropdownMenu.mobileView.hide
+        ul
+          li
+            a#menuProducts(href='index.html#products') {{ui.menu.products}}
+          li.active
+            a.active(href='platform.html') {{ui.menu.platform}}
+          li
+            a(href='about.html') {{ui.menu.company}}
+          li
+            a(href='cases.html') {{ui.menu.cases}}
       .container
         .row
-          .col-xs-5
+          .col-xs-5.desktopView
             ul
               li
-                a(href='about.html') {{ui.menu.company}}
+                a#menuProducts(href='index.html#products') {{ui.menu.products}}
+              li
+                a(href='platform.html') {{ui.menu.platform}}
           #mainLogo
             .logoContainer
               a(href='index.html')
-          .col-xs-5.col-xs-offset-2
+          .col-xs-5.col-xs-offset-2.desktopView
             ul
               li
+                a(href='about.html') {{ui.menu.company}}
+              li
                 a(href='cases.html') {{ui.menu.cases}}
-
+          #dropdownToggle.mobileView
 
 
 

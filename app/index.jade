@@ -24,40 +24,44 @@ html.no-js
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
 
-
-
-
+    script(src='vendors/modernizr/modernizr.js')
 
 
   body(ng-app='AskWeb')
 
 
-    // build:js({app,.tmp}) scripts/main.js
-    script(src='scripts/main.js')
-    // endbuild
-
-
-
 
     //--------HEADER------
     #menu.mainMenu
+      #dropdownMenu.mobileView.hide
+        ul
+          li
+            a#menuProducts(href='index.html#products') {{ui.menu.products}}
+          li.active
+            a.active(href='platform.html') {{ui.menu.platform}}
+          li
+            a(href='about.html') {{ui.menu.company}}
+          li
+            a(href='cases.html') {{ui.menu.cases}}
       .container
         .row
-          .col-xs-5
+          .col-xs-5.desktopView
             ul
               li
-                a(href='about.html') Producten
+                a#menuProducts(href='index.html#products') {{ui.menu.products}}
               li
-                a(href='about.html') Platform
+                a(href='platform.html') {{ui.menu.platform}}
           #mainLogo
             .logoContainer
               a(href='index.html')
-          .col-xs-5.col-xs-offset-2
+          .col-xs-5.col-xs-offset-2.desktopView
             ul
               li
                 a(href='about.html') {{ui.menu.company}}
               li
                 a(href='cases.html') {{ui.menu.cases}}
+          #dropdownToggle.mobileView
+
 
 
 
@@ -186,7 +190,7 @@ html.no-js
         .col-md-6.col-md-offset-3
           h2 {{ui.home.platform.introTitle}}
           p {{ui.home.platform.introText}}
-          .scenarioImg
+          .platformImg
             a(href='platform.html') {{ui.general.readMore}}...
             img(src='images/platform/platform01.png', alt='platform')
 

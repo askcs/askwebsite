@@ -38,6 +38,8 @@ var localization = {
       cookieMessageLink: 'privacybeleid'
     },
     menu: {
+      products: 'Producten',
+      platform: 'Platform',
       company: 'Bedrijf',
       cases: 'Referenties'
     },
@@ -65,8 +67,8 @@ var localization = {
       },
       platform: {
         title:'ASK Platform',
-        introTitle:'ASK platform is the basis of all ASK products.',
-        introText: 'ASK delivers the software-platform businesses need to guarantee availability of people, thereby making effective use of Context Awareness.',
+        introTitle:'ASK Software Platform',
+        introText: 'Last minute uitdagingen oplossen met het software-platform van ASK.'
       },
       casesPreview: {
         title: 'Referenties',
@@ -335,36 +337,60 @@ var localization = {
     },
 
     platform: {
-      availablePeople: {
-        title: 'Guarding your business goals',
-        description01: 'At the moment of truth, the last thing you want is being understaffed. You need available people.',
-        description02: 'To achieve this goal, ASK organises the right availability at any moment by checking if there are enough people available for the coming period, based on their planning and location. ASK escalates when an insolvable shortage is about to occur. From here, ASK goes beyond other software to secure a solution by providing continuous goal monitoring and guarding concerning availability.',
-        description03: 'This results in a very robust, reliable solution for your peace of mind.'
+      intro: {
+        title: 'ASK Platform',
+        description01: 'Last minute uitdagingen oplossen met het software-platform van ASK.',
+        description02: 'Nog voor er personeelstekorten ontstaan, garandeert het softwareplatform van ASK de beschikbaarheid van de juiste mensen. Dat betekent dat de juiste kennis en vaardigheden ook tot uw beschikking staan. Om dit mogelijk te maken, gebruikt ASK continu de informatie die uw medewerkers doorgeven aan het platform.',
+        description03: 'ASK gebruikt het platform bovendien als basis voor de eigen producten StandBy en TeamUp.'
+      },
+      need: {
+        title: 'Wat u nodig hebt wanneer u het nodig hebt',
+        description01: 'Er zijn veel voorbeelden van situaties waarin er direct behoefte is aan iemand met specifieke kennis en vaardigheden om een acuut probleem op te lossen. Of juist een groep van mensen die hiertoe hun kennis en vaardigheden combineren.',
+        exampleTitle01: 'Voorbeeld 1',
+        example01: '‘Er heeft zich zojuist een incident voorgedaan en het doel van uw organisatie om zo snel mogelijk (binnen de richtlijnen) op de plek van het incident aanwezig te zijn. Het is daarbij belangrijk dat u het juiste aantal personen op die locatie heeft. Net zo belangrijk is dat in dat team de mensen zitten die adequaat de juiste hulpverlening kunnen bieden.’',
+        exampleTitle02: 'Voorbeeld 2',
+        example02: '‘U heeft een pakketje dat binnen een uur aan de andere kant van het land moet worden bezorgd. Alleen heeft uw koerier zich zojuist ziekgemeld. Uw heeft een vervanger nodig die uw pakketje binnen dat uur kan ophalen en bezorgen.’',
+        exampleTitle03: 'Voorbeeld 3',
+        example03: '‘Op het laatste moment wordt een afspraak met een belangrijke relatie ingepland. U heeft wel globale informatie, maar u heeft voor deze afspraak meer gedetailleerde informatie nodig over tariefstructuren. U moet dus snel de juiste persoon zien te vinden.’',
+        description02: 'Uit voorgaande voorbeelden blijkt telkens eenzelfde issue: u weet vooraf niet of de juiste persoon of personen beschikbaar zijn op het moment dat u met een acuut probleem te maken krijgt, terwijl u direct een oplossing moet hebben.'
+      },
+      businessGoals: {
+        title: 'Uw organisatiebehoeften bewaken',
+        description01: 'Het softwareplatform van ASK voorkomt dat de oplossing te laat komt. Het platform zorgt er volledig zelfstandig voor dat de juiste personen voor u beschikbaar zijn op het moment dat het nodig is. Hierdoor beschikt u op het juiste moment over de benodigde kennis en kunde.',
+        description02: 'ASK gaat hierin verder dan andere software: Het platform houdt continu uw behoefte in de gaten en bewaakt deze actief. Dit betekent dat wanneer u wilt dat er altijd voldoende mensen beschikbaar zijn, ASK voor u in de gaten of dat het geval is en of dat ook mensen zijn met de juiste kennis en vaardigheden. Hiervoor kijkt ASK naar de toekomst door de planning en locatie van uw mensen te monitoren.'
       },
       context: {
-        title: 'The basics: You need context',
-        description01: 'If your goal is to move around safely, you need eyes and ears to determine the context (e.g. objects). This enables you not to bump into things. The same goes for technology: your applications need to know what is going on around them in order to determine your context. This can help you achieve a goal you have.'
-      },
-      inputs: {
-        title: 'Input for context',
-        description01: 'ASK uses the sensors in your devices to provide you with context information. On the other hand ASK uses dialogs to enhance the provided context information, and to organise availability. After user permission, ASK uses communication channels to gather information about the user’ behavior. Channels range from SMS, voice messages and e-mail to social media like Twitter.'
-      },
-      generatingInfo: {
-        title: 'Generating meaningful information',
-        description01: 'ASK abstracts the user’s context information. It provides access to state (a description of the user’s situation), network (who do you know and who did you meet) and timeline (when did things happen and what do we predict to happen).'
-      },
-      intensity: {
-        title: 'Adapting to your communication intensity',
-        description01: 'The ASK platform is a cloud platform. This provides you with infinite scalability. So whatever the intensity of your communications, you access the resources you need in line with your changing requirements.',
-        description02: 'To increase transparency, usage-based pricing models ensure that you only pay for the services you use. ',
-        description03: 'Also, the ASK cloud platform minimizes the risks associated with capital expenditure and the cost and effort of in-house operation and maintenance. You gain access to high-performance resources and professional solutions without needing to make upfront investment. And by reducing the need for local resources (i.e. expensive local servers), the cloud shrinks expenditure in the long term.'
-      },
-      nextGeneration: {
-        title: 'The next generation platform',
-        description01: 'ASK is the next generation Cloud Platform. It\'s a complete turnkey (developer friendly) PaaS solution. And ready to deploy in your cloud. ASK has a simple and effective API, based on open standards.',
-        description02: 'Like lego bricks, imagine ASK’s apps and API as little building blocks you can use to build a cloud based communication solution: You can start with the bricks ASK has already build (www.ask-fast.com).',
-        description03: 'In the case that you can\'t find what you\'re looking for, you can off course build your own apps with the ASK API to create your own customized solution.',
-        description04: 'On top of that we have made it really easy to implement ASK: it can be seamlessly integrated into your existing IT infrastructure.'
+        title: 'Context',
+        needContext: {
+          title: 'U heeft context nodig',
+          description01: 'Een simpel voorbeeld: Als u heelhuids van A naar B wilt komen, dan gebruikt u uw ogen en oren om obstakels te ontwijken. Deze obstakels zijn onderdeel van wat wij  ‘context’ noemen. Hetzelfde geldt voor onze technologie. Software-applicaties hebben informatie nodig over wat er gebeurt om voor u de context te kunnen bepalen.'
+        },
+        inputContext: {
+          title: 'Informatie voor de context',
+          description01: 'ASK maakt gebruik van sensors om informatie te verzamelen. Deze zitten in de devices die we bij ons dragen, zoals smartphone en tablet. De input uit de sensors vormt informatie die bijdraagt aan het bepalen van de context. Nadat de gebruiker toestemming heeft gegeven, gebruikt ASK verschillende communicatiekanalen om informatie te verzamelen over het gedrag van de gebruiker. Deze kanalen lopen uiteen van SMS, spraakberichten en e-mail tot sociale media zoals Twitter. Daarbij start ASK ook een dialoog met de gebruiker om de beschikbaarheid te regelen. Het continu combineren van alle beschikbare informatie over de gebruiker noemt ASK ‘context awareness’.'
+        },
+        meaningfulInfo: {
+          title: 'Informatie vertalen naar waarde',
+          description01: 'Het platform geeft toegang tot informatie over de status (beschrijving van situatie van de gebruiker), het sociale netwerk (wie kent wie en wie heeft wie ontmoet) en de tijdlijn (wat is er gebeurd en wat voorspellen we dat er moet gebeuren). Het ASK platform interpreteert alle informatie van gebruikers en creëert voor u context. Hiermee kan het platform beslissingen nemen om voor u met een passende oplossing te komen wanneer u dat nodig heeft.'
+        }
+       },
+      thePlatform: {
+        title: 'Het Platform',
+        communicationIntensity: {
+          title: 'Aangepast aan uw communicatiedruk',
+          description01: 'Het platform van ASK is een cloud platform. Hierdoor kan het meeschalen met uw communicatiebehoefte. Wanneer de communicatiedruk groter wordt, groeit de ruimte in de cloud automatisch mee.',
+          description02: 'ASK kiest voor transparantie door het hanteren van een usage-based tariefstructuur. Hierdoor betaalt u alleen voor de diensten die u ook daadwerkelijk gebruikt.',
+          description03: 'Doordat het platform in de cloud hangt, verlaagt ASK de initiële en terugkerende uitgaven aan het opzetten en onderhouden van IT-infrastructuur, alsmede de personele belasting. Ook zijn dure servers bij u op locatie niet meer nodig. U heeft de beschikking over snelle infrastructuur en professionele oplossingen zonder grote investeringen vooraf en met lagere kosten op langere termijn.'
+        },
+        nextGeneration: {
+          title: 'Een toekomstbestendig platform',
+          description01: 'Het ASK platform is een Platform as a Service (PaaS-oplossing): Het is klaar om uitgerold te worden in uw cloud-omgeving. De implementatie is eenvoudig en past naadloos in uw bestaande IT infrastructuur. Dit is makkelijk voor uw IT-medewerkers. Nog meer gemak is terug te vinden in de eenvoudige API, die bovendien is gebaseerd op open-source standaarden.',
+          description02: 'Vergelijk de softwareapplicaties en de API van ASK met lego: u kunt er namelijk uw eigen cloud-gebaseerde communicatieoplossing mee bouwen. Hiervoor kunt u gebruik maken van de stenen die ASK al klaar heeft liggen ',
+          link01: 'www.ask-fast.com',
+          description0202: 'Uiteraard kunt u met de ASK API ook uw eigen software-applicaties bouwen en zo uw eigen custom oplossing maken.',
+          description03: '',
+          description04: ''
+        }
       }
     }
   },
@@ -384,6 +410,8 @@ var localization = {
       cookieMessageLink: 'privacy policies'
     },
     menu: {
+      products: 'Products',
+      platform: 'Platform',
       company: 'Company',
       cases: 'References'
     },
@@ -408,6 +436,11 @@ var localization = {
         standby: 'Insight in the readiness beforehand, and not only after the alarm has gone off. Online schedules and alarm-receivers only solve part of the problem. That\'s why ASK has developed Standby.',
         teamup: 'ASK believes that ICT should support healthcare. Your employees don\'t want to spend much time on administrative tasks. They want to focus on providing care.',
         joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.'
+      },
+      platform: {
+        title:'ASK Platform',
+        introTitle:'ASK Software Platform',
+        introText: 'ASK delivers the software-platform businesses need to solve last minute challenges.'
       },
       casesPreview: {
         title: 'References',
@@ -669,6 +702,63 @@ var localization = {
           fact03: 'Communication costs'
         }
       }
+    },
+
+    platform: {
+      intro: {
+        title: 'ASK Platform',
+        description01: 'ASK delivers the software-platform businesses need to solve last minute challenges. ',
+        description02: 'At that very moment the ASK platform jumps in to guarantee the availability of the right people, and thus knowledge and skills. Effectively combining the users’ context and dialogue with the user the ASK platform ensures the right solution for the last minute challenge.',
+        description03: 'The ASK platform is also the basis of ASKs own products, including StandBy and TeamUp.'
+      },
+      need: {
+        title: 'Get what you need when you need it',
+        description01: 'There are numerous situations when you instantly need somebody for his expertise or skills (or the combined knowledge or skills of multiple persons) to solve a problem that has just occurred.',
+        exampleTitle01: 'Example 1',
+        example01: 'An incident just happened. The goal of your organisation is being on site at the incident as fast as possible within the standards. You then need the right amount of people on site and on time with the requested rescue expertises.',
+        exampleTitle02: 'Example 2',
+        example02: 'A package needs to be delivered within an hour at the other side of the country, but the driver just called in sick. You then need a replacement driver that is within an hour of pickup and destination. ',
+        exampleTitle03: 'Example 3',
+        example03: 'A meeting with an important client is scheduled last minute. You got the basics covered, but you need more input on the pricing models.',
+        description02: 'The problem is that you don’t know on forehand if the right person is available for you at that very moment. If he is, you’re lucky. But if he’s not, you can get in trouble because you can’t get the help you need…'
+      },
+      businessGoals: {
+        title: 'Guarding your business goals',
+        description01: 'The software-platform from ASK prevents the trouble: it operates autonomously in ensuring you have the right person (with the right expertise) available at the right moment to the right job.',
+        description02: 'From here, ASK goes beyond other software to secure a solution: by providing continuous monitoring and guarding of goals. If you the goal is availability, then ASK checks if there are enough people available for the coming period, based on their planning and location. ASK then escalates when an insolvable shortage is about to occur. This results in a very robust, reliable solution regarding the realisation of your business goals.'
+      },
+      context: {
+        title: 'Context',
+        needContext: {
+          title: 'You need context',
+          description01: 'A practical example: If your goal is to move around safely, you need eyes and ears to determine the location of objects. These objects are part of what we call ‘context’. This context prevents you from bumping into things. The same goes for technology: your applications need to know what is going on around them in order to determine your context. This can help you achieve a goal you have.'
+        },
+        inputContext: {
+          title: 'Input for context',
+          description01: 'ASK is aware of the users’ context by collecting information from the sensors in the devices they carry with them. It gives additional real-time information about the situation of the user. For a complete picture, ASK uses dialogs to enhance the provided context information, and to organise availability. Therefore, after user permission, ASK uses communication channels to gather information about the user’ behavior. These channels range from SMS, voice messages and e-mail to social media like Twitter.'
+        },
+        meaningfulInfo: {
+          title: 'Making information meaningful',
+          description01: 'ASK abstracts the user’s context information. It provides access to state (a description of the user’s situation), network (who do you know and who did you meet) and timeline (when did things happen and what do we predict to happen).'
+        }
+      },
+      thePlatform: {
+        title: 'What do you get: The platform',
+        communicationIntensity: {
+          title: 'Adapting to your communication intensity',
+          description01: 'The ASK platform is a cloud platform. This provides you with infinite scalability. The advantage? You access the resources you need in line with your changing requirements. ASK scales to the intensity of your communications.',
+          description02: 'To increase transparency, usage-based pricing models ensure that you only pay for the services you use.',
+          description03: 'Also, the ASK cloud platform minimizes the risks associated with capital expenditure and the cost and effort of in-house operation and maintenance. You gain access to high-performance resources and professional solutions without needing to make upfront investment. And by reducing the need for local resources (i.e. expensive local servers), the cloud shrinks expenditure in the long term.'
+        },
+        nextGeneration: {
+          title: 'The next generation platform',
+          description01: 'ASK is the next generation Cloud Platform. It\'s a complete turn-key (developer friendly) PaaS solution. And ready to deploy in your cloud. ASK has a simple and effective API, based on open standards.',
+          description02: 'Like lego bricks, imagine ASK’s apps and API as little building blocks you can use to build a cloud based communication solution: You can start with the bricks ASK has already build (',
+          link01: 'www.ask-fast.com',
+          description03: 'In the case that you can\'t find what you\'re looking for, you can off course build your own apps with the ASK API to create your own customized solution.',
+          description04: 'On top of this we have made it really easy to implement ASK: it can be seamlessly integrated into your existing IT infrastructure.'
+        }
+      }
     }
   },
 
@@ -687,6 +777,8 @@ var localization = {
       cookieMessageLink: 'Datenschutzbestimmungen'
     },
     menu: {
+      products: 'Produkte',
+      platform: 'Platform',
       company: 'Unternehmen',
       cases: 'Referenzen'
     },
@@ -718,6 +810,11 @@ var localization = {
         standby: 'Im Voraus einsehen können, wer verfügbar ist, anstatt erst, nachdem der Alarm ausgelöst wurde. Online-Pläne und Alarmempfänger liefern hierfür nur eine Notlösung. Deswegen hat ASK Standby entwickelt.',
         teamup:  'ASK ist wegweisend für IT unterstützte Dienste. Ihre Mitarbeiter sollten so wenig, wie möglich mit Verwaltungsaufgaben belastet werden, um sich der Qualität der Dienstleistung widmen zu können.',
         joinus: 'Flexibler Personaleinsatz bedeuted: Aquirieren, Verfügbarkeit kontrollieren, Planen und Einsetzen. Joinus ist eine App, mit der sämtliche Informationen rund um die flexible Arbeit schnell ausgetauscht werden.'
+      },
+      platform: {
+        title:'Die ASK Platform',
+        introTitle:'Die ASK Software Platform',
+        introText: 'ASK liefert Technologie, um bei kurzfristigen Änderungen auftretende Probleme zu vermeiden.'
       },
       casesPreview: {
         title: 'Referenzen',
@@ -1019,6 +1116,63 @@ var localization = {
           fact03: 'Reduzierung der Kommunikationskosten'
         }
       }
+    },
+
+    platform: {
+      intro: {
+        title: 'Die ASK Platform',
+        description01: 'ASK liefert Technologie, um bei kurzfristigen Änderungen auftretende Probleme zu vermeiden.',
+        description02: 'ASK sorgt dafür, dass stets die richtigen Personen verfügbar sind. Dazu werden verschiedene Kommunikationsmittel eingesetzt mit der bspw. der aktuelle Aufenthalt einer Person mitberücksichtigt werden kann.',
+        description03: 'Die ASK Plattform ist auch Basis für weitere ASK-Produkte, wie StandBy und TeamUp.'
+      },
+      need: {
+        title: 'Sie erhalten das, was Sie brauchen, wann Sie es brauchen',
+        description01: 'Es gibt zahlreiche Situationen, in denen Sie das Know-How eines anderen benötigen.',
+        exampleTitle01: 'Beispiel 1',
+        example01: 'Ein Unfall wurde gemeldet und Sie müssen so schnell, wie möglich, mit einer ausreichenden Anzahl dafür qualifizierter Personen vor Ort sein.',
+        exampleTitle02: 'Beispiel 2',
+        example02: 'Sie müssen innerhalb von einer Stunde ein Paket ausliefern. Der eingeplante Fahrer hat sich aber soeben krank gemeldet. Sie müssen einen Ersatzfahrer, der kurzfristig verfügbar ist, finden.',
+        exampleTitle03: 'Beispiel 3',
+        example03: 'Es findet in Kürze ein Treffen mit einem wichtigen Kunden statt. Dafür brauchen Sie kurzfristig noch das Feedback von einem Kollegen über ein zu erstellendes Angebot.',
+        description02: 'Sie wissen nicht vorab, ob die richtige Person zum Zeitpunkt verfügbar ist. Falls Ja, haben Sie Glück, aber wenn nicht, könnte Sie das in Schwierigkeiten bringen.'
+      },
+      businessGoals: {
+        title: 'Die Geschäftsziele im Auge behalten',
+        description01: 'Die ASK Software erspart Ihnen diese Probleme. ASK funktioniert autonom und gewährleistet, dass die richtige Person mit den gewünschten Fähigkeiten zum richtigen Zeitpunkt verfügbar ist.',
+        description02: 'ASK hebt sich von herkömmlicher Software dadurch hervor; dass fortdauernd die aktuelle mit der geplanten Situation überprüft und damit einen Echtzeitstatus geliefert wird. ASK ist ein selbstlernendes System, sodass ASK bei Bedarf immer schneller und effizienter die notwendigen Personen kontaktiert.'
+      },
+      context: {
+        title: 'Kontext',
+        needContext: {
+          title: 'Sie brauchen Kontext',
+          description01: 'Ein praktisches Beispiel: Um sich sicher zu bewegen braucht man Augen und Ohren mit denen man die Position von Objekten bestimmt. Diese Objekte sind Teil unseres Kontexts. Das gleiche gilt für die ASK-Software. Diese braucht Informationen, um zu wissen, was passiert, um auf Basis davon Entscheidungen zu treffen, die Ihnen beim Erreichen der Zielsetzungen helfen.'
+        },
+        inputContext: {
+          title: 'Input für Kontext',
+          description01: 'ASK kann z.B. die Sensoren in Smart-Phones für Kontext-Information verwenden, ggf. im Dialog mit dem Anwender. Ein Anwender-Profil kann weiter durch Analyse der Nutzung von Kommunikationskanälen wie Twitter, SMS und Sprachnachrichten erstellt werden.'
+        },
+        meaningfulInfo: {
+          title: 'Information brauchbar machen',
+          description01: 'Für ASK sind Kontext-Informationen wertvolle Hinweise: Ist die Person gerade verfügbar? Mit welchen Personen kommuniziert sie und wie sieht ihre Planung aus?'
+        }
+      },
+      thePlatform: {
+        title: 'Die ASK Plattform',
+        communicationIntensity: {
+          title: 'Auf Ihre Kommunikationsbedürfnisse zugeschnitten',
+          description01: 'ASK ist eine sog. Cloud Anwendung. Dieses bietet Ihnen eine unbegrenzte Skalierbarkeit. Der Vorteil? Sie bezahlen nur für die Ressourcen und Funktionen, die Sie tatsächlich nutzen.',
+          description02: 'Nutzungsabhängige Preismodelle erhöhen die Transparenz und sorgen dafür, dass Sie nur für die Leistungen bezahlen, die Sie in Anspruch nehmen.',
+          description03: 'Mit der ASK cloud Plattform minimieren Sie auch Risiken und Investitionen, welche mit Inhouse Lösungen verbunden wären. Mittels der ASK Cloud erhalten Sie Zugang zu professionellen Lösungen ohne Vorab-Investition.'
+        },
+        nextGeneration: {
+          title: 'Die Software Plattform der nächsten Generation',
+          description01: 'ASK liefert die nächste Generation cloud-Plattform. Sie ist für Entwickler über eine einfache API leicht zugängliche PaaS-Lösung basierend auf open standards.',
+          description02: 'Ähnlich dem Prinzip von Legosteinen können Sie mit den ASK-Apps und -API eine eigene cloud-basierte Kommunikationslösung konstruieren. Alternativ stehen Ihnen auch bereits von ASK vorgefertigte Lösungen zur Verfügung (z.B.',
+          link01: ' www.ask-fast.com',
+          description03: 'Sie können selbstverständlich auf Basis der ASK-API eine eigene Kommunikationslösung entwickeln. ',
+          description04: 'Sie können ASK schnell und einfach in Ihre bestehende IT-Infrastruktur integrieren.'
+        }
+      }
     }
   }
 
@@ -1090,3 +1244,13 @@ angular.module('AskWeb', []).
     }
 
   }]);
+
+
+//temporary for testing menu toggle mobile
+$( "#dropdownToggle" ).click(function() {
+    if ($('#dropdownMenu').hasClass('show')) {
+        $('#dropdownMenu').removeClass('show').addClass('hide');
+    } else {
+        $('#dropdownMenu').removeClass('hide').addClass('show');
+    }
+});

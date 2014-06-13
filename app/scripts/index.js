@@ -78,6 +78,11 @@ function cleanStyles (slide)
     }
 }
 
+
+
+
+
+
 setTimeout(function () { animateSlide(0); }, 500);
 
 $(document).ready(function() {
@@ -113,6 +118,22 @@ $(document).ready(function() {
         anchors: ['home', 'products', 'platform', 'cases'],
         menu: '#menu',
 
+        afterLoad: function(anchorLink, index){
+
+            function resetMenucolors() {
+                $('#menu li a').removeClass('active');
+            }
+
+            if(anchorLink == 'products'){
+                resetMenucolors();
+                $('#menuProducts').addClass('active');
+            } else {
+                resetMenucolors();
+            }
+            ga('send', 'event', 'navigate', anchorLink, index);
+
+        },
+
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex)
         {
             if (index == 1)
@@ -125,6 +146,8 @@ $(document).ready(function() {
                     case 3: animateSlide(3); break;
                 }
             }
+
+            console.log('index ->', index);
         }
     });
 

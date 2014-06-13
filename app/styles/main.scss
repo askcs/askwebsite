@@ -191,12 +191,10 @@ hr {
 }
 
 ::-moz-selection {
-  background: #b3d4fc;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
   text-shadow: none;
 }
 .chromeframe {
@@ -664,6 +662,7 @@ P:last-child {
 
 /*----------HEADER-----------*/
 
+
 #menu{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
@@ -672,14 +671,15 @@ P:last-child {
   position:fixed;
   top:0;
   left:0;
+  z-index: 115;
   height: 60px;
-  z-index: 70;
   width: 100%;
   padding: 0;
   margin:0;
   background-color: #000;
   border:none;
   .container {
+    z-index: 120;
     text-align: center;
     position: relative;
     text-align: left;
@@ -720,6 +720,33 @@ P:last-child {
   li:hover a{
     color: $ask-color;
   }
+  #dropdownToggle {
+    position: absolute;
+    width: 44px;
+    height: 40px;
+    background: url("../images/dropdownToggle.png") no-repeat;
+    right: 0;
+    cursor: pointer;
+  }
+}
+
+#dropdownMenu {
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 40px;
+  z-index: 130;
+  ul {
+    margin-top: 0px;
+    li {
+      display: block;
+      border-top: 1px solid #696969;
+      a {
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
 }
 
 
@@ -758,6 +785,11 @@ P:last-child {
   margin: -6px -3px 0 0;
 }
 
+.fullWidthPhoto {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
 
 
 #footer {
@@ -998,9 +1030,14 @@ P:last-child {
   h2 {
     margin-bottom: 20px;
   }
-  .scenarioImg {
+  .platformImg {
+    max-width: 500px;
+    margin: 0 auto;
     a {
       text-transform: uppercase;
+    }
+    img {
+      width: 100%;
     }
   }
 }
@@ -1106,7 +1143,7 @@ P:last-child {
   background-color: $green;
 }
 
-#content .casePostnl .textField, #content .platform1 .textField {
+#content .casePostnl .textField {
   margin-top: 10%;
 }
 
@@ -1153,23 +1190,50 @@ P:last-child {
   background-color: #fff;
 }
 
-.platform1 .bcg {
-  background-image:url('../images/platform/lego.jpg');
+
+/* ==========================================================================
+   PLATFORM
+   ========================================================================== */
+
+#platform {
+  background-color: #fff;
+  h1,h2 {
+    padding-bottom: 20px;
+  }
+  img {
+   max-width: 100%;
+  }
+  section {
+    border-bottom: dashed 2px #000000;
+  }
+  .container {
+    max-width: 970px;
+  }
+  .platform1 {
+  }
+  .platform2 {
+    background-color: $blue;
+    img {
+      max-width: 140px;
+    }
+  }
+  .platform4 {
+    background-color: $green;
+    p {
+      padding-bottom: 20px;
+    }
+  }
+  .platform5 {
+    background-color: $blue;
+    .textField {
+
+    }
+  }
 }
 
-.platform2 .bcg {
-  background: none;
-  background-color: $green;
-}
 
-.platform3 .bcg {
-  background-image:url('../images/platform/communication.JPG');
-}
 
-.platform4 .bcg {
-  background: none;
-  background-color: $blue;
-}
+
 
 .aboutContent {
   z-index: 5;
@@ -1184,7 +1248,7 @@ P:last-child {
   width: 200px;
   text-align: center;
   background-color: $ask-color;
-  z-index: 101;
+  z-index: 125;
   position: fixed;
   color: #fff;
   @include transform(rotate(-45deg));
@@ -1353,6 +1417,17 @@ body.jobs, body.terms {
 /*----------MIN WIDTH 1200-----------*/
 
 @media (min-width: 1200px){
+  .mobileView {
+    display: none;
+  }
+  #content{
+    #platform {
+      .container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+    }
+  }
   .bcg {
     background-attachment: fixed;
   }
@@ -1373,10 +1448,15 @@ body.jobs, body.terms {
     background-image:url('../images/jobs/ask.jpg');
     height: 600px;
   }
-
-  .products .mobileView {
-    display: none;
+  #platformHeader {
+    background-image:url('../images/platform/platformPhoto01.jpg');
+    height: 500px;
   }
+  #platformPhoto02 {
+    background-image:url('../images/platform/platformPhoto02.jpg');
+    height: 500px;
+  }
+
 
   .jobs {
     .job:nth-child(even) {
@@ -1406,6 +1486,13 @@ body.jobs, body.terms {
     }
   }
 
+  #platform {
+    .platform5 {
+      img {
+        padding-top: 20px;
+      }
+    }
+  }
 
 }
 
@@ -1435,8 +1522,16 @@ body.jobs, body.terms {
     background-image:url('../images/jobs/ask.jpg');
     height: 600px;
   }
+  #platformHeader {
+    background-image:url('../images/platform/platformPhoto01.jpg');
+    height: 500px;
+  }
+  #platformPhoto02 {
+    background-image:url('../images/platform/platformPhoto02.jpg');
+    height: 500px;
+  }
 
-  .products .mobileView {
+  .mobileView {
     display: none;
   }
 
@@ -1494,8 +1589,16 @@ body.jobs, body.terms {
     background-image:url('../images/jobs/askSm.jpg');
     height: 600px;
   }
+  #platformHeader {
+    background-image:url('../images/platform/platformPhoto01Sm.jpg');
+    height: 500px;
+  }
+  #platformPhoto02 {
+    background-image:url('../images/platform/platformPhoto02Sm.jpg');
+    height: 500px;
+  }
 
-  .products .mobileView {
+  .mobileView {
     display: none;
   }
 
@@ -1518,8 +1621,15 @@ body.jobs, body.terms {
   .hideXs {
     display: none !important;
   }
+  h1 {
+    font-size: 24px;
+  }
   h2{
     font-size: 20px;
+  }
+
+  .desktopView {
+    display: none;
   }
 
   .anchor {
@@ -1543,6 +1653,14 @@ body.jobs, body.terms {
   }
 
 
+  .platform {
+    p {
+      font-size: 12px;
+      line-height: 13px;
+      padding-top: 0px;
+    }
+  }
+
   .slide4 .scenarioImg .absoluteElements span img {
     top: 60px;
   }
@@ -1559,9 +1677,27 @@ body.jobs, body.terms {
   #case04, .caseKnrm .bcg {
     background-image: url('../images/cases/knrmXs.jpg');
   }
+
+  #platform {
+    padding-top: 0;
+    .platform3 {
+      h2 {
+        padding-top: 20px;
+      }
+    }
+  }
+
   #jobHeader{
     background-image:url('../images/jobs/askXs.jpg');
     height: 250px;
+  }
+  #platformHeader {
+    background-image:url('../images/platform/platformPhoto01Xs.jpg');
+    height: 200px;
+  }
+  #platformPhoto02 {
+    background-image:url('../images/platform/platformPhoto02Xs.jpg');
+    height: 200px;
   }
 
   #jobsToggle{
@@ -1612,9 +1748,6 @@ body.jobs, body.terms {
   }
 
   .products {
-    .desktopView {
-      display: none;
-    }
     p{
       font-size: 12px;
       line-height: 13px;
