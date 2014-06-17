@@ -1,284 +1,284 @@
 doctype
 html.no-js
-	head
-		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
-		title ASK Community Systems
-		meta(name='author', content='ASK Community Systems')
-		meta(name='Resource-type', content='Document')
-		meta(content='width=device-width, initial-scale=1', name='viewport')
-		meta(content='ASK Community Systems', property='og:title')
-		meta(content='image', property='og:type')
-		meta(content='https://ask-cs.nl/', property='og:url')
-		meta(content='', property='og:image')
-		link(href='/images/favicon.ico', rel='Shortcut Icon')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title ASK Community Systems
+    meta(name='author', content='ASK Community Systems')
+    meta(name='Resource-type', content='Document')
+    meta(content='width=device-width, initial-scale=1', name='viewport')
+    meta(content='ASK Community Systems', property='og:title')
+    meta(content='image', property='og:type')
+    meta(content='https://ask-cs.nl/', property='og:url')
+    meta(content='', property='og:image')
+    link(href='/images/favicon.ico', rel='Shortcut Icon')
 
 
 
-		// --------CSS------
-		// build:css styles/vendor.css
-		// bower:css
-		link(rel='stylesheet', href='vendors/animate.css/animate.css')
-		// endbower
-		// endbuild
-		// build:css(.tmp) styles/main.css
-		link(rel='stylesheet', href='styles/main.css')
-		// endbuild
+    // --------CSS------
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='vendors/animate.css/animate.css')
+    // endbower
+    // endbuild
+    // build:css(.tmp) styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
 
-		script(src='vendors/modernizr/modernizr.js')
-
-
-	body(ng-app='AskWeb')
+    script(src='vendors/modernizr/modernizr.js')
 
 
-
-		//--------HEADER------
-		#menu.mainMenu
-			#dropdownMenu.mobileView.hide
-				ul
-					li
-						a#menuProducts(href='index.html#products') {{ui.menu.products}}
-					li.active
-						a.active(href='platform.html') {{ui.menu.platform}}
-					li
-						a(href='about.html') {{ui.menu.company}}
-					li
-						a(href='cases.html') {{ui.menu.cases}}
-			.container
-				.row
-					.col-xs-5.desktopView
-						ul
-							li
-								a#menuProducts(href='index.html#products') {{ui.menu.products}}
-							li
-								a(href='platform.html') {{ui.menu.platform}}
-					#mainLogo
-						.logoContainer
-							a(href='index.html')
-					.col-xs-5.col-xs-offset-2.desktopView
-						ul
-							li
-								a(href='about.html') {{ui.menu.company}}
-							li
-								a(href='cases.html') {{ui.menu.cases}}
-					#dropdownToggle.mobileView
+  body(ng-app='AskWeb')
 
 
 
-
-
-		//--------COOKIE MESSAGE------
-		#cookieMessage
-			#closeCookie
-			p
-				| {{ui.general.cookieMessage}}
-				a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
-				| .
+    //--------HEADER------
+    #menu.mainMenu
+      #dropdownMenu.mobileView.hide
+        ul
+          li.active
+            a.active(href='platform.html') {{ui.menu.platform}}
+          li
+            a#menuProducts(href='index.html#products') {{ui.menu.products}}
+          li
+            a(href='about.html') {{ui.menu.company}}
+          li
+            a(href='cases.html') {{ui.menu.cases}}
+      .container
+        .row
+          .col-xs-5.desktopView
+            ul
+              li
+                a(href='platform.html') {{ui.menu.platform}}
+              li
+                a#menuProducts(href='index.html#products') {{ui.menu.products}}
+          #mainLogo
+            .logoContainer
+              a(href='index.html')
+          .col-xs-5.col-xs-offset-2.desktopView
+            ul
+              li
+                a(href='about.html') {{ui.menu.company}}
+              li
+                a(href='cases.html') {{ui.menu.cases}}
+          #dropdownToggle.mobileView
 
 
 
 
-		//--------SCENARIO------
-		#section0.section
-			.slide.slide1
-				.container
-					.col-md-12
-						h2.scenarioText1 {{ui.home.scenario.titleSlide1}}
-						.scenarioImg
-							img.animate01-01(src='images/home/scenario01-01.png', alt='slider')
-							img.animate01-02(src='images/home/scenario01-02.png', alt='slider')
-							img.animate01-03(src='images/home/scenario01-03.png', alt='slider')
-			.slide.slide2
-				.container
-					.col-md-12
-						h2.scenarioText2 {{ui.home.scenario.titleSlide2}}
-						.scenarioImg
-							img.animate02-01(src='images/home/scenario02-01.png', alt='slider')
-							img.animate02-02(src='images/home/scenario02-02.png', alt='slider')
-							img.animate02-03(src='images/home/scenario02-03.png', alt='slider')
-			.slide.slide3
-				.container
-					.col-md-12
-						h2.scenarioText3 {{ui.home.scenario.titleSlide3}}
-						.animate03-01.scenarioImg
-							img(src='images/home/scenario03-01.png', alt='slider')
-							.absoluteElements
-								span.animate03-02
-									img(src='images/home/scenario03-02.png')
-								span.animate03-03
-									img(src='images/home/scenario03-03.png')
-								span.animate03-04
-									img(src='images/home/scenario03-04.png')
-								span.animate03-05
-									img(src='images/home/scenario03-05.png')
-								span.animate03-06
-									img(src='images/home/scenario03-06.png')
-			.slide.slide4
-				.container
-					.col-md-12
-						h2.scenarioText4 {{ui.home.scenario.titleSlide4}}
-						.scenarioImg
-							img.animate04-01(src='images/home/scenario04-01.png', alt='slider')
-							img.animate04-02(src='images/home/scenario04-02.png', alt='slider')
-							img.animate04-03(src='images/home/scenario04-03.png', alt='slider')
-							.absoluteElements
-								span
-									img.hide.animate04-04(src='images/home/scenario04-04.png')
+
+    //--------COOKIE MESSAGE------
+    #cookieMessage
+      #closeCookie
+      p
+        | {{ui.general.cookieMessage}}
+        a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
+        | .
 
 
 
 
-		//--------PRODUCTS------
-		#section1.section.products
-			.label
-				h4 {{ui.home.products.title}}
-			.container.desktopView
-				.row
-					.col-md-4.col-md-offset-2.col-sm-5.col-sm-offset-1.standBy
-						a.box(href='https://standby.ask-cs.nl', target='_blank')
-							.top
-								img(src='images/products/logoStandBy.png')
-							.textPart
-								h3 StandBy
-								p {{ui.home.products.standby}}
-					.col-md-4.col-sm-5.teamUp
-						a.box(href='https://teamup.ask-cs.nl', target='_blank')
-							.top
-								img(src='images/products/logoTeamUp.png')
-							.textPart
-								h3 TeamUp
-								p {{ui.home.products.teamup}}
-					.hidden.col-md-4.col-sm-4.joinUs
-						a.box(href='https://joinus.ask-cs.nl', target='_blank')
-							.top
-								img(src='images/products/logoStandBy.png')
-							.textPart
-								h3 JoinUs
-								p {{ui.home.products.joinus}}
-			.mobileView
-				#product01.slide
-					.standBy
-						.top
-							img(src='images/products/logoStandBy.png')
-						.col-xs-12.textPart
-							h3 StandBy
-							p {{ui.home.products.standby}}
-							a(href='http://standby.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
-				#product02.slide
-					.teamUp
-						.top
-							img(src='images/products/logoTeamUp.png')
-						.col-xs-12.textPart
-							h3 TeamUp
-							p {{ui.home.products.teamup}}
-							a(href='http://teamup.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
-				#product03.hidden
-					.joinUs
-						.top
-							img(src='images/products/logoStandBy.png')
-						.col-xs-12.textPart
-							h3 JoinUs
-							p {{ui.home.products.joinus}}.
-							a(href='http://joinus.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+    //--------SCENARIO------
+    #section0.section
+      .slide.slide1
+        .container
+          .col-md-12
+            h2.scenarioText1 {{ui.home.scenario.titleSlide1}}
+            .scenarioImg
+              img.animate01-01(src='images/home/scenario01-01.png', alt='slider')
+              img.animate01-02(src='images/home/scenario01-02.png', alt='slider')
+              img.animate01-03(src='images/home/scenario01-03.png', alt='slider')
+      .slide.slide2
+        .container
+          .col-md-12
+            h2.scenarioText2 {{ui.home.scenario.titleSlide2}}
+            .scenarioImg
+              img.animate02-01(src='images/home/scenario02-01.png', alt='slider')
+              img.animate02-02(src='images/home/scenario02-02.png', alt='slider')
+              img.animate02-03(src='images/home/scenario02-03.png', alt='slider')
+      .slide.slide3
+        .container
+          .col-md-12
+            h2.scenarioText3 {{ui.home.scenario.titleSlide3}}
+            .animate03-01.scenarioImg
+              img(src='images/home/scenario03-01.png', alt='slider')
+              .absoluteElements
+                span.animate03-02
+                  img(src='images/home/scenario03-02.png')
+                span.animate03-03
+                  img(src='images/home/scenario03-03.png')
+                span.animate03-04
+                  img(src='images/home/scenario03-04.png')
+                span.animate03-05
+                  img(src='images/home/scenario03-05.png')
+                span.animate03-06
+                  img(src='images/home/scenario03-06.png')
+      .slide.slide4
+        .container
+          .col-md-12
+            h2.scenarioText4 {{ui.home.scenario.titleSlide4}}
+            .scenarioImg
+              img.animate04-01(src='images/home/scenario04-01.png', alt='slider')
+              img.animate04-02(src='images/home/scenario04-02.png', alt='slider')
+              img.animate04-03(src='images/home/scenario04-03.png', alt='slider')
+              .absoluteElements
+                span
+                  img.hide.animate04-04(src='images/home/scenario04-04.png')
 
 
 
-		//--------PLATFORM------
-		#section2.section.platform
-			.label
-				h4 {{ui.home.platform.title}}
-			.container
-				.col-md-6.col-md-offset-3
-					h2 {{ui.home.platform.introTitle}}
-					p {{ui.home.platform.introText}}
-					.platformImg
-						a(href='platform.html') {{ui.general.readMore}}...
-						img(src='images/platform/platform01.png', alt='platform')
+    //--------PLATFORM------
+    #section1.section.platform
+      .label
+        h4 {{ui.home.platform.title}}
+      .container
+        .col-md-6.col-md-offset-3
+          h2 {{ui.home.platform.introTitle}}
+          p {{ui.home.platform.introText}}
+          .platformImg
+            a(href='platform.html') {{ui.general.readMore}}...
+            img(src='images/platform/platform01.png', alt='platform')
 
 
 
 
-		//--------CASES------
-		#section3.section
-			.label
-				h4 {{ui.home.casesPreview.title}}
-			#case01.slide.case
-				.container
-					.col-md-4.col-xs-8.col-md-offset-8.col-xs-offset-4
-						.textField
-							h2 {{ui.cases.postnl.title}}
-							p {{ui.home.casesPreview.postnl}}
-							a(href='cases.html#slide-1') {{ui.general.readMore}}...
-			#case04.slide.case
-				.container
-					.col-md-4.col-xs-8
-						.textField
-							h2 {{ui.cases.knrm.title}}
-							p {{ui.home.casesPreview.knrm01}}
-							p {{ui.home.casesPreview.knrm02}}
-							a(href='cases.html#slide-3') {{ui.general.readMore}}...
-			#case03.slide.case
-				.container
-					.col-md-4.col-xs-8.col-md-offset-8.col-xs-offset-4
-						.textField
-							h2 {{ui.cases.bz.title}}
-							p {{ui.home.casesPreview.bz01}}
-							p {{ui.home.casesPreview.bz02}}
-							a(href='cases.html#slide-5') {{ui.general.readMore}}...
-			#case02.slide.case
-				.container
-					.col-md-4.col-xs-8
-						.textField
-							h2 {{ui.cases.olympia.title}}
-							p {{ui.home.casesPreview.olympia}}
-							a(href='cases.html#slide-7') {{ui.general.readMore}}...
+    //--------PRODUCTS------
+    #section2.section.products
+      .label
+        h4 {{ui.home.products.title}}
+      .container.desktopView
+        .row
+          .col-md-4.col-md-offset-2.col-sm-5.col-sm-offset-1.standBy
+            a.box(href='https://standby.ask-cs.nl', target='_blank')
+              .top
+                img(src='images/products/logoStandBy.png')
+              .textPart
+                h3 StandBy
+                p {{ui.home.products.standby}}
+          .col-md-4.col-sm-5.teamUp
+            a.box(href='https://teamup.ask-cs.nl', target='_blank')
+              .top
+                img(src='images/products/logoTeamUp.png')
+              .textPart
+                h3 TeamUp
+                p {{ui.home.products.teamup}}
+          .hidden.col-md-4.col-sm-4.joinUs
+            a.box(href='https://joinus.ask-cs.nl', target='_blank')
+              .top
+                img(src='images/products/logoStandBy.png')
+              .textPart
+                h3 JoinUs
+                p {{ui.home.products.joinus}}
+      .mobileView
+        #product01.slide
+          .standBy
+            .top
+              img(src='images/products/logoStandBy.png')
+            .col-xs-12.textPart
+              h3 StandBy
+              p {{ui.home.products.standby}}
+              a(href='http://standby.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+        #product02.slide
+          .teamUp
+            .top
+              img(src='images/products/logoTeamUp.png')
+            .col-xs-12.textPart
+              h3 TeamUp
+              p {{ui.home.products.teamup}}
+              a(href='http://teamup.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+        #product03.hidden
+          .joinUs
+            .top
+              img(src='images/products/logoStandBy.png')
+            .col-xs-12.textPart
+              h3 JoinUs
+              p {{ui.home.products.joinus}}.
+              a(href='http://joinus.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
 
 
 
 
-		//--------FOOTER------
-		#footer
-			ul.languageToggle
-				li
-					a
-			ul#languageMenu.hide
-				li
-					a(ng-click="changeLang('de')", class="{{(lang == 'de') && 'active'}}") DE
-				li
-					a(ng-click="changeLang('nl')", class="{{(lang == 'nl') && 'active'}}") NL
-				li
-					a(ng-click="changeLang('en')", class="{{(lang == 'en') && 'active'}}") EN
-			ul.contactDetails
-				li {{ui.contact.address}}
-				li.hideXs {{ui.contact.zipcode}}
-				li {{ui.contact.city}}
-				li.hideXs
-					| {{ui.contact.phone}}
-					li
-						a(href='mailto:{{ui.contact.email}}') {{ui.contact.email}}
-			ul.contactDetails.extraAddress.hideXs.hideSm
-				li {{ui.contactExtra.address}}
-				li.hideXs {{ui.contactExtra.zipcode}}
-				li {{ui.contactExtra.city}}
-				li.hideXs
-					| {{ui.contactExtra.phone}}
-					li
-						a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
+    //--------CASES------
+    #section3.section
+      .label
+        h4 {{ui.home.casesPreview.title}}
+      #case01.slide.case
+        .container
+          .col-md-4.col-xs-8.col-md-offset-8.col-xs-offset-4
+            .textField
+              h2 {{ui.cases.postnl.title}}
+              p {{ui.home.casesPreview.postnl}}
+              a(href='cases.html#slide-1') {{ui.general.readMore}}...
+      #case04.slide.case
+        .container
+          .col-md-4.col-xs-8
+            .textField
+              h2 {{ui.cases.knrm.title}}
+              p {{ui.home.casesPreview.knrm01}}
+              p {{ui.home.casesPreview.knrm02}}
+              a(href='cases.html#slide-3') {{ui.general.readMore}}...
+      #case03.slide.case
+        .container
+          .col-md-4.col-xs-8.col-md-offset-8.col-xs-offset-4
+            .textField
+              h2 {{ui.cases.bz.title}}
+              p {{ui.home.casesPreview.bz01}}
+              p {{ui.home.casesPreview.bz02}}
+              a(href='cases.html#slide-5') {{ui.general.readMore}}...
+      #case02.slide.case
+        .container
+          .col-md-4.col-xs-8
+            .textField
+              h2 {{ui.cases.olympia.title}}
+              p {{ui.home.casesPreview.olympia}}
+              a(href='cases.html#slide-7') {{ui.general.readMore}}...
 
 
-		//--------JS------
-		// build:js scripts/vendor.js
-		// bower:js
-		script(src='vendors/jQuery/dist/jquery.js')
-		script(src='vendors/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js')
-		script(src='vendors/angular/angular.js')
-		// endbower
-		// endbuild
 
-		script(src='scripts/main.js')
 
-		// build:js scripts/index.js
-		script(src='vendors/jquery.slimscroll/jquery.slimscroll.js')
-		script(src='vendors/fullPage.js/jquery.fullPage.js')
-		script(src='vendors/jquery-ui/ui/jquery-ui.js')
-		script(src='scripts/index.js')
-		// endbuild
+    //--------FOOTER------
+    #footer
+      ul.languageToggle
+        li
+          a
+      ul#languageMenu.hide
+        li
+          a(ng-click="changeLang('de')", class="{{(lang == 'de') && 'active'}}") DE
+        li
+          a(ng-click="changeLang('nl')", class="{{(lang == 'nl') && 'active'}}") NL
+        li
+          a(ng-click="changeLang('en')", class="{{(lang == 'en') && 'active'}}") EN
+      ul.contactDetails
+        li {{ui.contact.address}}
+        li.hideXs {{ui.contact.zipcode}}
+        li {{ui.contact.city}}
+        li.hideXs
+          | {{ui.contact.phone}}
+          li
+            a(href='mailto:{{ui.contact.email}}') {{ui.contact.email}}
+      ul.contactDetails.extraAddress.hideXs.hideSm
+        li {{ui.contactExtra.address}}
+        li.hideXs {{ui.contactExtra.zipcode}}
+        li {{ui.contactExtra.city}}
+        li.hideXs
+          | {{ui.contactExtra.phone}}
+          li
+            a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
+
+
+    //--------JS------
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='vendors/jQuery/dist/jquery.js')
+    script(src='vendors/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js')
+    script(src='vendors/angular/angular.js')
+    // endbower
+    // endbuild
+
+    script(src='scripts/main.js')
+
+    // build:js scripts/index.js
+    script(src='vendors/jquery.slimscroll/jquery.slimscroll.js')
+    script(src='vendors/fullPage.js/jquery.fullPage.js')
+    script(src='vendors/jquery-ui/ui/jquery-ui.js')
+    script(src='scripts/index.js')
+    // endbuild

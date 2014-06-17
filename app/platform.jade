@@ -34,10 +34,10 @@ html.no-js
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
         ul
-          li
-            a#menuProducts(href='index.html#products') {{ui.menu.products}}
           li.active
             a.active(href='platform.html') {{ui.menu.platform}}
+          li
+            a#menuProducts(href='index.html#products') {{ui.menu.products}}
           li
             a(href='about.html') {{ui.menu.company}}
           li
@@ -47,9 +47,9 @@ html.no-js
           .col-xs-5.desktopView
             ul
               li
-                a#menuProducts(href='index.html#products') {{ui.menu.products}}
-              li
                 a.active(href='platform.html') {{ui.menu.platform}}
+              li
+                a#menuProducts(href='index.html#products') {{ui.menu.products}}
           #mainLogo
             .logoContainer
               a(href='index.html')
@@ -165,7 +165,7 @@ html.no-js
                 p {{ui.platform.thePlatform.nextGeneration.description01}}
                 p {{ui.platform.thePlatform.nextGeneration.description02}}
                   a(href='https://ask-fast.com', target='_blank') {{ui.platform.thePlatform.nextGeneration.link01}}
-                  | ). {{ui.platform.thePlatform.nextGeneration.description0202}}
+                  | . {{ui.platform.thePlatform.nextGeneration.description0202}}
                 p {{ui.platform.thePlatform.nextGeneration.description03}}
                 p {{ui.platform.thePlatform.nextGeneration.description04}}
 

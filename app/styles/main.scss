@@ -1705,9 +1705,9 @@ body.jobs, body.terms {
   }
 
   #jobsToggle{
-    margin: 52px 0 0 -74px;
+    margin: 14px 0 0 -74px;
     padding: 3px 0;
-    z-index: 52;
+/*    z-index: 52;*/
     h4{
       font-size: 9px;
     }
@@ -1715,6 +1715,8 @@ body.jobs, body.terms {
 
   #jobArea {
     top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .jobs .job {
