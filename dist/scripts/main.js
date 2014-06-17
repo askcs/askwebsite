@@ -385,8 +385,8 @@ var localization = {
         nextGeneration: {
           title: 'Een toekomstbestendig platform',
           description01: 'Het ASK platform is een Platform as a Service (PaaS-oplossing): Het is klaar om uitgerold te worden in uw cloud-omgeving. De implementatie is eenvoudig en past naadloos in uw bestaande IT infrastructuur. Dit is makkelijk voor uw IT-medewerkers. Nog meer gemak is terug te vinden in de eenvoudige API, die bovendien is gebaseerd op open-source standaarden.',
-          description02: 'Vergelijk de softwareapplicaties en de API van ASK met lego: u kunt er namelijk uw eigen cloud-gebaseerde communicatieoplossing mee bouwen. Hiervoor kunt u gebruik maken van de stenen die ASK al klaar heeft liggen ',
-          link01: 'www.ask-fast.com',
+          description02: 'Vergelijk de softwareapplicaties en de API van ASK met lego: u kunt er namelijk uw eigen cloud-gebaseerde communicatieoplossing mee bouwen. Hiervoor kunt u gebruik maken van de bouwstenen die ASK al klaar heeft liggen, bijvoorbeeld op ',
+          link01: 'ASK-Fast.com',
           description0202: 'Uiteraard kunt u met de ASK API ook uw eigen software-applicaties bouwen en zo uw eigen custom oplossing maken.',
           description03: '',
           description04: ''
@@ -753,8 +753,8 @@ var localization = {
         nextGeneration: {
           title: 'The next generation platform',
           description01: 'ASK is the next generation Cloud Platform. It\'s a complete turn-key (developer friendly) PaaS solution. And ready to deploy in your cloud. ASK has a simple and effective API, based on open standards.',
-          description02: 'Like lego bricks, imagine ASK’s apps and API as little building blocks you can use to build a cloud based communication solution: You can start with the bricks ASK has already build (',
-          link01: 'www.ask-fast.com',
+          description02: 'Like lego bricks, imagine ASK’s apps and API as little building blocks you can use to build a cloud based communication solution: You can start with the bricks ASK has already build, for example on ',
+          link01: 'ASK-Fast.com',
           description03: 'In the case that you can\'t find what you\'re looking for, you can off course build your own apps with the ASK API to create your own customized solution.',
           description04: 'On top of this we have made it really easy to implement ASK: it can be seamlessly integrated into your existing IT infrastructure.'
         }
@@ -1167,8 +1167,8 @@ var localization = {
         nextGeneration: {
           title: 'Die Software Plattform der nächsten Generation',
           description01: 'ASK liefert die nächste Generation cloud-Plattform. Sie ist für Entwickler über eine einfache API leicht zugängliche PaaS-Lösung basierend auf open standards.',
-          description02: 'Ähnlich dem Prinzip von Legosteinen können Sie mit den ASK-Apps und -API eine eigene cloud-basierte Kommunikationslösung konstruieren. Alternativ stehen Ihnen auch bereits von ASK vorgefertigte Lösungen zur Verfügung (z.B.',
-          link01: ' www.ask-fast.com',
+          description02: 'Ähnlich dem Prinzip von Legosteinen können Sie mit den ASK-Apps und -API eine eigene cloud-basierte Kommunikationslösung konstruieren. Alternativ stehen Ihnen auch bereits von ASK vorgefertigde Lösungen zur Verfüging, z.B. auf ',
+          link01: ' ASK-Fast.com',
           description03: 'Sie können selbstverständlich auf Basis der ASK-API eine eigene Kommunikationslösung entwickeln. ',
           description04: 'Sie können ASK schnell und einfach in Ihre bestehende IT-Infrastruktur integrieren.'
         }
