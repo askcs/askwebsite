@@ -485,4 +485,9 @@ module.exports = function (grunt)
       'test',
       'build'
     ]);
+
+  grunt.registerTask(
+    'testBeforeDeploy', [
+      'serve:dist'
+    ]);
 };

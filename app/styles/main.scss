@@ -803,7 +803,11 @@ P:last-child {
   width: 100%;
   z-index: 9;
   font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
   font-size: 10px;
+  a {
+    padding-left: 3px;
+  }
   .languageToggle {
     position: fixed;
     display: block;
