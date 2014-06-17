@@ -1,100 +1,284 @@
-doctype html
+doctype
 html.no-js
-head
-	meta(charset='utf-8')
-	title Ask-HTML5
-	meta(name='description', content='')
-	meta(name='viewport', content='width=device-width')
-	link(rel='shortcut icon', href='/favicon.ico')
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		title ASK Community Systems
+		meta(name='author', content='ASK Community Systems')
+		meta(name='Resource-type', content='Document')
+		meta(content='width=device-width, initial-scale=1', name='viewport')
+		meta(content='ASK Community Systems', property='og:title')
+		meta(content='image', property='og:type')
+		meta(content='https://ask-cs.nl/', property='og:url')
+		meta(content='', property='og:image')
+		link(href='/images/favicon.ico', rel='Shortcut Icon')
 
-	// Place favicon.ico and apple-touch-icon.png in the root directory
 
-	// build:css styles/vendor.css
-	// bower:css
-	// endbower
-	// endbuild
 
-	// build:css(.tmp) styles/main.css
-	link(rel='stylesheet', href='styles/main.css')
-	// endbuild
+		// --------CSS------
+		// build:css styles/vendor.css
+		// bower:css
+		link(rel='stylesheet', href='vendors/animate.css/animate.css')
+		// endbower
+		// endbuild
+		// build:css(.tmp) styles/main.css
+		link(rel='stylesheet', href='styles/main.css')
+		// endbuild
 
-	// build:js scripts/vendor/modernizr.js
-	script(src='../bower_components/modernizr/modernizr.js')
-	// endbuild
+		script(src='vendors/modernizr/modernizr.js')
 
-	body
 
-		.container
+	body(ng-app='AskWeb')
 
-			.header
-				ul.nav.nav-pills.pull-right
+
+
+		//--------HEADER------
+		#menu.mainMenu
+			#dropdownMenu.mobileView.hide
+				ul
+					li
+						a#menuProducts(href='index.html#products') {{ui.menu.products}}
 					li.active
-						a(href='#') Home
+						a.active(href='platform.html') {{ui.menu.platform}}
 					li
-						a(href='#') About
+						a(href='about.html') {{ui.menu.company}}
 					li
-						a(href='#') Contact
-				h3.text-muted ask website
+						a(href='cases.html') {{ui.menu.cases}}
+			.container
+				.row
+					.col-xs-5.desktopView
+						ul
+							li
+								a#menuProducts(href='index.html#products') {{ui.menu.products}}
+							li
+								a(href='platform.html') {{ui.menu.platform}}
+					#mainLogo
+						.logoContainer
+							a(href='index.html')
+					.col-xs-5.col-xs-offset-2.desktopView
+						ul
+							li
+								a(href='about.html') {{ui.menu.company}}
+							li
+								a(href='cases.html') {{ui.menu.cases}}
+					#dropdownToggle.mobileView
 
-			.jumbotron
-				h1 'Allo, 'Allo!
-				p.lead Always a pleasure scaffolding your apps.
-				p
-					a.btn.btn-lg.btn-success(href='#')
-						| Splendid!
-						span.glyphicon.glyphicon-ok
 
-			.row.marketing
-				.col-lg-6
-					h4 HTML5 Boilerplate
-					p
-						| HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-					h4 Sass
-					p
-						| Sass is a mature, stable, and powerful professional grade CSS extension language.
-					h4 Bootstrap
-					p
-						| Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
-					h4 Modernizr
-					p
-						| Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.
 
-			.footer
-				p
-					span.glyphicon.glyphicon-heart
-					| from the Yeoman team
 
+
+		//--------COOKIE MESSAGE------
+		#cookieMessage
+			#closeCookie
+			p
+				| {{ui.general.cookieMessage}}
+				a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
+				| .
+
+
+
+
+		//--------SCENARIO------
+		#section0.section
+			.slide.slide1
+				.container
+					.col-md-12
+						h2.scenarioText1 {{ui.home.scenario.titleSlide1}}
+						.scenarioImg
+							img.animate01-01(src='images/home/scenario01-01.png', alt='slider')
+							img.animate01-02(src='images/home/scenario01-02.png', alt='slider')
+							img.animate01-03(src='images/home/scenario01-03.png', alt='slider')
+			.slide.slide2
+				.container
+					.col-md-12
+						h2.scenarioText2 {{ui.home.scenario.titleSlide2}}
+						.scenarioImg
+							img.animate02-01(src='images/home/scenario02-01.png', alt='slider')
+							img.animate02-02(src='images/home/scenario02-02.png', alt='slider')
+							img.animate02-03(src='images/home/scenario02-03.png', alt='slider')
+			.slide.slide3
+				.container
+					.col-md-12
+						h2.scenarioText3 {{ui.home.scenario.titleSlide3}}
+						.animate03-01.scenarioImg
+							img(src='images/home/scenario03-01.png', alt='slider')
+							.absoluteElements
+								span.animate03-02
+									img(src='images/home/scenario03-02.png')
+								span.animate03-03
+									img(src='images/home/scenario03-03.png')
+								span.animate03-04
+									img(src='images/home/scenario03-04.png')
+								span.animate03-05
+									img(src='images/home/scenario03-05.png')
+								span.animate03-06
+									img(src='images/home/scenario03-06.png')
+			.slide.slide4
+				.container
+					.col-md-12
+						h2.scenarioText4 {{ui.home.scenario.titleSlide4}}
+						.scenarioImg
+							img.animate04-01(src='images/home/scenario04-01.png', alt='slider')
+							img.animate04-02(src='images/home/scenario04-02.png', alt='slider')
+							img.animate04-03(src='images/home/scenario04-03.png', alt='slider')
+							.absoluteElements
+								span
+									img.hide.animate04-04(src='images/home/scenario04-04.png')
+
+
+
+
+		//--------PRODUCTS------
+		#section1.section.products
+			.label
+				h4 {{ui.home.products.title}}
+			.container.desktopView
+				.row
+					.col-md-4.col-md-offset-2.col-sm-5.col-sm-offset-1.standBy
+						a.box(href='https://standby.ask-cs.nl', target='_blank')
+							.top
+								img(src='images/products/logoStandBy.png')
+							.textPart
+								h3 StandBy
+								p {{ui.home.products.standby}}
+					.col-md-4.col-sm-5.teamUp
+						a.box(href='https://teamup.ask-cs.nl', target='_blank')
+							.top
+								img(src='images/products/logoTeamUp.png')
+							.textPart
+								h3 TeamUp
+								p {{ui.home.products.teamup}}
+					.hidden.col-md-4.col-sm-4.joinUs
+						a.box(href='https://joinus.ask-cs.nl', target='_blank')
+							.top
+								img(src='images/products/logoStandBy.png')
+							.textPart
+								h3 JoinUs
+								p {{ui.home.products.joinus}}
+			.mobileView
+				#product01.slide
+					.standBy
+						.top
+							img(src='images/products/logoStandBy.png')
+						.col-xs-12.textPart
+							h3 StandBy
+							p {{ui.home.products.standby}}
+							a(href='http://standby.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+				#product02.slide
+					.teamUp
+						.top
+							img(src='images/products/logoTeamUp.png')
+						.col-xs-12.textPart
+							h3 TeamUp
+							p {{ui.home.products.teamup}}
+							a(href='http://teamup.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+				#product03.hidden
+					.joinUs
+						.top
+							img(src='images/products/logoStandBy.png')
+						.col-xs-12.textPart
+							h3 JoinUs
+							p {{ui.home.products.joinus}}.
+							a(href='http://joinus.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+
+
+
+		//--------PLATFORM------
+		#section2.section.platform
+			.label
+				h4 {{ui.home.platform.title}}
+			.container
+				.col-md-6.col-md-offset-3
+					h2 {{ui.home.platform.introTitle}}
+					p {{ui.home.platform.introText}}
+					.platformImg
+						a(href='platform.html') {{ui.general.readMore}}...
+						img(src='images/platform/platform01.png', alt='platform')
+
+
+
+
+		//--------CASES------
+		#section3.section
+			.label
+				h4 {{ui.home.casesPreview.title}}
+			#case01.slide.case
+				.container
+					.col-md-4.col-xs-8.col-md-offset-8.col-xs-offset-4
+						.textField
+							h2 {{ui.cases.postnl.title}}
+							p {{ui.home.casesPreview.postnl}}
+							a(href='cases.html#slide-1') {{ui.general.readMore}}...
+			#case04.slide.case
+				.container
+					.col-md-4.col-xs-8
+						.textField
+							h2 {{ui.cases.knrm.title}}
+							p {{ui.home.casesPreview.knrm01}}
+							p {{ui.home.casesPreview.knrm02}}
+							a(href='cases.html#slide-3') {{ui.general.readMore}}...
+			#case03.slide.case
+				.container
+					.col-md-4.col-xs-8.col-md-offset-8.col-xs-offset-4
+						.textField
+							h2 {{ui.cases.bz.title}}
+							p {{ui.home.casesPreview.bz01}}
+							p {{ui.home.casesPreview.bz02}}
+							a(href='cases.html#slide-5') {{ui.general.readMore}}...
+			#case02.slide.case
+				.container
+					.col-md-4.col-xs-8
+						.textField
+							h2 {{ui.cases.olympia.title}}
+							p {{ui.home.casesPreview.olympia}}
+							a(href='cases.html#slide-7') {{ui.general.readMore}}...
+
+
+
+
+		//--------FOOTER------
+		#footer
+			ul.languageToggle
+				li
+					a
+			ul#languageMenu.hide
+				li
+					a(ng-click="changeLang('de')", class="{{(lang == 'de') && 'active'}}") DE
+				li
+					a(ng-click="changeLang('nl')", class="{{(lang == 'nl') && 'active'}}") NL
+				li
+					a(ng-click="changeLang('en')", class="{{(lang == 'en') && 'active'}}") EN
+			ul.contactDetails
+				li {{ui.contact.address}}
+				li.hideXs {{ui.contact.zipcode}}
+				li {{ui.contact.city}}
+				li.hideXs
+					| {{ui.contact.phone}}
+					li
+						a(href='mailto:{{ui.contact.email}}') {{ui.contact.email}}
+			ul.contactDetails.extraAddress.hideXs.hideSm
+				li {{ui.contactExtra.address}}
+				li.hideXs {{ui.contactExtra.zipcode}}
+				li {{ui.contactExtra.city}}
+				li.hideXs
+					| {{ui.contactExtra.phone}}
+					li
+						a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
+
+
+		//--------JS------
 		// build:js scripts/vendor.js
 		// bower:js
-		script(src='../bower_components/jquery/dist/jquery.js')
+		script(src='vendors/jQuery/dist/jquery.js')
+		script(src='vendors/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js')
+		script(src='vendors/angular/angular.js')
 		// endbower
 		// endbuild
 
-
-		// Google Analytics: change UA-XXXXX-X to be your site's ID.
-		script.
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='//www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-			ga('create','UA-XXXXX-X');ga('send','pageview');
-
-		// build:js scripts/plugins.js
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js')
-		script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js')
-		// endbuild
-
-		// build:js({app,.tmp}) scripts/main.js
 		script(src='scripts/main.js')
+
+		// build:js scripts/index.js
+		script(src='vendors/jquery.slimscroll/jquery.slimscroll.js')
+		script(src='vendors/fullPage.js/jquery.fullPage.js')
+		script(src='vendors/jquery-ui/ui/jquery-ui.js')
+		script(src='scripts/index.js')
 		// endbuild

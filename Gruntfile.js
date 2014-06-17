@@ -105,7 +105,7 @@ module.exports = function (grunt)
             {
               return [
                 connect.static('.tmp'),
-                connect().use('/bower_components', connect.static('./bower_components')),
+                connect().use('/vendors', connect.static('./vendors')),
                 connect.static(config.app)
               ];
             }
@@ -120,7 +120,7 @@ module.exports = function (grunt)
               return [
                 connect.static('.tmp'),
                 connect.static('test'),
-                connect().use('/bower_components', connect.static('./bower_components')),
+                connect().use('/vendors', connect.static('./vendors')),
                 connect.static(config.app)
               ];
             }
@@ -179,7 +179,7 @@ module.exports = function (grunt)
       sass: {
         options: {
           includePaths: [
-            'bower_components'
+            'vendors'
           ]
         },
         dist: {
@@ -227,7 +227,7 @@ module.exports = function (grunt)
       bowerInstall: {
         app: {
           src: ['<%= config.app %>/index.html'],
-          exclude: ['bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js']
+          exclude: ['vendors/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js']
         },
         sass: {
           src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}']
@@ -356,16 +356,17 @@ module.exports = function (grunt)
               src: [
                 '*.{ico,png,txt}',
                 '.htaccess',
-                'images/{,*/}*.webp',
+                'images/{,*/}{,*/}{,*/}*.*',
                 '{,*/}*.html',
-                'styles/fonts/{,*/}*.*'
+                'styles/fonts/{,*/}*.*',
+                'scripts/{,*/}*.*'
               ]
             },
             {
               expand: true,
               dot: true,
               cwd: '.',
-              src: ['bower_components/{,*/}{,*/}{,*/}{,*/}{,*/}{,*/}*.*'],
+              src: ['vendors/{,*/}{,*/}{,*/}{,*/}{,*/}{,*/}*.*'],
               dest: '<%= config.dist %>'
             }
           ]
@@ -383,7 +384,7 @@ module.exports = function (grunt)
       // reference in your app
       modernizr: {
         dist: {
-          devFile: 'bower_components/modernizr/modernizr.js',
+          devFile: 'vendors/modernizr/modernizr.js',
           outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
           files: {
             src: [
