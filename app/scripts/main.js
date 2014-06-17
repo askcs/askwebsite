@@ -67,8 +67,8 @@ var localization = {
       },
       platform: {
         title:'ASK Platform',
-        introTitle:'ASK Software Platform',
-        introText: 'Last minute uitdagingen oplossen met het software-platform van ASK.'
+        introTitle:'ASK Platform',
+        introText: 'Last minute uitdagingen oplossen met het platform van ASK.'
       },
       casesPreview: {
         title: 'Referenties',
@@ -339,8 +339,8 @@ var localization = {
     platform: {
       intro: {
         title: 'ASK Platform',
-        description01: 'Last minute uitdagingen oplossen met het software-platform van ASK.',
-        description02: 'Nog voor er personeelstekorten ontstaan, garandeert het softwareplatform van ASK de beschikbaarheid van de juiste mensen. Dat betekent dat de juiste kennis en vaardigheden ook tot uw beschikking staan. Om dit mogelijk te maken, gebruikt ASK continu de informatie die uw medewerkers doorgeven aan het platform.',
+        description01: 'Last minute uitdagingen oplossen met het platform van ASK.',
+        description02: 'Nog voor er personeelstekorten ontstaan, garandeert het platform van ASK de beschikbaarheid van de juiste mensen. Dat betekent dat de juiste kennis en vaardigheden ook tot uw beschikking staan. Om dit mogelijk te maken, gebruikt ASK continu de informatie die uw medewerkers doorgeven aan het platform.',
         description03: 'ASK gebruikt het platform bovendien als basis voor de eigen producten StandBy en TeamUp.'
       },
       need: {
@@ -356,7 +356,7 @@ var localization = {
       },
       businessGoals: {
         title: 'Uw organisatiebehoeften bewaken',
-        description01: 'Het softwareplatform van ASK voorkomt dat de oplossing te laat komt. Het platform zorgt er volledig zelfstandig voor dat de juiste personen voor u beschikbaar zijn op het moment dat het nodig is. Hierdoor beschikt u op het juiste moment over de benodigde kennis en kunde.',
+        description01: 'Het platform van ASK voorkomt dat de oplossing te laat komt. Het platform zorgt er volledig zelfstandig voor dat de juiste personen voor u beschikbaar zijn op het moment dat het nodig is. Hierdoor beschikt u op het juiste moment over de benodigde kennis en kunde.',
         description02: 'ASK gaat hierin verder dan andere software: Het platform houdt continu uw behoefte in de gaten en bewaakt deze actief. Dit betekent dat wanneer u wilt dat er altijd voldoende mensen beschikbaar zijn, ASK voor u in de gaten of dat het geval is en of dat ook mensen zijn met de juiste kennis en vaardigheden. Hiervoor kijkt ASK naar de toekomst door de planning en locatie van uw mensen te monitoren.'
       },
       context: {
@@ -439,8 +439,8 @@ var localization = {
       },
       platform: {
         title:'ASK Platform',
-        introTitle:'ASK Software Platform',
-        introText: 'ASK delivers the software-platform businesses need to solve last minute challenges.'
+        introTitle:'ASK Platform',
+        introText: 'ASK delivers the platform businesses need to solve last minute challenges.'
       },
       casesPreview: {
         title: 'References',
@@ -707,7 +707,7 @@ var localization = {
     platform: {
       intro: {
         title: 'ASK Platform',
-        description01: 'ASK delivers the software-platform businesses need to solve last minute challenges. ',
+        description01: 'ASK delivers the platform businesses need to solve last minute challenges. ',
         description02: 'At that very moment the ASK platform jumps in to guarantee the availability of the right people, and thus knowledge and skills. Effectively combining the users’ context and dialogue with the user the ASK platform ensures the right solution for the last minute challenge.',
         description03: 'The ASK platform is also the basis of ASKs own products, including StandBy and TeamUp.'
       },
@@ -724,7 +724,7 @@ var localization = {
       },
       businessGoals: {
         title: 'Guarding your business goals',
-        description01: 'The software-platform from ASK prevents the trouble: it operates autonomously in ensuring you have the right person (with the right expertise) available at the right moment to the right job.',
+        description01: 'The platform from ASK prevents the trouble: it operates autonomously in ensuring you have the right person (with the right expertise) available at the right moment to the right job.',
         description02: 'From here, ASK goes beyond other software to secure a solution: by providing continuous monitoring and guarding of goals. If you the goal is availability, then ASK checks if there are enough people available for the coming period, based on their planning and location. ASK then escalates when an insolvable shortage is about to occur. This results in a very robust, reliable solution regarding the realisation of your business goals.'
       },
       context: {
@@ -813,7 +813,7 @@ var localization = {
       },
       platform: {
         title:'Die ASK Platform',
-        introTitle:'Die ASK Software Platform',
+        introTitle:'Die ASK Platform',
         introText: 'ASK liefert Technologie, um bei kurzfristigen Änderungen auftretende Probleme zu vermeiden.'
       },
       casesPreview: {
@@ -1165,7 +1165,7 @@ var localization = {
           description03: 'Mit der ASK cloud Plattform minimieren Sie auch Risiken und Investitionen, welche mit Inhouse Lösungen verbunden wären. Mittels der ASK Cloud erhalten Sie Zugang zu professionellen Lösungen ohne Vorab-Investition.'
         },
         nextGeneration: {
-          title: 'Die Software Plattform der nächsten Generation',
+          title: 'Die Plattform der nächsten Generation',
           description01: 'ASK liefert die nächste Generation cloud-Plattform. Sie ist für Entwickler über eine einfache API leicht zugängliche PaaS-Lösung basierend auf open standards.',
           description02: 'Ähnlich dem Prinzip von Legosteinen können Sie mit den ASK-Apps und -API eine eigene cloud-basierte Kommunikationslösung konstruieren. Alternativ stehen Ihnen auch bereits von ASK vorgefertigde Lösungen zur Verfüging, z.B. auf ',
           link01: ' ASK-Fast.com',

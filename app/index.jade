@@ -27,6 +27,7 @@ html.no-js
     script(src='vendors/modernizr/modernizr.js')
 
 
+
   body(ng-app='AskWeb')
 
 
@@ -92,37 +93,37 @@ html.no-js
           .col-md-12
             h2.scenarioText2 {{ui.home.scenario.titleSlide2}}
             .scenarioImg
-              img.animate02-01(src='images/home/scenario02-01.png', alt='slider')
-              img.animate02-02(src='images/home/scenario02-02.png', alt='slider')
-              img.animate02-03(src='images/home/scenario02-03.png', alt='slider')
+              img.animate02-01(src='images/home/scenario02-01.png', alt='Smartphone')
+              img.animate02-02(src='images/home/scenario02-02.png', alt='Desktop computer')
+              img.animate02-03(src='images/home/scenario02-03.png', alt='Tablet')
       .slide.slide3
         .container
           .col-md-12
             h2.scenarioText3 {{ui.home.scenario.titleSlide3}}
             .animate03-01.scenarioImg
-              img(src='images/home/scenario03-01.png', alt='slider')
+              img(src='images/home/scenario03-01.png', alt='Devices')
               .absoluteElements
                 span.animate03-02
-                  img(src='images/home/scenario03-02.png')
+                  img(src='images/home/scenario03-02.png', alt='Laptop computer')
                 span.animate03-03
-                  img(src='images/home/scenario03-03.png')
+                  img(src='images/home/scenario03-03.png', alt='Email')
                 span.animate03-04
-                  img(src='images/home/scenario03-04.png')
+                  img(src='images/home/scenario03-04.png', alt='Email SMS')
                 span.animate03-05
-                  img(src='images/home/scenario03-05.png')
+                  img(src='images/home/scenario03-05.png', alt='Pager')
                 span.animate03-06
-                  img(src='images/home/scenario03-06.png')
+                  img(src='images/home/scenario03-06.png', alt='Phone')
       .slide.slide4
         .container
           .col-md-12
             h2.scenarioText4 {{ui.home.scenario.titleSlide4}}
             .scenarioImg
-              img.animate04-01(src='images/home/scenario04-01.png', alt='slider')
-              img.animate04-02(src='images/home/scenario04-02.png', alt='slider')
-              img.animate04-03(src='images/home/scenario04-03.png', alt='slider')
+              img.animate04-01(src='images/home/scenario04-01.png', alt='Safety worker')
+              img.animate04-02(src='images/home/scenario04-02.png', alt='Care worker')
+              img.animate04-03(src='images/home/scenario04-03.png', alt='Flex worker')
               .absoluteElements
                 span
-                  img.hide.animate04-04(src='images/home/scenario04-04.png')
+                  img.hide.animate04-04(src='images/home/scenario04-04.png', alt='Check')
 
 
 
@@ -150,21 +151,21 @@ html.no-js
           .col-md-4.col-md-offset-2.col-sm-5.col-sm-offset-1.standBy
             a.box(href='https://standby.ask-cs.nl', target='_blank')
               .top
-                img(src='images/products/logoStandBy.png')
+                img(src='images/products/logoStandBy.png', alt='StandBy')
               .textPart
                 h3 StandBy
                 p {{ui.home.products.standby}}
           .col-md-4.col-sm-5.teamUp
             a.box(href='https://teamup.ask-cs.nl', target='_blank')
               .top
-                img(src='images/products/logoTeamUp.png')
+                img(src='images/products/logoTeamUp.png', alt='TeamUp')
               .textPart
                 h3 TeamUp
                 p {{ui.home.products.teamup}}
           .hidden.col-md-4.col-sm-4.joinUs
             a.box(href='https://joinus.ask-cs.nl', target='_blank')
               .top
-                img(src='images/products/logoStandBy.png')
+                img(src='images/products/logoStandBy.png', alt='JoinUs')
               .textPart
                 h3 JoinUs
                 p {{ui.home.products.joinus}}
@@ -172,7 +173,7 @@ html.no-js
         #product01.slide
           .standBy
             .top
-              img(src='images/products/logoStandBy.png')
+              img(src='images/products/logoStandBy.png', alt='StandBy')
             .col-xs-12.textPart
               h3 StandBy
               p {{ui.home.products.standby}}
@@ -180,7 +181,7 @@ html.no-js
         #product02.slide
           .teamUp
             .top
-              img(src='images/products/logoTeamUp.png')
+              img(src='images/products/logoTeamUp.png', alt='TeamUp')
             .col-xs-12.textPart
               h3 TeamUp
               p {{ui.home.products.teamup}}
@@ -188,7 +189,7 @@ html.no-js
         #product03.hidden
           .joinUs
             .top
-              img(src='images/products/logoStandBy.png')
+              img(src='images/products/logoStandBy.png', alt='JoinUs')
             .col-xs-12.textPart
               h3 JoinUs
               p {{ui.home.products.joinus}}.
