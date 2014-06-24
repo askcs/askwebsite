@@ -1,9 +1,11 @@
 doctype
 html.no-js
   head
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(charset='UTF-8')
     title ASK Community Systems
     meta(name='author', content='ASK Community Systems')
+    meta(name='keywords', content='ask platform, cloudbased, apps, communicatie, cloud, last minute, planning, live, realtime, standby, teamup')
+    meta(name='description', content='ASK Platform biedt makkelijke app ontwikkeling in de cloud voor last minute oplossingen')
     meta(name='Resource-type', content='Document')
     meta(content='width=device-width, initial-scale=1', name='viewport')
     meta(content='ASK Community Systems', property='og:title')
@@ -36,8 +38,8 @@ html.no-js
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
         ul
-          li.active
-            a.active(href='platform.html') {{ui.menu.platform}}
+          li
+            a(href='platform.html') {{ui.menu.platform}}
           li
             a#menuProducts(href='index.html#products') {{ui.menu.products}}
           li
@@ -264,6 +266,14 @@ html.no-js
           | {{ui.contactExtra.phone}}
           li
             a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
+      ul.socialMedia.hideXs
+        li.facebook
+          a(href='https://www.facebook.com/ASKCommunitySystems', target='blank')
+        li.twitter
+          a(href='https://twitter.com/askcs', target='blank')
+        li.linkedin
+          a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
+
 
 
     //--------JS------

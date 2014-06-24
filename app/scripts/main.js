@@ -392,6 +392,11 @@ var localization = {
           description04: ''
         }
       }
+    },
+
+    notFound: {
+      title: '404',
+      description01: 'Pagina niet gevonden'
     }
   },
 
@@ -759,6 +764,11 @@ var localization = {
           description04: 'On top of this we have made it really easy to implement ASK: it can be seamlessly integrated into your existing IT infrastructure.'
         }
       }
+    },
+
+    notFound: {
+      title: '404',
+      description01: 'Page not found'
     }
   },
 
@@ -1173,6 +1183,11 @@ var localization = {
           description04: 'Sie können ASK schnell und einfach in Ihre bestehende IT-Infrastruktur integrieren.'
         }
       }
+    },
+
+    notFound: {
+      title: '404',
+      description01: 'Seite nicht gefunden'
     }
   }
 
