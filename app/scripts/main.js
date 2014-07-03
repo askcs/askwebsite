@@ -25,7 +25,7 @@ $( "#closeCookie").click(function () {
 var localization = {
 
 
-
+/*jshint indent:2 */
 
   /*----------DUTCH--------*/
 
@@ -103,58 +103,157 @@ var localization = {
 
 
     jobs: {
-      title:'Vacatures',
-      knowledgeTitle: 'Gewenste kennis en ervaring:',
-      profileTitle: 'Jouw profiel:',
-      offerTitle: 'Wij bieden jou:',
-      contactTitle: 'Interesse?',
-      contactDescription01: 'Neem contact op met Carolyn Hoek:',
+      title:'Jobs',
+      keyResTitle: 'Key responsibilities',
+      knowledgeTitle: 'Required knowledge and experience:',
+      profileTitle: 'Your Profile:',
+      offerTitle: 'We offer you:',
+      contactTitle: 'Apply?',
+      contactDescription01: 'Please contact Carolyn Hoek:',
 
-      iosdev: {
-        title:'iOS Developer',
-        intro: 'ASK Community Systems B.V. is voor een aantal projecten op zoek naar ervaren iOS Developers. Het gaat hierbij om de ontwikkeling van innovatieve iPhone en iPad applicaties. Je streeft samen met het team naar het beste resultaat.',
+      sbmanager: {
+        title: 'StandBy Product Manager',
+        keyRes: {
+          point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
+          point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
+          point03: 'Provide marketing and sales support by (co-) developing (communication) strategy, product portfolio and pricing.',
+          point04: 'Cooperate with marketing manager to develop parameters to measure successful performances in marketing, products and sales. Use market information to evaluate and improve market plans.',
+          point05: 'Work together with the technical talent in your team to define development priorities and liaise with designers and developers to achieve the optimal implementation of changes.',
+          point06: 'Interact regularly with customers on the value of the whole product. Solicit continuously for improvements in products and related extensions and additions.',
+          point07: 'Monitor, analyze and evaluate the user experience and customer satisfaction using a combination of web analytics, user analytics, user surveys and other tools.'
+        },
         knowledge: {
-          point01: 'HBO denk- en werkniveau',
-          point02: 'Minimaal 2 jaar aantoonbare ervaring met iOS app development',
-          point03: 'Uitgebreide kennis van iOS SDK en Xcode',
-          point04: 'Goede kennis van Objective-C , HTML5, JSON'
+          intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
+          point01: 'Bachelor degree (HBO) in IT technology or business. ',
+          point02: 'Minimum of 3 years experience in developing (value-based) service strategy in a high-tech environment.',
+          point03: 'Understanding of (Dutch and European) public safety and security market.',
+          point04: 'Fluency in Dutch and English, verbal and written.',
+          point05: 'Demonstrated ability to perform in high-pressure environments.'
         },
         profile: {
-          point01: 'Analytische vaardigheden',
-          point02: 'Collegiaal en flexibel',
-          point03: 'Verantwoordelijkheidsgevoel en stressbestendigheid',
-          point04: 'Onze doelstelling onderschrijven door plezier te hebben in je werk en dat uit te stralen',
-          point05: 'Bereid zijn jouw kennis met je collega\'s te delen'
+          point01: 'Analytical skills',
+          point02: 'Collegial and flexible',
+          point03: 'Sense of responsibility and immune to stress',
+          point04: 'Support our goals by visibly enjoying your work',
+          point05: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      iosdev: {
+        title:'iOS Developer (2x)',
+        intro: 'ASK Community Systems B.V. is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of iOS (iPhone and iPad) applications of one of our products.',
+          point02: 'Develop, enhance and maintain the iOS applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
         },
-        offer: {
-          point01: 'Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden;',
-          point02: 'Een inspirerende internationale werkomgeving;',
-          point03: 'Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen.'
+        knowledge: {
+          point01: 'HBO-level of working and thinking',
+          point02: 'Minimum 2 years of demonstrable experience in iOS app development',
+          point03: 'Experience with Apple appstore & Distribution Process.',
+          point04: 'Extensive knowledge of iOS SDK and Xcode',
+          point05: 'Sufficient knowledge of Objective-C , HTML5, JSON',
+          point06: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point07: 'Fully comfortable working in English, both in writing and spoken'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      androiddev: {
+        title:'Android Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Android Developers for several projects. The focus is on developing innovative mobile applications for Android devices. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of Android applications of one of our products.',
+          point02: 'Develop, enhance and maintain the Android applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in Android app development.',
+          point03: 'Experience with Android Market place & Distribution Process.',
+          point04: 'Excellent knowledge of Java.',
+          point05: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point06: 'Sufficient knowledge of HTML5, JSON.',
+          point07: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
+        }
+      },
+
+      webdev: {
+        title:'Web Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Web Developers for several products. The focus is on developing innovative web applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of web applications of one of our products.',
+          point02: 'Develop, enhance and maintain the web applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in web app development.',
+          point03: 'Excellent knowledge of HTML, javascript, CSS, JSON.',
+          point04: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
         }
       },
 
       businessConsultant: {
         title: 'Business Consultant',
-        intro: 'Ter uitbreiding van ons salesteam, zijn wij op zoek naar een Business Consultant. In deze functie ben je verantwoordelijk voor het binnenhalen van new business en het relatiebeheer met klanten. Je bent het boegbeeld van ASK Community Systems B.V. en gaat geen enkele commerciële uitdaging uit de weg.',
+        intro: 'For the extension of our sales team, we are looking for a Business Consultant. This function gives the responsibility of attracting new business and relationship management with customers. You are a figurehead of ASK Community Systems B.V. and you are not afraid of any commercial challenges.',
         knowledge: {
-          point01: 'Afgeronde HBO / universitaire opleiding op technisch gebied (zoals Computertechnologie, Informatietechnologie of Bedrijfskunde)',
-          point02: 'Minimaal 3 jaar ervaring in een soortgelijke functie',
-          point03: 'Aantoonbaar succesvolle commerciële werkervaring'
+          point01: 'Completed HBO / university education in technical field of study (like Computer Technology, Information Technology or Business Administration)',
+          point02: 'Minimum 3 years of experience in similar function',
+          point03: 'Demonstrable successful commercial experience'
         },
         profile: {
-          point01: 'Je bent ondernemend en neemt initiatief',
-          point02: 'Je bent zelfstandig, toont ownership en werkt graag in teamverband',
-          point03: 'Een goede netwerker',
-          point04: 'Communicatief vaardig in woord en geschrift',
-          point05: 'Uitstekende mondelinge en schriftelijke kennis van het Engels',
-          point06: 'In staat om je op korte termijn het dienstenaanbod van ASK eigen te maken',
-          point07:'Bij voorkeur woonachtig in regio Rotterdam'
+          point01: 'You are enterprising and take initiative',
+          point02: 'You are independent, show ownership and enjoy working in a team',
+          point03: 'A good networker',
+          point04: 'Communicative skills in word and writing',
+          point05: 'Excellent English oral and writing skills ',
+          point06: 'Able to make ASK services your own in short-term',
+          point07: 'Preferably living in region of Rotterdam'
         },
         offer: {
-          point01: 'Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden;',
-          point02: 'Bedrijf met potentie;',
-          point03: 'Een inspirerende internationale werkomgeving;',
-          point04: 'Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen.'
+          point01: 'Competitive benefits',
+          point02: 'A company with potential',
+          point03: 'An inspiring international working environment',
+          point04: 'Plenty of possibilities for personal development within, as well as beyond your field of study'
         }
       },
 
@@ -481,20 +580,31 @@ var localization = {
 
     jobs: {
       title:'Jobs',
+      keyResTitle: 'Key responsibilities',
       knowledgeTitle: 'Required knowledge and experience:',
       profileTitle: 'Your Profile:',
       offerTitle: 'We offer you:',
       contactTitle: 'Apply?',
       contactDescription01: 'Please contact Carolyn Hoek:',
 
-      iosdev: {
-        title:'iOS Developer',
-        intro: 'ASK Community Systems B.V.  is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
+      sbmanager: {
+        title: 'StandBy Product Manager',
+        keyRes: {
+          point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
+          point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
+          point03: 'Provide marketing and sales support by (co-) developing (communication) strategy, product portfolio and pricing.',
+          point04: 'Cooperate with marketing manager to develop parameters to measure successful performances in marketing, products and sales. Use market information to evaluate and improve market plans.',
+          point05: 'Work together with the technical talent in your team to define development priorities and liaise with designers and developers to achieve the optimal implementation of changes.',
+          point06: 'Interact regularly with customers on the value of the whole product. Solicit continuously for improvements in products and related extensions and additions.',
+          point07: 'Monitor, analyze and evaluate the user experience and customer satisfaction using a combination of web analytics, user analytics, user surveys and other tools.'
+        },
         knowledge: {
-          point01: 'HBO-level of working and thinking',
-          point02: 'Minimum 2 years of demonstrable experience in iOS app development',
-          point03: 'Extensive knowledge of iOS SDK and Xcode',
-          point04: 'Sufficient knowledge of Objective-C , HTML5, JSON '
+          intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
+          point01: 'Bachelor degree (HBO) in IT technology or business. ',
+          point02: 'Minimum of 3 years experience in developing (value-based) service strategy in a high-tech environment.',
+          point03: 'Understanding of (Dutch and European) public safety and security market.',
+          point04: 'Fluency in Dutch and English, verbal and written.',
+          point05: 'Demonstrated ability to perform in high-pressure environments.'
         },
         profile: {
           point01: 'Analytical skills',
@@ -502,11 +612,99 @@ var localization = {
           point03: 'Sense of responsibility and immune to stress',
           point04: 'Support our goals by visibly enjoying your work',
           point05: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      iosdev: {
+        title:'iOS Developer (2x)',
+        intro: 'ASK Community Systems B.V. is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of iOS (iPhone and iPad) applications of one of our products.',
+          point02: 'Develop, enhance and maintain the iOS applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
         },
-        offer: {
-          point01: 'Competitive benefits',
-          point02: 'An inspiring international working environment',
-          point03: 'Plenty of possibilities for personal development within, as well as beyond your field of study'
+        knowledge: {
+          point01: 'HBO-level of working and thinking',
+          point02: 'Minimum 2 years of demonstrable experience in iOS app development',
+          point03: 'Experience with Apple appstore & Distribution Process.',
+          point04: 'Extensive knowledge of iOS SDK and Xcode',
+          point05: 'Sufficient knowledge of Objective-C , HTML5, JSON',
+          point06: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point07: 'Fully comfortable working in English, both in writing and spoken'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      androiddev: {
+        title:'Android Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Android Developers for several projects. The focus is on developing innovative mobile applications for Android devices. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of Android applications of one of our products.',
+          point02: 'Develop, enhance and maintain the Android applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in Android app development.',
+          point03: 'Experience with Android Market place & Distribution Process.',
+          point04: 'Excellent knowledge of Java.',
+          point05: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point06: 'Sufficient knowledge of HTML5, JSON.',
+          point07: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
+        }
+      },
+
+      webdev: {
+        title:'Web Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Web Developers for several products. The focus is on developing innovative web applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of web applications of one of our products.',
+          point02: 'Develop, enhance and maintain the web applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in web app development.',
+          point03: 'Excellent knowledge of HTML, javascript, CSS, JSON.',
+          point04: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
         }
       },
 
@@ -534,7 +732,6 @@ var localization = {
           point04: 'Plenty of possibilities for personal development within, as well as beyond your field of study'
         }
       },
-
 
       internshipTitle:'Internships',
       internshipTitle02:'Internship:',
@@ -895,58 +1092,157 @@ var localization = {
 
 
     jobs: {
-      title:'Vacatures',
-      knowledgeTitle: 'Gewenste kennis en ervaring:',
-      profileTitle: 'Jouw profiel:',
-      offerTitle: 'Wij bieden jou:',
-      contactTitle: 'Interesse?',
-      contactDescription01: 'Neem contact op met Carolyn Hoek:',
+      title:'Jobs',
+      keyResTitle: 'Key responsibilities',
+      knowledgeTitle: 'Required knowledge and experience:',
+      profileTitle: 'Your Profile:',
+      offerTitle: 'We offer you:',
+      contactTitle: 'Apply?',
+      contactDescription01: 'Please contact Carolyn Hoek:',
 
-      iosdev: {
-        title:'iOS Developer',
-        intro: 'ASK Community Systems B.V. is voor een aantal projecten op zoek naar ervaren iOS Developers. Het gaat hierbij om de ontwikkeling van innovatieve iPhone en iPad applicaties. Je streeft samen met het team naar het beste resultaat.',
+      sbmanager: {
+        title: 'StandBy Product Manager',
+        keyRes: {
+          point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
+          point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
+          point03: 'Provide marketing and sales support by (co-) developing (communication) strategy, product portfolio and pricing.',
+          point04: 'Cooperate with marketing manager to develop parameters to measure successful performances in marketing, products and sales. Use market information to evaluate and improve market plans.',
+          point05: 'Work together with the technical talent in your team to define development priorities and liaise with designers and developers to achieve the optimal implementation of changes.',
+          point06: 'Interact regularly with customers on the value of the whole product. Solicit continuously for improvements in products and related extensions and additions.',
+          point07: 'Monitor, analyze and evaluate the user experience and customer satisfaction using a combination of web analytics, user analytics, user surveys and other tools.'
+        },
         knowledge: {
-          point01: 'HBO denk- en werkniveau',
-          point02: 'Minimaal 2 jaar aantoonbare ervaring met iOS app development',
-          point03: 'Uitgebreide kennis van iOS SDK en Xcode',
-          point04: 'Goede kennis van Objective-C , HTML5, JSON'
+          intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
+          point01: 'Bachelor degree (HBO) in IT technology or business. ',
+          point02: 'Minimum of 3 years experience in developing (value-based) service strategy in a high-tech environment.',
+          point03: 'Understanding of (Dutch and European) public safety and security market.',
+          point04: 'Fluency in Dutch and English, verbal and written.',
+          point05: 'Demonstrated ability to perform in high-pressure environments.'
         },
         profile: {
-          point01: 'Analytische vaardigheden',
-          point02: 'Collegiaal en flexibel',
-          point03: 'Verantwoordelijkheidsgevoel en stressbestendigheid',
-          point04: 'Onze doelstelling onderschrijven door plezier te hebben in je werk en dat uit te stralen',
-          point05: 'Bereid zijn jouw kennis met je collega\'s te delen'
+          point01: 'Analytical skills',
+          point02: 'Collegial and flexible',
+          point03: 'Sense of responsibility and immune to stress',
+          point04: 'Support our goals by visibly enjoying your work',
+          point05: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      iosdev: {
+        title:'iOS Developer (2x)',
+        intro: 'ASK Community Systems B.V. is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of iOS (iPhone and iPad) applications of one of our products.',
+          point02: 'Develop, enhance and maintain the iOS applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
         },
-        offer: {
-          point01: 'Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden;',
-          point02: 'Een inspirerende internationale werkomgeving;',
-          point03: 'Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen.'
+        knowledge: {
+          point01: 'HBO-level of working and thinking',
+          point02: 'Minimum 2 years of demonstrable experience in iOS app development',
+          point03: 'Experience with Apple appstore & Distribution Process.',
+          point04: 'Extensive knowledge of iOS SDK and Xcode',
+          point05: 'Sufficient knowledge of Objective-C , HTML5, JSON',
+          point06: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point07: 'Fully comfortable working in English, both in writing and spoken'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      androiddev: {
+        title:'Android Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Android Developers for several projects. The focus is on developing innovative mobile applications for Android devices. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of Android applications of one of our products.',
+          point02: 'Develop, enhance and maintain the Android applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in Android app development.',
+          point03: 'Experience with Android Market place & Distribution Process.',
+          point04: 'Excellent knowledge of Java.',
+          point05: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point06: 'Sufficient knowledge of HTML5, JSON.',
+          point07: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
+        }
+      },
+
+      webdev: {
+        title:'Web Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Web Developers for several products. The focus is on developing innovative web applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of web applications of one of our products.',
+          point02: 'Develop, enhance and maintain the web applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in web app development.',
+          point03: 'Excellent knowledge of HTML, javascript, CSS, JSON.',
+          point04: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
         }
       },
 
       businessConsultant: {
         title: 'Business Consultant',
-        intro: 'Ter uitbreiding van ons salesteam, zijn wij op zoek naar een Business Consultant. In deze functie ben je verantwoordelijk voor het binnenhalen van new business en het relatiebeheer met klanten. Je bent het boegbeeld van ASK Community Systems B.V. en gaat geen enkele commerciële uitdaging uit de weg.',
+        intro: 'For the extension of our sales team, we are looking for a Business Consultant. This function gives the responsibility of attracting new business and relationship management with customers. You are a figurehead of ASK Community Systems B.V. and you are not afraid of any commercial challenges.',
         knowledge: {
-          point01: 'Afgeronde HBO / universitaire opleiding op technisch gebied (zoals Computertechnologie, Informatietechnologie of Bedrijfskunde)',
-          point02: 'Minimaal 3 jaar ervaring in een soortgelijke functie',
-          point03: 'Aantoonbaar succesvolle commerciële werkervaring'
+          point01: 'Completed HBO / university education in technical field of study (like Computer Technology, Information Technology or Business Administration)',
+          point02: 'Minimum 3 years of experience in similar function',
+          point03: 'Demonstrable successful commercial experience'
         },
         profile: {
-          point01: 'Je bent ondernemend en neemt initiatief',
-          point02: 'Je bent zelfstandig, toont ownership en werkt graag in teamverband',
-          point03: 'Een goede netwerker',
-          point04: 'Communicatief vaardig in woord en geschrift',
-          point05: 'Uitstekende mondelinge en schriftelijke kennis van het Engels',
-          point06: 'In staat om je op korte termijn het dienstenaanbod van ASK eigen te maken',
-          point07:'Bij voorkeur woonachtig in regio Rotterdam'
+          point01: 'You are enterprising and take initiative',
+          point02: 'You are independent, show ownership and enjoy working in a team',
+          point03: 'A good networker',
+          point04: 'Communicative skills in word and writing',
+          point05: 'Excellent English oral and writing skills ',
+          point06: 'Able to make ASK services your own in short-term',
+          point07: 'Preferably living in region of Rotterdam'
         },
         offer: {
-          point01: 'Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden;',
-          point02: 'Bedrijf met potentie;',
-          point03: 'Een inspirerende internationale werkomgeving;',
-          point04: 'Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen.'
+          point01: 'Competitive benefits',
+          point02: 'A company with potential',
+          point03: 'An inspiring international working environment',
+          point04: 'Plenty of possibilities for personal development within, as well as beyond your field of study'
         }
       },
 

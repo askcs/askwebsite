@@ -872,26 +872,34 @@ P:last-child {
     }
     li.facebook {
       a {
-        background: url("../images/facebook.png") no-repeat;
+        background: url("../images/facebook02.png") no-repeat;
       }
       a:hover {
-        background: url("../images/facebook02.png") no-repeat;
+        background: url("../images/facebook.png") no-repeat;
       }
     }
     li.twitter {
       a {
-        background: url("../images/twitter.png") no-repeat;
+        background: url("../images/twitter02.png") no-repeat;
       }
       a:hover {
-        background: url("../images/twitter02.png") no-repeat;
+        background: url("../images/twitter.png") no-repeat;
       }
     }
     li.linkedin {
       a {
-        background: url("../images/linkedin.png") no-repeat;
+        background: url("../images/linkedin02.png") no-repeat;
       }
       a:hover {
-        background: url("../images/linkedin02.png") no-repeat;
+        background: url("../images/linkedin.png") no-repeat;
+      }
+    }
+    li.googleplus {
+      a {
+        background: url("../images/googleplus02.png") no-repeat;
+      }
+      a:hover {
+        background: url("../images/googleplus.png") no-repeat;
       }
     }
   }
