@@ -108,11 +108,12 @@ var localization = {
       knowledgeTitle: 'Required knowledge and experience:',
       profileTitle: 'Your Profile:',
       offerTitle: 'We offer you:',
-      contactTitle: 'Apply?',
-      contactDescription01: 'Please contact Carolyn Hoek:',
+      contactTitle: 'Interesse?',
+      contactDescription01: 'Neem contact op met Carolyn Hoek:',
 
       sbmanager: {
         title: 'StandBy Product Manager',
+        intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
         keyRes: {
           point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
           point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
@@ -589,6 +590,7 @@ var localization = {
 
       sbmanager: {
         title: 'StandBy Product Manager',
+        intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
         keyRes: {
           point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
           point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
@@ -1097,11 +1099,12 @@ var localization = {
       knowledgeTitle: 'Required knowledge and experience:',
       profileTitle: 'Your Profile:',
       offerTitle: 'We offer you:',
-      contactTitle: 'Apply?',
-      contactDescription01: 'Please contact Carolyn Hoek:',
+      contactTitle: 'Interesse?',
+      contactDescription01: 'Neem contact op met Carolyn Hoek:',
 
       sbmanager: {
         title: 'StandBy Product Manager',
+        intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
         keyRes: {
           point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
           point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',

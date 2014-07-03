@@ -1282,7 +1282,9 @@ P:last-child {
 }
 
 
-
+/* ==========================================================================
+   ABOUT
+   ========================================================================== */
 
 
 .aboutContent {
@@ -1382,10 +1384,24 @@ P:last-child {
   }
 }
 
+
+/* ==========================================================================
+   JOBS
+   ========================================================================== */
+
+
 body.jobs {
   #content {
     .container {
       padding: 0;
+/*      max-width: 970px;*/
+      .job {
+        border-bottom: 1px solid $ask-color;
+        padding-bottom: 50px !important;
+        p:nth-child(2n) {
+          padding-bottom: 20px;
+        }
+      }
     }
   }
 }
@@ -1521,16 +1537,6 @@ body.notFound {
     height: 500px;
   }
 
-
-  .jobs {
-    .job:nth-child(even) {
-      border-left: 1px solid $ask-color;
-    }
-    .twoJobs {
-      border-bottom: 1px solid $ask-color;
-      padding-bottom: 50px !important;
-    }
-  }
 }
 
 
@@ -1599,15 +1605,6 @@ body.notFound {
     display: none;
   }
 
-  .jobs {
-    .job:nth-child(even) {
-      border-left: 1px solid $ask-color;
-    }
-    .twoJobs {
-      border-bottom: 1px solid $ask-color;
-      padding-bottom: 50px !important;
-    }
-  }
 }
 
 
@@ -1666,15 +1663,6 @@ body.notFound {
     display: none;
   }
 
-  .jobs {
-    .job:nth-child(even) {
-      border-left: 1px solid $ask-color;
-    }
-    .twoJobs {
-      border-bottom: 1px solid $ask-color;
-      padding-bottom: 50px !important;
-    }
-  }
 }
 
 
