@@ -64,10 +64,12 @@ $icon-font-path: "/vendors/bootstrap-sass-official/vendor/assets/fonts/bootstrap
 $ask-color: #e61e3b;
 $standby-color: #a93232;
 $teamup-color: #1dc8b6;
+$blank-color: #959595;
 $joinus-color: #fab25e;
 $yellow: #FACB6A;
 $green: #9fe384;
 $blue: #a5eaf5;
+$light-grey: #e5e5e5;
 
 
 // Mixins
@@ -1056,6 +1058,17 @@ P:last-child {
       background-color: lighten($teamup-color, 10%);
     }
   }
+  #productBlank{
+    background-color: $blank-color;
+  }
+  .blank{
+    .box {
+      background-color: $blank-color;
+    }
+    .top {
+      background-color: lighten($blank-color, 10%);
+    }
+  }
   #product03{
     background-color: $joinus-color;
   }
@@ -1398,6 +1411,15 @@ body.jobs {
       .job {
         border-bottom: 1px solid $ask-color;
         padding-bottom: 50px !important;
+        .knowledge {
+          background-color: $light-grey;
+          margin-top: 10px;
+          padding-bottom: 10px;
+        }
+        .seeking {
+          background-color: $blue;
+          margin-top: 10px;
+        }
         p:nth-child(2n) {
           padding-bottom: 20px;
         }
@@ -1818,7 +1840,7 @@ body.notFound {
       position: absolute;
       text-align: center;
     }
-    .standBy, .teamUp, .joinUs {
+    .standBy, .teamUp, .joinUs, .blank {
       height: 100%;
     }
   }

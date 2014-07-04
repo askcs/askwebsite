@@ -63,7 +63,9 @@ var localization = {
         title:'Producten',
         standby: 'Vooraf inzage in de paraatheid hebben en niet pas wanneer het alarm is afgegaan. Online roosters en alarmontvangers bieden slechts een deeloplossing. Daarom heeft ASK Standby ontwikkeld.',
         teamup: 'ASK vindt dat ICT de zorg dient te ondersteunen. Uw medewerkers willen zo min mogelijk tijd aan administratie kwijt zijn, zodat ze zich kunnen richten op het verlenen van goede zorg.',
-        joinus: 'Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.'
+        joinus: 'Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.',
+        blankTitle: 'Uw app',
+        blankText: 'Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.'
       },
       platform: {
         title:'ASK Platform',
@@ -540,7 +542,9 @@ var localization = {
         title:'Products',
         standby: 'Insight in the readiness beforehand, and not only after the alarm has gone off. Online schedules and alarm-receivers only solve part of the problem. That\'s why ASK has developed Standby.',
         teamup: 'ASK believes that ICT should support healthcare. Your employees don\'t want to spend much time on administrative tasks. They want to focus on providing care.',
-        joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.'
+        joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.',
+        blankTitle: 'Your App',
+        blankText: 'ASK provides a publicly available cloud API that developers can interact with to build their own intelligent communication apps on top of the ASK platform.'
       },
       platform: {
         title:'ASK Platform',
@@ -1018,7 +1022,9 @@ var localization = {
         title:'Produkte',
         standby: 'Im Voraus einsehen können, wer verfügbar ist, anstatt erst, nachdem der Alarm ausgelöst wurde. Online-Pläne und Alarmempfänger liefern hierfür nur eine Notlösung. Deswegen hat ASK Standby entwickelt.',
         teamup:  'ASK ist wegweisend für IT unterstützte Dienste. Ihre Mitarbeiter sollten so wenig, wie möglich mit Verwaltungsaufgaben belastet werden, um sich der Qualität der Dienstleistung widmen zu können.',
-        joinus: 'Flexibler Personaleinsatz bedeuted: Aquirieren, Verfügbarkeit kontrollieren, Planen und Einsetzen. Joinus ist eine App, mit der sämtliche Informationen rund um die flexible Arbeit schnell ausgetauscht werden.'
+        joinus: 'Flexibler Personaleinsatz bedeuted: Aquirieren, Verfügbarkeit kontrollieren, Planen und Einsetzen. Joinus ist eine App, mit der sämtliche Informationen rund um die flexible Arbeit schnell ausgetauscht werden.',
+        blankTitle: 'Your App',
+        blankText: 'ASK provides a publicly available cloud API that developers can interact with to build their own intelligent communication apps on top of the ASK platform.'
       },
       platform: {
         title:'Die ASK Platform',

@@ -150,20 +150,27 @@ html.no-js
         h4 {{ui.home.products.title}}
       .container.desktopView
         .row
-          .col-md-4.col-md-offset-2.col-sm-5.col-sm-offset-1.standBy
+          .col-md-4.col-sm-4.standBy
             a.box(href='https://standby.ask-cs.nl', target='_blank')
               .top
                 img(src='images/products/logoStandBy.png', alt='StandBy')
               .textPart
                 h3 StandBy
                 p {{ui.home.products.standby}}
-          .col-md-4.col-sm-5.teamUp
+          .col-md-4.col-sm-4.teamUp
             a.box(href='https://teamup.ask-cs.nl', target='_blank')
               .top
                 img(src='images/products/logoTeamUp.png', alt='TeamUp')
               .textPart
                 h3 TeamUp
                 p {{ui.home.products.teamup}}
+          .col-md-4.col-sm-4.blank
+            a.box(href='https://joinus.ask-cs.nl', target='_blank')
+              .top
+                img(src='images/products/blank.png', alt='Your app')
+              .textPart
+                h3 {{ui.home.products.blankTitle}}
+                p {{ui.home.products.blankText}}
           .hidden.col-md-4.col-sm-4.joinUs
             a.box(href='https://joinus.ask-cs.nl', target='_blank')
               .top
@@ -188,6 +195,14 @@ html.no-js
               h3 TeamUp
               p {{ui.home.products.teamup}}
               a(href='http://teamup.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+        #productBlank.slide
+          .blank
+            .top
+              img(src='images/products/blank.png', alt='Your own')
+            .col-xs-12.textPart
+              h3 Blank
+              p {{ui.home.products.joinus}}.
+              a(href='http://joinus.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
         #product03.hidden
           .joinUs
             .top
