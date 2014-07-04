@@ -103,7 +103,7 @@ var localization = {
 
 
     jobs: {
-      title:'Jobs',
+      title:'Vacatures',
       keyResTitle: 'Key responsibilities',
       knowledgeTitle: 'Required knowledge and experience:',
       profileTitle: 'Your Profile:',
@@ -1094,7 +1094,7 @@ var localization = {
 
 
     jobs: {
-      title:'Jobs',
+      title:'Vacatures',
       keyResTitle: 'Key responsibilities',
       knowledgeTitle: 'Required knowledge and experience:',
       profileTitle: 'Your Profile:',
