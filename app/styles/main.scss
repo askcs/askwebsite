@@ -923,14 +923,36 @@ P:last-child {
   left: 0;
   bottom: 12%;
   background-color: $ask-color;
-  z-index: 10;
+  z-index: 111;
   color: #fff;
   text-transform: uppercase;
   opacity: 0.9;
   h4 {
     font-size: 12px;
   }
+}
 
+.arrowDownPosition {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 8%;
+  width: 100%;
+  z-index: 110;
+  .arrowDown{
+    padding-top: 12px;
+    width: 200px;
+    height: 69px;
+    background-image: url("../images/arrowDown02.png");
+    background-size: 100% auto;
+    display: block;
+    margin: 0 auto;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    h4 {
+      font-size: 14px;
+    }
+  }
 }
 
 
@@ -941,11 +963,8 @@ P:last-child {
   max-height: 270px;
   margin: 20px auto ;
   position: relative;
-  img.animate01-01, img.animate01-03 {
-    width: 34%;
-  }
-  img.animate01-02 {
-    width: 32%;
+  img.animate01-01 {
+    width: 100%;
   }
   img.animate02-01 {
     width: 15%;
@@ -1025,12 +1044,11 @@ P:last-child {
   color: #fff;
   background: url("../images/products/bgBlurred.jpg") repeat;
   background-position: center center;
-  a, a:hover, a:active {
+  .product a, .product a:hover, .product a:active {
     color: #fff;
     display: block;
     outline: none;
     margin-top: 10px;
-    text-transform: uppercase;
   }
   a.box{
     text-decoration: none !important;
@@ -1726,6 +1744,16 @@ body.notFound {
     }
   }
 
+  .arrowDownPosition {
+    .arrowDown{
+      padding-top: 1px;
+      width: 100px;
+      height: 34px;
+      h4 {
+        font-size: 8px;
+      }
+    }
+  }
 
   .platform {
     p {

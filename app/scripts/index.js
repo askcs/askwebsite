@@ -37,6 +37,14 @@ function animateSlide (slide){
 
             setTimeout(function(){ cleanStyles(3); }, 3500);
             break;
+        case 4:
+          $('.animate02-01').addClass('animated swing');
+          setTimeout(function(){$(".animate02-02").addClass('animated shake');}, 250);
+          setTimeout(function(){$(".animate02-03").addClass('animated shake');}, 500);
+          setTimeout(function(){$(".scenarioText2").addClass('animated pulse');}, 1500);
+
+          setTimeout(function(){ cleanStyles(1); }, 2500);
+          break;
     }
 }
 
@@ -75,6 +83,13 @@ function cleanStyles (slide)
             $(".animate04-04").removeClass('animated rotateIn')/*.addClass('hide')*/;
             $(".scenarioText4").removeClass('animated pulse');
             break;
+        case 4:
+          // clean slide 1 styles
+          $('.animate02-01').removeClass('animated swing');
+          $(".animate02-02").removeClass('animated shake');
+          $(".animate02-03").removeClass('animated shake');
+          $(".scenarioText2").removeClass('animated pulse');
+          break;
     }
 }
 
@@ -114,8 +129,8 @@ $(document).ready(function() {
         'touchSensitivity': 20,
         'continuousVertical': false,
         'animateAnchor': true,
-        slidesColor: ['#facb6a', '#a5eaf5', '#000', '#000'],
-        anchors: ['home', 'platform', 'products', 'cases'],
+        slidesColor: ['#a5eaf5', '#000', '#000'],
+        anchors: ['platform', 'products', 'cases'],
         menu: '#menu',
 
         afterLoad: function(anchorLink, index){
@@ -144,6 +159,7 @@ $(document).ready(function() {
                     case 1: animateSlide(1); break;
                     case 2: animateSlide(2); break;
                     case 3: animateSlide(3); break;
+                    case 4: animateSlide(4); break;
                 }
             }
 

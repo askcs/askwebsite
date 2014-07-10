@@ -53,24 +53,26 @@ var localization = {
 
 
     home: {
-      scenario: {
-        titleSlide1: 'Regelmatig een tekort aan personeel?',
-        titleSlide2: 'Met ASK geeft personeel zelf beschikbaarheid aan.',
-        titleSlide3: 'Bij een tekort zoekt ASK automatisch naar personeel.',
-        titleSlide4: 'Zo heeft u altijd voldoende personeel!'
+      platform: {
+        title: 'ASK Platform',
+        introTitle: 'Maak kennis met het ASK Platform',
+        intro: 'Slimme apps maken die uw team ondersteunen.',
+        contextAwarenessTitle: 'ASK Platform is context-aware',
+        contextAwareness: 'Toegang tot status, netwerk en tijdlijn van teamleden.',
+        communicationTitle: ' ASK Platform is communicatief',
+        communication: 'Faciliteren van dialogen binnen uw team over meerdere communicatiekanalen',
+        proActiveTitle: 'ASK Platform is proactief',
+        proActive: 'Proactief handelen door continu de gestelde doelen in de gaten te houden en te bewaken.',
+        multiDeviceTitle: 'ASK Platform is multi-device',
+        multiDevice: 'Werken vanaf vaste en mobiele apparaten.'
       },
       products: {
         title:'Producten',
         standby: 'Vooraf inzage in de paraatheid hebben en niet pas wanneer het alarm is afgegaan. Online roosters en alarmontvangers bieden slechts een deeloplossing. Daarom heeft ASK Standby ontwikkeld.',
         teamup: 'ASK vindt dat ICT de zorg dient te ondersteunen. Uw medewerkers willen zo min mogelijk tijd aan administratie kwijt zijn, zodat ze zich kunnen richten op het verlenen van goede zorg.',
         joinus: 'Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.',
-        blankTitle: 'Uw app',
-        blankText: 'Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.'
-      },
-      platform: {
-        title:'ASK Platform',
-        introTitle:'ASK Platform',
-        introText: 'Last minute uitdagingen oplossen met het platform van ASK.'
+        blankTitle: 'Uw App',
+        blankText: 'Het ASK platform heeft een cloud API waarmee u uw eigen slimme applicaties kunt bouwen.'
       },
       casesPreview: {
         title: 'Referenties',
@@ -532,11 +534,18 @@ var localization = {
 
 
     home: {
-      scenario: {
-        titleSlide1: 'Experiencing shortages in personnel regularly?',
-        titleSlide2: 'With ASK, personnel can register their availability themselves.',
-        titleSlide3: 'When there is a shortage, ASK will automatically search for personnel.',
-        titleSlide4: 'This way you will always have enough personnel!'
+      platform: {
+        title:'ASK Platform',
+        introTitle:'Meet the ASK Platform',
+        intro:'Building intelligent applications to support your team.',
+        contextAwarenessTitle:'ASK Platform is context-aware',
+        contextAwareness:'Providing access to team members\' state, network and timeline.',
+        communicationTitle:'ASK Platform is communicative',
+        communication:'Facilitating multichannel dialogs within your team.',
+        proActiveTitle:'ASK Platform is proactive',
+        proActive:'Acting proactively with its continuous monitoring and guarding of goals.',
+        multiDeviceTitle:'ASK Platform is multi-device',
+        multiDevice:'Working across multiple devices.'
       },
       products: {
         title:'Products',
@@ -544,12 +553,7 @@ var localization = {
         teamup: 'ASK believes that ICT should support healthcare. Your employees don\'t want to spend much time on administrative tasks. They want to focus on providing care.',
         joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.',
         blankTitle: 'Your App',
-        blankText: 'ASK provides a publicly available cloud API that developers can interact with to build their own intelligent communication apps on top of the ASK platform.'
-      },
-      platform: {
-        title:'ASK Platform',
-        introTitle:'ASK Platform',
-        introText: 'ASK delivers the platform businesses need to solve last minute challenges.'
+        blankText: 'We provide you with a cloud API on the ASK Platform with which you can build your own intelligent applications.'
       },
       casesPreview: {
         title: 'References',
@@ -1012,11 +1016,18 @@ var localization = {
 
 
     home: {
-      scenario: {
-        titleSlide1: 'Häufig Mitarbeitermangel?',
-        titleSlide2: 'Mit ASK bestimmen Mitarbeiter selbst über ihre Verfügbarkeit.',
-        titleSlide3: 'Bei Bedarf sucht ASK automatisch nach einem Mitarbeiter.',
-        titleSlide4: 'Auf diese Weise haben Sie immer ausreichend Mitarbeiter.'
+      platform: {
+        title: 'Die ASK Platform',
+        introTitle: 'Maak kennis met het ASK Platform',
+        intro: 'Slimme apps maken die uw team ondersteunen.',
+        contextAwarenessTitle: 'ASK Platform is context-aware',
+        contextAwareness: 'Toegang tot status, netwerk en tijdlijn van teamleden.',
+        communicationTitle: ' ASK Platform is communicatief',
+        communication: 'Faciliteren van dialogen binnen uw team over meerdere communicatiekanalen',
+        proActiveTitle: 'ASK Platform is proactief',
+        proActive: 'Proactief handelen door continu de gestelde doelen in de gaten te houden en te bewaken.',
+        multiDeviceTitle: 'ASK Platform is multi-device',
+        multiDevice: 'Werken vanaf vaste en mobiele apparaten.'
       },
       products: {
         title:'Produkte',
@@ -1025,11 +1036,6 @@ var localization = {
         joinus: 'Flexibler Personaleinsatz bedeuted: Aquirieren, Verfügbarkeit kontrollieren, Planen und Einsetzen. Joinus ist eine App, mit der sämtliche Informationen rund um die flexible Arbeit schnell ausgetauscht werden.',
         blankTitle: 'Your App',
         blankText: 'ASK provides a publicly available cloud API that developers can interact with to build their own intelligent communication apps on top of the ASK platform.'
-      },
-      platform: {
-        title:'Die ASK Platform',
-        introTitle:'Die ASK Platform',
-        introText: 'ASK liefert Technologie, um bei kurzfristigen Änderungen auftretende Probleme zu vermeiden.'
       },
       casesPreview: {
         title: 'Referenzen',

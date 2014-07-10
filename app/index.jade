@@ -80,20 +80,26 @@ html.no-js
 
 
 
-    //--------SCENARIO------
+    //--------PLATFORM------
     #section0.section
-      //.slide.slide1
-      //  .container
-      //    .col-md-12
-      //      h2.scenarioText1 {{ui.home.scenario.titleSlide1}}
-      //      .scenarioImg
-      //        img.animate01-01(src='images/home/scenario01-01.png', alt='slider')
-      //        img.animate01-02(src='images/home/scenario01-02.png', alt='slider')
-      //        img.animate01-03(src='images/home/scenario01-03.png', alt='slider')
+      .label
+        h4 {{ui.home.platform.title}}
+      .arrowDownPosition
+        a.arrowDown(href='index.html#products')
+          h4 {{ui.menu.products}}
+      .slide.slide1
+        .container
+          .col-md-12
+            h2 {{ui.home.platform.introTitle}}
+            p {{ui.home.platform.intro}}
+            .scenarioImg
+              a(href='platform.html') {{ui.general.readMore}}...
+              img.animate01-01(src='images/platform/platform01.png', alt='platform')
       .slide.slide2
         .container
           .col-md-12
-            h2.scenarioText2 {{ui.home.scenario.titleSlide2}}
+            h2.scenarioText2 {{ui.home.platform.contextAwarenessTitle}}
+            p {{ui.home.platform.contextAwareness}}
             .scenarioImg
               img.animate02-01(src='images/home/scenario02-01.png', alt='Smartphone')
               img.animate02-02(src='images/home/scenario02-02.png', alt='Desktop computer')
@@ -101,7 +107,8 @@ html.no-js
       .slide.slide3
         .container
           .col-md-12
-            h2.scenarioText3 {{ui.home.scenario.titleSlide3}}
+            h2.scenarioText3 {{ui.home.platform.communicationTitle}}
+            p {{ui.home.platform.communication}}
             .animate03-01.scenarioImg
               img(src='images/home/scenario03-01.png', alt='Devices')
               .absoluteElements
@@ -118,7 +125,8 @@ html.no-js
       .slide.slide4
         .container
           .col-md-12
-            h2.scenarioText4 {{ui.home.scenario.titleSlide4}}
+            h2.scenarioText4 {{ui.home.platform.proActiveTitle}}
+            p {{ui.home.platform.proActive}}
             .scenarioImg
               img.animate04-01(src='images/home/scenario04-01.png', alt='Safety worker')
               img.animate04-02(src='images/home/scenario04-02.png', alt='Care worker')
@@ -126,52 +134,64 @@ html.no-js
               .absoluteElements
                 span
                   img.hide.animate04-04(src='images/home/scenario04-04.png', alt='Check')
+      .slide.slide5
+        .container
+          .col-md-12
+            h2.scenarioText3 {{ui.home.platform.multiDeviceTitle}}
+            p {{ui.home.platform.multiDevice}}
+            .scenarioImg
+              img.animate02-01(src='images/home/scenario02-01.png', alt='Smartphone')
+              img.animate02-02(src='images/home/scenario02-02.png', alt='Desktop computer')
+              img.animate02-03(src='images/home/scenario02-03.png', alt='Tablet')
 
 
 
     //--------PLATFORM------
-    #section1.section.platform
-      .label
-        h4 {{ui.home.platform.title}}
-      .container
-        .col-md-6.col-md-offset-3
-          h2 {{ui.home.platform.introTitle}}
-          p {{ui.home.platform.introText}}
-          .platformImg
-            a(href='platform.html') {{ui.general.readMore}}...
-            img(src='images/platform/platform01.png', alt='platform')
+    //#section1.section.platform
+    //  .label
+    //    h4 {{ui.home.platform.title}}
+    //  .container
+    //    .col-md-6.col-md-offset-3
+    //      h2 {{ui.home.platform.introTitle}}
+    //      p {{ui.home.platform.introText}}
+    //      .platformImg
+    //        a(href='platform.html') {{ui.general.readMore}}...
+    //        img(src='images/platform/platform01.png', alt='platform')
 
 
 
 
     //--------PRODUCTS------
-    #section2.section.products
+    #section1.section.products
       .label
         h4 {{ui.home.products.title}}
+      .arrowDownPosition
+        a.arrowDown(href='index.html#cases')
+          h4 {{ui.menu.cases}}
       .container.desktopView
-        .row
-          .col-md-4.col-sm-4.standBy
+        .row.products2
+          .col-md-4.col-sm-4.standBy.product
             a.box(href='https://standby.ask-cs.nl', target='_blank')
               .top
                 img(src='images/products/logoStandBy.png', alt='StandBy')
               .textPart
                 h3 StandBy
                 p {{ui.home.products.standby}}
-          .col-md-4.col-sm-4.teamUp
+          .col-md-4.col-sm-4.teamUp.product
             a.box(href='https://teamup.ask-cs.nl', target='_blank')
               .top
                 img(src='images/products/logoTeamUp.png', alt='TeamUp')
               .textPart
                 h3 TeamUp
                 p {{ui.home.products.teamup}}
-          .col-md-4.col-sm-4.blank
-            a.box(href='https://joinus.ask-cs.nl', target='_blank')
+          .col-md-4.col-sm-4.blank.product
+            a.box(href='platform.html')
               .top
                 img(src='images/products/blank.png', alt='Your app')
               .textPart
                 h3 {{ui.home.products.blankTitle}}
                 p {{ui.home.products.blankText}}
-          .hidden.col-md-4.col-sm-4.joinUs
+          .hidden.col-md-4.col-sm-4.joinUs.product
             a.box(href='https://joinus.ask-cs.nl', target='_blank')
               .top
                 img(src='images/products/logoStandBy.png', alt='JoinUs')
@@ -202,7 +222,7 @@ html.no-js
             .col-xs-12.textPart
               h3 Blank
               p {{ui.home.products.joinus}}.
-              a(href='http://joinus.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+              a(href='platform.html') {{ui.general.readMore}}...
         #product03.hidden
           .joinUs
             .top
@@ -216,7 +236,7 @@ html.no-js
 
 
     //--------CASES------
-    #section3.section
+    #section2.section
       .label
         h4 {{ui.home.casesPreview.title}}
       #case01.slide.case
