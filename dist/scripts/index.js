@@ -1,7 +1,7 @@
 function animateSlide (slide){
     switch (slide) {
         case 0:
-            $(".animate01-01").addClass('animated bounce');
+            $(".intro01").addClass('animated bounce');
             setTimeout(function(){$(".animate01-02").addClass('animated bounce');}, 500);
             setTimeout(function(){$(".animate01-03").addClass('animated tada');}, 1200);
             setTimeout(function(){$(".scenarioText1").addClass('animated pulse');}, 2500);
@@ -45,7 +45,7 @@ function cleanStyles (slide)
     switch (slide) {
         case 0:
             // clean slide 0 styles
-            $(".animate01-01").removeClass('animated bounce');
+            $(".intro01").removeClass('animated bounce');
             $(".animate01-02").removeClass('animated bounce');
             $(".animate01-03").removeClass('animated tada');
             $(".scenarioText1").removeClass('animated pulse');

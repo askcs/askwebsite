@@ -955,6 +955,13 @@ P:last-child {
   }
 }
 
+.platformHome  {
+  p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
 
 .scenarioImg {
   width: 100%;
@@ -963,29 +970,29 @@ P:last-child {
   max-height: 270px;
   margin: 20px auto ;
   position: relative;
-  img.animate01-01 {
+  img {
     width: 100%;
   }
-  img.animate02-01 {
-    width: 15%;
-  }
-  img.animate02-02 {
-    width: 57%;
-  }
-  img.animate02-03 {
-    width: 28%;
-  }
-  img.animate04-01, img.animate04-02 {
+  img.anContextAware01 {
     width: 30%;
   }
-  img.animate04-03 {
+  img.anContextAware02 {
+    width: 30%;
+  }
+  img.anContextAware03 {
     width: 40%;
+  }
+  img.anMultiDevice01 {
+    width: 15%;
+  }
+  img.anMultiDevice02 {
+    width: 57%;
+  }
+  img.anMultiDevice03 {
+    width: 28%;
   }
 }
 
-.slide1 .scenarioImg img, .slide2 .scenarioImg img, .slide4 .scenarioImg img {
-  float: left;
-}
 
 .slide3 {
   .scenarioImg {
@@ -1003,34 +1010,34 @@ P:last-child {
 }
 
 
-.slide4 .scenarioImg .absoluteElements span img{
+.slide2 .scenarioImg .absoluteElements span img{
   position: absolute;
   width: 27%;
   height: auto;
   right: 0;
   top: 115px;
-  background-color: $yellow;
+  background-color: $blue;
   @include border-radius(50%);
 }
 
 .absoluteElements {
-  span.animate03-02 {
+  span.anCommunication02 {
     left: 14%;
     top: 19%;
   }
-  span.animate03-03 {
+  span.anCommunication03 {
     left: 22%;
     top: 58%;
   }
-  span.animate03-04 {
+  span.anCommunication04 {
     left: 44%;
     top: 74%;
   }
-  span.animate03-05 {
+  span.anCommunication05 {
     left: 66%;
     top: 58%;
   }
-  span.animate03-06 {
+  span.anCommunication06 {
     left: 74%;
     top: 19%;
   }
@@ -1745,6 +1752,7 @@ body.notFound {
   }
 
   .arrowDownPosition {
+    bottom: 10%;
     .arrowDown{
       padding-top: 1px;
       width: 100px;
@@ -1763,7 +1771,7 @@ body.notFound {
     }
   }
 
-  .slide4 .scenarioImg .absoluteElements span img {
+  .slide2 .scenarioImg .absoluteElements span img {
     top: 60px;
   }
 

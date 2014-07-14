@@ -81,7 +81,7 @@ html.no-js
 
 
     //--------PLATFORM------
-    #section0.section
+    #section0.section.platformHome
       .label
         h4 {{ui.home.platform.title}}
       .arrowDownPosition
@@ -90,59 +90,57 @@ html.no-js
       .slide.slide1
         .container
           .col-md-12
-            h2 {{ui.home.platform.introTitle}}
-            p {{ui.home.platform.intro}}
+            h2.anText1 {{ui.home.platform.introTitle}}
+            p.hideXs {{ui.home.platform.intro}}
             .scenarioImg
-              a(href='platform.html') {{ui.general.readMore}}...
-              img.animate01-01(src='images/platform/platform01.png', alt='platform')
+              img.anIntro01(src='images/platform/platform01.png', alt='platform')
       .slide.slide2
         .container
           .col-md-12
-            h2.scenarioText2 {{ui.home.platform.contextAwarenessTitle}}
-            p {{ui.home.platform.contextAwareness}}
+            h2.anText2 {{ui.home.platform.contextAwarenessTitle}}
+            p.hideXs {{ui.home.platform.contextAwareness}}
             .scenarioImg
-              img.animate02-01(src='images/home/scenario02-01.png', alt='Smartphone')
-              img.animate02-02(src='images/home/scenario02-02.png', alt='Desktop computer')
-              img.animate02-03(src='images/home/scenario02-03.png', alt='Tablet')
+              img.anContextAware01(src='images/home/scenario04-01.png', alt='Safety worker')
+              img.anContextAware02(src='images/home/scenario04-02.png', alt='Care worker')
+              img.anContextAware03(src='images/home/scenario04-03.png', alt='Flex worker')
+              .absoluteElements
+                span
+                  img.hide.anContextAware04(src='images/home/scenario04-04.png', alt='Check')
       .slide.slide3
         .container
           .col-md-12
-            h2.scenarioText3 {{ui.home.platform.communicationTitle}}
-            p {{ui.home.platform.communication}}
-            .animate03-01.scenarioImg
+            h2.anText3 {{ui.home.platform.communicationTitle}}
+            p.hideXs {{ui.home.platform.communication}}
+            .anCommunication01.scenarioImg
               img(src='images/home/scenario03-01.png', alt='Devices')
               .absoluteElements
-                span.animate03-02
+                span.anCommunication02
                   img(src='images/home/scenario03-02.png', alt='Laptop computer')
-                span.animate03-03
+                span.anCommunication03
                   img(src='images/home/scenario03-03.png', alt='Email')
-                span.animate03-04
+                span.anCommunication04
                   img(src='images/home/scenario03-04.png', alt='Email SMS')
-                span.animate03-05
+                span.anCommunication05
                   img(src='images/home/scenario03-05.png', alt='Pager')
-                span.animate03-06
+                span.anCommunication06
                   img(src='images/home/scenario03-06.png', alt='Phone')
       .slide.slide4
         .container
           .col-md-12
-            h2.scenarioText4 {{ui.home.platform.proActiveTitle}}
-            p {{ui.home.platform.proActive}}
+            h2.anText4 {{ui.home.platform.proActiveTitle}}
+            p.hideXs {{ui.home.platform.proActive}}
             .scenarioImg
-              img.animate04-01(src='images/home/scenario04-01.png', alt='Safety worker')
-              img.animate04-02(src='images/home/scenario04-02.png', alt='Care worker')
-              img.animate04-03(src='images/home/scenario04-03.png', alt='Flex worker')
-              .absoluteElements
-                span
-                  img.hide.animate04-04(src='images/home/scenario04-04.png', alt='Check')
+              img.anProActive01(src='images/home/proActive01.png', alt='Pro active')
       .slide.slide5
         .container
           .col-md-12
-            h2.scenarioText3 {{ui.home.platform.multiDeviceTitle}}
-            p {{ui.home.platform.multiDevice}}
+            h2.anText5 {{ui.home.platform.multiDeviceTitle}}
+            p.hideXs {{ui.home.platform.multiDevice}}
+            a.hideXs(href='platform.html') {{ui.general.readMore}}...
             .scenarioImg
-              img.animate02-01(src='images/home/scenario02-01.png', alt='Smartphone')
-              img.animate02-02(src='images/home/scenario02-02.png', alt='Desktop computer')
-              img.animate02-03(src='images/home/scenario02-03.png', alt='Tablet')
+              img.anMultiDevice01(src='images/home/scenario02-01.png', alt='Smartphone')
+              img.anMultiDevice02(src='images/home/scenario02-02.png', alt='Desktop computer')
+              img.anMultiDevice03(src='images/home/scenario02-03.png', alt='Tablet')
 
 
 
@@ -191,13 +189,6 @@ html.no-js
               .textPart
                 h3 {{ui.home.products.blankTitle}}
                 p {{ui.home.products.blankText}}
-          .hidden.col-md-4.col-sm-4.joinUs.product
-            a.box(href='https://joinus.ask-cs.nl', target='_blank')
-              .top
-                img(src='images/products/logoStandBy.png', alt='JoinUs')
-              .textPart
-                h3 JoinUs
-                p {{ui.home.products.joinus}}
       .mobileView
         #product01.slide
           .standBy
