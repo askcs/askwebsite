@@ -1,80 +1,88 @@
 function animateSlide (slide){
     switch (slide) {
         case 0:
-            $(".intro01").addClass('animated bounce');
-            setTimeout(function(){$(".animate01-02").addClass('animated bounce');}, 500);
-            setTimeout(function(){$(".animate01-03").addClass('animated tada');}, 1200);
-            setTimeout(function(){$(".scenarioText1").addClass('animated pulse');}, 2500);
-            setTimeout(function(){$(".next").addClass('animated wobble');}, 4000);
+            $(".anIntro01").addClass('animated rubberBand');
+            setTimeout(function(){$(".anText1").addClass('animated pulse');}, 1000);
+            setTimeout(function(){$(".next").addClass('animated shake');}, 2500);
 
             setTimeout(function(){ cleanStyles(0); }, 3500);
             break;
         case 1:
-            $('.animate02-01').addClass('animated swing');
-            setTimeout(function(){$(".animate02-02").addClass('animated shake');}, 250);
-            setTimeout(function(){$(".animate02-03").addClass('animated shake');}, 500);
-            setTimeout(function(){$(".scenarioText2").addClass('animated pulse');}, 1500);
+            $(".anContextAware01").addClass('animated bounce');
+            setTimeout(function(){$(".anContextAware02").addClass('animated bounce');}, 500);
+            setTimeout(function(){$(".anContextAware03").addClass('animated bounce');}, 1100);
+            setTimeout(function(){$(".anContextAware04").removeClass('hide').addClass('animated rotateIn');}, 1900);
+            setTimeout(function(){$(".anText2").addClass('animated pulse');}, 2500);
 
-            setTimeout(function(){ cleanStyles(1); }, 2500);
+            setTimeout(function(){ cleanStyles(1); }, 3500);
             break;
         case 2:
-            $('.animate03-01').addClass('animated flip');
-            setTimeout(function(){$(".scenarioText3").addClass('animated pulse');}, 1000);
-            setTimeout(function(){$(".animate03-02").addClass('animated pulse');}, 2000);
-            setTimeout(function(){$(".animate03-03").addClass('animated pulse');}, 2250);
-            setTimeout(function(){$(".animate03-04").addClass('animated pulse');}, 2500);
-            setTimeout(function(){$(".animate03-05").addClass('animated pulse');}, 2750);
-            setTimeout(function(){$(".animate03-06").addClass('animated pulse');}, 3000);
+            $('.anCommunication01').addClass('animated swing');
+            setTimeout(function(){$(".anText3").addClass('animated pulse');}, 1000);
+            setTimeout(function(){$(".anCommunication02").addClass('animated pulse');}, 2000);
+            setTimeout(function(){$(".anCommunication03").addClass('animated pulse');}, 2250);
+            setTimeout(function(){$(".anCommunication04").addClass('animated pulse');}, 2500);
+            setTimeout(function(){$(".anCommunication05").addClass('animated pulse');}, 2750);
+            setTimeout(function(){$(".anCommunication06").addClass('animated pulse');}, 3000);
 
             setTimeout(function(){ cleanStyles(2); }, 4000);
             break;
         case 3:
-            $(".animate04-01").addClass('animated bounce');
-            setTimeout(function(){$(".animate04-02").addClass('animated bounce');}, 500);
-            setTimeout(function(){$(".animate04-03").addClass('animated bounce');}, 1200);
-            setTimeout(function(){$(".animate04-04").removeClass('hide').addClass('animated rotateIn');}, 1900);
-            setTimeout(function(){$(".scenarioText4").addClass('animated pulse');}, 2500);
+            $(".anProActive01").addClass('animated flip');
+            setTimeout(function(){$(".anText4").addClass('animated pulse');}, 1200);
 
             setTimeout(function(){ cleanStyles(3); }, 3500);
             break;
+        case 4:
+            $('.anMultiDevice01').addClass('animated swing');
+            setTimeout(function(){$(".anMultiDevice02").addClass('animated shake');}, 250);
+            setTimeout(function(){$(".anMultiDevice03").addClass('animated shake');}, 500);
+            setTimeout(function(){$(".anText5").addClass('animated pulse');}, 1500);
+
+            setTimeout(function(){ cleanStyles(4); }, 2500);
+            break;
     }
 }
+
 
 function cleanStyles (slide)
 {
     switch (slide) {
         case 0:
             // clean slide 0 styles
-            $(".intro01").removeClass('animated bounce');
-            $(".animate01-02").removeClass('animated bounce');
-            $(".animate01-03").removeClass('animated tada');
-            $(".scenarioText1").removeClass('animated pulse');
+            $(".anIntro01").removeClass('animated rubberBand');
+            $(".anText1").removeClass('animated pulse');
             break;
         case 1:
             // clean slide 1 styles
-            $('.animate02-01').removeClass('animated swing');
-            $(".animate02-02").removeClass('animated shake');
-            $(".animate02-03").removeClass('animated shake');
-            $(".scenarioText2").removeClass('animated pulse');
+            $(".anContextAware01").removeClass('animated bounce');
+            $(".anContextAware02").removeClass('animated bounce');
+            $(".anContextAware03").removeClass('animated bounce');
+            $(".anContextAware04").removeClass('animated rotateIn')/*.addClass('hide')*/;
+            $(".anText2").removeClass('animated pulse');
             break;
         case 2:
             // clean slide 2 styles
-            $('.animate03-01').removeClass('animated flip');
-            $(".scenarioText3").removeClass('animated pulse');
-            $(".animate03-02").removeClass('animated pulse');
-            $(".animate03-03").removeClass('animated pulse');
-            $(".animate03-04").removeClass('animated pulse');
-            $(".animate03-05").removeClass('animated pulse');
-            $(".animate03-06").removeClass('animated pulse');
+            $('.anCommunication01').removeClass('animated swing');
+            $(".anText3").removeClass('animated pulse');
+            $(".anCommunication02").removeClass('animated pulse');
+            $(".anCommunication03").removeClass('animated pulse');
+            $(".anCommunication04").removeClass('animated pulse');
+            $(".anCommunication05").removeClass('animated pulse');
+            $(".anCommunication06").removeClass('animated pulse');
             break;
         case 3:
             // clean slide 3 styles
-            $(".animate04-01").removeClass('animated bounce');
-            $(".animate04-02").removeClass('animated bounce');
-            $(".animate04-03").removeClass('animated bounce');
-            $(".animate04-04").removeClass('animated rotateIn')/*.addClass('hide')*/;
-            $(".scenarioText4").removeClass('animated pulse');
+            $(".anProActive01").removeClass('animated flip');
+            $(".anText4").removeClass('animated pulse');
             break;
+        case 4:
+            // clean slide 4 styles
+            $('.anMultiDevice01').removeClass('animated swing');
+            $(".anMultiDevice02").removeClass('animated shake');
+            $(".anMultiDevice03").removeClass('animated shake');
+            $(".text5").removeClass('animated pulse');
+          break;
     }
 }
 
@@ -114,11 +122,13 @@ $(document).ready(function() {
         'touchSensitivity': 20,
         'continuousVertical': false,
         'animateAnchor': true,
-        slidesColor: ['#facb6a', '#a5eaf5', '#000', '#000'],
-        anchors: ['home', 'platform', 'products', 'cases'],
+        slidesColor: ['#a5eaf5', '#000', '#000'],
+        anchors: ['platform', 'products', 'cases'],
         menu: '#menu',
 
         afterLoad: function(anchorLink, index){
+
+          // console.log('afterLoad', anchorLink, index);
 
             function resetMenucolors() {
                 $('#menu li a').removeClass('active');
@@ -130,12 +140,14 @@ $(document).ready(function() {
             } else {
                 resetMenucolors();
             }
-            ga('send', 'event', 'navigate', anchorLink, index);
 
+            ga('send', 'event', 'navigate', anchorLink, index);
         },
 
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex)
         {
+          // console.log('afterSlideLoad', anchorLink, index, slideAnchor, slideIndex);
+
             if (index == 1)
             {
                 switch (slideIndex)
@@ -144,6 +156,7 @@ $(document).ready(function() {
                     case 1: animateSlide(1); break;
                     case 2: animateSlide(2); break;
                     case 3: animateSlide(3); break;
+                    case 4: animateSlide(4); break;
                 }
             }
 

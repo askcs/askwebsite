@@ -1,31 +1,37 @@
 'use strict';
 
 //  Google Analytics: change UA-XXXXX-X to be your site's ID.
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+(function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 ga('create', 'UA-49063927-1', 'ask-cs.com');
 ga('send', 'pageview');
-
 
 
 var isShown = localStorage.getItem('cookieMessageShown');
 
 if (!isShown) {
-    $('#cookieMessage').show();
+  $('#cookieMessage').show();
 }
 
-$( "#closeCookie").click(function () {
-    $('#cookieMessage').hide();
-    localStorage.setItem('cookieMessageShown', true);
+$("#closeCookie").click(function () {
+  $('#cookieMessage').hide();
+  localStorage.setItem('cookieMessageShown', true);
 });
 
 
 var localization = {
 
 
-
+  /*jshint indent:2 */
 
   /*----------DUTCH--------*/
 
@@ -53,22 +59,26 @@ var localization = {
 
 
     home: {
-      scenario: {
-        titleSlide1: 'Regelmatig een tekort aan personeel?',
-        titleSlide2: 'Met ASK geeft personeel zelf beschikbaarheid aan.',
-        titleSlide3: 'Bij een tekort zoekt ASK automatisch naar personeel.',
-        titleSlide4: 'Zo heeft u altijd voldoende personeel!'
+      platform: {
+        title: 'ASK Platform',
+        introTitle: 'Maak kennis met het ASK Platform',
+        intro: 'Slimme apps maken die uw team ondersteunen.',
+        contextAwarenessTitle: 'ASK Platform is context-aware',
+        contextAwareness: 'Toegang tot status, netwerk en tijdlijn van teamleden.',
+        communicationTitle: ' ASK Platform is communicatief',
+        communication: 'Faciliteren van dialogen binnen uw team over meerdere communicatiekanalen.',
+        proActiveTitle: 'ASK Platform is proactief',
+        proActive: 'Proactief handelen door continu de gestelde doelen in de gaten te houden en te bewaken.',
+        multiDeviceTitle: 'ASK Platform is multi-device',
+        multiDevice: 'Werken vanaf vaste en mobiele apparaten.'
       },
       products: {
-        title:'Producten',
+        title: 'Producten',
         standby: 'Vooraf inzage in de paraatheid hebben en niet pas wanneer het alarm is afgegaan. Online roosters en alarmontvangers bieden slechts een deeloplossing. Daarom heeft ASK Standby ontwikkeld.',
         teamup: 'ASK vindt dat ICT de zorg dient te ondersteunen. Uw medewerkers willen zo min mogelijk tijd aan administratie kwijt zijn, zodat ze zich kunnen richten op het verlenen van goede zorg.',
-        joinus: 'Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.'
-      },
-      platform: {
-        title:'ASK Platform',
-        introTitle:'ASK Platform',
-        introText: 'Last minute uitdagingen oplossen met het platform van ASK.'
+        joinus: 'Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.',
+        blankTitle: 'Uw App',
+        blankText: 'Het ASK platform heeft een cloud API waarmee u uw eigen slimme applicaties kunt bouwen.'
       },
       casesPreview: {
         title: 'Referenties',
@@ -103,90 +113,190 @@ var localization = {
 
 
     jobs: {
-      title:'Vacatures',
-      knowledgeTitle: 'Gewenste kennis en ervaring:',
-      profileTitle: 'Jouw profiel:',
-      offerTitle: 'Wij bieden jou:',
+      title: 'Vacatures',
+      keyResTitle: 'Key responsibilities',
+      knowledgeTitle: 'Required knowledge and experience:',
+      profileTitle: 'Your Profile:',
+      offerTitle: 'We offer you:',
       contactTitle: 'Interesse?',
       contactDescription01: 'Neem contact op met Carolyn Hoek:',
 
-      iosdev: {
-        title:'iOS Developer',
-        intro: 'ASK Community Systems B.V. is voor een aantal projecten op zoek naar ervaren iOS Developers. Het gaat hierbij om de ontwikkeling van innovatieve iPhone en iPad applicaties. Je streeft samen met het team naar het beste resultaat.',
+      sbmanager: {
+        title: 'StandBy Product Manager',
+        intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
+        keyRes: {
+          point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
+          point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
+          point03: 'Provide marketing and sales support by (co-) developing (communication) strategy, product portfolio and pricing.',
+          point04: 'Cooperate with marketing manager to develop parameters to measure successful performances in marketing, products and sales. Use market information to evaluate and improve market plans.',
+          point05: 'Work together with the technical talent in your team to define development priorities and liaise with designers and developers to achieve the optimal implementation of changes.',
+          point06: 'Interact regularly with customers on the value of the whole product. Solicit continuously for improvements in products and related extensions and additions.',
+          point07: 'Monitor, analyze and evaluate the user experience and customer satisfaction using a combination of web analytics, user analytics, user surveys and other tools.'
+        },
         knowledge: {
-          point01: 'HBO denk- en werkniveau',
-          point02: 'Minimaal 2 jaar aantoonbare ervaring met iOS app development',
-          point03: 'Uitgebreide kennis van iOS SDK en Xcode',
-          point04: 'Goede kennis van Objective-C , HTML5, JSON'
+          intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
+          point01: 'Bachelor degree (HBO) in IT technology or business. ',
+          point02: 'Minimum of 3 years experience in developing (value-based) service strategy in a high-tech environment.',
+          point03: 'Understanding of (Dutch and European) public safety and security market.',
+          point04: 'Fluency in Dutch and English, verbal and written.',
+          point05: 'Demonstrated ability to perform in high-pressure environments.'
         },
         profile: {
-          point01: 'Analytische vaardigheden',
-          point02: 'Collegiaal en flexibel',
-          point03: 'Verantwoordelijkheidsgevoel en stressbestendigheid',
-          point04: 'Onze doelstelling onderschrijven door plezier te hebben in je werk en dat uit te stralen',
-          point05: 'Bereid zijn jouw kennis met je collega\'s te delen'
+          point01: 'Analytical skills',
+          point02: 'Collegial and flexible',
+          point03: 'Sense of responsibility and immune to stress',
+          point04: 'Support our goals by visibly enjoying your work',
+          point05: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      iosdev: {
+        title: 'iOS Developer (2x)',
+        intro: 'ASK Community Systems B.V. is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of iOS (iPhone and iPad) applications of one of our products.',
+          point02: 'Develop, enhance and maintain the iOS applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
         },
-        offer: {
-          point01: 'Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden;',
-          point02: 'Een inspirerende internationale werkomgeving;',
-          point03: 'Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen.'
+        knowledge: {
+          point01: 'HBO-level of working and thinking',
+          point02: 'Minimum 2 years of demonstrable experience in iOS app development',
+          point03: 'Experience with Apple appstore & Distribution Process.',
+          point04: 'Extensive knowledge of iOS SDK and Xcode',
+          point05: 'Sufficient knowledge of Objective-C , HTML5, JSON',
+          point06: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point07: 'Fully comfortable working in English, both in writing and spoken'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      androiddev: {
+        title: 'Android Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Android Developers for several projects. The focus is on developing innovative mobile applications for Android devices. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of Android applications of one of our products.',
+          point02: 'Develop, enhance and maintain the Android applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in Android app development.',
+          point03: 'Experience with Android Market place & Distribution Process.',
+          point04: 'Excellent knowledge of Java.',
+          point05: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point06: 'Sufficient knowledge of HTML5, JSON.',
+          point07: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
+        }
+      },
+
+      webdev: {
+        title: 'Web Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Web Developers for several products. The focus is on developing innovative web applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of web applications of one of our products.',
+          point02: 'Develop, enhance and maintain the web applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in web app development.',
+          point03: 'Excellent knowledge of HTML, javascript, CSS, JSON.',
+          point04: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
         }
       },
 
       businessConsultant: {
         title: 'Business Consultant',
-        intro: 'Ter uitbreiding van ons salesteam, zijn wij op zoek naar een Business Consultant. In deze functie ben je verantwoordelijk voor het binnenhalen van new business en het relatiebeheer met klanten. Je bent het boegbeeld van ASK Community Systems B.V. en gaat geen enkele commerciële uitdaging uit de weg.',
+        intro: 'For the extension of our sales team, we are looking for a Business Consultant. This function gives the responsibility of attracting new business and relationship management with customers. You are a figurehead of ASK Community Systems B.V. and you are not afraid of any commercial challenges.',
         knowledge: {
-          point01: 'Afgeronde HBO / universitaire opleiding op technisch gebied (zoals Computertechnologie, Informatietechnologie of Bedrijfskunde)',
-          point02: 'Minimaal 3 jaar ervaring in een soortgelijke functie',
-          point03: 'Aantoonbaar succesvolle commerciële werkervaring'
+          point01: 'Completed HBO / university education in technical field of study (like Computer Technology, Information Technology or Business Administration)',
+          point02: 'Minimum 3 years of experience in similar function',
+          point03: 'Demonstrable successful commercial experience'
         },
         profile: {
-          point01: 'Je bent ondernemend en neemt initiatief',
-          point02: 'Je bent zelfstandig, toont ownership en werkt graag in teamverband',
-          point03: 'Een goede netwerker',
-          point04: 'Communicatief vaardig in woord en geschrift',
-          point05: 'Uitstekende mondelinge en schriftelijke kennis van het Engels',
-          point06: 'In staat om je op korte termijn het dienstenaanbod van ASK eigen te maken',
-          point07:'Bij voorkeur woonachtig in regio Rotterdam'
+          point01: 'You are enterprising and take initiative',
+          point02: 'You are independent, show ownership and enjoy working in a team',
+          point03: 'A good networker',
+          point04: 'Communicative skills in word and writing',
+          point05: 'Excellent English oral and writing skills ',
+          point06: 'Able to make ASK services your own in short-term',
+          point07: 'Preferably living in region of Rotterdam'
         },
         offer: {
-          point01: 'Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden;',
-          point02: 'Bedrijf met potentie;',
-          point03: 'Een inspirerende internationale werkomgeving;',
-          point04: 'Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen.'
+          point01: 'Competitive benefits',
+          point02: 'A company with potential',
+          point03: 'An inspiring international working environment',
+          point04: 'Plenty of possibilities for personal development within, as well as beyond your field of study'
         }
       },
 
 
-      internshipTitle:'Stages',
-      internshipTitle02:'Stage:',
+      internshipTitle: 'Stages',
+      internshipTitle02: 'Stage:',
       challengeTitle: 'De uitdaging',
       weSeekTitle: 'Wie we zoeken',
 
       internshipClouds: {
-        title:'Onderzoek naar clouds',
+        title: 'Onderzoek naar clouds',
         challengeDescription01: 'ASK maakt veelvuldig gebruik van multi-agenttechnologie in haar oplossingen. Twee van onze belangrijkste systemen maken gebruik van deze technologie: de ASK Back-End voor realtime coördinatie en informatie-uitwisseling, en ASK-Fast, een platform voor realtime communicatie tussen verschillende partijen. ',
         challengeDescription02: 'Beide platforms draaien in de cloud (voornamelijk Google App Engine), waardoor ze onbeperkt schaalbaar zijn. Om ook in de toekomst goede beslissingen te kunnen nemen over onze applicaties in de cloud, willen we graag meer weten over andere cloud oplossingen. ',
         weSeekDescription01: 'We zoeken daarom een stagiair die een uitgebreid vergelijkend onderzoek wil doen naar de verschillende cloudplatforms die op dit moment op de markt zijn. Het gaat daarbij om zowel een literatuurstudie als praktische experimenten waarbij de voors en tegens van de verschillende cloud platforms tegen elkaar kunnen worden afgewogen. '
       },
 
       internshipPersonalAlarm: {
-        title:'Personal alarm system',
+        title: 'Personal alarm system',
         challengeDescription01: 'ASK werkt op dit moment aan de Alarm app: een innovatief systeem dat de juiste mensen alarmeert in geval van nood. Deze app kan gebruikt worden door bijvoorbeeld patiënten met epilepsie, diabetes of hartproblemen, mobiele beveiligers, medewerkers die in hun eentje op een gevaarlijke plek moeten werken, reizigers die worden geconfronteerd met geweld, enz. ',
         challengeDescription02: 'De applicatie bestaat uit een app (te gebruiken door slachtoffers én helpers) en een intelligente back-end. De back-end zorgt dat de meest geschikte persoon wordt gealarmeerd en dat de juiste informatie snel bij de juiste persoon terecht komt. De Alarm app is getest in twee experimentele situaties, namelijk binnen Zorg en binnen Veiligheid. ',
         weSeekDescription01: 'ASK-CS zoekt een stagiair die wil helpen deze pilotversie om te zetten naar een market ready systeem.'
       },
 
       internshipP2000Alarm: {
-        title:'P2000 alarm system',
+        title: 'P2000 alarm system',
         challengeDescription01: '',
         challengeDescription02: '',
         weSeekDescription01: ''
       },
 
       internshipLearningSoftwareAgent: {
-        title:'Een lerende software-agent voor multi-modale communicatie',
+        title: 'Een lerende software-agent voor multi-modale communicatie',
         challengeDescription01: 'Het ASK-Fast platform stelt gebruikers in staat om met verschillende partijen te communiceren via verschillende kanalen. Denk aan telefonie, SMS, Email, IM, in-app berichten, enz. Op deze manier kunnen één of meerdere dialogen worden opgezet.',
         challengeDescription02: 'Eén van de systemen die gebruik maken van ASK-Fast is JoinUs, een systeem dat recruiters helpt om veel flex-medewerkers tegelijk te polsen over hun beschikbaarheid voor een bepaalde taak. Elke flex-medewerker wordt afhankelijk van zijn/haar voorkeuren via één of meerdere kanalen aangesproken. ',
         challengeDescription03: 'Om tot een optimale mix van communicatiekanalen te komen, willen we een lerende software-agent ontwikkelen. Deze agent combineert de statische kennis over de verschillende communicatiekanalen, met de gebruikerspecifieke voorkeuren. ',
@@ -194,7 +304,7 @@ var localization = {
       },
 
       internshipTeamup: {
-        title:'TeamUp in de praktijk',
+        title: 'TeamUp in de praktijk',
         challengeDescription01: 'Voor de zorgsector ontwikkelt ASK de oplossing TeamUp. Deze applicatie helpt teams van zorgverleners (zoals thuiszorgmedewerkers) om samen te werken met hun teamgenoten. Ze kunnen bijvoorbeeld elkaars status opvragen, ondersteuning vragen, of op locatie informatie over hun patiënten opzoeken.',
         challengeDescription02: 'ASK wil de TeamUp applicatie nu ook inzetten in andere domeinen, zoals sportteams, mantelzorgers, enz.',
         weSeekDescription01: 'We zoeken een stagiair die voor ons wil onderzoeken hoe TeamUp kan worden ingezet in dergelijke domeinen en welke toegevoegde waarde de applicatie kan hebben.'
@@ -220,10 +330,10 @@ var localization = {
       qualResultsTitle: 'Kwantitatieve resultaten:',
 
       postnl: {
-        title:'PostNL',
+        title: 'PostNL',
         factsTitle: 'ASK bij PostNL in cijfers:',
-        fact01:'Sorteercentra verspreid door Nederland',
-        fact02:'Flexwerkers in het systeem',
+        fact01: 'Sorteercentra verspreid door Nederland',
+        fact02: 'Flexwerkers in het systeem',
         fact03: 'Communicatiehandelingen per maand (telefoon/sms)',
         problem: {
           point01: 'Inefficiënte planning door scheve verhouding tussen vooraf gemaakt rooster en daadwerkelijke vraag;',
@@ -237,13 +347,13 @@ var localization = {
         },
         solution: {
           description01: 'PostNL heeft, in overeenstemming met de ondernemingsraad, gekozen voor de oplossing van ASK, omdat deze goed aansluit bij hun MVO-doelstellingen (Maatschappelijk Verantwoord Ondernemen).',
-          description02:'De roosters van postsorteerders worden voortaan gegenereerd op basis van de beschikbaarheid van werknemers, die zij zelf online aangeven. De definitieve planning wordt aan de flexwerkers doorgegeven via e-mail of sms.'
+          description02: 'De roosters van postsorteerders worden voortaan gegenereerd op basis van de beschikbaarheid van werknemers, die zij zelf online aangeven. De definitieve planning wordt aan de flexwerkers doorgegeven via e-mail of sms.'
         },
         qualResults: {
-          point01:'Aantal uitzenduren is teruggebracht;',
-          point02:'Geen ontslagen onder vaste medewerkers;',
-          point03:'Meer continuïteit doordat er meer met vaste medewerkers wordt gewerkt;',
-          point04:'Personeel is beter gemotiveerd omdat werk en privé beter op elkaar zijn af te stemmen.'
+          point01: 'Aantal uitzenduren is teruggebracht;',
+          point02: 'Geen ontslagen onder vaste medewerkers;',
+          point03: 'Meer continuïteit doordat er meer met vaste medewerkers wordt gewerkt;',
+          point04: 'Personeel is beter gemotiveerd omdat werk en privé beter op elkaar zijn af te stemmen.'
         },
         quanResults: {
           fact01: 'Kostenvermindering door besparing',
@@ -253,10 +363,10 @@ var localization = {
       },
 
       knrm: {
-        title:'KNRM',
+        title: 'KNRM',
         factsTitle: 'ASK bij KNRM in cijfers:',
-        fact01:'Reddingsstations gebruiken ASK',
-        fact02:'Hulpverleners ondersteund',
+        fact01: 'Reddingsstations gebruiken ASK',
+        fact02: 'Hulpverleners ondersteund',
         problem: {
           point01: 'Veel onnodige oproepen;',
           point02: 'Niet altijd voldoende mensen beschikbaar;',
@@ -271,17 +381,17 @@ var localization = {
           description01: 'Met de intrede van ASK vullen de meer dan 1300 hulpverleners bij de 46 stations nu online hun beschikbaarheid in via het planbord. De coördinator houdt het overzicht op het gezamenlijke rooster van zijn/haar locatie. ASK vult automatisch de gaten in het rooster op door telefonisch de beschikbaarheid te peilen.'
         },
         qualResults: {
-          point01:'Vrijwilligerswerk voor de KNRM is beter te combineren met werk/privé;',
-          point02:'ASK bewaakt de permanentiegraad (= altijd voldoende mensen beschikbaar);',
-          point03:'De schippers zijn ontlast, doordat ze nu alleen bij een tekort worden genotificeerd.'
+          point01: 'Vrijwilligerswerk voor de KNRM is beter te combineren met werk/privé;',
+          point02: 'ASK bewaakt de permanentiegraad (= altijd voldoende mensen beschikbaar);',
+          point03: 'De schippers zijn ontlast, doordat ze nu alleen bij een tekort worden genotificeerd.'
         }
       },
 
       bz: {
-        title:'Buurtzorg',
+        title: 'Buurtzorg',
         factsTitle: 'Buurtzorg in cijfers:',
-        fact01:'Personen maximaal per zelfsturend team',
-        fact02:'Locaties in Nederland',
+        fact01: 'Personen maximaal per zelfsturend team',
+        fact02: 'Locaties in Nederland',
         problem: {
           point01: 'Veel tijd kwijt aan het naar kantoor gaan om op de computer cliëntgegevens te kunnen raadplegen;',
           point02: 'Communicatie tussen collega’s onderling slecht gefaciliteerd.'
@@ -292,22 +402,22 @@ var localization = {
         },
         solution: {
           description01: 'ASK Community Systems heeft in samenwerking met Ecare Services de Buurtzorg App ontwikkeld. Deze app geeft werknemers de mogelijkheid om onderweg naar de cliënt de laatste rapporten door te nemen. Het vormt de mobiele ondersteuning van de wijkverpleegkundige.',
-          description02:'Tevens zorgt de Buurtzorg App voor kortere lijntjes: Geen mensen meer achter de bureaus, maar gewoon uitvoerenden die ook de talenten in zich hebben om na te denken en gebruik te maken van moderne technologie.'
+          description02: 'Tevens zorgt de Buurtzorg App voor kortere lijntjes: Geen mensen meer achter de bureaus, maar gewoon uitvoerenden die ook de talenten in zich hebben om na te denken en gebruik te maken van moderne technologie.'
         },
         qualResults: {
-          description01:'Met de Buurtzorg App kunnen wijkverpleegkundigen:',
-          point01:'Basisgegevens van en over cliënten inzien;',
-          point02:'Rapportages van en over cliënten, inzien en creëren;',
-          point03:'Tijd besteed bij een cliënt vastleggen en doorsturen;',
-          point04:'Contact opnemen met cliënten of collega\'s.'
+          description01: 'Met de Buurtzorg App kunnen wijkverpleegkundigen:',
+          point01: 'Basisgegevens van en over cliënten inzien;',
+          point02: 'Rapportages van en over cliënten, inzien en creëren;',
+          point03: 'Tijd besteed bij een cliënt vastleggen en doorsturen;',
+          point04: 'Contact opnemen met cliënten of collega\'s.'
         }
       },
 
       olympia: {
-        title:'Olympia',
+        title: 'Olympia',
         factsTitle: 'ASK bij Olympia in cijfers:',
-        fact01:'Geregistreerde uitzendkrachten',
-        fact02:'Communicatiehandelingen per kwartaal (telefoon/sms)',
+        fact01: 'Geregistreerde uitzendkrachten',
+        fact02: 'Communicatiehandelingen per kwartaal (telefoon/sms)',
         problem: {
           point01: 'Beperkte productiviteit bij intercedenten in alle branches;',
           point02: 'Intercedenten besteden te veel tijd aan herhalende communicatiehandelingen;',
@@ -320,13 +430,13 @@ var localization = {
         },
         solution: {
           description01: 'Olympia Uitzendbureau gebruikte ASK om haar intercedenten te ondersteunen bij dagelijkse werkprocessen.',
-          description02:'Wanneer een vacature moet worden vervuld, selecteert de intercedent eerst handmatig een groep geschikte uitzendkrachten. De intercedent neemt óf een gesproken bericht op, óf schrijft een tekst met daarin de belangrijkste informatie over de opdracht. ASK bezorgt dit bericht bij de geselecteerde uitzendkrachten en verzamelt meteen reacties via de telefoon, sms, of e-mail.',
+          description02: 'Wanneer een vacature moet worden vervuld, selecteert de intercedent eerst handmatig een groep geschikte uitzendkrachten. De intercedent neemt óf een gesproken bericht op, óf schrijft een tekst met daarin de belangrijkste informatie over de opdracht. ASK bezorgt dit bericht bij de geselecteerde uitzendkrachten en verzamelt meteen reacties via de telefoon, sms, of e-mail.',
           description03: 'De opdracht kan online worden uitgezet en gevolgd. Dit betekent dat de intercedent niet in hetzelfde land hoeft te zijn als de kandidaten en dat de effectieve werktijd wordt uitgebreid (tot wel 24/7). Het systeem blijft kandidaten benaderen, ook wanneer de intercedent niet achter zijn of haar bureau zit.'
         },
         qualResults: {
-          point01:'De dagelijkse operatie is efficiënter en flexibeler;',
-          point02:'Een betere concurrentiepositie;',
-          point03:'De baan van intercedent is aantrekkelijker omdat ASK de saaie, repetitieve taken overneemt.'
+          point01: 'De dagelijkse operatie is efficiënter en flexibeler;',
+          point02: 'Een betere concurrentiepositie;',
+          point03: 'De baan van intercedent is aantrekkelijker omdat ASK de saaie, repetitieve taken overneemt.'
         },
         quanResults: {
           fact01: 'Succesvolle uitzendingen',
@@ -373,7 +483,7 @@ var localization = {
           title: 'Informatie vertalen naar waarde',
           description01: 'Het platform geeft toegang tot informatie over de status (beschrijving van situatie van de gebruiker), het sociale netwerk (wie kent wie en wie heeft wie ontmoet) en de tijdlijn (wat is er gebeurd en wat voorspellen we dat er moet gebeuren). Het ASK platform interpreteert alle informatie van gebruikers en creëert voor u context. Hiermee kan het platform beslissingen nemen om voor u met een passende oplossing te komen wanneer u dat nodig heeft.'
         }
-       },
+      },
       thePlatform: {
         title: 'Het Platform',
         communicationIntensity: {
@@ -399,9 +509,6 @@ var localization = {
       description01: 'Pagina niet gevonden'
     }
   },
-
-
-
 
 
   /*----------ENGLISH--------*/
@@ -430,22 +537,26 @@ var localization = {
 
 
     home: {
-      scenario: {
-        titleSlide1: 'Experiencing shortages in personnel regularly?',
-        titleSlide2: 'With ASK, personnel can register their availability themselves.',
-        titleSlide3: 'When there is a shortage, ASK will automatically search for personnel.',
-        titleSlide4: 'This way you will always have enough personnel!'
+      platform: {
+        title: 'ASK Platform',
+        introTitle: 'Meet the ASK Platform',
+        intro: 'Building intelligent applications to support your team.',
+        contextAwarenessTitle: 'ASK Platform is context-aware',
+        contextAwareness: 'Providing access to team members\' state, network and timeline.',
+        communicationTitle: 'ASK Platform is communicative',
+        communication: 'Facilitating multichannel dialogs within your team.',
+        proActiveTitle: 'ASK Platform is proactive',
+        proActive: 'Acting proactively with its continuous monitoring and guarding of goals.',
+        multiDeviceTitle: 'ASK Platform is multi-device',
+        multiDevice: 'Working across multiple devices.'
       },
       products: {
-        title:'Products',
+        title: 'Products',
         standby: 'Insight in the readiness beforehand, and not only after the alarm has gone off. Online schedules and alarm-receivers only solve part of the problem. That\'s why ASK has developed Standby.',
         teamup: 'ASK believes that ICT should support healthcare. Your employees don\'t want to spend much time on administrative tasks. They want to focus on providing care.',
-        joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.'
-      },
-      platform: {
-        title:'ASK Platform',
-        introTitle:'ASK Platform',
-        introText: 'ASK delivers the platform businesses need to solve last minute challenges.'
+        joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.',
+        blankTitle: 'Your App',
+        blankText: 'We provide you with a cloud API on the ASK Platform with which you can build your own intelligent applications.'
       },
       casesPreview: {
         title: 'References',
@@ -480,21 +591,33 @@ var localization = {
 
 
     jobs: {
-      title:'Jobs',
+      title: 'Jobs',
+      keyResTitle: 'Key responsibilities',
       knowledgeTitle: 'Required knowledge and experience:',
       profileTitle: 'Your Profile:',
       offerTitle: 'We offer you:',
       contactTitle: 'Apply?',
       contactDescription01: 'Please contact Carolyn Hoek:',
 
-      iosdev: {
-        title:'iOS Developer',
-        intro: 'ASK Community Systems B.V.  is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
+      sbmanager: {
+        title: 'StandBy Product Manager',
+        intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
+        keyRes: {
+          point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
+          point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
+          point03: 'Provide marketing and sales support by (co-) developing (communication) strategy, product portfolio and pricing.',
+          point04: 'Cooperate with marketing manager to develop parameters to measure successful performances in marketing, products and sales. Use market information to evaluate and improve market plans.',
+          point05: 'Work together with the technical talent in your team to define development priorities and liaise with designers and developers to achieve the optimal implementation of changes.',
+          point06: 'Interact regularly with customers on the value of the whole product. Solicit continuously for improvements in products and related extensions and additions.',
+          point07: 'Monitor, analyze and evaluate the user experience and customer satisfaction using a combination of web analytics, user analytics, user surveys and other tools.'
+        },
         knowledge: {
-          point01: 'HBO-level of working and thinking',
-          point02: 'Minimum 2 years of demonstrable experience in iOS app development',
-          point03: 'Extensive knowledge of iOS SDK and Xcode',
-          point04: 'Sufficient knowledge of Objective-C , HTML5, JSON '
+          intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
+          point01: 'Bachelor degree (HBO) in IT technology or business. ',
+          point02: 'Minimum of 3 years experience in developing (value-based) service strategy in a high-tech environment.',
+          point03: 'Understanding of (Dutch and European) public safety and security market.',
+          point04: 'Fluency in Dutch and English, verbal and written.',
+          point05: 'Demonstrated ability to perform in high-pressure environments.'
         },
         profile: {
           point01: 'Analytical skills',
@@ -502,11 +625,99 @@ var localization = {
           point03: 'Sense of responsibility and immune to stress',
           point04: 'Support our goals by visibly enjoying your work',
           point05: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      iosdev: {
+        title: 'iOS Developer (2x)',
+        intro: 'ASK Community Systems B.V. is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of iOS (iPhone and iPad) applications of one of our products.',
+          point02: 'Develop, enhance and maintain the iOS applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
         },
-        offer: {
-          point01: 'Competitive benefits',
-          point02: 'An inspiring international working environment',
-          point03: 'Plenty of possibilities for personal development within, as well as beyond your field of study'
+        knowledge: {
+          point01: 'HBO-level of working and thinking',
+          point02: 'Minimum 2 years of demonstrable experience in iOS app development',
+          point03: 'Experience with Apple appstore & Distribution Process.',
+          point04: 'Extensive knowledge of iOS SDK and Xcode',
+          point05: 'Sufficient knowledge of Objective-C , HTML5, JSON',
+          point06: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point07: 'Fully comfortable working in English, both in writing and spoken'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      androiddev: {
+        title: 'Android Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Android Developers for several projects. The focus is on developing innovative mobile applications for Android devices. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of Android applications of one of our products.',
+          point02: 'Develop, enhance and maintain the Android applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in Android app development.',
+          point03: 'Experience with Android Market place & Distribution Process.',
+          point04: 'Excellent knowledge of Java.',
+          point05: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point06: 'Sufficient knowledge of HTML5, JSON.',
+          point07: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
+        }
+      },
+
+      webdev: {
+        title: 'Web Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Web Developers for several products. The focus is on developing innovative web applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of web applications of one of our products.',
+          point02: 'Develop, enhance and maintain the web applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in web app development.',
+          point03: 'Excellent knowledge of HTML, javascript, CSS, JSON.',
+          point04: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
         }
       },
 
@@ -535,35 +746,34 @@ var localization = {
         }
       },
 
-
-      internshipTitle:'Internships',
-      internshipTitle02:'Internship:',
+      internshipTitle: 'Internships',
+      internshipTitle02: 'Internship:',
       challengeTitle: 'The challenge',
       weSeekTitle: 'We seek',
 
       internshipClouds: {
-        title:'Research cloud platforms',
+        title: 'Research cloud platforms',
         challengeDescription01: 'ASK frequently uses multi-agent technology in its solutions. Two of our most important systems use this technology: the ASK Back-End for realtime coordination and exchange of information, and ASK-Fast, a platform for realtime communication between different parties.',
         challengeDescription02: 'Both platforms are active in the cloud (mainly Google App Engine), causing unlimited scalability. In order to make solid decisions about our cloud-based applications in the future, we would like to gain knowledge about other cloud solutions.',
         weSeekDescription01: 'That is why we are looking for an intern who is willing to carry out extensive comparative research into the different cloud platforms that are currently on the market. It will be a combination of a literature review and practical experiments, making it possible to measure the pros and cons of the different cloud platforms.'
       },
 
       internshipPersonalAlarm: {
-        title:'Personal alarm system',
+        title: 'Personal alarm system',
         challengeDescription01: 'As an innovation project, ASK started the development of the Alarm app, a system where people can alarm other people in case of an emergency. Multiple types of emergencies can be imagined, varying from someone with health-care related issues (heart failure, epileptic attack, diabetes, etc) or more into the safety and security area, where lone workers would require assistance or lonely travellers are confronted with a violent situation.',
         challengeDescription02: 'The system is composed of an app, both for victims and helpers and a back-end with intelligence to alarm the right people and pass information on the situation to the appropriate people. So far 2 experiments have been done, one with a healthcare scenario and one with a security scenario, resulting into a demonstrator back-end and 2 demonstrator apps.',
         weSeekDescription01: 'ASK is looking for talented students to take the demonstrators to a next level and start the production of a system based upon the lessons learned so far.'
       },
 
       internshipP2000Alarm: {
-        title:'P2000 alarm system',
+        title: 'P2000 alarm system',
         challengeDescription01: '',
         challengeDescription02: '',
         weSeekDescription01: ''
       },
 
       internshipLearningSoftwareAgent: {
-        title:'Learning agent on multi-modal communication',
+        title: 'Learning agent on multi-modal communication',
         challengeDescription01: 'The ASK-Fast platform enables users to communicate via multi-modal communication channels, including voice telephony, SMS, Email, in-app messages etc. These channels can be used to set-up one or simultaneous dialogues.',
         challengeDescription02: 'One of the systems using the multi-modal communication of the ASK-Fast platform is the JoinUs system, a system aiming to support recruiters in the flex-market to poll many flex-workers in parallel for their availability on a certain job. Each of these flex-workers can be contacted via one or multiple media, depending on their preference or the most effective type of communication.',
         challengeDescription03: 'In order to use the optimal mixture of preference and effectiveness, a learning agent is foreseen. This agent would combine static knowledge on the different communication media with user efficiency for the specific users.',
@@ -593,10 +803,10 @@ var localization = {
       qualResultsTitle: 'Quantitative Results:',
 
       postnl: {
-        title:'PostNL',
+        title: 'PostNL',
         factsTitle: 'ASK at PostNL in numbers:',
-        fact01:'Sorting centres in the Netherlands',
-        fact02:'Flexworkers in the system',
+        fact01: 'Sorting centres in the Netherlands',
+        fact02: 'Flexworkers in the system',
         fact03: 'Communication actions per month (phone/sms)',
         problem: {
           point01: 'Inefficient planning due to inaccurate relation between earlier-made schedule and actual demand;',
@@ -610,13 +820,13 @@ var localization = {
         },
         solution: {
           description01: 'PostNL selected ASK\'s solution, because this is in line with their Corporate Social Responsibility policy.',
-          description02:'The schedules will be generated based on the availability of the employees, which they will indicate themselves. The final planning will be communicated to the flexworkers via e-mail or sms.'
+          description02: 'The schedules will be generated based on the availability of the employees, which they will indicate themselves. The final planning will be communicated to the flexworkers via e-mail or sms.'
         },
         qualResults: {
-          point01:'Amount of temporary hours is reduced;',
-          point02:'No cutbacks in regular staff;',
-          point03:'More continuity because regular staff is used more often;',
-          point04:'Personnel is motivated because work and private life are more in tune.'
+          point01: 'Amount of temporary hours is reduced;',
+          point02: 'No cutbacks in regular staff;',
+          point03: 'More continuity because regular staff is used more often;',
+          point04: 'Personnel is motivated because work and private life are more in tune.'
         },
         quanResults: {
           fact01: 'Cost reduction due to savings',
@@ -626,10 +836,10 @@ var localization = {
       },
 
       knrm: {
-        title:'KNRM',
+        title: 'KNRM',
         factsTitle: 'ASK at KNRM in numbers:',
-        fact01:'Rescue-stations use ASK',
-        fact02:'Rescue workers are supported',
+        fact01: 'Rescue-stations use ASK',
+        fact02: 'Rescue workers are supported',
         problem: {
           point01: 'A lot of unnecessary calls;',
           point02: 'Not always enough people available;',
@@ -644,17 +854,17 @@ var localization = {
           description01: 'By using ASK, more than 1300 rescue workers at the 46 stations are filling in their availability online through the planboard. The coordinator keeps an overview on the joint schedule of his/her location. ASK automatically fills gaps in the schedule by gauging the availability by telephone.'
         },
         qualResults: {
-          point01:'Volunteering for KNRM is easier to combine with work/private life;',
-          point02:' ASK looks after the availiability;',
-          point03:'The skippers are unburdened, because they will only be notified when there is a shortage.'
+          point01: 'Volunteering for KNRM is easier to combine with work/private life;',
+          point02: ' ASK looks after the availiability;',
+          point03: 'The skippers are unburdened, because they will only be notified when there is a shortage.'
         }
       },
 
       bz: {
-        title:'Buurtzorg',
+        title: 'Buurtzorg',
         factsTitle: 'Buurtzorg in numbers:',
-        fact01:'People maximum per self-managing team',
-        fact02:'Locations in the Netherlands',
+        fact01: 'People maximum per self-managing team',
+        fact02: 'Locations in the Netherlands',
         problem: {
           point01: 'A lot of time is lost by travelling to the office in order to look into client-details on the computer;',
           point02: 'Communication between colleagues is poorly facilitated.'
@@ -665,22 +875,22 @@ var localization = {
         },
         solution: {
           description01: 'ASK Community Systems has, together with Ecare Services, developed the Buurtzorg App.  This app allows employees see the latest reports while travelling to the client. It fills in the nurses\' mobile needs.',
-          description02:'At the same time, the Buurtzorg App makes sure there are shorter lines: no more people sitting behind desks, but performers who also have the talents to think and use modern technology.'
+          description02: 'At the same time, the Buurtzorg App makes sure there are shorter lines: no more people sitting behind desks, but performers who also have the talents to think and use modern technology.'
         },
         qualResults: {
-          description01:'With the Buurtzorg App nurses can:',
-          point01:'See Basic data concerning clients;',
-          point02:'See Reports related to clients; ',
-          point03:'Capture and forward the amount of time spent with a client; ',
-          point04:'Contact clients or colleagues.'
+          description01: 'With the Buurtzorg App nurses can:',
+          point01: 'See Basic data concerning clients;',
+          point02: 'See Reports related to clients; ',
+          point03: 'Capture and forward the amount of time spent with a client; ',
+          point04: 'Contact clients or colleagues.'
         }
       },
 
       olympia: {
-        title:'Olympia',
+        title: 'Olympia',
         factsTitle: 'Olympia in numbers:',
-        fact01:'Registered temporary workers',
-        fact02:'Communication actions per quarter (telephone/sms)',
+        fact01: 'Registered temporary workers',
+        fact02: 'Communication actions per quarter (telephone/sms)',
         problem: {
           point01: 'Limited productivity of consultants accross all branches;',
           point02: 'Consultants spend too much time on repetitive communication actions;',
@@ -697,9 +907,9 @@ var localization = {
           description03: 'The job can be placed and tracked online. This means that the consultant is not required to be in the same country as the candidates and the effective working time is expanded (up to 24/7). The system keeps approaching candidates, even when the consultant is not at his/her desk.'
         },
         qualResults: {
-          point01:'Daily operations are more efficient and flexible;',
-          point02:'A better situation in terms of competition;',
-          point03:'A job as consultant is more attractive, because ASK takes over the boring and repetitive tasks.'
+          point01: 'Daily operations are more efficient and flexible;',
+          point02: 'A better situation in terms of competition;',
+          point03: 'A job as consultant is more attractive, because ASK takes over the boring and repetitive tasks.'
         },
         quanResults: {
           fact01: 'Succesfull assignments',
@@ -773,9 +983,6 @@ var localization = {
   },
 
 
-
-
-
   /*----------GERMAN--------*/
 
   de: {
@@ -809,22 +1016,26 @@ var localization = {
 
 
     home: {
-      scenario: {
-        titleSlide1: 'Häufig Mitarbeitermangel?',
-        titleSlide2: 'Mit ASK bestimmen Mitarbeiter selbst über ihre Verfügbarkeit.',
-        titleSlide3: 'Bei Bedarf sucht ASK automatisch nach einem Mitarbeiter.',
-        titleSlide4: 'Auf diese Weise haben Sie immer ausreichend Mitarbeiter.'
+      platform: {
+        title: 'Die ASK Platform',
+        introTitle: 'Lernen Sie die ASK Plattform kennen',
+        intro: 'Entwickeln Sie intelligente Anwendungen zur Unterstützung der Kommunikation in Ihrem Team.',
+        contextAwarenessTitle: 'Die ASK Plattform berücksichtigt viele Fazetten',
+        contextAwareness: 'Übersicht über den Status von Teammitgliedern, das Netzwerk und den Zeitplan.',
+        communicationTitle: 'Die ASK-Plattform ist kommunikativ',
+        communication: 'Unterstützt mehrere Kommunikationsformen in ihrem Team.',
+        proActiveTitle: 'Die ASK Plattform ist pro-aktiv',
+        proActive: 'Ihre proaktiven Eigenschaften bestehen in der fortdauernden Überprüfung der Zielsetzungen und des aktuelles Fortschreitens.',
+        multiDeviceTitle: 'Die ASK Plattform ist systemunabhängig',
+        multiDevice: 'Arbeiten mit unterschiedlichsten Systemen.'
       },
       products: {
-        title:'Produkte',
+        title: 'Produkte',
         standby: 'Im Voraus einsehen können, wer verfügbar ist, anstatt erst, nachdem der Alarm ausgelöst wurde. Online-Pläne und Alarmempfänger liefern hierfür nur eine Notlösung. Deswegen hat ASK Standby entwickelt.',
-        teamup:  'ASK ist wegweisend für IT unterstützte Dienste. Ihre Mitarbeiter sollten so wenig, wie möglich mit Verwaltungsaufgaben belastet werden, um sich der Qualität der Dienstleistung widmen zu können.',
-        joinus: 'Flexibler Personaleinsatz bedeuted: Aquirieren, Verfügbarkeit kontrollieren, Planen und Einsetzen. Joinus ist eine App, mit der sämtliche Informationen rund um die flexible Arbeit schnell ausgetauscht werden.'
-      },
-      platform: {
-        title:'Die ASK Platform',
-        introTitle:'Die ASK Platform',
-        introText: 'ASK liefert Technologie, um bei kurzfristigen Änderungen auftretende Probleme zu vermeiden.'
+        teamup: 'ASK ist wegweisend für IT unterstützte Dienste. Ihre Mitarbeiter sollten so wenig, wie möglich mit Verwaltungsaufgaben belastet werden, um sich der Qualität der Dienstleistung widmen zu können.',
+        joinus: 'Flexibler Personaleinsatz bedeuted: Aquirieren, Verfügbarkeit kontrollieren, Planen und Einsetzen. Joinus ist eine App, mit der sämtliche Informationen rund um die flexible Arbeit schnell ausgetauscht werden.',
+        blankTitle: 'Ihre App',
+        blankText: 'Wir stellen Ihnen eine Cloud API zur Verfügung, mit der Sie intelligente Kommunikationsanwendungen entwickeln können.'
       },
       casesPreview: {
         title: 'Referenzen',
@@ -895,90 +1106,190 @@ var localization = {
 
 
     jobs: {
-      title:'Vacatures',
-      knowledgeTitle: 'Gewenste kennis en ervaring:',
-      profileTitle: 'Jouw profiel:',
-      offerTitle: 'Wij bieden jou:',
+      title: 'Vacatures',
+      keyResTitle: 'Key responsibilities',
+      knowledgeTitle: 'Required knowledge and experience:',
+      profileTitle: 'Your Profile:',
+      offerTitle: 'We offer you:',
       contactTitle: 'Interesse?',
       contactDescription01: 'Neem contact op met Carolyn Hoek:',
 
-      iosdev: {
-        title:'iOS Developer',
-        intro: 'ASK Community Systems B.V. is voor een aantal projecten op zoek naar ervaren iOS Developers. Het gaat hierbij om de ontwikkeling van innovatieve iPhone en iPad applicaties. Je streeft samen met het team naar het beste resultaat.',
+      sbmanager: {
+        title: 'StandBy Product Manager',
+        intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
+        keyRes: {
+          point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
+          point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
+          point03: 'Provide marketing and sales support by (co-) developing (communication) strategy, product portfolio and pricing.',
+          point04: 'Cooperate with marketing manager to develop parameters to measure successful performances in marketing, products and sales. Use market information to evaluate and improve market plans.',
+          point05: 'Work together with the technical talent in your team to define development priorities and liaise with designers and developers to achieve the optimal implementation of changes.',
+          point06: 'Interact regularly with customers on the value of the whole product. Solicit continuously for improvements in products and related extensions and additions.',
+          point07: 'Monitor, analyze and evaluate the user experience and customer satisfaction using a combination of web analytics, user analytics, user surveys and other tools.'
+        },
         knowledge: {
-          point01: 'HBO denk- en werkniveau',
-          point02: 'Minimaal 2 jaar aantoonbare ervaring met iOS app development',
-          point03: 'Uitgebreide kennis van iOS SDK en Xcode',
-          point04: 'Goede kennis van Objective-C , HTML5, JSON'
+          intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
+          point01: 'Bachelor degree (HBO) in IT technology or business. ',
+          point02: 'Minimum of 3 years experience in developing (value-based) service strategy in a high-tech environment.',
+          point03: 'Understanding of (Dutch and European) public safety and security market.',
+          point04: 'Fluency in Dutch and English, verbal and written.',
+          point05: 'Demonstrated ability to perform in high-pressure environments.'
         },
         profile: {
-          point01: 'Analytische vaardigheden',
-          point02: 'Collegiaal en flexibel',
-          point03: 'Verantwoordelijkheidsgevoel en stressbestendigheid',
-          point04: 'Onze doelstelling onderschrijven door plezier te hebben in je werk en dat uit te stralen',
-          point05: 'Bereid zijn jouw kennis met je collega\'s te delen'
+          point01: 'Analytical skills',
+          point02: 'Collegial and flexible',
+          point03: 'Sense of responsibility and immune to stress',
+          point04: 'Support our goals by visibly enjoying your work',
+          point05: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      iosdev: {
+        title: 'iOS Developer (2x)',
+        intro: 'ASK Community Systems B.V. is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of iOS (iPhone and iPad) applications of one of our products.',
+          point02: 'Develop, enhance and maintain the iOS applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
         },
-        offer: {
-          point01: 'Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden;',
-          point02: 'Een inspirerende internationale werkomgeving;',
-          point03: 'Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen.'
+        knowledge: {
+          point01: 'HBO-level of working and thinking',
+          point02: 'Minimum 2 years of demonstrable experience in iOS app development',
+          point03: 'Experience with Apple appstore & Distribution Process.',
+          point04: 'Extensive knowledge of iOS SDK and Xcode',
+          point05: 'Sufficient knowledge of Objective-C , HTML5, JSON',
+          point06: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point07: 'Fully comfortable working in English, both in writing and spoken'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues'
+        }
+      },
+
+      androiddev: {
+        title: 'Android Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Android Developers for several projects. The focus is on developing innovative mobile applications for Android devices. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of Android applications of one of our products.',
+          point02: 'Develop, enhance and maintain the Android applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in Android app development.',
+          point03: 'Experience with Android Market place & Distribution Process.',
+          point04: 'Excellent knowledge of Java.',
+          point05: 'Good knowledge of Object Oriented concepts and a strong passion for software development.',
+          point06: 'Sufficient knowledge of HTML5, JSON.',
+          point07: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
+        }
+      },
+
+      webdev: {
+        title: 'Web Developer',
+        intro: 'ASK Community Systems B.V. is looking for experienced Web Developers for several products. The focus is on developing innovative web applications. Together with the team, you will strive for the best results.',
+        keyRes: {
+          point01: 'Ownership of web applications of one of our products.',
+          point02: 'Develop, enhance and maintain the web applications.',
+          point03: 'Provide estimates on development cycles.',
+          point04: 'Implement conversion experiments (A/B tests).',
+          point05: 'Partner with designers to help define and implement User Interface.',
+          point06: 'Work with team members on server-side integration.'
+        },
+        knowledge: {
+          point01: 'HBO-level of working and thinking.',
+          point02: 'Minimum 2 years of demonstrable experience in web app development.',
+          point03: 'Excellent knowledge of HTML, javascript, CSS, JSON.',
+          point04: 'Fully comfortable working in English, both in writing and spoken.'
+        },
+        profile: {
+          point01: 'Self-starter, highly motivated, team-player.',
+          point02: 'Analytical skills.',
+          point03: 'Collegial and flexible.',
+          point04: 'Sense of responsibility and immune to stress.',
+          point05: 'Strong interaction and design sense.',
+          point06: 'Excellent attention to detail.',
+          point07: 'Support our goals by visibly enjoying your work.',
+          point08: 'Prepared to share your knowledge with your colleagues.'
         }
       },
 
       businessConsultant: {
         title: 'Business Consultant',
-        intro: 'Ter uitbreiding van ons salesteam, zijn wij op zoek naar een Business Consultant. In deze functie ben je verantwoordelijk voor het binnenhalen van new business en het relatiebeheer met klanten. Je bent het boegbeeld van ASK Community Systems B.V. en gaat geen enkele commerciële uitdaging uit de weg.',
+        intro: 'For the extension of our sales team, we are looking for a Business Consultant. This function gives the responsibility of attracting new business and relationship management with customers. You are a figurehead of ASK Community Systems B.V. and you are not afraid of any commercial challenges.',
         knowledge: {
-          point01: 'Afgeronde HBO / universitaire opleiding op technisch gebied (zoals Computertechnologie, Informatietechnologie of Bedrijfskunde)',
-          point02: 'Minimaal 3 jaar ervaring in een soortgelijke functie',
-          point03: 'Aantoonbaar succesvolle commerciële werkervaring'
+          point01: 'Completed HBO / university education in technical field of study (like Computer Technology, Information Technology or Business Administration)',
+          point02: 'Minimum 3 years of experience in similar function',
+          point03: 'Demonstrable successful commercial experience'
         },
         profile: {
-          point01: 'Je bent ondernemend en neemt initiatief',
-          point02: 'Je bent zelfstandig, toont ownership en werkt graag in teamverband',
-          point03: 'Een goede netwerker',
-          point04: 'Communicatief vaardig in woord en geschrift',
-          point05: 'Uitstekende mondelinge en schriftelijke kennis van het Engels',
-          point06: 'In staat om je op korte termijn het dienstenaanbod van ASK eigen te maken',
-          point07:'Bij voorkeur woonachtig in regio Rotterdam'
+          point01: 'You are enterprising and take initiative',
+          point02: 'You are independent, show ownership and enjoy working in a team',
+          point03: 'A good networker',
+          point04: 'Communicative skills in word and writing',
+          point05: 'Excellent English oral and writing skills ',
+          point06: 'Able to make ASK services your own in short-term',
+          point07: 'Preferably living in region of Rotterdam'
         },
         offer: {
-          point01: 'Een marktconform salaris met aantrekkelijke arbeidsvoorwaarden;',
-          point02: 'Bedrijf met potentie;',
-          point03: 'Een inspirerende internationale werkomgeving;',
-          point04: 'Ruime mogelijkheden om jezelf op je vakgebied en daarbuiten te blijven ontwikkelen.'
+          point01: 'Competitive benefits',
+          point02: 'A company with potential',
+          point03: 'An inspiring international working environment',
+          point04: 'Plenty of possibilities for personal development within, as well as beyond your field of study'
         }
       },
 
 
-      internshipTitle:'Stages',
-      internshipTitle02:'Stage:',
+      internshipTitle: 'Stages',
+      internshipTitle02: 'Stage:',
       challengeTitle: 'De uitdaging',
       weSeekTitle: 'Wie we zoeken',
 
       internshipClouds: {
-        title:'Onderzoek naar clouds',
+        title: 'Onderzoek naar clouds',
         challengeDescription01: 'ASK maakt veelvuldig gebruik van multi-agenttechnologie in haar oplossingen. Twee van onze belangrijkste systemen maken gebruik van deze technologie: de ASK Back-End voor realtime coördinatie en informatie-uitwisseling, en ASK-Fast, een platform voor realtime communicatie tussen verschillende partijen. ',
         challengeDescription02: 'Beide platforms draaien in de cloud (voornamelijk Google App Engine), waardoor ze onbeperkt schaalbaar zijn. Om ook in de toekomst goede beslissingen te kunnen nemen over onze applicaties in de cloud, willen we graag meer weten over andere cloud oplossingen. ',
         weSeekDescription01: 'We zoeken daarom een stagiair die een uitgebreid vergelijkend onderzoek wil doen naar de verschillende cloudplatforms die op dit moment op de markt zijn. Het gaat daarbij om zowel een literatuurstudie als praktische experimenten waarbij de voors en tegens van de verschillende cloud platforms tegen elkaar kunnen worden afgewogen. '
       },
 
       internshipPersonalAlarm: {
-        title:'Personal alarm system',
+        title: 'Personal alarm system',
         challengeDescription01: 'ASK werkt op dit moment aan de Alarm app: een innovatief systeem dat de juiste mensen alarmeert in geval van nood. Deze app kan gebruikt worden door bijvoorbeeld patiënten met epilepsie, diabetes of hartproblemen, mobiele beveiligers, medewerkers die in hun eentje op een gevaarlijke plek moeten werken, reizigers die worden geconfronteerd met geweld, enz. ',
         challengeDescription02: 'De applicatie bestaat uit een app (te gebruiken door slachtoffers én helpers) en een intelligente back-end. De back-end zorgt dat de meest geschikte persoon wordt gealarmeerd en dat de juiste informatie snel bij de juiste persoon terecht komt. De Alarm app is getest in twee experimentele situaties, namelijk binnen Zorg en binnen Veiligheid. ',
         weSeekDescription01: 'ASK-CS zoekt een stagiair die wil helpen deze pilotversie om te zetten naar een market ready systeem.'
       },
 
       internshipP2000Alarm: {
-        title:'P2000 alarm system',
+        title: 'P2000 alarm system',
         challengeDescription01: '',
         challengeDescription02: '',
         weSeekDescription01: ''
       },
 
       internshipLearningSoftwareAgent: {
-        title:'Een lerende software-agent voor multi-modale communicatie',
+        title: 'Een lerende software-agent voor multi-modale communicatie',
         challengeDescription01: 'Het ASK-Fast platform stelt gebruikers in staat om met verschillende partijen te communiceren via verschillende kanalen. Denk aan telefonie, SMS, Email, IM, in-app berichten, enz. Op deze manier kunnen één of meerdere dialogen worden opgezet.',
         challengeDescription02: 'Eén van de systemen die gebruik maken van ASK-Fast is JoinUs, een systeem dat recruiters helpt om veel flex-medewerkers tegelijk te polsen over hun beschikbaarheid voor een bepaalde taak. Elke flex-medewerker wordt afhankelijk van zijn/haar voorkeuren via één of meerdere kanalen aangesproken. ',
         challengeDescription03: 'Om tot een optimale mix van communicatiekanalen te komen, willen we een lerende software-agent ontwikkelen. Deze agent combineert de statische kennis over de verschillende communicatiekanalen, met de gebruikerspecifieke voorkeuren. ',
@@ -986,7 +1297,7 @@ var localization = {
       },
 
       internshipTeamup: {
-        title:'TeamUp in de praktijk',
+        title: 'TeamUp in de praktijk',
         challengeDescription01: 'Voor de zorgsector ontwikkelt ASK de oplossing TeamUp. Deze applicatie helpt teams van zorgverleners (zoals thuiszorgmedewerkers) om samen te werken met hun teamgenoten. Ze kunnen bijvoorbeeld elkaars status opvragen, ondersteuning vragen, of op locatie informatie over hun patiënten opzoeken.',
         challengeDescription02: 'ASK wil de TeamUp applicatie nu ook inzetten in andere domeinen, zoals sportteams, mantelzorgers, enz.',
         weSeekDescription01: 'We zoeken een stagiair die voor ons wil onderzoeken hoe TeamUp kan worden ingezet in dergelijke domeinen en welke toegevoegde waarde de applicatie kan hebben.'
@@ -1012,10 +1323,10 @@ var localization = {
       qualResultsTitle: 'Quantitative Ergebnisse:',
 
       postnl: {
-        title:'die Niederländische Post',
+        title: 'die Niederländische Post',
         factsTitle: 'ASK bei der Niederländischen Post in Zahlen:',
-        fact01:'Sortierzentren in den Niederlanden',
-        fact02:'Flexible Arbeitskräfte im System',
+        fact01: 'Sortierzentren in den Niederlanden',
+        fact02: 'Flexible Arbeitskräfte im System',
         fact03: 'Kommunikationshandlungen pro Monat (Tel/SMS)',
         problem: {
           point01: 'Ineffiziente Planung infolge Abweichungen der Vorausplanung von dem tatsächlichen Bedarf;',
@@ -1032,10 +1343,10 @@ var localization = {
           description02: 'Die Einplanung von Postsortierkräften erfolgt fortan auf Basis der Verfügbarkeit der Mitarbeiter, die von ihnen selbst online angegeben wird. Die entgültige Planung wird per Email oder SMS den flexiblen Mitarbeitern mitgeteilt.'
         },
         qualResults: {
-          point01:'die Anzahl Überstunden wurde reduziert;',
-          point02:'keine Kündigungen von Festangestellten;',
-          point03:'Kontinuität, da mehr feste Arbeitskräfte zum Einsatz kommen;',
-          point04:'die Mitarbeitermotivation ist gestiegen, da Privatleben und Arbeit besser aufeinander abgestimmt sind.'
+          point01: 'die Anzahl Überstunden wurde reduziert;',
+          point02: 'keine Kündigungen von Festangestellten;',
+          point03: 'Kontinuität, da mehr feste Arbeitskräfte zum Einsatz kommen;',
+          point04: 'die Mitarbeitermotivation ist gestiegen, da Privatleben und Arbeit besser aufeinander abgestimmt sind.'
         },
         quanResults: {
           fact01: 'Vollzeitarbeitsplätze eingespart',
@@ -1045,10 +1356,10 @@ var localization = {
       },
 
       knrm: {
-        title:'der KNRM',
+        title: 'der KNRM',
         factsTitle: 'ASK bei der KNRM in Zahlen:',
-        fact01:'Rettungsstationen verwenden ASK',
-        fact02:'Rettungskräfte werden unterstützt',
+        fact01: 'Rettungsstationen verwenden ASK',
+        fact02: 'Rettungskräfte werden unterstützt',
         problem: {
           point01: 'häufig unnötiges Abrufen;',
           point02: 'nicht immer ausreichend Menschen verfügbar;',
@@ -1063,17 +1374,17 @@ var localization = {
           description01: 'Mit ASK geben die mehr als 1300 Rettungskräfte der 46 Stationen ihre Verfügbarkeit online ins Planboard ein. Der Koordinator erhält eine Übersicht über die Personalverfügbarkeit in seinem Standort. ASK schließt automatisch Lücken im Bereitsschaftdienst durch Erfragen der Verfügbarkeit übers Telefon.'
         },
         qualResults: {
-          point01:'Ehrenamtliche Tätigkeit für den KNRM ist leichter mit Arbeits- und Privatleben zu vereinbaren',
-          point02:'ASK sorgt für Beständigkeit (jederzeit ausreichend Retter verfügbar zu haben);',
-          point03:'die Skipper werden entlastet, da sie nur bei Personalmangel gerufen werden.'
+          point01: 'Ehrenamtliche Tätigkeit für den KNRM ist leichter mit Arbeits- und Privatleben zu vereinbaren',
+          point02: 'ASK sorgt für Beständigkeit (jederzeit ausreichend Retter verfügbar zu haben);',
+          point03: 'die Skipper werden entlastet, da sie nur bei Personalmangel gerufen werden.'
         }
       },
 
       bz: {
-        title:'Nachbarschaftshilfe',
+        title: 'Nachbarschaftshilfe',
         factsTitle: 'Nachbarschaftshilfe in Zahlen:',
-        fact01:'Personen max. pro Team',
-        fact02:'Niederlassungen in den Niederlanden',
+        fact01: 'Personen max. pro Team',
+        fact02: 'Niederlassungen in den Niederlanden',
         problem: {
           point01: 'hoher Zeitverlust durch Anfahrtszeiten zum Büro, um Kundendaten elektronisch einzugeben;',
           point02: 'Kommunikation zwischen Kollegen ist ungenügend.'
@@ -1084,22 +1395,22 @@ var localization = {
         },
         solution: {
           description01: 'ASK Community Systems hat zusammen mit Ecare Services die Nachbarschaftshilfe App entwickelt. Diese App ermöglicht den Mitarbeitern auf dem Weg zum Kunden die letzten Berichte durchgehen zu können. Es bildet eine mobile Unterstützung der ambulanten Pflege.',
-          description02:'Gleichzeitig verkürzt die Nachbarschaftshilfe App Verwaltungswege: weniger Leute müssen hinterm Bildschirm sitzen, die Pflegekräfte können mitunter verborgende Talente entdecken und die moderne Technologie optimal nutzen.'
+          description02: 'Gleichzeitig verkürzt die Nachbarschaftshilfe App Verwaltungswege: weniger Leute müssen hinterm Bildschirm sitzen, die Pflegekräfte können mitunter verborgende Talente entdecken und die moderne Technologie optimal nutzen.'
         },
         qualResults: {
-          description01:'Mit der Nachbarschaftshilfe App können Pfleger:',
-          point01:'Basisdaten zu den Kunden/ Patienten einsehen;',
-          point02:'Berichte bezüglich des Patienten einsehen und erstellen;',
-          point03:'Zeitschreibung bezogen auf die Versorgung des Patienten vornehmen;',
-          point04:'Kontakt mit Kunden oder Mitarbeitern herstellen.'
+          description01: 'Mit der Nachbarschaftshilfe App können Pfleger:',
+          point01: 'Basisdaten zu den Kunden/ Patienten einsehen;',
+          point02: 'Berichte bezüglich des Patienten einsehen und erstellen;',
+          point03: 'Zeitschreibung bezogen auf die Versorgung des Patienten vornehmen;',
+          point04: 'Kontakt mit Kunden oder Mitarbeitern herstellen.'
         }
       },
 
       olympia: {
-        title:'Olympia',
+        title: 'Olympia',
         factsTitle: 'ASK bei Olympia in Zahlen:',
-        fact01:'Registrierte Zeitarbeitskräfte',
-        fact02:'Kommunikationshandlungen pro Quartal (Tel./ SMS)',
+        fact01: 'Registrierte Zeitarbeitskräfte',
+        fact02: 'Kommunikationshandlungen pro Quartal (Tel./ SMS)',
         problem: {
           point01: 'Eingeschränkte Produktivität von Disponenten, die alle Branchen betrifft;',
           point02: 'Disponenten verbringen zu viel Zeit mit sich wiederholenden Kommunikationsaufgaben;',
@@ -1201,10 +1512,37 @@ var localization = {
 };
 
 
-
 angular.module('AskWeb', []).
   constant('locals', localization).
-  run(['$rootScope', 'locals', function ($rootScope, locals) {
+  run(['$rootScope', 'locals', '$timeout', function ($rootScope, locals, $timeout) {
+
+
+    function fixBoxes() {
+      $timeout(
+        function () {
+          angular.element('.products .product.standBy .textPart').height('auto');
+          angular.element('.products .product.teamUp .textPart').height('auto');
+          angular.element('.products .product.blank .textPart').height('auto');
+
+          var max = 0;
+
+          angular.forEach(
+            angular.element('.products .product .textPart'),
+            function (product, index) {
+              if (angular.element(product).height() >= max) {
+                max = angular.element(product).height();
+              }
+            }
+          );
+
+          angular.element('.products .product.standBy .textPart').height(max);
+          angular.element('.products .product.teamUp .textPart').height(max);
+          angular.element('.products .product.blank .textPart').height(max);
+        }
+      )
+    }
+
+    fixBoxes();
 
     if (!localStorage.getItem('selectedLanguage')) {
       localStorage.setItem('selectedLanguage', 'nl');
@@ -1216,8 +1554,9 @@ angular.module('AskWeb', []).
 
     var toggled = true;
 
-    $rootScope.changeLang = function (lang)
-    {
+    $rootScope.changeLang = function (lang) {
+      fixBoxes();
+
       $(".languageToggle li a").html(lang);
 
       if ($rootScope.lang == lang) {
@@ -1251,8 +1590,7 @@ angular.module('AskWeb', []).
       toggled = !toggled;
     });
 
-    function toggleOut ()
-    {
+    function toggleOut() {
       $('#languageMenu')
         .removeClass('rotateInDownLeft')
         .addClass('animated rotateOutUpLeft');
@@ -1262,10 +1600,10 @@ angular.module('AskWeb', []).
 
 
 //temporary for testing menu toggle mobile
-$( "#dropdownToggle" ).click(function() {
-    if ($('#dropdownMenu').hasClass('show')) {
-        $('#dropdownMenu').removeClass('show').addClass('hide');
-    } else {
-        $('#dropdownMenu').removeClass('hide').addClass('show');
-    }
+$("#dropdownToggle").click(function () {
+  if ($('#dropdownMenu').hasClass('show')) {
+    $('#dropdownMenu').removeClass('show').addClass('hide');
+  } else {
+    $('#dropdownMenu').removeClass('hide').addClass('show');
+  }
 });
