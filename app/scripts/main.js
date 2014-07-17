@@ -1596,6 +1596,9 @@ angular.module('AskWeb', []).
         .addClass('animated rotateOutUpLeft');
     }
 
+        angular.element('#menu .desktopView ul').css({'display': 'block'});
+        // angular.element('#secondOne').css({'display': 'block'});
+
   }]);
 
 
