@@ -1,18 +1,15 @@
 function animateSlide (slide){
     switch (slide) {
         case 0:
-            $(".anIntro01").addClass('animated rubberBand');
+            $(".anIntro01").addClass('animated bounce');
             setTimeout(function(){$(".anText1").addClass('animated pulse');}, 1000);
             setTimeout(function(){$(".next").addClass('animated shake');}, 2500);
 
             setTimeout(function(){ cleanStyles(0); }, 3500);
             break;
         case 1:
-            $(".anContextAware01").addClass('animated bounce');
-            setTimeout(function(){$(".anContextAware02").addClass('animated bounce');}, 500);
-            setTimeout(function(){$(".anContextAware03").addClass('animated bounce');}, 1100);
-            setTimeout(function(){$(".anContextAware04").removeClass('hide').addClass('animated rotateIn');}, 1900);
-            setTimeout(function(){$(".anText2").addClass('animated pulse');}, 2500);
+            $(".anContextAware01").addClass('animated rubberBand');
+            setTimeout(function(){$(".anText2").addClass('animated pulse');}, 1000);
 
             setTimeout(function(){ cleanStyles(1); }, 3500);
             break;
@@ -50,15 +47,12 @@ function cleanStyles (slide)
     switch (slide) {
         case 0:
             // clean slide 0 styles
-            $(".anIntro01").removeClass('animated rubberBand');
+            $(".anIntro01").removeClass('animated bounce');
             $(".anText1").removeClass('animated pulse');
             break;
         case 1:
             // clean slide 1 styles
-            $(".anContextAware01").removeClass('animated bounce');
-            $(".anContextAware02").removeClass('animated bounce');
-            $(".anContextAware03").removeClass('animated bounce');
-            $(".anContextAware04").removeClass('animated rotateIn')/*.addClass('hide')*/;
+            $(".anContextAware01").removeClass('animated rubberBand');
             $(".anText2").removeClass('animated pulse');
             break;
         case 2:
@@ -116,7 +110,7 @@ $(document).ready(function() {
         'css3': true,
         'paddingTop': 0,
         'paddingBottom': 0,
-        'fixedElements': '#menu, #footer, #cookieMessage',
+        'fixedElements': '#menu, #jobsToggle, #footer, #cookieMessage',
         'normalScrollElements': null,
         'keyboardScrolling': true,
         'touchSensitivity': 20,
@@ -164,4 +158,13 @@ $(document).ready(function() {
         }
     });
 
+});
+
+
+$( "#jobsToggle" ).click(function() {
+  $('#jobArea').removeClass('hide rotateOutUpLeft').addClass('animated rotateInDownLeft');
+});
+
+$( "#closeJobs" ).click(function() {
+  $('#jobArea').removeClass('rotateInDownLeft').addClass('animated rotateOutUpLeft');
 });

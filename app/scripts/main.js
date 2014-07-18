@@ -77,7 +77,7 @@ var localization = {
         standby: 'Vooraf inzage in de paraatheid hebben en niet pas wanneer het alarm is afgegaan. Online roosters en alarmontvangers bieden slechts een deeloplossing. Daarom heeft ASK Standby ontwikkeld.',
         teamup: 'ASK vindt dat ICT de zorg dient te ondersteunen. Uw medewerkers willen zo min mogelijk tijd aan administratie kwijt zijn, zodat ze zich kunnen richten op het verlenen van goede zorg.',
         joinus: 'Flexibele personeelsinzet kent veel verschillende aspecten: werven, beschikbaarheid bewaken, plannen én uitzenden. Joinus is dé applicatie om alle informatie rond flexwerk snel uit te wisselen.',
-        blankTitle: 'Uw App',
+        blankTitle: 'Uw Applicatie',
         blankText: 'Het ASK platform heeft een cloud API waarmee u uw eigen slimme applicaties kunt bouwen.'
       },
       casesPreview: {
@@ -555,7 +555,7 @@ var localization = {
         standby: 'Insight in the readiness beforehand, and not only after the alarm has gone off. Online schedules and alarm-receivers only solve part of the problem. That\'s why ASK has developed Standby.',
         teamup: 'ASK believes that ICT should support healthcare. Your employees don\'t want to spend much time on administrative tasks. They want to focus on providing care.',
         joinus: 'Flexible staffing has many different aspects: recruitment, availability monitoring, planning and dispatching. JoinUs is the application to fast exchange information about flexible work.',
-        blankTitle: 'Your App',
+        blankTitle: 'Your Application',
         blankText: 'We provide you with a cloud API on the ASK Platform with which you can build your own intelligent applications.'
       },
       casesPreview: {
