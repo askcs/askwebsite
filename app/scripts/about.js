@@ -162,6 +162,7 @@ function init() {
             title: 'ASK Community Systems'
         });
 
+        //map marker popup
         var contentString = '<div class="text-center">' +
             '<h2>Contact</h2><br>' +
             '<p>Coolhaven 236 3024 AN Rotterdam<br>010 225 0130 | info@ask-cs.com</p>' +
@@ -195,6 +196,8 @@ function init() {
 
 }
 
+
+//Show and hide JobArea
 $( "#jobsToggle" ).click(function() {
     $('#jobArea').removeClass('hide rotateOutUpLeft').addClass('animated rotateInDownLeft');
 });

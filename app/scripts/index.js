@@ -1,3 +1,4 @@
+//Animated CSS
 function animateSlide (slide){
     switch (slide) {
         case 0:
@@ -42,6 +43,7 @@ function animateSlide (slide){
 }
 
 
+//Animated CSS: remove styles for repeating
 function cleanStyles (slide)
 {
     switch (slide) {
@@ -84,7 +86,7 @@ function cleanStyles (slide)
 
 
 
-
+//FullPage JS initialization
 setTimeout(function () { animateSlide(0); }, 500);
 
 $(document).ready(function() {
@@ -161,6 +163,7 @@ $(document).ready(function() {
 });
 
 
+//Show and hide JobArea
 $( "#jobsToggle" ).click(function() {
   $('#jobArea').removeClass('hide rotateOutUpLeft').addClass('animated rotateInDownLeft');
 });
