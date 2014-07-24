@@ -326,8 +326,8 @@ var localization = {
       problemTitle: 'Probleemschets:',
       goalsTitle: 'Doelstellingen:',
       solutionTitle: 'Oplossing:',
-      quanResultsTitle: 'Kwalitatieve resultaten:',
-      qualResultsTitle: 'Kwantitatieve resultaten:',
+      quanResultsTitle: 'Kwantitatieve resultaten:',
+      qualResultsTitle: 'Kwalitatieve resultaten:',
 
       postnl: {
         title: 'PostNL',
