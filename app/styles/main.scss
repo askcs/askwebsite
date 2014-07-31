@@ -1307,8 +1307,11 @@ P:last-child {
   }
   .platform5 {
     background-color: $blue;
-    .textField {
-
+  }
+  .platform7 {
+    background-color: $yellow;
+    p:first-child {
+      padding-bottom: 20px;
     }
   }
 }

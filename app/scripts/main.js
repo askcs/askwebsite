@@ -501,6 +501,10 @@ var localization = {
           description03: '',
           description04: ''
         }
+      },
+      model: {
+        description01: 'Met het ASK platform kunnen ontwikkelaars overal, altijd en vanaf vaste en mobiele apparaten apps maken. Het ASK platform is ingericht om voor iedere organisatie te bouwen. Het is bovendien dezelfde basis waarop ASK de commerciële apps StandBy en TeamUp heeft gebouwd.',
+        description02: 'Met een gebruiksvriendelijke API en tools is het eenvoudig om applicaties te ontwikkelen op het ASK platform. Deze apps verbinden teamleden onderling beter met elkaar, waardoor betere individuele en teamprestaties worden gehaald.'
       }
     },
 
@@ -973,6 +977,10 @@ var localization = {
           description03: 'In the case that you can\'t find what you\'re looking for, you can off course build your own apps with the ASK API to create your own customized solution.',
           description04: 'On top of this we have made it really easy to implement ASK: it can be seamlessly integrated into your existing IT infrastructure.'
         }
+      },
+      model: {
+        description01: 'The ASK platform allows developers to build great apps from anywhere, anytime and multi-device. With the ASK platform, developers can build apps for every organization, build on the same platform as the commercial ASK applications StandBy and TeamUp.',
+        description02: 'The ASK platform with its user friendly API and tools make building apps easy. With the apps team are better connected, which results in higher performance.'
       }
     },
 
@@ -1493,6 +1501,10 @@ var localization = {
           description03: 'Sie können selbstverständlich auf Basis der ASK-API eine eigene Kommunikationslösung entwickeln. ',
           description04: 'Sie können ASK schnell und einfach in Ihre bestehende IT-Infrastruktur integrieren.'
         }
+      },
+      model: {
+        description01: 'Die ASK-Plattform ermöglicht auf vielfältige Art und Weise die Entwicklung von Apps und das jederzeit und von überall aus. Mit der ASK-Plattform können Programmierer für jede Organisation Apps entwickeln, die auf der derselben Plattform basieren, wie die kommerziell erhältlichen ASK- Apps Standby und Teamup.',
+        description02: 'Die ASK-Plattform mit ihren anwenderfreundlichen API und Tools macht die Entwicklung von Apps einfach. Mit den Apps sind Teams besser untereinander verknüpft und arbeiten erfolgreicher.'
       }
     },
 
