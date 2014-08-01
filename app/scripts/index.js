@@ -112,7 +112,7 @@ $(document).ready(function() {
         'css3': true,
         'paddingTop': 0,
         'paddingBottom': 0,
-        'fixedElements': '#menu, #jobsToggle, #footer, #cookieMessage',
+        'fixedElements': '#menu, #jobsToggle, #jobArea, #footer, #cookieMessage',
         'normalScrollElements': null,
         'keyboardScrolling': true,
         'touchSensitivity': 20,
