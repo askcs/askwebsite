@@ -803,8 +803,8 @@ var localization = {
       problemTitle: 'The challenge:',
       goalsTitle: 'Goals:',
       solutionTitle: 'Solution:',
-      quanResultsTitle: 'Qualitative results:',
-      qualResultsTitle: 'Quantitative Results:',
+      quanResultsTitle: 'Quantitative results:',
+      qualResultsTitle: 'Qualitative results:',
 
       postnl: {
         title: 'PostNL',
@@ -1327,8 +1327,8 @@ var localization = {
       problemTitle: 'Problemstellungen:',
       goalsTitle: 'Zielstellungen:',
       solutionTitle: 'Lösung:',
-      quanResultsTitle: 'Qualitative Ergebnisse:',
-      qualResultsTitle: 'Quantitative Ergebnisse:',
+      quanResultsTitle: 'Quantitative Ergebnisse:',
+      qualResultsTitle: 'Qualitative Ergebnisse:',
 
       postnl: {
         title: 'die Niederländische Post',
