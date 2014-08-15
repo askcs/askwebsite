@@ -13,6 +13,9 @@ html.no-js
     meta(content='https://ask-cs.nl/', property='og:url')
     meta(content='', property='og:image')
     link(href='/images/favicon.ico', rel='Shortcut Icon')
+
+
+
     // --------CSS------
     // build:css styles/vendor.css
     // bower:css
@@ -22,7 +25,13 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
+
+
+
   body(ng-app='AskWeb')
+
+
+
     //--------HEADER------
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
@@ -53,6 +62,8 @@ html.no-js
               li
                 a(href='cases.html') {{ui.menu.cases}}
           #dropdownToggle.mobileView
+
+
     //--------COOKIE MESSAGE------
     #cookieMessage
       #closeCookie
@@ -60,6 +71,8 @@ html.no-js
         | {{ui.general.cookieMessage}}
         a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
         | .
+
+
     //--------PLATFORM STORY------
     #content
       #platform
@@ -167,6 +180,12 @@ html.no-js
                     p {{ui.platform.model.description02}}
               .col-md-8.col-sm-12
                 img(src='images/platform/platformModel.png', alt='Platform model')
+
+
+
+
+
+
     //--------FOOTER------
     #footer
       ul.languageToggle
@@ -204,6 +223,10 @@ html.no-js
           a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
         li.googleplus
           a(href='https://plus.google.com/100201535227830552056', target='blank')
+
+
+
+
     //  --------JS------
     // build:js scripts/vendor.js
     // bower:js
@@ -212,7 +235,10 @@ html.no-js
     script(src='vendors/angular/angular.js')
     // endbower
     // endbuild
+
     script(src='scripts/main.js')
+
+
     // build:js scripts/cases.js
     script(src='scripts/imagesloaded.js')
     script(src='scripts/skrollr.js')
