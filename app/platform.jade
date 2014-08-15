@@ -1,9 +1,11 @@
 doctype
 html.no-js
   head
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(charset='UTF-8')
     title ASK Community Systems
     meta(name='author', content='ASK Community Systems')
+    meta(name='keywords', content='ask platform, cloudbased, apps, communicatie, cloud, last minute, planning, live, realtime')
+    meta(name='description', content='ASK Platform biedt makkelijke app ontwikkeling in de cloud voor last minute oplossingen')
     meta(name='Resource-type', content='Document')
     meta(content='width=device-width, initial-scale=1', name='viewport')
     meta(content='ASK Community Systems', property='og:title')
@@ -11,9 +13,6 @@ html.no-js
     meta(content='https://ask-cs.nl/', property='og:url')
     meta(content='', property='og:image')
     link(href='/images/favicon.ico', rel='Shortcut Icon')
-
-
-
     // --------CSS------
     // build:css styles/vendor.css
     // bower:css
@@ -23,21 +22,15 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
-
-
-
   body(ng-app='AskWeb')
-
-
-
     //--------HEADER------
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
         ul
-          li
-            a#menuProducts(href='index.html#products') {{ui.menu.products}}
           li.active
             a.active(href='platform.html') {{ui.menu.platform}}
+          li
+            a#menuProducts(href='index.html#products') {{ui.menu.products}}
           li
             a(href='about.html') {{ui.menu.company}}
           li
@@ -47,9 +40,9 @@ html.no-js
           .col-xs-5.desktopView
             ul
               li
-                a#menuProducts(href='index.html#products') {{ui.menu.products}}
-              li
                 a.active(href='platform.html') {{ui.menu.platform}}
+              li
+                a#menuProducts(href='index.html#products') {{ui.menu.products}}
           #mainLogo
             .logoContainer
               a(href='index.html')
@@ -60,8 +53,6 @@ html.no-js
               li
                 a(href='cases.html') {{ui.menu.cases}}
           #dropdownToggle.mobileView
-
-
     //--------COOKIE MESSAGE------
     #cookieMessage
       #closeCookie
@@ -69,8 +60,6 @@ html.no-js
         | {{ui.general.cookieMessage}}
         a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
         | .
-
-
     //--------PLATFORM STORY------
     #content
       #platform
@@ -144,15 +133,14 @@ html.no-js
           .container.smallDeviceContainer
             .row
               .col-md-12
-                .col-md-12
-                  h2 {{ui.platform.thePlatform.title}}
-                .col-md-7.col-sm-6
-                  h4 {{ui.platform.thePlatform.communicationIntensity.title}}
-                  p {{ui.platform.thePlatform.communicationIntensity.description01}}
-                  p {{ui.platform.thePlatform.communicationIntensity.description02}}
-                  p {{ui.platform.thePlatform.communicationIntensity.description03}}
-                .col-md-5.col-sm-6
-                  img(src='images/platform/platform04.png', alt='cloudPlatform')
+                h2 {{ui.platform.thePlatform.title}}
+              .col-md-7.col-sm-6
+                h4 {{ui.platform.thePlatform.communicationIntensity.title}}
+                p {{ui.platform.thePlatform.communicationIntensity.description01}}
+                p {{ui.platform.thePlatform.communicationIntensity.description02}}
+                p {{ui.platform.thePlatform.communicationIntensity.description03}}
+              .col-md-5.col-sm-6
+                img(src='images/platform/platform04.png', alt='cloudPlatform')
         section.platform6
           .container.smallDeviceContainer
             .row
@@ -165,16 +153,20 @@ html.no-js
                 p {{ui.platform.thePlatform.nextGeneration.description01}}
                 p {{ui.platform.thePlatform.nextGeneration.description02}}
                   a(href='https://ask-fast.com', target='_blank') {{ui.platform.thePlatform.nextGeneration.link01}}
-                  | ). {{ui.platform.thePlatform.nextGeneration.description0202}}
+                  | . {{ui.platform.thePlatform.nextGeneration.description0202}}
                 p {{ui.platform.thePlatform.nextGeneration.description03}}
                 p {{ui.platform.thePlatform.nextGeneration.description04}}
-
-
-
-
-
-
-
+        section.platform7
+          .container.smallDeviceContainer
+            .row
+              .col-md-4.col-sm-12
+                .row
+                  .col-md-12.col-sm-6
+                    p {{ui.platform.model.description01}}
+                  .col-md-12.col-sm-6
+                    p {{ui.platform.model.description02}}
+              .col-md-8.col-sm-12
+                img(src='images/platform/platformModel.png', alt='Platform model')
     //--------FOOTER------
     #footer
       ul.languageToggle
@@ -203,10 +195,15 @@ html.no-js
           | {{ui.contactExtra.phone}}
           li
             a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
-
-
-
-
+      ul.socialMedia.hideXs
+        li.facebook
+          a(href='https://www.facebook.com/ASKCommunitySystems', target='blank')
+        li.twitter
+          a(href='https://twitter.com/askcs', target='blank')
+        li.linkedin
+          a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
+        li.googleplus
+          a(href='https://plus.google.com/100201535227830552056', target='blank')
     //  --------JS------
     // build:js scripts/vendor.js
     // bower:js
@@ -215,10 +212,7 @@ html.no-js
     script(src='vendors/angular/angular.js')
     // endbower
     // endbuild
-
     script(src='scripts/main.js')
-
-
     // build:js scripts/cases.js
     script(src='scripts/imagesloaded.js')
     script(src='scripts/skrollr.js')

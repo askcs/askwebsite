@@ -1,9 +1,11 @@
 doctype
 html.no-js
   head
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(charset='UTF-8')
     title ASK Community Systems
     meta(name='author', content='ASK Community Systems')
+    meta(name='keywords', content='impressum, regelungen, informationen, platform, standby, teamup')
+    meta(name='description', content='Unsere impressum')
     meta(name='Resource-type', content='Document')
     meta(content='width=device-width, initial-scale=1', name='viewport')
     meta(content='ASK Community Systems', property='og:title')
@@ -59,9 +61,9 @@ html.no-js
       #dropdownMenu.mobileView.hide
         ul
           li
+            a(href='platform.html') {{ui.menu.platform}}
+          li
             a#menuProducts(href='index.html#products') {{ui.menu.products}}
-          li.active
-            a.active(href='platform.html') {{ui.menu.platform}}
           li
             a(href='about.html') {{ui.menu.company}}
           li
@@ -71,9 +73,9 @@ html.no-js
           .col-xs-5.desktopView
             ul
               li
-                a#menuProducts(href='index.html#products') {{ui.menu.products}}
-              li
                 a(href='platform.html') {{ui.menu.platform}}
+              li
+                a#menuProducts(href='index.html#products') {{ui.menu.products}}
           #mainLogo
             .logoContainer
               a(href='index.html')
@@ -167,12 +169,35 @@ html.no-js
           | {{ui.contactExtra.phone}}
           li
             a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
+      ul.socialMedia.hideXs
+        li.facebook
+          a(href='https://www.facebook.com/ASKCommunitySystems', target='blank')
+        li.twitter
+          a(href='https://twitter.com/askcs', target='blank')
+        li.linkedin
+          a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
+        li.googleplus
+          a(href='https://plus.google.com/100201535227830552056', target='blank')
 
 
     // __build:js({app,.tmp}) scripts/main.js
     // script(src='scripts/main.js')
     // __endbuild
 
-
+                //  --------JS------
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='vendors/jQuery/dist/jquery.js')
+    script(src='vendors/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js')
+    script(src='vendors/angular/angular.js')
+    // endbower
+    // endbuild
+    script(src='scripts/main.js')
+    // build:js scripts/cases.js
+    script(src='scripts/imagesloaded.js')
+    script(src='scripts/skrollr.js')
+    script(src='scripts/_main.js')
+    //script(src='scripts/cases.js')
+    // endbuild
 
 

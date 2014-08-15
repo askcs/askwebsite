@@ -1,9 +1,11 @@
 doctype
 html.no-js
   head
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(charset='UTF-8')
     title ASK Community Systems
     meta(name='author', content='ASK Community Systems')
+    meta(name='keywords', content='ask platform, cloudbased, apps, communicatie, cloud, last minute, planning, live, realtime, standby, teamup')
+    meta(name='description', content='ASK Platform biedt makkelijke app ontwikkeling in de cloud voor last minute oplossingen')
     meta(name='Resource-type', content='Document')
     meta(content='width=device-width, initial-scale=1', name='viewport')
     meta(content='ASK Community Systems', property='og:title')
@@ -11,9 +13,6 @@ html.no-js
     meta(content='https://ask-cs.nl/', property='og:url')
     meta(content='', property='og:image')
     link(href='/images/favicon.ico', rel='Shortcut Icon')
-
-
-
     // --------CSS------
     // build:css styles/vendor.css
     // bower:css
@@ -23,22 +22,16 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
-
     script(src='vendors/modernizr/modernizr.js')
-
-
   body(ng-app='AskWeb')
-
-
-
     //--------HEADER------
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
         ul
           li
+            a(href='platform.html') {{ui.menu.platform}}
+          li
             a#menuProducts(href='index.html#products') {{ui.menu.products}}
-          li.active
-            a.active(href='platform.html') {{ui.menu.platform}}
           li
             a(href='about.html') {{ui.menu.company}}
           li
@@ -48,9 +41,9 @@ html.no-js
           .col-xs-5.desktopView
             ul
               li
-                a#menuProducts(href='index.html#products') {{ui.menu.products}}
-              li
                 a(href='platform.html') {{ui.menu.platform}}
+              li
+                a#menuProducts(href='index.html#products') {{ui.menu.products}}
           #mainLogo
             .logoContainer
               a(href='index.html')
@@ -61,11 +54,42 @@ html.no-js
               li
                 a(href='cases.html') {{ui.menu.cases}}
           #dropdownToggle.mobileView
-
-
-
-
-
+    //--------JOBSTOGGLE------
+    #jobsToggle
+      h4 {{ui.jobs.title}}
+    #jobArea.hide
+      #closeJobs
+      .container
+        .row
+          .col-md-4.col-sm-6
+            h2 {{ui.jobs.title}}
+            ol
+              li
+                a(href='jobs.html#sbmanager') {{ui.jobs.sbmanager.title}}
+              li
+                a(href='jobs.html#iosdev') {{ui.jobs.iosdev.title}}
+              li
+                a(href='jobs.html#androiddev') {{ui.jobs.androiddev.title}}
+              li
+                a(href='jobs.html#webdev') {{ui.jobs.webdev.title}}
+              li
+                a(href='jobs.html#businessconsultant') {{ui.jobs.businessConsultant.title}}
+            h4 {{ui.jobs.internshipTitle}}
+            ol
+              li
+                a(href='jobs.html#stage1') {{ui.jobs.internshipClouds.title}}
+              li
+                a(href='jobs.html#stage2') {{ui.jobs.internshipPersonalAlarm.title}}
+              li.hidden
+                a(href='jobs.html#stage3') {{ui.jobs.internshipP2000Alarm.title}}
+              li
+                a(href='jobs.html#stage4') {{ui.jobs.internshipLearningSoftwareAgent.title}}
+              li
+                a(href='jobs.html#stage5') {{ui.jobs.internshipTeamup.title}}
+          .workAt.col-md-8.col-sm-6.hidden-xs
+            h2.col-md-12 {{ui.jobs.workAt.title}}
+            p.col-md-6 {{ui.jobs.workAt.description01}}
+            p.col-md-6 {{ui.jobs.workAt.description02}}
     //--------COOKIE MESSAGE------
     #cookieMessage
       #closeCookie
@@ -73,92 +97,108 @@ html.no-js
         | {{ui.general.cookieMessage}}
         a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
         | .
-
-
-
-
-    //--------SCENARIO------
-    #section0.section
+    //--------PLATFORM (SLIDER)------
+    #section0.section.platformHome
+      .label
+        h4 {{ui.home.platform.title}}
+      .arrowDownPosition
+        a.arrowDown(href='index.html#products')
+          h4 {{ui.menu.products}}
       .slide.slide1
         .container
           .col-md-12
-            h2.scenarioText1 {{ui.home.scenario.titleSlide1}}
+            h2.anText1 {{ui.home.platform.introTitle}}
+            p.hideXs {{ui.home.platform.intro}}
             .scenarioImg
-              img.animate01-01(src='images/home/scenario01-01.png', alt='slider')
-              img.animate01-02(src='images/home/scenario01-02.png', alt='slider')
-              img.animate01-03(src='images/home/scenario01-03.png', alt='slider')
+              img.anIntro01(src='images/platform/platform01.png', alt='platform')
       .slide.slide2
         .container
           .col-md-12
-            h2.scenarioText2 {{ui.home.scenario.titleSlide2}}
+            h2.anText2 {{ui.home.platform.contextAwarenessTitle}}
+            p.hideXs {{ui.home.platform.contextAwareness}}
             .scenarioImg
-              img.animate02-01(src='images/home/scenario02-01.png', alt='slider')
-              img.animate02-02(src='images/home/scenario02-02.png', alt='slider')
-              img.animate02-03(src='images/home/scenario02-03.png', alt='slider')
+              img.anContextAware01(src='images/home/contextAware01.png', alt='Context aware')
       .slide.slide3
         .container
           .col-md-12
-            h2.scenarioText3 {{ui.home.scenario.titleSlide3}}
-            .animate03-01.scenarioImg
-              img(src='images/home/scenario03-01.png', alt='slider')
+            h2.anText3 {{ui.home.platform.communicationTitle}}
+            p.hideXs {{ui.home.platform.communication}}
+            .anCommunication01.scenarioImg
+              img(src='images/home/scenario03-01.png', alt='Devices')
               .absoluteElements
-                span.animate03-02
-                  img(src='images/home/scenario03-02.png')
-                span.animate03-03
-                  img(src='images/home/scenario03-03.png')
-                span.animate03-04
-                  img(src='images/home/scenario03-04.png')
-                span.animate03-05
-                  img(src='images/home/scenario03-05.png')
-                span.animate03-06
-                  img(src='images/home/scenario03-06.png')
+                span.anCommunication02
+                  img(src='images/home/scenario03-02.png', alt='Laptop computer')
+                span.anCommunication03
+                  img(src='images/home/scenario03-03.png', alt='Email')
+                span.anCommunication04
+                  img(src='images/home/scenario03-04.png', alt='Email SMS')
+                span.anCommunication05
+                  img(src='images/home/scenario03-05.png', alt='Pager')
+                span.anCommunication06
+                  img(src='images/home/scenario03-06.png', alt='Phone')
       .slide.slide4
         .container
           .col-md-12
-            h2.scenarioText4 {{ui.home.scenario.titleSlide4}}
+            h2.anText4 {{ui.home.platform.proActiveTitle}}
+            p.hideXs {{ui.home.platform.proActive}}
             .scenarioImg
-              img.animate04-01(src='images/home/scenario04-01.png', alt='slider')
-              img.animate04-02(src='images/home/scenario04-02.png', alt='slider')
-              img.animate04-03(src='images/home/scenario04-03.png', alt='slider')
-              .absoluteElements
-                span
-                  img.hide.animate04-04(src='images/home/scenario04-04.png')
-
-
-
-
+              img.anProActive01(src='images/home/proActive01.png', alt='Pro active')
+      .slide.slide5
+        .container
+          .col-md-12
+            h2.anText5 {{ui.home.platform.multiDeviceTitle}}
+            p.hideXs {{ui.home.platform.multiDevice}}
+            a.hideXs(href='platform.html') {{ui.general.readMore}}...
+            .scenarioImg
+              img.anMultiDevice01(src='images/home/scenario02-01.png', alt='Smartphone')
+              img.anMultiDevice02(src='images/home/scenario02-02.png', alt='Desktop computer')
+              img.anMultiDevice03(src='images/home/scenario02-03.png', alt='Tablet')
+    //--------PLATFORM------
+    //#section1.section.platform
+    //  .label
+    //    h4 {{ui.home.platform.title}}
+    //  .container
+    //    .col-md-6.col-md-offset-3
+    //      h2 {{ui.home.platform.introTitle}}
+    //      p {{ui.home.platform.introText}}
+    //      .platformImg
+    //        a(href='platform.html') {{ui.general.readMore}}...
+    //        img(src='images/platform/platform01.png', alt='platform')
     //--------PRODUCTS------
     #section1.section.products
       .label
         h4 {{ui.home.products.title}}
+      .arrowDownPosition
+        a.arrowDown(href='index.html#cases')
+          h4 {{ui.menu.cases}}
       .container.desktopView
-        .row
-          .col-md-4.col-md-offset-2.col-sm-5.col-sm-offset-1.standBy
+        .row.products2
+          .col-md-4.col-sm-4.standBy.product
             a.box(href='https://standby.ask-cs.nl', target='_blank')
               .top
-                img(src='images/products/logoStandBy.png')
+                img(src='images/products/logoStandBy.png', alt='StandBy')
               .textPart
                 h3 StandBy
                 p {{ui.home.products.standby}}
-          .col-md-4.col-sm-5.teamUp
+          .col-md-4.col-sm-4.teamUp.product
             a.box(href='https://teamup.ask-cs.nl', target='_blank')
               .top
-                img(src='images/products/logoTeamUp.png')
+                img(src='images/products/logoTeamUp.png', alt='TeamUp')
               .textPart
                 h3 TeamUp
                 p {{ui.home.products.teamup}}
-          .hidden.col-md-4.col-sm-4.joinUs
-            a.box(href='https://joinus.ask-cs.nl', target='_blank')
+          .col-md-4.col-sm-4.blank.product
+            a.box(href='platform.html')
               .top
-                img(src='images/products/logoStandBy.png')
+                img(src='images/products/blank.png', alt='Your app')
               .textPart
-                h3 JoinUs
-                p {{ui.home.products.joinus}}
+                h3 {{ui.home.products.blankTitle}}
+                p {{ui.home.products.blankText}}
       .mobileView
         #product01.slide
           .standBy
             .top
-              img(src='images/products/logoStandBy.png')
+              img(src='images/products/logoStandBy.png', alt='StandBy')
             .col-xs-12.textPart
               h3 StandBy
               p {{ui.home.products.standby}}
@@ -166,39 +206,29 @@ html.no-js
         #product02.slide
           .teamUp
             .top
-              img(src='images/products/logoTeamUp.png')
+              img(src='images/products/logoTeamUp.png', alt='TeamUp')
             .col-xs-12.textPart
               h3 TeamUp
               p {{ui.home.products.teamup}}
               a(href='http://teamup.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+        #productBlank.slide
+          .blank
+            .top
+              img(src='images/products/blank.png', alt='Your own')
+            .col-xs-12.textPart
+              h3 Blank
+              p {{ui.home.products.joinus}}.
+              a(href='platform.html') {{ui.general.readMore}}...
         #product03.hidden
           .joinUs
             .top
-              img(src='images/products/logoStandBy.png')
+              img(src='images/products/logoStandBy.png', alt='JoinUs')
             .col-xs-12.textPart
               h3 JoinUs
               p {{ui.home.products.joinus}}.
               a(href='http://joinus.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
-
-
-
-    //--------PLATFORM------
-    #section2.section.platform
-      .label
-        h4 {{ui.home.platform.title}}
-      .container
-        .col-md-6.col-md-offset-3
-          h2 {{ui.home.platform.introTitle}}
-          p {{ui.home.platform.introText}}
-          .platformImg
-            a(href='platform.html') {{ui.general.readMore}}...
-            img(src='images/platform/platform01.png', alt='platform')
-
-
-
-
     //--------CASES------
-    #section3.section
+    #section2.section
       .label
         h4 {{ui.home.casesPreview.title}}
       #case01.slide.case
@@ -231,10 +261,6 @@ html.no-js
               h2 {{ui.cases.olympia.title}}
               p {{ui.home.casesPreview.olympia}}
               a(href='cases.html#slide-7') {{ui.general.readMore}}...
-
-
-
-
     //--------FOOTER------
     #footer
       ul.languageToggle
@@ -263,8 +289,15 @@ html.no-js
           | {{ui.contactExtra.phone}}
           li
             a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
-
-
+      ul.socialMedia.hideXs
+        li.facebook
+          a(href='https://www.facebook.com/ASKCommunitySystems', target='blank')
+        li.twitter
+          a(href='https://twitter.com/askcs', target='blank')
+        li.linkedin
+          a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
+        li.googleplus
+          a(href='https://plus.google.com/100201535227830552056', target='blank')
     //--------JS------
     // build:js scripts/vendor.js
     // bower:js
@@ -273,9 +306,7 @@ html.no-js
     script(src='vendors/angular/angular.js')
     // endbower
     // endbuild
-
     script(src='scripts/main.js')
-
     // build:js scripts/index.js
     script(src='vendors/jquery.slimscroll/jquery.slimscroll.js')
     script(src='vendors/fullPage.js/jquery.fullPage.js')

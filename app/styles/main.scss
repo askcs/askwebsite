@@ -1,62 +1,62 @@
 $icon-font-path: "/vendors/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 // bower:scss
-//@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+//@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 
 // Core variables and mixins
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins";
 
 // Reset
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/normalize";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/print";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/normalize";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/print";
 
 // Core CSS
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/scaffolding";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/type";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/code";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/grid";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/tables";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/forms";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/buttons";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/scaffolding";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/type";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/code";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/grid";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/tables";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/forms";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/buttons";
 
 // Components
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/component-animations";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/glyphicons";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/dropdowns";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/button-groups";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/input-groups";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/navs";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/navbar";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/breadcrumbs";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/pagination";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/pager";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/labels";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/badges";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/jumbotron";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/thumbnails";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/alerts";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/progress-bars";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/media";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/list-group";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/panels";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/wells";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/close";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/component-animations";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/glyphicons";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/dropdowns";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/button-groups";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/input-groups";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/navs";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/navbar";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/breadcrumbs";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/pagination";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/pager";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/labels";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/badges";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/jumbotron";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/thumbnails";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/alerts";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/progress-bars";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/media";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/list-group";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/panels";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/wells";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/close";
 
 // Components w/ JavaScript
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/modals";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/tooltip";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/popovers";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/carousel";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/modals";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/tooltip";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/popovers";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/carousel";
 
 // Utility classes
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/utilities";
-@import "../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/responsive-utilities";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/utilities";
+@import "../../vendors/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/responsive-utilities";
 
 // endbower
 
-@import "//fonts.googleapis.com/css?family=Ubuntu:700";
-@import "//fonts.googleapis.com/css?family=Lato:700,400,400italic,700italic,300italic,300";
+@import url("//fonts.googleapis.com/css?family=Ubuntu:700");
+@import url("//fonts.googleapis.com/css?family=Lato:700,400,400italic,700italic,300italic,300");
 
 
 
@@ -64,10 +64,13 @@ $icon-font-path: "/vendors/bootstrap-sass-official/vendor/assets/fonts/bootstrap
 $ask-color: #e61e3b;
 $standby-color: #a93232;
 $teamup-color: #1dc8b6;
+$blank-color: #959595;
 $joinus-color: #fab25e;
 $yellow: #FACB6A;
 $green: #9fe384;
 $blue: #a5eaf5;
+$light-grey: #e5e5e5;
+
 
 // Mixins
 
@@ -687,6 +690,11 @@ P:last-child {
       text-align: right;
     }
   }
+  .desktopView {
+    ul {
+      display: none;
+    }
+  }
   #mainLogo {
     padding: 0;
     position: absolute;
@@ -803,12 +811,14 @@ P:last-child {
   width: 100%;
   z-index: 9;
   font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
   font-size: 10px;
   .languageToggle {
     position: fixed;
     display: block;
     background-color: $ask-color;
     bottom: -3px;
+    width: 32px;
   }
   #languageMenu {
     position: fixed;
@@ -839,7 +849,7 @@ P:last-child {
     display: inline-block;
     li {
       display: inline-block;
-      padding: 8px 0;
+      padding: 8px 0 8px 1px;
       a {
         color: #fff;
         outline: none;
@@ -853,9 +863,54 @@ P:last-child {
   ul.extraAddress {
     margin-left: 20px;
   }
+  ul.socialMedia {
+    padding-top: 3px;
+    position: fixed;
+    height: 30px;
+    display: inline-block;
+    right: 0;
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    li.facebook {
+      a {
+        background: url("../images/facebook02.png") no-repeat;
+      }
+      a:hover {
+        background: url("../images/facebook.png") no-repeat;
+      }
+    }
+    li.twitter {
+      a {
+        background: url("../images/twitter02.png") no-repeat;
+      }
+      a:hover {
+        background: url("../images/twitter.png") no-repeat;
+      }
+    }
+    li.linkedin {
+      a {
+        background: url("../images/linkedin02.png") no-repeat;
+      }
+      a:hover {
+        background: url("../images/linkedin.png") no-repeat;
+      }
+    }
+    li.googleplus {
+      a {
+        background: url("../images/googleplus02.png") no-repeat;
+      }
+      a:hover {
+        background: url("../images/googleplus.png") no-repeat;
+      }
+    }
+  }
 }
-
-
 
 
 
@@ -871,16 +926,45 @@ P:last-child {
   left: 0;
   bottom: 12%;
   background-color: $ask-color;
-  z-index: 10;
+  z-index: 111;
   color: #fff;
   text-transform: uppercase;
   opacity: 0.9;
   h4 {
     font-size: 12px;
   }
-
 }
 
+.arrowDownPosition {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 8%;
+  width: 100%;
+  z-index: 110;
+  .arrowDown{
+    padding-top: 12px;
+    width: 200px;
+    height: 69px;
+    background-image: url("../images/arrowDown02.png");
+    background-size: 100% auto;
+    display: block;
+    margin: 0 auto;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    h4 {
+      font-size: 14px;
+    }
+  }
+}
+
+.platformHome  {
+  p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
 
 .scenarioImg {
   width: 100%;
@@ -889,32 +973,20 @@ P:last-child {
   max-height: 270px;
   margin: 20px auto ;
   position: relative;
-  img.animate01-01, img.animate01-03 {
-    width: 34%;
+  img {
+    width: 100%;
   }
-  img.animate01-02 {
-    width: 32%;
-  }
-  img.animate02-01 {
+  img.anMultiDevice01 {
     width: 15%;
   }
-  img.animate02-02 {
+  img.anMultiDevice02 {
     width: 57%;
   }
-  img.animate02-03 {
+  img.anMultiDevice03 {
     width: 28%;
-  }
-  img.animate04-01, img.animate04-02 {
-    width: 30%;
-  }
-  img.animate04-03 {
-    width: 40%;
   }
 }
 
-.slide1 .scenarioImg img, .slide2 .scenarioImg img, .slide4 .scenarioImg img {
-  float: left;
-}
 
 .slide3 {
   .scenarioImg {
@@ -932,34 +1004,34 @@ P:last-child {
 }
 
 
-.slide4 .scenarioImg .absoluteElements span img{
+.slide2 .scenarioImg .absoluteElements span img{
   position: absolute;
   width: 27%;
   height: auto;
   right: 0;
   top: 115px;
-  background-color: $yellow;
+  background-color: $blue;
   @include border-radius(50%);
 }
 
 .absoluteElements {
-  span.animate03-02 {
+  span.anCommunication02 {
     left: 14%;
     top: 19%;
   }
-  span.animate03-03 {
+  span.anCommunication03 {
     left: 22%;
     top: 58%;
   }
-  span.animate03-04 {
+  span.anCommunication04 {
     left: 44%;
     top: 74%;
   }
-  span.animate03-05 {
+  span.anCommunication05 {
     left: 66%;
     top: 58%;
   }
-  span.animate03-06 {
+  span.anCommunication06 {
     left: 74%;
     top: 19%;
   }
@@ -973,12 +1045,11 @@ P:last-child {
   color: #fff;
   background: url("../images/products/bgBlurred.jpg") repeat;
   background-position: center center;
-  a, a:hover, a:active {
+  .product a, .product a:hover, .product a:active {
     color: #fff;
     display: block;
     outline: none;
     margin-top: 10px;
-    text-transform: uppercase;
   }
   a.box{
     text-decoration: none !important;
@@ -1004,6 +1075,17 @@ P:last-child {
     }
     .top{
       background-color: lighten($teamup-color, 10%);
+    }
+  }
+  #productBlank{
+    background-color: $blank-color;
+  }
+  .blank{
+    .box {
+      background-color: $blank-color;
+    }
+    .top {
+      background-color: lighten($blank-color, 10%);
     }
   }
   #product03{
@@ -1153,7 +1235,7 @@ P:last-child {
 }
 
 .caseBz .bcg {
-/*  background-position: left center;*/
+  /*  background-position: left center;*/
 }
 
 .caseBzText .bcg,  .caseBz .textField span {
@@ -1201,7 +1283,7 @@ P:last-child {
     padding-bottom: 20px;
   }
   img {
-   max-width: 100%;
+    max-width: 100%;
   }
   section {
     border-bottom: dashed 2px #000000;
@@ -1225,14 +1307,19 @@ P:last-child {
   }
   .platform5 {
     background-color: $blue;
-    .textField {
-
+  }
+  .platform7 {
+    background-color: $yellow;
+    p:first-child {
+      padding-bottom: 20px;
     }
   }
 }
 
 
-
+/* ==========================================================================
+   ABOUT
+   ========================================================================== */
 
 
 .aboutContent {
@@ -1251,6 +1338,7 @@ P:last-child {
   z-index: 125;
   position: fixed;
   color: #fff;
+  top: 0;
   @include transform(rotate(-45deg));
   h4{
     font-size: 12px;
@@ -1332,10 +1420,33 @@ P:last-child {
   }
 }
 
+
+/* ==========================================================================
+   JOBS
+   ========================================================================== */
+
+
 body.jobs {
   #content {
     .container {
       padding: 0;
+      /*      max-width: 970px;*/
+      .job {
+        border-bottom: 1px solid $ask-color;
+        padding-bottom: 50px !important;
+        .knowledge {
+          background-color: $light-grey;
+          margin-top: 10px;
+          padding-bottom: 10px;
+        }
+        .seeking {
+          background-color: $blue;
+          margin-top: 10px;
+        }
+        p:nth-child(2n) {
+          padding-bottom: 20px;
+        }
+      }
     }
   }
 }
@@ -1397,7 +1508,21 @@ body.jobs, body.terms {
   }
 }
 
+body.notFound {
+  background-color: $yellow;
+  text-align: center;
+  .content {
+    margin-top: 20%;
+    h1 {
+      font-size: 100px;
+    }
+    p {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
 
+}
 
 
 
@@ -1457,16 +1582,6 @@ body.jobs, body.terms {
     height: 500px;
   }
 
-
-  .jobs {
-    .job:nth-child(even) {
-      border-left: 1px solid $ask-color;
-    }
-    .twoJobs {
-      border-bottom: 1px solid $ask-color;
-      padding-bottom: 50px !important;
-    }
-  }
 }
 
 
@@ -1535,15 +1650,6 @@ body.jobs, body.terms {
     display: none;
   }
 
-  .jobs {
-    .job:nth-child(even) {
-      border-left: 1px solid $ask-color;
-    }
-    .twoJobs {
-      border-bottom: 1px solid $ask-color;
-      padding-bottom: 50px !important;
-    }
-  }
 }
 
 
@@ -1602,15 +1708,6 @@ body.jobs, body.terms {
     display: none;
   }
 
-  .jobs {
-    .job:nth-child(even) {
-      border-left: 1px solid $ask-color;
-    }
-    .twoJobs {
-      border-bottom: 1px solid $ask-color;
-      padding-bottom: 50px !important;
-    }
-  }
 }
 
 
@@ -1652,6 +1749,17 @@ body.jobs, body.terms {
     }
   }
 
+  .arrowDownPosition {
+    bottom: 10%;
+    .arrowDown{
+      padding-top: 1px;
+      width: 100px;
+      height: 34px;
+      h4 {
+        font-size: 8px;
+      }
+    }
+  }
 
   .platform {
     p {
@@ -1661,7 +1769,7 @@ body.jobs, body.terms {
     }
   }
 
-  .slide4 .scenarioImg .absoluteElements span img {
+  .slide2 .scenarioImg .absoluteElements span img {
     top: 60px;
   }
 
@@ -1701,9 +1809,9 @@ body.jobs, body.terms {
   }
 
   #jobsToggle{
-    margin: 52px 0 0 -74px;
+    margin: 14px 0 0 -74px;
     padding: 3px 0;
-    z-index: 52;
+    /*    z-index: 52;*/
     h4{
       font-size: 9px;
     }
@@ -1711,6 +1819,8 @@ body.jobs, body.terms {
 
   #jobArea {
     top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .jobs .job {
@@ -1764,7 +1874,7 @@ body.jobs, body.terms {
       position: absolute;
       text-align: center;
     }
-    .standBy, .teamUp, .joinUs {
+    .standBy, .teamUp, .joinUs, .blank {
       height: 100%;
     }
   }
@@ -1826,6 +1936,3 @@ body.jobs, body.terms {
     }
   }
 }
-
-
-

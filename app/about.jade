@@ -1,9 +1,11 @@
 doctype
 html.no-js
   head
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(charset='UTF-8')
     title ASK Community Systems
     meta(name='author', content='ASK Community Systems')
+    meta(name='keywords', content='expert, applicaties, software, intelligentie, communicatie, cloud, standby, teamup')
+    meta(name='description', content='Bouw uw Cloud computing-applicaties op het ASK platform, het intelligente cloud software platform')
     meta(name='Resource-type', content='Document')
     meta(content='width=device-width, initial-scale=1', name='viewport')
     meta(content='ASK Community Systems', property='og:title')
@@ -11,9 +13,6 @@ html.no-js
     meta(content='https://ask-cs.nl/', property='og:url')
     meta(content='', property='og:image')
     link(href='/images/favicon.ico', rel='Shortcut Icon')
-
-
-
     // --------CSS------
     // build:css styles/vendor.css
     // bower:css
@@ -23,29 +22,18 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
-
-
-
     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false')
-    script(src='scripts/about.js')
-
-
-
-
   body(ng-app='AskWeb')
-
-
-
     //--------HEADER------
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
         ul
           li
+            a(href='platform.html') {{ui.menu.platform}}
+          li
             a#menuProducts(href='index.html#products') {{ui.menu.products}}
           li.active
-            a.active(href='platform.html') {{ui.menu.platform}}
-          li
-            a(href='about.html') {{ui.menu.company}}
+            a.active(href='about.html') {{ui.menu.company}}
           li
             a(href='cases.html') {{ui.menu.cases}}
       .container
@@ -53,9 +41,9 @@ html.no-js
           .col-xs-5.desktopView
             ul
               li
-                a#menuProducts(href='index.html#products') {{ui.menu.products}}
-              li
                 a(href='platform.html') {{ui.menu.platform}}
+              li
+                a#menuProducts(href='index.html#products') {{ui.menu.products}}
           #mainLogo
             .logoContainer
               a(href='index.html')
@@ -66,7 +54,6 @@ html.no-js
               li
                 a(href='cases.html') {{ui.menu.cases}}
           #dropdownToggle.mobileView
-
     #jobsToggle
       h4 {{ui.jobs.title}}
     #jobArea.hide
@@ -77,7 +64,13 @@ html.no-js
             h2 {{ui.jobs.title}}
             ol
               li
+                a(href='jobs.html#sbmanager') {{ui.jobs.sbmanager.title}}
+              li
                 a(href='jobs.html#iosdev') {{ui.jobs.iosdev.title}}
+              li
+                a(href='jobs.html#androiddev') {{ui.jobs.androiddev.title}}
+              li
+                a(href='jobs.html#webdev') {{ui.jobs.webdev.title}}
               li
                 a(href='jobs.html#businessconsultant') {{ui.jobs.businessConsultant.title}}
             h4 {{ui.jobs.internshipTitle}}
@@ -96,9 +89,6 @@ html.no-js
             h2.col-md-12 {{ui.jobs.workAt.title}}
             p.col-md-6 {{ui.jobs.workAt.description01}}
             p.col-md-6 {{ui.jobs.workAt.description02}}
-
-
-
     //--------COOKIE MESSAGE------
     #cookieMessage
       #closeCookie
@@ -106,8 +96,6 @@ html.no-js
         | {{ui.general.cookieMessage}}
         a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
         | .
-
-
     //--------About Slides------
     #content.aboutContent
       #skrollr-body
@@ -125,7 +113,7 @@ html.no-js
                     p {{ui.company.pressure.description03}}
                     p {{ui.company.pressure.description04}}
                 .col-md-6.col-sm-6.col-xs-12(data-106-bottom='opacity: 0', data-center='opacity: 1')
-                  img(src='images/about/askIntro.png', style='height: auto; width: 100%; margin: 20px 0;')
+                  img(src='images/about/askIntro.png', style='height: auto; width: 100%; margin: 20px 0;', alt='ASK Communication System')
         section#slide-3.about3.homeSlide(anim-detached='true')
           .bcg(data-center='background-position: 50% -50px;', data-top-bottom='background-position: 50% 100%;', data-anchor-target='#slide-3')
             .container.smallDeviceContainer
@@ -147,44 +135,38 @@ html.no-js
                   .row
                     .col-md-3.col-xs-6.partnerContainer
                       a(href='http://almende.com', target='_blank')
-                        img.hoverHide(src='/images/about/partners/almende02.png')
-                        img.hoverShow(src='/images/about/partners/almende01.png')
+                        img.hoverHide(src='/images/about/partners/almende02.png', alt='Almende')
+                        img.hoverShow(src='/images/about/partners/almende01.png', alt='Almende')
                     .col-md-3.col-xs-6.partnerContainer
                       a(href='http://dobots.nl', target='_blank')
-                        img.hoverHide(src='/images/about/partners/do02.png')
-                        img.hoverShow(src='/images/about/partners/do01.png')
+                        img.hoverHide(src='/images/about/partners/do02.png', alt='DoBots')
+                        img.hoverShow(src='/images/about/partners/do01.png', alt='DoBots')
                     .col-md-3.col-xs-6.partnerContainer
                       a(href='http://sense-os.nl', target='_blank')
-                        img.hoverHide(src='/images/about/partners/sense02.png')
-                        img.hoverShow(src='/images/about/partners/sense01.png')
+                        img.hoverHide(src='/images/about/partners/sense02.png', alt='Sense Observation Systems')
+                        img.hoverShow(src='/images/about/partners/sense01.png', alt='Sense Observation Systems')
                     .col-md-3.col-xs-6.partnerContainer
                       a(href='http://luna.nl', target='_blank')
-                        img.hoverHide(src='/images/about/partners/luna02.png')
-                        img.hoverShow(src='/images/about/partners/luna01.png')
+                        img.hoverHide(src='/images/about/partners/luna02.png', alt='Luna')
+                        img.hoverShow(src='/images/about/partners/luna01.png', alt='Luna')
                     .col-md-3.col-xs-6.partnerContainer
                       a(href='http://dealservices.nl', target='_blank')
-                        img.hoverHide(src='/images/about/partners/deal02.png')
-                        img.hoverShow(src='/images/about/partners/deal01.png')
+                        img.hoverHide(src='/images/about/partners/deal02.png', alt='Deal Services')
+                        img.hoverShow(src='/images/about/partners/deal01.png', alt='Deal Services')
                     .col-md-3.col-xs-6.partnerContainer
                       a(href='http://ask-fast.com', target='_blank')
-                        img.hoverHide(src='/images/about/partners/askfast02.png')
-                        img.hoverShow(src='/images/about/partners/askfast01.png')
+                        img.hoverHide(src='/images/about/partners/askfast02.png', alt='ASK Fast')
+                        img.hoverShow(src='/images/about/partners/askfast01.png', alt='ASK Fast')
                     .col-md-3.col-xs-6.partnerContainer
                       a(href='http://mantelplan.nl', target='_blank')
-                        img.hoverHide(src='/images/about/partners/mantalplan02.png')
-                        img.hoverShow(src='/images/about/partners/mantelplan01.png')
+                        img.hoverHide(src='/images/about/partners/mantelplan02.png', alt='Mantelplan')
+                        img.hoverShow(src='/images/about/partners/mantelplan01.png', alt='Mantelplan')
                     .col-md-3.col-xs-6.partnerContainer
                       a(href='http://rotterdam-cs.com', target='_blank')
-                        img.hoverHide(src='/images/about/partners/rotterdamcs02.png')
-                        img.hoverShow(src='/images/about/partners/rotterdamcs01.png')
-
+                        img.hoverHide(src='/images/about/partners/rotterdamcs02.png', alt='Rotterdam Community Solutions')
+                        img.hoverShow(src='/images/about/partners/rotterdamcs01.png', alt='Rotterdam Community Solutions')
     #mapContainer
       #map
-
-
-
-
-
     //--------FOOTER------
     #footer
       ul.languageToggle
@@ -213,13 +195,18 @@ html.no-js
           | {{ui.contactExtra.phone}}
           li
             a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
-
-
+      ul.socialMedia.hideXs
+        li.facebook
+          a(href='https://www.facebook.com/ASKCommunitySystems', target='blank')
+        li.twitter
+          a(href='https://twitter.com/askcs', target='blank')
+        li.linkedin
+          a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
+        li.googleplus
+          a(href='https://plus.google.com/100201535227830552056', target='blank')
     // __build:js({app,.tmp}) scripts/main.js
     // script(src='scripts/main.js')
     // __endbuild
-
-
     //  --------JS------
     // build:js scripts/vendor.js
     // bower:js
@@ -228,9 +215,8 @@ html.no-js
     script(src='vendors/angular/angular.js')
     // endbower
     // endbuild
-
     script(src='scripts/main.js')
-
+    script(src='scripts/about.js')
     // build:js scripts/about.js
     script(src='scripts/imagesloaded.js')
     script(src='scripts/skrollr.js')

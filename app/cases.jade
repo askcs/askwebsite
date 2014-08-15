@@ -1,9 +1,11 @@
 doctype
 html.no-js
   head
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(charset='UTF-8')
     title ASK Community Systems
     meta(name='author', content='ASK Community Systems')
+    meta(name='keywords', content='flexwerkers, postnl, knrm, vrijwilligers, zelfsturend, clienten, uitzendkracht, intercedent')
+    meta(name='description', content='Lees de ervaringen van gebruikers van het ASK platform. Het ASK platform biedt uw organisatie vele mogelijkheden en voordelen.')
     meta(name='Resource-type', content='Document')
     meta(content='width=device-width, initial-scale=1', name='viewport')
     meta(content='ASK Community Systems', property='og:title')
@@ -11,10 +13,7 @@ html.no-js
     meta(content='https://ask-cs.nl/', property='og:url')
     meta(content='', property='og:image')
     link(href='/images/favicon.ico', rel='Shortcut Icon')
-
-
-
-    // --------CSS------
+      // --------CSS------
     // build:css styles/vendor.css
     // bower:css
     link(rel='stylesheet', href='vendors/animate.css/animate.css')
@@ -23,33 +22,27 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
-
-
-
-  body(ng-app='AskWeb')
-
-
-
-    //--------HEADER------
+                                                                                                     body(ng-app='AskWeb')
+                                                                                                       //--------HEADER------
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
         ul
           li
+            a(href='platform.html') {{ui.menu.platform}}
+          li
             a#menuProducts(href='index.html#products') {{ui.menu.products}}
-          li.active
-            a.active(href='platform.html') {{ui.menu.platform}}
           li
             a(href='about.html') {{ui.menu.company}}
-          li
-            a(href='cases.html') {{ui.menu.cases}}
+          li.active
+            a.active(href='cases.html') {{ui.menu.cases}}
       .container
         .row
           .col-xs-5.desktopView
             ul
               li
-                a#menuProducts(href='index.html#products') {{ui.menu.products}}
-              li
                 a(href='platform.html') {{ui.menu.platform}}
+              li
+                a#menuProducts(href='index.html#products') {{ui.menu.products}}
           #mainLogo
             .logoContainer
               a(href='index.html')
@@ -60,19 +53,14 @@ html.no-js
               li
                 a.active(href='cases.html') {{ui.menu.cases}}
           #dropdownToggle.mobileView
-
-
-
-    //--------COOKIE MESSAGE------
+            //--------COOKIE MESSAGE------
     #cookieMessage
       #closeCookie
       p
         | {{ui.general.cookieMessage}}
         a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
         | .
-
-
-    //--------Cases------
+        //--------Cases------
     #content
       #skrollr-body
         //--------PostNL------
@@ -121,7 +109,7 @@ html.no-js
                       p {{ui.cases.postnl.solution.description02}}
                   .row
                     .col-md-6(data-106-bottom='opacity: 0', data-center='opacity: 1')
-                      img(src='images/cases/postnl.png', style='height: auto; width: 100%; margin: 20px 0;')
+                      img(src='images/cases/postnl.png', style='height: auto; width: 100%; margin: 20px 0;', alt='PostNL')
                 .textFieldContainer
                   .textField.text-left.col-md-4.col-sm-5.col-xs-12
                     h4 {{ui.cases.qualResultsTitle}}
@@ -182,7 +170,7 @@ html.no-js
                       p {{ui.cases.knrm.solution.description01}}
                   .row
                     .col-md-6(data-106-bottom='opacity: 0', data-center='opacity: 1')
-                      img(src='images/cases/knrm.png', style='height: auto; width: 100%; margin: 20px 0;')
+                      img(src='images/cases/knrm.png', style='height: auto; width: 100%; margin: 20px 0;', alt='KNRM')
                 .textFieldContainer
                   .textField.text-left.col-md-4.col-sm-5.col-xs-12
                     h4 {{ui.cases.qualResultsTitle}}
@@ -231,7 +219,7 @@ html.no-js
                       p {{ui.cases.bz.solution.description02}}
                   .row
                     .col-md-6(data-106-bottom='opacity: 0', data-center='opacity: 1')
-                      img(src='images/cases/buurtzorg.png', style='height: auto; width: 100%; margin: 20px 0;')
+                      img(src='images/cases/buurtzorg.png', style='height: auto; width: 100%; margin: 20px 0;', alt='Buurtzorg')
                 .textFieldContainer
                   .textField.text-left.col-md-4.col-sm-5.col-xs-12
                     h4 {{ui.cases.qualResultsTitle}}
@@ -285,7 +273,7 @@ html.no-js
                       p {{ui.cases.olympia.solution.description03}}
                   .row
                     .col-md-6(data-300-bottom='opacity: 0', data-center='opacity: 1')
-                      img(src='images/cases/olympia.png', style='height: auto; width: 100%; margin: 20px 0;')
+                      img(src='images/cases/olympia.png', style='height: auto; width: 100%; margin: 20px 0;', alt='Olympia')
                 .textFieldContainer
                   .textField.text-left.col-md-4.col-sm-5.col-xs-12
                     h4 {{ui.cases.qualResultsTitle}}
@@ -303,12 +291,7 @@ html.no-js
                     .factVer
                       h1 - 90%
                       p {{ui.cases.olympia.quanResults.fact03}}
-
-
-
-
-
-    //--------FOOTER------
+                        //--------FOOTER------
     #footer
       ul.languageToggle
         li
@@ -336,9 +319,16 @@ html.no-js
           | {{ui.contactExtra.phone}}
           li
             a(href='mailto:{{ui.contactExtra.email}}') {{ui.contactExtra.email}}
-
-
-    //  --------JS------
+      ul.socialMedia.hideXs
+        li.facebook
+          a(href='https://www.facebook.com/ASKCommunitySystems', target='blank')
+        li.twitter
+          a(href='https://twitter.com/askcs', target='blank')
+        li.linkedin
+          a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
+        li.googleplus
+          a(href='https://plus.google.com/100201535227830552056', target='blank')
+            //  --------JS------
     // build:js scripts/vendor.js
     // bower:js
     script(src='vendors/jQuery/dist/jquery.js')
@@ -346,11 +336,8 @@ html.no-js
     script(src='vendors/angular/angular.js')
     // endbower
     // endbuild
-
-    script(src='scripts/main.js')
-
-
-    // build:js scripts/cases.js
+                                     script(src='scripts/main.js')
+                                                                      // build:js scripts/cases.js
     script(src='scripts/imagesloaded.js')
     script(src='scripts/skrollr.js')
     script(src='scripts/_main.js')
