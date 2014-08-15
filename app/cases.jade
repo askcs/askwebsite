@@ -13,7 +13,10 @@ html.no-js
     meta(content='https://ask-cs.nl/', property='og:url')
     meta(content='', property='og:image')
     link(href='/images/favicon.ico', rel='Shortcut Icon')
-      // --------CSS------
+
+
+
+    // --------CSS------
     // build:css styles/vendor.css
     // bower:css
     link(rel='stylesheet', href='vendors/animate.css/animate.css')
@@ -22,8 +25,14 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
-                                                                                                     body(ng-app='AskWeb')
-                                                                                                       //--------HEADER------
+
+
+
+  body(ng-app='AskWeb')
+
+
+
+    //--------HEADER------
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
         ul
@@ -53,14 +62,19 @@ html.no-js
               li
                 a.active(href='cases.html') {{ui.menu.cases}}
           #dropdownToggle.mobileView
-            //--------COOKIE MESSAGE------
+
+
+
+    //--------COOKIE MESSAGE------
     #cookieMessage
       #closeCookie
       p
         | {{ui.general.cookieMessage}}
         a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
         | .
-        //--------Cases------
+
+
+    //--------Cases------
     #content
       #skrollr-body
         //--------PostNL------
@@ -291,7 +305,12 @@ html.no-js
                     .factVer
                       h1 - 90%
                       p {{ui.cases.olympia.quanResults.fact03}}
-                        //--------FOOTER------
+
+
+
+
+
+    //--------FOOTER------
     #footer
       ul.languageToggle
         li
@@ -328,7 +347,9 @@ html.no-js
           a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
         li.googleplus
           a(href='https://plus.google.com/100201535227830552056', target='blank')
-            //  --------JS------
+
+
+    //  --------JS------
     // build:js scripts/vendor.js
     // bower:js
     script(src='vendors/jQuery/dist/jquery.js')
@@ -336,8 +357,11 @@ html.no-js
     script(src='vendors/angular/angular.js')
     // endbower
     // endbuild
-                                     script(src='scripts/main.js')
-                                                                      // build:js scripts/cases.js
+
+    script(src='scripts/main.js')
+
+
+    // build:js scripts/cases.js
     script(src='scripts/imagesloaded.js')
     script(src='scripts/skrollr.js')
     script(src='scripts/_main.js')

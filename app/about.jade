@@ -13,6 +13,9 @@ html.no-js
     meta(content='https://ask-cs.nl/', property='og:url')
     meta(content='', property='og:image')
     link(href='/images/favicon.ico', rel='Shortcut Icon')
+
+
+
     // --------CSS------
     // build:css styles/vendor.css
     // bower:css
@@ -22,8 +25,18 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
+
+
+
     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false')
+
+
+
+
   body(ng-app='AskWeb')
+
+
+
     //--------HEADER------
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
@@ -54,6 +67,7 @@ html.no-js
               li
                 a(href='cases.html') {{ui.menu.cases}}
           #dropdownToggle.mobileView
+
     #jobsToggle
       h4 {{ui.jobs.title}}
     #jobArea.hide
@@ -89,6 +103,9 @@ html.no-js
             h2.col-md-12 {{ui.jobs.workAt.title}}
             p.col-md-6 {{ui.jobs.workAt.description01}}
             p.col-md-6 {{ui.jobs.workAt.description02}}
+
+
+
     //--------COOKIE MESSAGE------
     #cookieMessage
       #closeCookie
@@ -96,6 +113,8 @@ html.no-js
         | {{ui.general.cookieMessage}}
         a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
         | .
+
+
     //--------About Slides------
     #content.aboutContent
       #skrollr-body
@@ -165,8 +184,12 @@ html.no-js
                       a(href='http://rotterdam-cs.com', target='_blank')
                         img.hoverHide(src='/images/about/partners/rotterdamcs02.png', alt='Rotterdam Community Solutions')
                         img.hoverShow(src='/images/about/partners/rotterdamcs01.png', alt='Rotterdam Community Solutions')
+
     #mapContainer
       #map
+
+
+
     //--------FOOTER------
     #footer
       ul.languageToggle
@@ -204,9 +227,13 @@ html.no-js
           a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
         li.googleplus
           a(href='https://plus.google.com/100201535227830552056', target='blank')
+
+
     // __build:js({app,.tmp}) scripts/main.js
     // script(src='scripts/main.js')
     // __endbuild
+
+
     //  --------JS------
     // build:js scripts/vendor.js
     // bower:js
@@ -215,8 +242,10 @@ html.no-js
     script(src='vendors/angular/angular.js')
     // endbower
     // endbuild
+
     script(src='scripts/main.js')
     script(src='scripts/about.js')
+
     // build:js scripts/about.js
     script(src='scripts/imagesloaded.js')
     script(src='scripts/skrollr.js')

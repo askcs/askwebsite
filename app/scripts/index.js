@@ -78,7 +78,7 @@ function cleanStyles (slide)
             $(".anMultiDevice02").removeClass('animated shake');
             $(".anMultiDevice03").removeClass('animated shake');
             $(".text5").removeClass('animated pulse');
-            break;
+          break;
     }
 }
 
@@ -124,7 +124,7 @@ $(document).ready(function() {
 
         afterLoad: function(anchorLink, index){
 
-            // console.log('afterLoad', anchorLink, index);
+          // console.log('afterLoad', anchorLink, index);
 
             function resetMenucolors() {
                 $('#menu li a').removeClass('active');
@@ -142,7 +142,7 @@ $(document).ready(function() {
 
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex)
         {
-            // console.log('afterSlideLoad', anchorLink, index, slideAnchor, slideIndex);
+          // console.log('afterSlideLoad', anchorLink, index, slideAnchor, slideIndex);
 
             if (index == 1)
             {
@@ -165,9 +165,9 @@ $(document).ready(function() {
 
 //Show and hide JobArea
 $( "#jobsToggle" ).click(function() {
-    $('#jobArea').removeClass('hide rotateOutUpLeft').addClass('animated rotateInDownLeft');
+  $('#jobArea').removeClass('hide rotateOutUpLeft').addClass('animated rotateInDownLeft');
 });
 
 $( "#closeJobs" ).click(function() {
-    $('#jobArea').removeClass('rotateInDownLeft').addClass('animated rotateOutUpLeft');
+  $('#jobArea').removeClass('rotateInDownLeft').addClass('animated rotateOutUpLeft');
 });

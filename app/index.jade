@@ -13,6 +13,9 @@ html.no-js
     meta(content='https://ask-cs.nl/', property='og:url')
     meta(content='', property='og:image')
     link(href='/images/favicon.ico', rel='Shortcut Icon')
+
+
+
     // --------CSS------
     // build:css styles/vendor.css
     // bower:css
@@ -22,8 +25,15 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
+
     script(src='vendors/modernizr/modernizr.js')
+
+
+
   body(ng-app='AskWeb')
+
+
+
     //--------HEADER------
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
@@ -54,6 +64,8 @@ html.no-js
               li
                 a(href='cases.html') {{ui.menu.cases}}
           #dropdownToggle.mobileView
+
+
     //--------JOBSTOGGLE------
     #jobsToggle
       h4 {{ui.jobs.title}}
@@ -90,6 +102,11 @@ html.no-js
             h2.col-md-12 {{ui.jobs.workAt.title}}
             p.col-md-6 {{ui.jobs.workAt.description01}}
             p.col-md-6 {{ui.jobs.workAt.description02}}
+
+
+
+
+
     //--------COOKIE MESSAGE------
     #cookieMessage
       #closeCookie
@@ -97,6 +114,10 @@ html.no-js
         | {{ui.general.cookieMessage}}
         a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
         | .
+
+
+
+
     //--------PLATFORM (SLIDER)------
     #section0.section.platformHome
       .label
@@ -153,6 +174,9 @@ html.no-js
               img.anMultiDevice01(src='images/home/scenario02-01.png', alt='Smartphone')
               img.anMultiDevice02(src='images/home/scenario02-02.png', alt='Desktop computer')
               img.anMultiDevice03(src='images/home/scenario02-03.png', alt='Tablet')
+
+
+
     //--------PLATFORM------
     //#section1.section.platform
     //  .label
@@ -164,6 +188,10 @@ html.no-js
     //      .platformImg
     //        a(href='platform.html') {{ui.general.readMore}}...
     //        img(src='images/platform/platform01.png', alt='platform')
+
+
+
+
     //--------PRODUCTS------
     #section1.section.products
       .label
@@ -227,6 +255,10 @@ html.no-js
               h3 JoinUs
               p {{ui.home.products.joinus}}.
               a(href='http://joinus.ask-cs.nl', target='_blank') {{ui.general.readMore}}...
+
+
+
+
     //--------CASES------
     #section2.section
       .label
@@ -261,6 +293,10 @@ html.no-js
               h2 {{ui.cases.olympia.title}}
               p {{ui.home.casesPreview.olympia}}
               a(href='cases.html#slide-7') {{ui.general.readMore}}...
+
+
+
+
     //--------FOOTER------
     #footer
       ul.languageToggle
@@ -298,6 +334,9 @@ html.no-js
           a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
         li.googleplus
           a(href='https://plus.google.com/100201535227830552056', target='blank')
+
+
+
     //--------JS------
     // build:js scripts/vendor.js
     // bower:js
@@ -306,7 +345,9 @@ html.no-js
     script(src='vendors/angular/angular.js')
     // endbower
     // endbuild
+
     script(src='scripts/main.js')
+
     // build:js scripts/index.js
     script(src='vendors/jquery.slimscroll/jquery.slimscroll.js')
     script(src='vendors/fullPage.js/jquery.fullPage.js')

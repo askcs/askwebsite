@@ -13,6 +13,9 @@ html.no-js
     meta(content='https://ask-cs.nl/', property='og:url')
     meta(content='', property='og:image')
     link(href='/images/favicon.ico', rel='Shortcut Icon')
+
+
+
     // --------CSS------
     // build:css styles/vendor.css
     // bower:css
@@ -22,6 +25,8 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
+
+
     //  --------JS (ALSO @ END)------
     // build:js scripts/vendor.js
     // bower:js
@@ -29,19 +34,28 @@ html.no-js
     script(src='vendors/angular/angular.js')
     // endbower
     // endbuild
+
+
     // build:js scripts/jobs.js
     script(src='scripts/imagesloaded.js')
     script(src='scripts/skrollr.js')
     script(src='scripts/_main.js')
     // endbuild
+
     style(type='text/css')
-      | html, body {
-        background-color: #fff;
-      }
+      | html,body {background-color: #fff;}
+
   body.jobs(ng-app='AskWeb')
+
+
     // build:js({app,.tmp}) scripts/main.js
     script(src='scripts/main.js')
     // endbuild
+
+
+
+
+
     //--------HEADER------
     #menu.mainMenu
       #dropdownMenu.mobileView.hide
@@ -72,6 +86,10 @@ html.no-js
               li
                 a(href='cases.html') {{ui.menu.cases}}
           #dropdownToggle.mobileView
+
+
+
+
     //--------COOKIE MESSAGE------
     #cookieMessage
       #closeCookie
@@ -79,10 +97,14 @@ html.no-js
         | {{ui.general.cookieMessage}}
         a(href='docs/Privacy-Statement-ASK-Community-Systems.pdf', target='_blank')  {{ui.general.cookieMessageLink}}
         | .
+
+
     //--------JOBS ------
     #jobHeader
     #content
       .container.smallDeviceContainer
+
+
         .job
           .row
             a#sbmanager.anchor
@@ -130,6 +152,7 @@ html.no-js
                 p.contactItem
                   span.mailIcon.icon
                   a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
         .job
           .row
             a#iosdev.anchor
@@ -182,6 +205,7 @@ html.no-js
                 p.contactItem
                   span.mailIcon.icon
                   a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
         .job
           .row
             a#androiddev.anchor
@@ -234,6 +258,7 @@ html.no-js
                 p.contactItem
                   span.mailIcon.icon
                   a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
         .job
           .row
             a#webdev.anchor
@@ -283,6 +308,7 @@ html.no-js
                 p.contactItem
                   span.mailIcon.icon
                   a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
         .job
           .row
             a#businessconsultant.anchor
@@ -328,6 +354,7 @@ html.no-js
                 p.contactItem
                   span.mailIcon.icon
                   a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
         .job
           .row
             a#stage1.anchor
@@ -355,6 +382,7 @@ html.no-js
                 p.contactItem
                   span.mailIcon.icon
                   a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
         .job
           .row
             a#stage2.anchor
@@ -382,6 +410,7 @@ html.no-js
                 p.contactItem
                   span.mailIcon.icon
                   a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
         .job
           .row
             a#stage4.anchor
@@ -410,6 +439,7 @@ html.no-js
                 p.contactItem
                   span.mailIcon.icon
                   a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
         .job
           .row
             a#stage5.anchor
@@ -437,6 +467,12 @@ html.no-js
                 p.contactItem
                   span.mailIcon.icon
                   a(href='mailto:choek@ask-cs.com') choek@ask-cs.com
+
+
+
+
+
+
     //--------FOOTER------
     #footer
       ul.languageToggle
@@ -474,9 +510,13 @@ html.no-js
           a(href='https://www.linkedin.com/company/ask-community-systems', target='blank')
         li.googleplus
           a(href='https://plus.google.com/100201535227830552056', target='blank')
+
+
     // __build:js({app,.tmp}) scripts/main.js
     // script(src='scripts/main.js')
     // __endbuild
+
+
     //  --------JS------
     // build:js scripts/vendor.js
     // bower:js
@@ -492,3 +532,4 @@ html.no-js
     script(src='scripts/_main.js')
     //script(src='scripts/cases.js')
     // endbuild
+
