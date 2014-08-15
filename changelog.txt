@@ -1,5 +1,8 @@
 AskWebsite
 https://github.com/askcs/askwebsite.git
 
+15 august 2014, version 1.0.1
+Hotfix: Some file got corrupted in the merge
+
 15 august 2014, version 1.0.0
 Initial version
