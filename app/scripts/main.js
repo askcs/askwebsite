@@ -50,8 +50,8 @@ var localization = {
       cases: 'Referenties'
     },
     contact: {
-      address: 'Coolhaven 236 | ',
-      zipcode: ' 3024 AN ',
+      address: 'Heemraadssingel 89 | ',
+      zipcode: ' 3022 CA ',
       city: ' Rotterdam | ',
       phone: '  +31 (0)10 225 0130 | ',
       email: ' info@ask-cs.com '
@@ -532,8 +532,8 @@ var localization = {
       cases: 'References'
     },
     contact: {
-      address: 'Coolhaven 236 | ',
-      zipcode: ' 3024 AN ',
+      address: 'Heemraadssingel 89 | ',
+      zipcode: ' 3022 CA ',
       city: ' Rotterdam | ',
       phone: '  +31 (0)10 225 0130 | ',
       email: ' info@ask-cs.com '
@@ -1015,8 +1015,8 @@ var localization = {
       email: ' info@ask-cs.de '
     },
     contactExtra: {
-      address: 'Coolhaven 236 | ',
-      zipcode: ' 3024 AN ',
+      address: 'Heemraadssingel 89 | ',
+      zipcode: ' 3022 CA ',
       city: ' Rotterdam (NL) | ',
       phone: '  +31 (0)10 225 0130 | ',
       email: ' info@ask-cs.com '
