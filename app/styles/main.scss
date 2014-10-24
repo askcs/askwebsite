@@ -1262,9 +1262,9 @@ P:last-child {
 }
 
 .about3 .bcg {
-  background: none;
+  //background: none;
   background-image:url('../images/about/ask02.jpg');
-  @extend .fullbackground;
+  //@extend .fullbackground;
 }
 
 .about4 .bcg {
