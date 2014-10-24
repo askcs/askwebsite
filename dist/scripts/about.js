@@ -4,7 +4,7 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 
-    var myLatlng = new google.maps.LatLng(51.907921, 4.452299);
+    var myLatlng = new google.maps.LatLng(51.920505,4.454438);
 
     var mapOptions = {
         zoom: 14,
@@ -165,7 +165,7 @@ function init() {
         //map marker popup
         var contentString = '<div class="text-center">' +
             '<h2>Contact</h2><br>' +
-            '<p>Coolhaven 236 3024 AN Rotterdam<br>010 225 0130 | info@ask-cs.com</p>' +
+            '<p>Heemraadssingel 89 | 3022 CA Rotterdam<br>010 225 0130 | info@ask-cs.com</p>' +
             '</div>';
 
         var infowindow = new google.maps.InfoWindow({
