@@ -119,39 +119,10 @@ var localization = {
       profileTitle: 'Your Profile:',
       offerTitle: 'We offer you:',
       contactTitle: 'Interesse?',
-      contactDescription01: 'Neem contact op met Carolyn Hoek:',
-
-      sbmanager: {
-        title: 'StandBy Product Manager',
-        intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
-        keyRes: {
-          point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
-          point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
-          point03: 'Provide marketing and sales support by (co-) developing (communication) strategy, product portfolio and pricing.',
-          point04: 'Cooperate with marketing manager to develop parameters to measure successful performances in marketing, products and sales. Use market information to evaluate and improve market plans.',
-          point05: 'Work together with the technical talent in your team to define development priorities and liaise with designers and developers to achieve the optimal implementation of changes.',
-          point06: 'Interact regularly with customers on the value of the whole product. Solicit continuously for improvements in products and related extensions and additions.',
-          point07: 'Monitor, analyze and evaluate the user experience and customer satisfaction using a combination of web analytics, user analytics, user surveys and other tools.'
-        },
-        knowledge: {
-          intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
-          point01: 'Bachelor degree (HBO) in IT technology or business. ',
-          point02: 'Minimum of 3 years experience in developing (value-based) service strategy in a high-tech environment.',
-          point03: 'Understanding of (Dutch and European) public safety and security market.',
-          point04: 'Fluency in Dutch and English, verbal and written.',
-          point05: 'Demonstrated ability to perform in high-pressure environments.'
-        },
-        profile: {
-          point01: 'Analytical skills',
-          point02: 'Collegial and flexible',
-          point03: 'Sense of responsibility and immune to stress',
-          point04: 'Support our goals by visibly enjoying your work',
-          point05: 'Prepared to share your knowledge with your colleagues'
-        }
-      },
+      contactDescription01: 'Neem contact op met Judith Engelsman:',
 
       iosdev: {
-        title: 'iOS Developer (2x)',
+        title: 'iOS Developer (2x) at Bandung, Indonesia',
         intro: 'ASK Community Systems B.V. is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
         keyRes: {
           point01: 'Ownership of iOS (iPhone and iPad) applications of one of our products.',
@@ -183,7 +154,7 @@ var localization = {
       },
 
       androiddev: {
-        title: 'Android Developer',
+        title: 'Android Developer at Bandung, Indonesia',
         intro: 'ASK Community Systems B.V. is looking for experienced Android Developers for several projects. The focus is on developing innovative mobile applications for Android devices. Together with the team, you will strive for the best results.',
         keyRes: {
           point01: 'Ownership of Android applications of one of our products.',
@@ -215,7 +186,7 @@ var localization = {
       },
 
       webdev: {
-        title: 'Web Developer',
+        title: 'Web Developer at Bandung, Indonesia',
         intro: 'ASK Community Systems B.V. is looking for experienced Web Developers for several products. The focus is on developing innovative web applications. Together with the team, you will strive for the best results.',
         keyRes: {
           point01: 'Ownership of web applications of one of our products.',
@@ -601,39 +572,10 @@ var localization = {
       profileTitle: 'Your Profile:',
       offerTitle: 'We offer you:',
       contactTitle: 'Apply?',
-      contactDescription01: 'Please contact Carolyn Hoek:',
-
-      sbmanager: {
-        title: 'StandBy Product Manager',
-        intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
-        keyRes: {
-          point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
-          point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
-          point03: 'Provide marketing and sales support by (co-) developing (communication) strategy, product portfolio and pricing.',
-          point04: 'Cooperate with marketing manager to develop parameters to measure successful performances in marketing, products and sales. Use market information to evaluate and improve market plans.',
-          point05: 'Work together with the technical talent in your team to define development priorities and liaise with designers and developers to achieve the optimal implementation of changes.',
-          point06: 'Interact regularly with customers on the value of the whole product. Solicit continuously for improvements in products and related extensions and additions.',
-          point07: 'Monitor, analyze and evaluate the user experience and customer satisfaction using a combination of web analytics, user analytics, user surveys and other tools.'
-        },
-        knowledge: {
-          intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
-          point01: 'Bachelor degree (HBO) in IT technology or business. ',
-          point02: 'Minimum of 3 years experience in developing (value-based) service strategy in a high-tech environment.',
-          point03: 'Understanding of (Dutch and European) public safety and security market.',
-          point04: 'Fluency in Dutch and English, verbal and written.',
-          point05: 'Demonstrated ability to perform in high-pressure environments.'
-        },
-        profile: {
-          point01: 'Analytical skills',
-          point02: 'Collegial and flexible',
-          point03: 'Sense of responsibility and immune to stress',
-          point04: 'Support our goals by visibly enjoying your work',
-          point05: 'Prepared to share your knowledge with your colleagues'
-        }
-      },
+      contactDescription01: 'Please contact Judith Engelsman:',
 
       iosdev: {
-        title: 'iOS Developer (2x)',
+        title: 'iOS Developer (2x) at Bandung, Indonesia',
         intro: 'ASK Community Systems B.V. is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
         keyRes: {
           point01: 'Ownership of iOS (iPhone and iPad) applications of one of our products.',
@@ -665,7 +607,7 @@ var localization = {
       },
 
       androiddev: {
-        title: 'Android Developer',
+        title: 'Android Developer at Bandung, Indonesia',
         intro: 'ASK Community Systems B.V. is looking for experienced Android Developers for several projects. The focus is on developing innovative mobile applications for Android devices. Together with the team, you will strive for the best results.',
         keyRes: {
           point01: 'Ownership of Android applications of one of our products.',
@@ -697,7 +639,7 @@ var localization = {
       },
 
       webdev: {
-        title: 'Web Developer',
+        title: 'Web Developer at Bandung, Indonesia',
         intro: 'ASK Community Systems B.V. is looking for experienced Web Developers for several products. The focus is on developing innovative web applications. Together with the team, you will strive for the best results.',
         keyRes: {
           point01: 'Ownership of web applications of one of our products.',
@@ -1120,39 +1062,10 @@ var localization = {
       profileTitle: 'Your Profile:',
       offerTitle: 'We offer you:',
       contactTitle: 'Interesse?',
-      contactDescription01: 'Neem contact op met Carolyn Hoek:',
-
-      sbmanager: {
-        title: 'StandBy Product Manager',
-        intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
-        keyRes: {
-          point01: 'Contribute to the definition of the product(line) by the preparation and maintenance of Product Requirements Specification.',
-          point02: 'Understand the opportunities and threats for the business, analyze market trends and possibilities in relation to technological developments, customer demands and the position of competitors; Based on these guide the product development roadmap.',
-          point03: 'Provide marketing and sales support by (co-) developing (communication) strategy, product portfolio and pricing.',
-          point04: 'Cooperate with marketing manager to develop parameters to measure successful performances in marketing, products and sales. Use market information to evaluate and improve market plans.',
-          point05: 'Work together with the technical talent in your team to define development priorities and liaise with designers and developers to achieve the optimal implementation of changes.',
-          point06: 'Interact regularly with customers on the value of the whole product. Solicit continuously for improvements in products and related extensions and additions.',
-          point07: 'Monitor, analyze and evaluate the user experience and customer satisfaction using a combination of web analytics, user analytics, user surveys and other tools.'
-        },
-        knowledge: {
-          intro: 'As StandBy Product Manager you are responsible for the overall success of StandBy, a leading “readiness & alarming” solution in public safety and security market. Together with the business unit, you will define the strategic direction of the StandBy customer experience across desktop, mobile and digital marketing.',
-          point01: 'Bachelor degree (HBO) in IT technology or business. ',
-          point02: 'Minimum of 3 years experience in developing (value-based) service strategy in a high-tech environment.',
-          point03: 'Understanding of (Dutch and European) public safety and security market.',
-          point04: 'Fluency in Dutch and English, verbal and written.',
-          point05: 'Demonstrated ability to perform in high-pressure environments.'
-        },
-        profile: {
-          point01: 'Analytical skills',
-          point02: 'Collegial and flexible',
-          point03: 'Sense of responsibility and immune to stress',
-          point04: 'Support our goals by visibly enjoying your work',
-          point05: 'Prepared to share your knowledge with your colleagues'
-        }
-      },
+      contactDescription01: 'Neem contact op met Judith Engelsman:',
 
       iosdev: {
-        title: 'iOS Developer (2x)',
+        title: 'iOS Developer (2x) at Bandung, Indonesia',
         intro: 'ASK Community Systems B.V. is looking for experienced iOS Developers for several projects. The focus is on developing innovative iPhone and iPad applications. Together with the team, you will strive for the best results.',
         keyRes: {
           point01: 'Ownership of iOS (iPhone and iPad) applications of one of our products.',
@@ -1184,7 +1097,7 @@ var localization = {
       },
 
       androiddev: {
-        title: 'Android Developer',
+        title: 'Android Developer at Bandung, Indonesia',
         intro: 'ASK Community Systems B.V. is looking for experienced Android Developers for several projects. The focus is on developing innovative mobile applications for Android devices. Together with the team, you will strive for the best results.',
         keyRes: {
           point01: 'Ownership of Android applications of one of our products.',
@@ -1216,7 +1129,7 @@ var localization = {
       },
 
       webdev: {
-        title: 'Web Developer',
+        title: 'Web Developer at Bandung, Indonesia',
         intro: 'ASK Community Systems B.V. is looking for experienced Web Developers for several products. The focus is on developing innovative web applications. Together with the team, you will strive for the best results.',
         keyRes: {
           point01: 'Ownership of web applications of one of our products.',
