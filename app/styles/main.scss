@@ -1443,7 +1443,7 @@ body.jobs {
           background-color: $blue;
           margin-top: 10px;
         }
-        p:nth-child(2n) {
+        p:nth-child(2n), ol {
           padding-bottom: 20px;
         }
       }
