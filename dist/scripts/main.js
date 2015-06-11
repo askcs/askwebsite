@@ -244,6 +244,49 @@ var localization = {
       internshipTitle02: 'Stage:',
       challengeTitle: 'De uitdaging',
       weSeekTitle: 'Wie we zoeken',
+      tasksTitle: 'Mogelijke werkzaamheden',
+      aboutAfTitle: 'Over ASK-Fast',
+      internshipProfileTitle: 'Jouw profiel',
+
+      internshipDesigner1: {
+        title: 'UI Designer / Communication & Multimedia Designer',
+        challengeDescription01: 'Wij zijn op zoek naar een creatieve en gemotiveerde stagiair die ons team komt versterken. Tijdens deze stage help je mee met het ontwikkelen van gebruikersinterfaces en marketinguitingen, zowel digitaal als offline. Je denkt graag mee aan manieren waarop we onze producten kunnen blijven verbeteren. Je weet je wensen van de marketing-afdeling om te zetten in heldere ontwerpen en wordt begeleid door onze marketingmedewerker en onze designer. Doordat wij met de SCRUM-methode werken, blijf je dagelijks op de hoogte van de werkzaamheden van collega’s en kunnen eventuele problemen in teamverband opgelost worden.',
+        tasks: {
+          point01: 'Ontwerpen mobiele interfaces (Android/iOS/Windows)',
+          point02: 'Ontwerpen web-interfaces',
+          point03: 'Ontwerpen omzetten in HTML/CSS',
+          point04: 'Ontwerpen/verbeteren huisstijlen',
+          point05: 'Vormgeven promotiemateriaal (Flyers, banners e.d.)'
+        },
+        profile: {
+          point01: 'Goede communicatieve vaardigheden',
+          point02: 'Duidelijke ux-visie die je kunt vertalen naar ontwerpen',
+          point03: 'Oog voor detail',
+          point04: 'Beheersing van  Adobe Photoshop, Illustrator & InDesign',
+          point05: 'Beheersing van HTML & CSS',
+          point06: 'Kennis van JavaScript is een pré',
+          point07: 'Je werkt gestructureerd met het oog op overdraagbaarheid van je werk',
+          point08: 'Goede beheersing van de Engelse en/of Nederlandse taal',
+          point09: 'Minimaal HBO-niveau'
+        }
+      },
+
+      internshipDesigner2: {
+        title: 'UI Designer ASK-Fast Development Center',
+        challengeDescription01: 'Wij zijn op zoek naar een gemotiveerde stagiair die de gebruikersinterface (web) van het ASK-Fast Development Center komt hernieuwen. Je bent goed in het analyseren van complexe data en weet dit, vanuit het oog van de gebruiker, goed te structureren. Naast dat het ontwerp functioneel is, weet je het ook visueel aantrekkelijk te maken. Je bent goed in het toepassen van huisstijlen en je gebruikt je eigen creativiteit om een ontwerp er gelikt uit laten zien. Eventueel kun je je eigen ontwerp omzetten in HTML/CSS. Doordat wij met de SCRUM-methode werken, blijf je dagelijks op de hoogte van de werkzaamheden van collega’s en kunnen eventuele problemen in teamverband opgelost worden.',
+        afDescription01: 'ASK-Fast ziet een gat tussen de software en de telecomwereld. Dit willen we dichten met onze eigen cloud-communicatieoplossingen. De basis hiervoor is de ASK-Fast API. Hiermee kunnen software developers automatische gespreksflows opstellen. Deze kunnen door klantenserviceafdelingen worden gebruikt om gesprekken met klanten te automatiseren. Het mooie is dat de oplossingen die met de ASK-Fast API zijn gemaakt niet alleen werken met alle gebruikelijke communicatiekanalen, zoals telefoon, SMS, chat, email en social media, maar ook op bijna alle devices.',
+        profile: {
+          point01: 'Goede communicatieve vaardigheden',
+          point02: 'Duidelijke ux-visie die je kunt vertalen naar ontwerpen',
+          point03: 'Ervaring met het maken van wireframes & klikbare prototypes',
+          point04: 'Oog voor detail',
+          point05: 'Beheersing van  Adobe Photoshop,  (Illustrator & InDesign is een pré)',
+          point06: 'Beheersing van HTML & CSS en JavaScript is een pré',
+          point07: 'Je werkt gestructureerd met het oog op overdraagbaarheid van je werk',
+          point08: 'Goede beheersing van de Engelse en/of Nederlandse taal',
+          point09: 'Minimaal HBO-niveau'
+        }
+      },
 
       internshipClouds: {
         title: 'Onderzoek naar clouds',
@@ -696,6 +739,49 @@ var localization = {
       internshipTitle02: 'Internship:',
       challengeTitle: 'The challenge',
       weSeekTitle: 'We seek',
+      tasksTitle: 'Possible activities',
+      aboutAfTitle: 'About ASK-Fast',
+      internshipProfileTitle: 'Your profile',
+
+      internshipDesigner1: {
+        title: 'UI Designer / Communication & Multimedia Designer',
+        challengeDescription01: 'Wij zijn op zoek naar een creatieve en gemotiveerde stagiair die ons team komt versterken. Tijdens deze stage help je mee met het ontwikkelen van gebruikersinterfaces en marketinguitingen, zowel digitaal als offline. Je denkt graag mee aan manieren waarop we onze producten kunnen blijven verbeteren. Je weet je wensen van de marketing-afdeling om te zetten in heldere ontwerpen en wordt begeleid door onze marketingmedewerker en onze designer. Doordat wij met de SCRUM-methode werken, blijf je dagelijks op de hoogte van de werkzaamheden van collega’s en kunnen eventuele problemen in teamverband opgelost worden.',
+        tasks: {
+          point01: 'Ontwerpen mobiele interfaces (Android/iOS/Windows)',
+          point02: 'Ontwerpen web-interfaces',
+          point03: 'Ontwerpen omzetten in HTML/CSS',
+          point04: 'Ontwerpen/verbeteren huisstijlen',
+          point05: 'Vormgeven promotiemateriaal (Flyers, banners e.d.)'
+        },
+        profile: {
+          point01: 'Goede communicatieve vaardigheden',
+          point02: 'Duidelijke ux-visie die je kunt vertalen naar ontwerpen',
+          point03: 'Oog voor detail',
+          point04: 'Beheersing van  Adobe Photoshop, Illustrator & InDesign',
+          point05: 'Beheersing van HTML & CSS',
+          point06: 'Kennis van JavaScript is een pré',
+          point07: 'Je werkt gestructureerd met het oog op overdraagbaarheid van je werk',
+          point08: 'Goede beheersing van de Engelse en/of Nederlandse taal',
+          point09: 'Minimaal HBO-niveau'
+        }
+      },
+
+      internshipDesigner2: {
+        title: 'UI Designer ASK-Fast Development Center',
+        challengeDescription01: 'Wij zijn op zoek naar een gemotiveerde stagiair die de gebruikersinterface (web) van het ASK-Fast Development Center komt hernieuwen. Je bent goed in het analyseren van complexe data en weet dit, vanuit het oog van de gebruiker, goed te structureren. Naast dat het ontwerp functioneel is, weet je het ook visueel aantrekkelijk te maken. Je bent goed in het toepassen van huisstijlen en je gebruikt je eigen creativiteit om een ontwerp er gelikt uit laten zien. Eventueel kun je je eigen ontwerp omzetten in HTML/CSS. Doordat wij met de SCRUM-methode werken, blijf je dagelijks op de hoogte van de werkzaamheden van collega’s en kunnen eventuele problemen in teamverband opgelost worden.',
+        afDescription01: 'ASK-Fast ziet een gat tussen de software en de telecomwereld. Dit willen we dichten met onze eigen cloud-communicatieoplossingen. De basis hiervoor is de ASK-Fast API. Hiermee kunnen software developers automatische gespreksflows opstellen. Deze kunnen door klantenserviceafdelingen worden gebruikt om gesprekken met klanten te automatiseren. Het mooie is dat de oplossingen die met de ASK-Fast API zijn gemaakt niet alleen werken met alle gebruikelijke communicatiekanalen, zoals telefoon, SMS, chat, email en social media, maar ook op bijna alle devices.',
+        profile: {
+          point01: 'Goede communicatieve vaardigheden',
+          point02: 'Duidelijke ux-visie die je kunt vertalen naar ontwerpen',
+          point03: 'Ervaring met het maken van wireframes & klikbare prototypes',
+          point04: 'Oog voor detail',
+          point05: 'Beheersing van  Adobe Photoshop,  (Illustrator & InDesign is een pré)',
+          point06: 'Beheersing van HTML & CSS en JavaScript is een pré',
+          point07: 'Je werkt gestructureerd met het oog op overdraagbaarheid van je werk',
+          point08: 'Goede beheersing van de Engelse en/of Nederlandse taal',
+          point09: 'Minimaal HBO-niveau'
+        }
+      },
 
       internshipClouds: {
         title: 'Research cloud platforms',
@@ -1187,6 +1273,49 @@ var localization = {
       internshipTitle02: 'Stage:',
       challengeTitle: 'De uitdaging',
       weSeekTitle: 'Wie we zoeken',
+      tasksTitle: 'Mogelijke werkzaamheden',
+      aboutAfTitle: 'Over ASK-Fast',
+      internshipProfileTitle: 'Jouw profiel',
+
+      internshipDesigner1: {
+        title: 'UI Designer / Communication & Multimedia Designer',
+        challengeDescription01: 'Wij zijn op zoek naar een creatieve en gemotiveerde stagiair die ons team komt versterken. Tijdens deze stage help je mee met het ontwikkelen van gebruikersinterfaces en marketinguitingen, zowel digitaal als offline. Je denkt graag mee aan manieren waarop we onze producten kunnen blijven verbeteren. Je weet je wensen van de marketing-afdeling om te zetten in heldere ontwerpen en wordt begeleid door onze marketingmedewerker en onze designer. Doordat wij met de SCRUM-methode werken, blijf je dagelijks op de hoogte van de werkzaamheden van collega’s en kunnen eventuele problemen in teamverband opgelost worden.',
+        tasks: {
+          point01: 'Ontwerpen mobiele interfaces (Android/iOS/Windows)',
+          point02: 'Ontwerpen web-interfaces',
+          point03: 'Ontwerpen omzetten in HTML/CSS',
+          point04: 'Ontwerpen/verbeteren huisstijlen',
+          point05: 'Vormgeven promotiemateriaal (Flyers, banners e.d.)'
+        },
+        profile: {
+          point01: 'Goede communicatieve vaardigheden',
+          point02: 'Duidelijke ux-visie die je kunt vertalen naar ontwerpen',
+          point03: 'Oog voor detail',
+          point04: 'Beheersing van  Adobe Photoshop, Illustrator & InDesign',
+          point05: 'Beheersing van HTML & CSS',
+          point06: 'Kennis van JavaScript is een pré',
+          point07: 'Je werkt gestructureerd met het oog op overdraagbaarheid van je werk',
+          point08: 'Goede beheersing van de Engelse en/of Nederlandse taal',
+          point09: 'Minimaal HBO-niveau'
+        }
+      },
+
+      internshipDesigner2: {
+        title: 'UI Designer ASK-Fast Development Center',
+        challengeDescription01: 'Wij zijn op zoek naar een gemotiveerde stagiair die de gebruikersinterface (web) van het ASK-Fast Development Center komt hernieuwen. Je bent goed in het analyseren van complexe data en weet dit, vanuit het oog van de gebruiker, goed te structureren. Naast dat het ontwerp functioneel is, weet je het ook visueel aantrekkelijk te maken. Je bent goed in het toepassen van huisstijlen en je gebruikt je eigen creativiteit om een ontwerp er gelikt uit laten zien. Eventueel kun je je eigen ontwerp omzetten in HTML/CSS. Doordat wij met de SCRUM-methode werken, blijf je dagelijks op de hoogte van de werkzaamheden van collega’s en kunnen eventuele problemen in teamverband opgelost worden.',
+        afDescription01: 'ASK-Fast ziet een gat tussen de software en de telecomwereld. Dit willen we dichten met onze eigen cloud-communicatieoplossingen. De basis hiervoor is de ASK-Fast API. Hiermee kunnen software developers automatische gespreksflows opstellen. Deze kunnen door klantenserviceafdelingen worden gebruikt om gesprekken met klanten te automatiseren. Het mooie is dat de oplossingen die met de ASK-Fast API zijn gemaakt niet alleen werken met alle gebruikelijke communicatiekanalen, zoals telefoon, SMS, chat, email en social media, maar ook op bijna alle devices.',
+        profile: {
+          point01: 'Goede communicatieve vaardigheden',
+          point02: 'Duidelijke ux-visie die je kunt vertalen naar ontwerpen',
+          point03: 'Ervaring met het maken van wireframes & klikbare prototypes',
+          point04: 'Oog voor detail',
+          point05: 'Beheersing van  Adobe Photoshop,  (Illustrator & InDesign is een pré)',
+          point06: 'Beheersing van HTML & CSS en JavaScript is een pré',
+          point07: 'Je werkt gestructureerd met het oog op overdraagbaarheid van je werk',
+          point08: 'Goede beheersing van de Engelse en/of Nederlandse taal',
+          point09: 'Minimaal HBO-niveau'
+        }
+      },
 
       internshipClouds: {
         title: 'Onderzoek naar clouds',
